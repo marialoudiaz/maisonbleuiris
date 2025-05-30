@@ -82,44 +82,6 @@ function Services() {
         // delay: 6
       });
     });
-
-    // Nouvelle timeline pour l'effet de rotation avant/arrière - Rotation avec scrolltrigger
-    // const tlRotation = gsap.timeline({
-    //   scrollTrigger: {
-    //     trigger: containerCardz.current.querySelector(".card"),
-    //     start: "top center", // Début au milieu de l'écran
-    //     end: "bottom bottom",
-    //     scrub: 0.5,
-    //     id: 'rotation-timeline'
-    //   }
-    // });
-    // cards.forEach((card, index) => {
-    //   const backEl = card.querySelector(".flip-card-back");
-    //   const frontEl = card.querySelector(".flip-card-front");
-
-    //   tlRotation.fromTo(frontEl, {
-    //   rotationY: 0,
-    //   zIndex:1000,
-    //   }, {
-    //   rotationY: -180,
-    //     ease: "none",
-    //     duration: 1,
-    //     zIndex:0,
-
-    //   }, "-=1.5");
-      
-
-    //   tlRotation.fromTo(backEl, {
-    //     rotationY: -180,
-    //     zIndex: 0,
-    //     opacity:1,
-    //   }, {
-    //     rotationY: 0,
-    //     zIndex: 1000,
-    //     ease: "none",
-    //     duration: 1
-    //   }, "-=1.5");
-    // });
   }, { scope: containerCardz });
 
   // Rotation au hover
@@ -160,15 +122,6 @@ function Services() {
     });
   };
 
-  // const cardUp = (index, Lang) => {
-  //   const updatedTexts = Array(imgArr.length).fill(null);
-  //   if (Lang === 'FR') {
-  //     updatedTexts[index] = imgArr[index].text[1];
-  //   } else {
-  //     updatedTexts[index] = imgArr[index].text[0];
-  //   }
-  //   setfooterTexts(updatedTexts);
-  // };
   return (
     <>
       <ReactLenis root>

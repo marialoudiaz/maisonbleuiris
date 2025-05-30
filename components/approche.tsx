@@ -8,12 +8,6 @@ import Carousel from '../components/carousel';
 import '../styles/App.scss'
 import { useData } from '@/app/context/DataContext';
 
-// Approche avec LS
-// interface ApprocheProps {
-//   infos: {
-//     approche: string[];
-//   };
-// }
 const Approche: React.FC = () => {
 
       //Array recue
@@ -36,27 +30,6 @@ const Approche: React.FC = () => {
           titre: `${indepArray[0].values[0]}`,
           text: `${indepArray[0].values[1]}`,
         },
-        // {
-        //   index: 1,
-        //   image: detail,
-        //   alt: "oeil à l'encre de chine",
-        //   titre: `${indepArray[0].approche[4]}`,
-        //   text: `${indepArray[0].approche[5]}`,
-        // },
-        // {
-        //   index: 2,
-        //   image: harmony,
-        //   alt: "symbole symétrique à l'encre de chine",
-        //   titre: `${indepArray[0].approche[6]}`,
-        //   text: `${indepArray[0].approche[7]}`,
-        // },
-        // {
-        //   index: 3,
-        //   image: nature,
-        //   alt: "plante minimaliste à l'encre de chine",
-        //   titre: `${indepArray[0].approche[8]}`,
-        //   text: `${indepArray[0].approche[9]}`,
-        // },
         {
           index: 1,
           image: minimalism,
@@ -71,13 +44,6 @@ const Approche: React.FC = () => {
           titre: `${indepArray[0].values[5]}`,
           text: `${indepArray[0].values[6]}`,
         },
-        // {
-        //   index: 5,
-        //   image: color,
-        //   alt: "trait doré à l'encre de chine",
-        //   titre: `${indepArray[0].approche[12]}`,
-        //   text: `${indepArray[0].approche[13]}`,
-        // },
       ];
 
 
@@ -92,48 +58,11 @@ const Approche: React.FC = () => {
                 width={96}
                 height={100}
               />
-              {/* <span className='syne'>
-               <Typewriter
-                  options={{
-                  strings: [`${citation}`],
-                  autoStart: true,
-                  loop: true,
-                  }}
-              </span> */}
+             
               <Carousel dataArray={dataArray} />
             </div>
         </div>
-        {/* <div className='grid-col2'>
-          <Image 
-            className='grid-col2-img' 
-            src={portrait} 
-            width={1000}
-            height={0}
-            alt='autoportrait souriant en noir et blanc'
-          />
-          <div className='flex-col' style={{justifyContent:'center', marginTop:'1rem'}}>
-            <div className='flex-wrap'>
-              <Image
-                src="/logo/medaillon.png"
-                alt="le logo sous forme de médaillon"
-                width={96}
-                height={100}
-              />
-              <h2>{approchez}</h2>
-              <span className='syne'>
-              <Typewriter
-              
-                  options={{
-                  strings: [`${citation}`],
-                  autoStart: true,
-                  loop: true,
-                  }}
-              />
-              </span>
-              <Carousel dataArray={dataArray} />
-            </div>
-          </div>
-        </div> */}
+        
       </div>
     </>
   )

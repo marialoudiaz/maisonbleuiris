@@ -106,7 +106,6 @@ const VideoReveal: React.FC<VideoProps> = ({ scrollYProgress }) => {
         </div>
 
         <div className="mobile" style={{height:'100%', objectFit: 'cover'}}>
-        {/* style={{ position: 'relative' }} */}
           <video
             ref={mobileVideoRef}
             muted
