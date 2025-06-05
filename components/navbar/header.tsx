@@ -6,13 +6,6 @@ import '../../styles/App.scss';
 import Image from 'next/image';
 import logo from '../../public/logo/mbi-noir.png';
 import MobileNavbar from '../navbar/mobileHeader';
-//Avec LS
-// interface HeaderProps {
-//   arrayRecu: string[],
-//   infos: {
-//     header: string[]
-//   }
-// }
 
 const Header = () => {
 

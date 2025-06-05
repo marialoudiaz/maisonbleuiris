@@ -74,268 +74,113 @@ function Projet() {
           []
         ]
       },
-      // pascale
+      //georges
       {
         id: 2,
-        client: 'Pascale Laffon',
+        client: 'Maison Bleu Iris',
         discover: ["scroller pour découvrir le projet","scroll down to discover the project"],
-        videoDesktop: '/projets/pl/pl_video.mp4',
-        videoMobile: '/projets/pl/pl_video.mp4',
-        image: '/projets/pl/pl-img.jpg',
-        title: 'Pascale Laffon',
-        baseline:["Invincible est la douceur","Invincible is gentleness"],
-        infos: [['2024', 'Site vitrine', 'Médecine holistique'],['2024', 'Showcase website', 'Holistic medicine']],
+        videoDesktop: '/projets/georges/georges-hp.mp4',
+        videoMobile: '/projets/georges/georges-hp-hover.mp4',
+        image: '/projets/georges/georges-hp.png',
+        title: 'Georges, aioli catalan',
+        baseline: [
+          "L'âme du Canigou",
+          'The soul of the Canigou',],
+
+        infos: [['2025','Site web','Packaging', 'Branding'],['2025','Website','Packaging', 'Branding']],
         categories: 
         [
-          ['UI/UX', 'Intégration', 'Charte graphique', 'SEO', 'Hébergement', 'Maintenance', 'Motion', 'Captations vidéos & photos'],
-          ['UI/UX', 'Coding', 'Graphic charter', 'SEO', 'Hosting', 'Maintenance', 'Motion, Video & photo']
+          ['Conception graphique','Expérience utilisateur','Application web','Maintenance','Développement Fullstack', 'Vidéo', 'Stroytelling'],
+          ['Graphic Design', 'User Experience', 'Web Application', 'Maintenance', 'Fullstack Development', 'Video', 'Storytelling']
         ],
-        onClick: ['https:/www.pascalelaffon.fr', '_blank'],
+        onClick: ['https://www.georges-aioli.fr', '_blank'],
         besoins:[
-          ["Pascale Laffon, micropracteur de longue date, se lance désormais en tant qu'auto-entrepreneur. Pour valoriser au mieux ses services et refléter fidèlement son univers, la création d'un site vitrine s'impose comme une nécessité. Dans cette optique, j'ai entrepris de repenser sa charte graphique (incluant le logotype et l'iconographie) et de développer un site vitrine à même de transmettre l'essence de son activité."],
-          ["Pascale Laffon, a long-time micropractor is now launching as a sole trador. To showcase her services effectively and accurately reflect her universe, creating a showcase website is essential. With this goal in mind, I have undertaken to redesign her visual identity (including logo and iconography) and develop a showcase website that will perfectly convey the essence of her business."]],
-        technologies: [
-          ['Ink', 'Illustrator', 'Photoshop', 'Premiere Pro', 'After Effects', 'Figma', 'React'],
-          ['Encre', 'Illustrator', 'Photoshop', 'Premiere Pro', 'After Effects', 'Figma', 'React']
+          ["Le projet avait besoin d’un récit visuel fort, capable de porter à la fois une légende ancienne et une identité contemporaine. Il fallait ancrer le produit dans un imaginaire sacré, mais accessible, en respectant l’intimité d’une fabrication artisanale et la force d’un terroir. L’emballage devait être à la hauteur de ce double héritage : celui d’un savoir oublié et d’un goût intemporel. Enfin, le tout devait s’inscrire dans un langage de marque sobre, élégant et sincère, pour séduire autant les épicuriens que les rêveurs."],
+          ["The project required a strong visual narrative — one that could carry both an ancient legend and a modern identity. It needed to root the product in a sacred yet accessible imagination, honouring the intimacy of artisanal making and the strength of its local origins. The packaging had to live up to this dual legacy: forgotten knowledge and timeless flavour. And ultimately, everything needed to align with a brand language that was sober, elegant and sincere — appealing to both epicureans and dreamers."],
         ],
+        technologies: ['React', 'After effects', 'Illustrator', 'Ink handdrawing', 'Figma', 'Adobe Creative Suite', 'Express'],
         sections: 
-        [
-          {title:'Pascale Laffon',
-          categories: [
-          ['Typographie', 'Iconographie', 'Charte graphique'],
-          ['Typography', 'Iconography', 'Graphic charter'],
-          ],
-          subtitle: ['Une police d’écriture signature', 'A signature font'],
-          text: [
-            "L’encre de chine comme symbole d’élégance et de finesse. Raconter graphiquement la pratique de la micropraxie, c’était parvenir à parler d’un univers doux, calme mais puissant. Ainsi l’encre de chine s’est révélée comme étant le médium le plus à même de nous transporter dans l’univers de Pascale Laffon. Un titre, une signature pour faire du nom de son entreprise un concept.",
-            "Chinese ink as a symbol of elegance and refinement. Graphically depicting the practice of micropraxis meant conveying a gentle, calm yet powerful universe. Thus, Chinese ink emerged as the medium best suited to transport us into Pascale Laffon's world. A title, a signature, to transform the name of her business into a concept."
-          ],
-          imageEN: '/projets/pl/pl-section1en.png',
-          image: '/projets/pl/pl-section1.png'
-          },
-
-          {title:'Pascale Laffon',
-          categories: [
-              ['Illustration','Charte graphique'],
-              ['Illustration','Graphic charter']
-              ],
-          subtitle: ['L’illustration comme première impression', 'Portrait as a first impression'],
-          text: [
-            "Tirer le portrait de Pascale et de son cabinet permettent d’aller à la rencontre du patient avant même qu’il prenne rendez-vous. Cette approche rend l'expérience vivante et chaleureuse, invitant ainsi les patients à entrer dans l'univers de Pascale et à établir une connexion personnelle dès le début.",
-            "Capturing portraits of Pascale and her practice allows potential patients to get acquainted even before scheduling an appointment. This approach brings a lively and welcoming feel, inviting patients into Pascale's world and creating a warm, personal connection from the start.",
-          ],
-          image: '/projets/pl/pl-section2.png',
-          },
-
-          {title:'Pascale Laffon',
-            categories: [
-              ['Illustration', 'Iconographie', 'Charte graphique', 'Motion'],
-              ['Illustration', 'Iconography', 'Graphic charter', 'Motion']
-            ],
-            subtitle: [' Penser une iconographie unique', 'Creating a unique iconography'],
-            text: [
-              "Pour immerger encore davantage les utilisateurs dans l'univers unique de Pascale, il est apparu évident de créer une iconographie exclusive. En concevant des pictogrammes spécialement imaginés pour illustrer la pratique de la micropraxie, nous avons pu raconter son histoire de manière authentique et engageante.",
-              "To further immerse users in Pascale's unique world, it became clear that creating an exclusive iconography was essential. By designing custom pictograms that vividly narrate the practice of micropraxis, we were able to tell her story in an authentic and engaging way.",
-            ],
-            image: '/projets/pl/pl-section3.png',
-            },
-
-            {title:'Pascale Laffon',
-              categories: [
-                ['Illustration', 'Iconographie', 'Charte graphique', 'Motion'],
-                ['Illustration', 'Iconography', 'Graphic charter', 'Motion']
-              ],
-              subtitle: ['Less is more', 'Less is more'],
-              text: [
-                "Afin de cristalliser, cette refonte, en dernier lieu, il est apparu essentiel de simplifier le logotype déjà existant de Pascale Laffon et de l’animer.",
-                "To finalize this redesign, it became essential to simplify Pascale Laffon's existing logotype and animate it.",
-              ],
-              video: '/projets/pl/pl-section4.mp4',
-              },
+[
+  {
+    subtitle: ['Approche', 'Approach'],
+    text: [
+      "L’approche visuelle s’est inspirée des éléments naturels et de la sobriété monacale. Le pot évoque la pierre brute du Canigou, l’étiquette se fait parchemin. L’identité graphique est minimale mais habitée : une typographie gravée, un dessin discret d’ail sauvage, et une palette réduite aux tons de terre et d’or patiné. Tout évoque la lenteur, la patience, et le sacré du geste. Nous avons conçu l’emballage comme un talisman : modeste en apparence, mais chargé de mémoire.",
+      "The visual approach drew from nature’s rawness and monastic simplicity. The jar echoes the rugged stone of Canigou; the label feels like aged parchment. The graphic identity is minimal yet alive: engraved typography, a subtle drawing of wild garlic, and a muted palette of earth and weathered gold. Every detail speaks of slowness, patience, and sacred ritual. We designed the packaging like a talisman: modest on the surface, yet rich with legacy."
+    ],
+    image: '/projets/georges/affiche-georges-aioli4.jpg',
+  },
+  {
+    subtitle: ['Créer une légende autour de ta mémoire', 'To create a tale from your memory.'],
+    
+    text: [
+      "Né d’une légende enracinée au sommet du Canigou, l’aïoli Georges incarne plus qu’un simple condiment : il est la mémoire vivante d’un savoir ancien, transmis par un ermite solitaire et sage. Chaque pot contient la puissance des éléments, le parfum de l’ail sauvage, et la patience du geste artisanal. Ce packaging sobre et authentique rend hommage à cette histoire : celle d’un homme, d’une montagne, et d’une promesse. Plus qu’une sauce : l’âme du Canigou.",
+      "Born from a legend rooted at the summit of Mount Canigou, Georges aïoli is more than a sauce — it's the living memory of an ancient craft, passed down by a solitary and wise hermit. Each jar holds the strength of the mountains, the scent of wild garlic, and the patience of a hand-forged ritual. This simple, authentic packaging pays tribute to that story — of a man, a mountain, and a promise. More than a sauce: the soul of Canigou."
+    ],
+    image: '/projets/georges/affiche-georges-aioli3.jpg',
+  },
+  {
+    subtitle: ["Georges & la légende de l'aïoli Catalan", "Georges and the legend of catalan aioli"],
+    text: 
+    [
+      "Il y a bien longtemps, dans un temps où les hommes craignaient encore les cimes, vivait un vieil ermite nommé Georges, au sommet du Canigou. Solitaire, il parlait peu, mais ses mains racontaient des récits de feu, de pierre, et d’huile. Vivait, un vieil ermite, au sommet du Canigou, là où les neiges éternelles caressent les cieux, et où le silence des montagnes pèse plus lourd que les siècles. Il habitait une cabane de pierre, adossée à un éperon rocheux, battue par les vents mais chaleureuse de solitude choisie. Chaque matin, il saluait le lever du soleil comme un vieil ami, et descendait parfois jusqu'à la lisière des forêts pour cueillir herbes et racines, marmonnant à mi-voix les secrets de la terre qu’il n’avait jamais cessé d’aimer. Chaque jour, portant sur son dos, le mortier qu'il avait sculpté dans un magnifique marbre griotte du Conflent, il gravissait les versants escarpés, en quête de l’ail des ours, une plante rare qu’il ne trouvait qu’à l’ombre des hêtres, là où les izards tracent leurs chemins secrets. Les villageois disaient qu’il avait été un grand chef autrefois, mais qu’il avait renoncé à la gloire pour atteindre la vérité du goût. Selon la rumeur, il aurait appris à dompter les éléments – le vent, le sel, et le feu – pour créer l’aïoli parfait, un mélange si puissant qu’il guérissait les cœurs durs et redonnait force aux faibles. Mais l’aïoli de Georges ne se laissait pas apprivoiser. Il fallait battre sans faiblir, avec patience, à la main, comme l’izard franchit les falaises : sans pause, sans peur. Nombreux sont ceux qui montèrent au sommet pour apprendre, mais seuls les plus tenaces furent dignes du secret. Un jour, alors que les vents soufflaient fort et que l’hiver menaçait la vallée, Georges descendit avec un petit pot doré. Il entra dans la place du village, le déposa sur la table de pierre, et dit : 'Voici l’âme du Canigou. Ce n’est pas une sauce, c’est une épreuve. Une promesse. Une mémoire.' Puis il repartit, suivi seulement par un groupe silencieux d’izards. Depuis ce jour, chaque pot d’aïoli Georges contient un peu de cette légende :la force des montagnes,la patience du mortier,et le mystère de l’ail sauvage.",
+      "Long ago, in a time when men still feared the mountain peaks, there lived a hermit named Georges atop Mount Canigou. He lived alone, spoke little, but his hands told stories — of fire, of stone, and of oil. He dwelled in a stone hut, nestled against a rocky outcrop, battered by the winds yet warmed by chosen solitude, high where eternal snow brushes the sky and the silence weighs heavier than centuries. Each morning, he greeted the rising sun like an old friend, and would sometimes descend to the forest’s edge to gather herbs and roots, whispering softly the secrets of a land he had never stopped loving. Each day, he carried on his back a mortar he had carved from rich Conflent red marble, climbing the steep slopes in search of wild garlic — a rare plant found only in the shadow of beech trees, where izards carve hidden paths. The villagers said he had once been a great chef, who had given up fame to pursue the truth of taste. Rumour had it that he had learned to master the elements — the wind, the salt, and the fire — to create the perfect aïoli, a blend so powerful it could soften the hardest of hearts and restore strength to the weary. But Georges’ aïoli would not yield easily. It had to be beaten by hand, with patience, never wavering — like the izard that climbs the cliff face: without pause, without fear. Many climbed the mountain hoping to learn, but only the most steadfast were deemed worthy of the secret. One day, as fierce winds howled and winter crept down into the valley, Georges descended with a small golden jar. He entered the village square, placed it upon the stone table, and said: 'This is the soul of Canigou. It is not a sauce. It is a trial. A promise. A memory.' Then he left, followed only by a silent procession of izards. Since that day, each jar of Georges aïoli carries a trace of that legend: the strength of the mountains, the patience of the mortar and the mystery of wild garlic.",
+    ],
+    image: '/projets/georges/affiche-georges-aioli3.jpg',
+  },
+        
+],
+        sectionsImg: [
+          ['/projets/georges/etiquette-pot.jpg','/projets/georges/georges-signature.png','/projets/georges/boite-georges.jpg'],
+          ['/projets/georges/etiquette-pot.jpg','/projets/georges/georges-signature.png','/projets/georges/boite-georges.jpg'],
         ],
-      },
-      //vb
-      {
-              id: 3,
-              client: 'Valette & Berthelsen Avocats',
-              discover: ["scroller pour découvrir le projet","scroll down to discover the project"],
-              videoDesktop: '/projets/vb/vb-video.mp4',
-              videoMobile: '/projets/vb/vb-video.mp4',
-              image: '/projets/vb/vb-img.jpg',
-              title: 'VB Avocats',
-              baseline:["Redéfinir l'excellence juridique","Redefining Legal Excellence"],
-              infos: [
-                ['2024', 'Identité graphique', 'Cabinet d’avocats', 'Réalisé chez Cible Publicité'],
-                ['2024', 'Graphic identity', 'Law firm', 'Designed at Cible Publicité']
-              ],
-              categories: 
-              [
-                ['Charte graphique', 'Logotype', 'Papeterie', 'Signalétique'],
-                ['Graphic charter', 'Logotype', 'Stationery', 'Signage'],
-              ],
-              onClick: ['https:/www.avocats-vb.fr', '_blank'],
-              besoins:[
-                ["VB Avocats, anciennement Valette & Berthelsen, ont exprimé le désir de revitaliser leur identité graphique tout en préservant l'essence même du cabinet. La refonte visait à insuffler un nouveau dynamisme tout en respectant les valeurs et l'histoire de l'entreprise. Il a donc été question d'entreprendre une refonte du logotype, des éléments de papeterie et de la signalétique."],
-                ["VB Avocats, formerly known as Valette & Berthelsen, sought a redesign of their graphic identity. The goal was to breathe new life into their brand without compromising the essence of the firm. Therefore, I undertook a redesign of the logo, stationery elements, and signage."],
-              ],
-              technologies:
-              [
-                ['Photoshop', 'Ilustrator', 'Indesign'],
-                ['Photoshop', 'Ilustrator', 'Indesign'],
-              ],
-        sections: 
-        [
-          {
-          subtitle: [
-            'Transmettre les valeurs fondamentales du droit', 
-            'Convey the fundamental values of law'
-          ],
-          text: [
-            "La palette vert et argenté et le symbole de Thémis ont été choisis pour incarner les valeurs fondamentales de notre firme d’avocats. Le vert symbolise l’équilibre, l’harmonie et la justice. Il évoque aussi la croissance, la confiance et l’espoir, des notions essentielles pour accompagner nos clients vers des solutions justes et durables. L’argenté incarne la modernité, la rigueur et la transparence. Il reflète notre engagement à offrir des services clairs, efficaces et innovants, tout en garantissant une approche professionnelle et intègre. Le symbole de Thémis, déesse de la justice, représente l’équité, l’impartialité et la vérité. Avec sa balance, elle incarne la recherche constante d’équilibre et de justesse dans nos actions, tandis que son glaive rappelle notre détermination à défendre les droits de nos clients avec force et conviction. Cette identité visuelle traduit parfaitement notre mission : allier tradition et modernité pour défendre vos intérêts avec excellence, intégrité et humanité.",
-            "The green and silver palette and the symbol of Themis were chosen to embody the core values of our law firm. Green symbolizes balance, harmony, and justice. It also evokes growth, trust, and hope, essential concepts in guiding our clients toward fair and sustainable solutions. Silver represents modernity, rigor, and transparency. It reflects our commitment to delivering clear, effective, and innovative services while ensuring a professional and ethical approach. The symbol of Themis, the goddess of justice, stands for fairness, impartiality, and truth. With her scales, she embodies the constant pursuit of balance and fairness in our actions, while her sword reminds us of our determination to defend our clients' rights with strength and conviction. This visual identity perfectly conveys our mission: combining tradition and modernity to defend your interests with excellence, integrity, and humanity."
-          ],
-          image: '/projets/none.png',
-          },
-        ],
-              sectionsImg:
-              [
-                ['/projets/vb/vb-section1aen.png','/projets/vb/vb-section2b.jpg','/projets/vb/vb-section1en.png','/projets/vb/vb-section2d.jpg','/projets/vb/vb-img.jpg','/projets/vb/vb-section2c.jpg'],
-                ['/projets/vb/vb-section1afr.png','/projets/vb/vb-section2b.jpg','/projets/vb/vb-section1fr.png','/projets/vb/vb-section2d.jpg','/projets/vb/vb-img.jpg','/projets/vb/vb-section2c.jpg'],  
-              ]
-      },
-      // nda
-      {
-        id: 4,
-        client: 'Émile Trubert',
+},
+
+{
+        id: 3,
+        client: 'Gisèle Perrin',
         discover: ["scroller pour découvrir le projet","scroll down to discover the project"],
-        videoDesktop: '/projets/nda/nda-2_hover.mp4',
-        videoMobile: '/projets/nda/nda-2_hover.mp4',
-        image: '/projets/nda/nda-1.jpg',
-        title: "Naissance d'une amitié",
-        baseline:["L'amitié est une âme en deux corps","Friendship is a soul in two bodies"],
-        infos: [['2024', 'Illustration', 'Littérature contemporaine'],['2024', 'Illustration', 'Contemporary Literature']],
+        videoDesktop: '/projets/soup/soup-2_hover.mp4',
+        videoMobile: '/projets/soup/soup-2_hover.mp4',
+        image: '/projets/soup/mockup-livre.jpg',
+        title: "Soupes",
+        baseline: ["Oeil pour oeil, soupe pour souvenir", "An eye for an eye, a story for a soup"],
+        infos: [['2025', 'Illustration', 'Livre de recettes & récit biographique, romanesque'],['2025', 'Illustration', 'Cookbook and novel']],
         categories: 
         [
           ['Illustration', 'Littérature'],
-          ['Illustration', 'Literature']
+          ['Illustration', 'Cooking literature']
         ],
         onClick: ['https:/www.marialoudiaz.fr', '_blank'],
         besoins:[
-          ["Naissance d'une amitié est un roman d'Émile Trubert qui explore avec délicatesse l’émergence d’une amitié émouvante. Au cœur de l’histoire se trouve un vieil homme, accablé par le poids du deuil après la perte de son épouse bien-aimée, et Eva, une jeune femme dont la présence commence à transformer son monde en ruines. Leur lien devient une source de guérison, ramenant peu à peu chaleur et espoir dans sa vie. Un élément central du récit est une illustration récurrente : la figure du protagoniste, initialement enveloppé dans des teintes sombres et ternes, symbolisant son chagrin et son isolement. Au fil de l’histoire, à mesure que son amitié avec Eva s’approfondit, le dessin évolue. Des rayons de lumière subtils commencent à percer l’obscurité qui l’entoure, reflétant le pouvoir transformateur de leur relation. À la fin, il apparaît baigné dans une lumière éclatante, métaphore visuelle du renouveau et de l’espoir apportés par cette amitié. Cette représentation artistique accompagne le voyage émotionnel du roman, soulignant l’impact profond des liens humains et le pouvoir de transformation qu’ils portent en eux. Le roman est une tendre ode à l’amitié et à la lumière qu’elle peut faire briller dans les recoins les plus sombres de la vie."],
-          ["Birth of a Friendship is a novel by Émile Trubert that delicately explores the emergence of a poignant friendship. At its heart is an elderly man, burdened by the shadow of grief following the loss of his beloved spouse, and Eva, a young woman whose presence begins to reshape his desolate world. Their bond becomes a source of healing, gradually infusing his life with warmth and unforeseen possibilities. Central to the narrative is a recurring illustration: the figure of the protagonist, initially cloaked in dim, muted tones, symbolizing his sorrow and isolation. As the story unfolds, and his connection with Eva deepens, the drawing evolves. Subtle shafts of light begin to pierce the darkness around him, reflecting the transformative power of their friendship. By the conclusion, he stands bathed in vibrant light, a visual metaphor for the rejuvenation and hope their relationship brings. This artistic depiction mirrors the emotional journey of the novel, underscoring the profound impact of human connection and the renewal it can inspire. The novel is a tender ode to friendship and the light it can cast even in life’s darkest corners."]],
-        technologies: [
+          ["Ce projet éditorial posait un défi singulier : comment rendre hommage à une tradition culinaire modeste mais profondément riche, tout en concevant une identité visuelle à la fois intime et intemporelle ? Il fallait donner forme à un recueil de recettes familiales, de récits du Sud et de savoir-faire transmis, en créant une couverture capable d’évoquer la chaleur d’une cuisine de grand-mère, tout en affirmant sa place en librairie comme un objet éditorial élégant, authentique et personnel."],
+          ["This book project came with a unique challenge: how to honour the humble yet rich tradition of soup-making while crafting a visual identity that feels both intimate and timeless. We needed to create a design that could embody a collection of heartfelt family recipes, regional storytelling, and deep-rooted culinary know-how. How could we evoke the warmth of a grandmother’s kitchen in Southern France, while making the book stand out on shelves as an elegant, authentic and personal object?"],
+        ],
+          technologies: [
           ['Ink', 'Illustrator', 'Photoshop', 'Indesign'],
           ['Ink', 'Illustrator', 'Photoshop', 'Indesign'],
         ],
-        // sections: 
-        // [
-        //   {title:'Pascale Laffon',
-        //   categories: [
-        //   ['Typographie', 'Iconographie', 'Charte graphique'],
-        //   ['Typography', 'Iconography', 'Graphic charter'],
-        //   ],
-        //   subtitle: ['Une police d’écriture signature', 'A signature font'],
-        //   text: [
-        //     "L’encre de chine comme symbole d’élégance et de finesse. Raconter graphiquement la pratique de la micropraxie, c’était parvenir à parler d’un univers doux, calme mais puissant. Ainsi l’encre de chine s’est révélée comme étant le médium le plus à même de nous transporter dans l’univers de Pascale Laffon. Un titre, une signature pour faire du nom de son entreprise un concept.",
-        //     "Chinese ink as a symbol of elegance and refinement. Graphically depicting the practice of micropraxis meant conveying a gentle, calm yet powerful universe. Thus, Chinese ink emerged as the medium best suited to transport us into Pascale Laffon's world. A title, a signature, to transform the name of her business into a concept."
-        //   ],
-        //   imageEN: '/projets/pl/pl-section1en.png',
-        //   image: '/projets/pl/pl-section1.png'
-        //   },
-
-        //   {title:'Pascale Laffon',
-        //   categories: [
-        //       ['Illustration','Charte graphique'],
-        //       ['Illustration','Graphic charter']
-        //       ],
-        //   subtitle: ['L’illustration comme première impression', 'Portrait as a first impression'],
-        //   text: [
-        //     "Tirer le portrait de Pascale et de son cabinet permettent d’aller à la rencontre du patient avant même qu’il prenne rendez-vous. Cette approche rend l'expérience vivante et chaleureuse, invitant ainsi les patients à entrer dans l'univers de Pascale et à établir une connexion personnelle dès le début.",
-        //     "Capturing portraits of Pascale and her practice allows potential patients to get acquainted even before scheduling an appointment. This approach brings a lively and welcoming feel, inviting patients into Pascale's world and creating a warm, personal connection from the start.",
-        //   ],
-        //   image: '/projets/pl/pl-section2.png',
-        //   },
-
-        //   {title:'Pascale Laffon',
-        //     categories: [
-        //       ['Illustration', 'Iconographie', 'Charte graphique', 'Motion'],
-        //       ['Illustration', 'Iconography', 'Graphic charter', 'Motion']
-        //     ],
-        //     subtitle: [' Penser une iconographie unique', 'Creating a unique iconography'],
-        //     text: [
-        //       "Pour immerger encore davantage les utilisateurs dans l'univers unique de Pascale, il est apparu évident de créer une iconographie exclusive. En concevant des pictogrammes spécialement imaginés pour illustrer la pratique de la micropraxie, nous avons pu raconter son histoire de manière authentique et engageante.",
-        //       "To further immerse users in Pascale's unique world, it became clear that creating an exclusive iconography was essential. By designing custom pictograms that vividly narrate the practice of micropraxis, we were able to tell her story in an authentic and engaging way.",
-        //     ],
-        //     image: '/projets/pl/pl-section3.png',
-        //     },
-
-        //     {title:'Pascale Laffon',
-        //       categories: [
-        //         ['Illustration', 'Iconographie', 'Charte graphique', 'Motion'],
-        //         ['Illustration', 'Iconography', 'Graphic charter', 'Motion']
-        //       ],
-        //       subtitle: ['Less is more', 'Less is more'],
-        //       text: [
-        //         "Afin de cristalliser, cette refonte, en dernier lieu, il est apparu essentiel de simplifier le logotype déjà existant de Pascale Laffon et de l’animer.",
-        //         "To finalize this redesign, it became essential to simplify Pascale Laffon's existing logotype and animate it.",
-        //       ],
-        //       video: '/projets/pl/pl-section4.mp4',
-        //       },
-        // ],
-        sectionsImg: 
-        [
-          ['/projets/nda/nda-1.png','/projets/nda/nda-2.png'],
-          []
-        ]
-      },
-      // LES PROJETS PLUS ANCIENS
-      // onsight
-      {
-        id: 5,
-        client: 'Maria Lou Diaz',
-        discover: ["scroller pour découvrir le projet","scroll down to discover the project"],
-        videoDesktop: '/projets/os/video-onsight.mp4',
-        videoMobile: '/projets/os/video-onsight.mp4', //'/projets/os/video-onsight.mp4'
-        image: '/projets/os/os-img.png',
-        title: 'Onsight',
-        baseline: [
-          "L'appli qui vous donne envie de prendre votre dose quotidienne de cinéma",
-          'The app that helps you remember to take your daily dose of cinema.',
-        ],
-        infos: [['2023','Application mobile', 'IOS','Cinéma/série'],['2023','App', 'IOS','Cinema/serie']],
-        categories: 
-        [
-          ['Conception graphique','Expérience utilisateur','Application mobile','Maintenance'],
-          ['Graphic design', 'User experience', 'Mobile application', 'Maintenance']
-        ],
-        onClick: ['https://apps.apple.com/fr/app/movies-on-sight/id6450311314', '_blank'],
-        besoins:[["Découvrez OnSight, l'application mobile de prise de notes ultime pour les cinéphiles et amateurs de séries. Plongez dans un univers graphique aux allures rétro où chaque interaction vous transporte dans le passé. Avec OnSight, vous pouvez facilement ajouter et supprimer des films et séries de votre liste, tout en profitant d'un design vintage captivant."],["Discover OnSight, the ultimate note-taking mobile app for movie and series enthusiasts. Immerse yourself in a retro graphical universe reminiscent of the 80s, where every interaction takes you back in time. With OnSight, you can easily add and remove movies and series from your watchlist, all while enjoying a captivating vintage design."]],
-        technologies: ['React native', 'After effects', 'Illustrator'],
         sections: 
         [
           {
-          subtitle: ['Repenser la prise de notes avec style', 'Rethinking Note-Taking with Style'],
+          subtitle: ['Approche', 'Approach'],
           text: [
-            "'OnSight' c'est l'idée de créer une application mobile pour garder en mémoire ses films et séries préférés en ajoutant une composante nostalgique. OnSight plonge les utilisateurs dans une ambiance vintage tout en leur offrant une plateforme élégante et intuitive pour créer et gérer leur liste de films et séries préférés. Inspirée par l'esthétique des années 80 et 90, l'interface se distingue par des tons bleus calmes mais profonds & des police d'écritures rétro. Les utilisateurs peuvent ajouter autant de titres qu'ils le souhaitent. Les films & séries s'ajoutent et s'empilent sous la forme de pilules comme pour rappeler à l'utilisateur de prendre sa dose quotidienne de cinéma - rendant ainsi la gestion de sa vidéothèque plus ludique.",
-            "OnSight is about creating a simple mobile app to keep track of your favorite movies and series. The idea was to rethink the aesthetics to add a nostalgic component. OnSight immerses users in a vintage atmosphere while offering an elegant and intuitive platform to create and manage their list of favorite movies and series. Inspired by the aesthetics of the 80s and 90s, the interface features calm yet deep blue tones and retro fonts. Users can add as many titles as they wish. Movies and series are added and stacked in the form of pills, reminding users to take their daily dose of cinema, making the management of their video library more playful."
+            "Nous avons abordé ce projet comme un carnet de souvenirs : avec délicatesse, texture et sincérité. L’univers visuel puise dans les carnets de croquis, les recettes manuscrites et les gestes de la cuisine paysanne. Le fond texturé rappelle le grain du papier ancien, tandis que la typographie allie sobriété littéraire et douceur rustique. Le croquis rouge — une marmite sur le feu — agit comme une fenêtre ouverte sur une scène de vie, pleine de chaleur et de réminiscences. L’esthétique choisie ne cherche pas à être tendance, mais vraie. Elle invite à ralentir, à s’imprégner d’un monde où chaque soupe est une histoire, chaque ingrédient un héritage.",
+            "We approached this project like a preserved memory – with care, texture, and a human touch. The visual tone was drawn from old sketchbooks, handwritten notes, and vintage cookery traditions. We opted for a textured, paper-like background to echo the feel of an old recipe journal. The typography evokes literary elegance and rural authenticity, while the red line illustration — a pot gently bubbling on the stove — adds an emotional, almost cinematic depth. The design is not just nostalgic; it’s rooted. It invites the reader to step into a slow, sun-drenched world of shared meals and inherited wisdom — a world that feels both deeply familiar and quietly sacred.",
           ],
-          image: '/projets/os/os-section1.jpg',
+          image: '/projets/soup/serv-livre.jpg',
           },
           {
-          subtitle: ['Donner vie à l’identité graphique', 'Giving birth to the graphic identity'],
+          subtitle: ['Résultat', 'Result'],
           text: [
-            "Créer une identité forte pour OnSight, c'était aussi imaginer un logotype distinctif et son animation. Le logotype devait capturer l'essence de l'esthétique vintage de l'application tout en restant moderne et reconnaissable. L'animation a été conçue pour donner vie au logo, ajoutant un élément dynamique qui améliore l'expérience utilisateur. Ensemble, le logotype et son animation créent une identité de marque cohérente et mémorable, reflétant le caractère unique d'OnSight.",
-            "Creating a strong identity for OnSight also meant envisioning a distinctive logotype and its animation. The logotype needed to capture the essence of the app's vintage aesthetic while remaining modern and recognizable. The animation was designed to bring the logo to life, adding a dynamic element that enhances the user experience. Together, the logotype and its animation create a cohesive and memorable brand identity that reflects the unique character of OnSight.",
+            "Le résultat : une couverture qui raconte déjà une histoire avant même d’ouvrir le livre. Soupes de Gisèle Perrin n’est pas un simple livre de recettes — c’est un hommage. Le design traduit l’essence d’un foyer, d’un lien transmis, d’une cuisine de cœur et de saisons. Il se démarque en rayon non par le volume, mais par l’émotion. C’est un ouvrage qui ne crie pas, mais qui touche — comme le parfum d’un bouillon qui réveille la mémoire d’un dimanche en famille.",
+            "The result is a cover that tells a story before a single page is turned. Soupes by Gisèle Perrin is not just a cookbook — it’s a tribute. The design captures the essence of home, of ritual, and of resilience passed through generations of women. It stands out on a shelf not through loudness, but through feeling. This is a book that whispers, not shouts — yet its presence lingers, like the scent of simmering broth in a quiet kitchen at dusk."
           ],
-          video: '/projets/os/os-section2.mp4',
+          image: '/projets/soup/serv-livre.jpg',
           },
         ],
-        sectionsImg: 
-        [
-          ['/projets/os/os-sectionimg1.jpg'],
-          ['/projets/os/os-sectionimg2.jpg']
-        ]
       },
+      // LES PROJETS PLUS ANCIENS
+      
       // pile-poele
       {
         id: 6,
@@ -401,76 +246,6 @@ function Projet() {
         ]
         
       },
-      // topographies
-      {
-        id: 7,
-        client: 'Maria Lou Diaz',
-        discover: ["scroller pour découvrir le projet","scroll down to discover the project"],
-        videoDesktop: '/projets/topos/topos-video.mp4', //https://www.facebook.com/watch/?v=829436065704861  
-        videoMobile: '/projets/topos/topos-video.mp4',
-        image: '/projets/topos/topos-img.png',
-        title: "Topographies",
-        baseline:["Qui a dit que l'ornement était un crime ?","Who said ornament was a crime ?"],
-        infos: [
-          ['2019', 'Édition', 'Dessins au charbon'],
-          ['2019', 'Publishing', 'Charcoal drawings']
-        ],
-        categories: 
-        [
-          ['Édition', 'Dessin'],
-          ['Publishing', 'Drawing'],
-        ],
-        besoins:[
-          ["Topographies est une exploration artistique de la ville de Nîmes à travers ses ornements architecturaux, mettant en lumière les dessins complexes et l'importance historique de chaque détail. Ce projet vise à cartographier visuellement la ville à travers des dessins détaillés et des motifs urbains uniques identifiables sur les différentes façades et devantures de portes, offrant un récit visuel complet de la diversité architecturale de Nîmes. C'est également un projet artistique réflexif sur les manières de parler de l'Homme par la cartographie et par sa manière de construire la ville, révélant ainsi comment l'urbanisme et l'architecture peuvent être des témoignages éloquents de la culture et de l'histoire humaine."],
-          ["Topographies is an artistic exploration of the city of Nîmes through its architectural ornaments, highlighting the intricate designs and historical significance of each detail. This project aims to visually map the city through detailed drawings and unique urban patterns identifiable on various facades and door fronts, providing a comprehensive visual narrative of Nîmes' architectural diversity. It is also a reflective artistic project on the ways of speaking about humanity through cartography and urban construction, revealing how urbanism and architecture can serve as eloquent testimonies of human culture and history."],
-        ],
-        technologies:
-        [
-          ['Fusains', 'Charbon', 'Indesign'],
-          ['Charcoals', 'Coal', 'InDesign'],
-        ],
-        sectionsImg:
-        [
-          ['/projets/topos/topos-section2.jpg','/projets/topos/topos-section3.jpg'],
-          ['/projets/topos/topos-section2.jpg','/projets/topos/topos-section3.jpg']
-        ]
-        
-      },    
-      //un endroit où aller
-      {
-        id: 8,
-        client: 'Actes Sud',
-        discover: ["scroller pour découvrir le projet","scroll down to discover the project"],
-        videoDesktop: '/projets/1eoa/1eoa-hover.mp4', 
-        videoMobile: '/projets/1eoa/1eoa-hover.mp4', 
-        image: '/projets/1eoa/1eoa_2.jpg',
-        title: "Un endroit où aller",
-        baseline:["Moderniser une collection phare","Modernizing the first collection"],
-        infos: [
-          ['2021', 'Édition'],
-          ['2021', 'Publishing']
-        ],
-        categories: 
-        [
-          ['Édition'],
-          ['Publishing'],
-        ],
-        besoins:[
-          ["Un endroit où aller est un projet visant à moderniser la collection éponyme de la maison d'édition Actes Sud. Achevé en 2021, ce projet a revitalisé la première collection de la maison d'édition tout en préservant sa forme élancée caractéristique et sa couleur rose pâle."],
-          ["Un endroit où aller is a project aimed at modernizing the eponymous collection by the publishing house Actes Sud. Completed in 2021, this project revitalized the publishing house’s first collection while preserving its distinctive slender shape and pale pink color."],
-        ],
-        technologies:
-        [
-          ['Photoshop', 'Indesign'],
-          ['Photoshop', 'Indesign'],
-        ],
-        sectionsImg:
-        [
-          ['/projets/1eoa/1eoa.png','/projets/1eoa/1eoa_2.jpg'],
-          ['/projets/1eoa/1eoa.png','/projets/1eoa/1eoa_2.jpg']
-        ]
-        
-      }, 
       //memoire
       {
         id: 9,
@@ -506,6 +281,8 @@ function Projet() {
         ]
       }, 
     ];
+
+
     const imgStyle={
       display: 'flex',
       fleWrap: 'nowrap',

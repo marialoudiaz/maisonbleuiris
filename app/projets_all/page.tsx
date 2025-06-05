@@ -38,13 +38,7 @@ const Projets = () => {
 
 // Menu des projets
   const projectsArr = [
-      // onsight
-      {
-        id: 5,
-        title: 'Onsight',
-        img: '/projets/os/os-img.png',
-        video: '/projets/os/video-onsight.mp4',
-      },
+      
       // pile-poele
       {
         id: 6,
@@ -52,20 +46,7 @@ const Projets = () => {
         img: '/projets/pp/pp-img.png',
         video: '/projets/pp/video_type_hp.mp4',
       },
-      // topographies
-      {
-        id: 7,
-        title: 'Topographies',
-        img: '/projets/topos/topos-img.png',
-        video: '/projets/topos/topos-video.mp4',
-      }, 
-      //un endroit où aller
-      {
-        id: 8,
-        title: "Un endroit où aller",
-        img: '/projets/1eoa/1eoa_2.jpg',
-        video: '/projets/1eoa/1eoa-hover.mp4',
-      }, 
+      
       //memoire
       {
         id: 9,

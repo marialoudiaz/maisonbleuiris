@@ -979,6 +979,47 @@ pointer-events: auto;
   transform-origin: top;
 }
 
+/* Component.module.css */
+.container {
+  position: relative; /* Needed for absolute positioning of text */
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:1rem
+}
+.text {
+  position: relative; /* Needed for the transform */
+  opacity: 0;
+  transform: translateY(20px); /* Start below */
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  color: white;
+}
+.textVisible {
+  opacity: 1;
+  transform: translateY(0); /* Move to final position */
+  transition-delay: 470ms;
+}
+.textVisible2 {
+  opacity: 1;
+  transform: translateY(0); /* Move to final position */
+  transition-delay: 530ms;
+}
+.textVisible3 {
+  opacity: 1;
+  transform: translateY(0); /* Move to final position */
+  transition-delay: 590ms;
+}
+
+/*IMAGE GETS BIGGER ON HOVER*/
+.service-img{
+  transition: transform 0.3;
+}
+.service-img:hover{
+transform: scale(1.1);
+}
+
 /*HOMEPAGE*/
 .name{
   width: 100%;
@@ -1328,6 +1369,25 @@ pointer-events: auto;
   color: white;
 }
 
+/*SERVICES FLAT*/
+.serv-flat-div{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;  
+  text-align: center;
+  gap: 1rem;
+  // border: 1px solid #324f9e;
+
+  & img{
+    width: 20rem;
+    border-radius: 100%;
+  }
+}
+.serv-flat-title{
+  font-size: 2rem!important;
+  color: black;
+}
 
 /*CIBLE*/
 .col-titre{

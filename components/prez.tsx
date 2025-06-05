@@ -51,44 +51,45 @@ const Prez: React.FC = () => {
     <>
     <Services />
       <div className='text-homepage'>
-
-      <Marquee speed={30} style={{ borderTop: '1px solid white', borderBottom: '1px solid white', padding: '1rem' }}>
-          <h3 className='syne-bold' style={{ textTransform: 'uppercase'}}>
-            {expertise + ' '}
-          </h3>
-      </Marquee>
-
-      <div className='name'>
-        <h1 style={{ color: '#00000000'}}> MAISON BLEU IRIS | BRANDING POÉTHIQUE</h1>
+        <Marquee speed={30} style={{ borderTop: '1px solid white', borderBottom: '1px solid white', padding: '1rem' }}>
+            <h3 className='syne-bold' style={{ textTransform: 'uppercase'}}>
+              {expertise + ' '}
+            </h3>
+        </Marquee>
       </div>
 
-      <div className='prez'>
-        <h4 id='p-hp'> {presentation[0]}</h4>
-        <p id='prez-txt'> {presentation[1]}</p>
-        {/* <p id='prez-txt'> {presentation[2]}</p> */}
-        
-        <Carousel dataArray={dataArray} />
+      <div>
+        <div className='name'>
+          <h1> MAISON BLEU IRIS | BRANDING POÉTHIQUE</h1>
+        </div>
+        <div className='prez'>
+          <h4 id='p-hp'style={{color:'black'}}> {presentation[0]}</h4>
+          <p id='prez-txt'> {presentation[1]}</p>
+          {/* <p id='prez-txt'> {presentation[2]}</p> */}
+          
+          <Carousel dataArray={dataArray} />
 
-        <button className='btn-transp' style={{ margin: '2rem auto' }}  onClick={() => router.push('/homepage/#Contact')}>
-              <div>
-                <svg
-                    className="icon-transp"
-                    viewBox="0 0 16 19"
-                    xmlns="http://www.w3.org/2000/svg"
-                    aria-label='Arrow Icon'
-                  >
-                    <path
-                      d="M7 18C7 18.5523 7.44772 19 8 19C8.55228 19 9 18.5523 9 18H7ZM8.70711 0.292893C8.31658 -0.0976311 7.68342 -0.0976311 7.29289 0.292893L0.928932 6.65685C0.538408 7.04738 0.538408 7.68054 0.928932 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292893ZM9 18L9 1H7L7 18H9Z"
-                      className="fill-white group-hover:fill-gray-400"
-                    ></path>
-                </svg>
-                <p className='btn-transp-p' style={{ color: 'white' }}>
-                  {cta[1]}
-                </p>
-              </div>
-        </button>
+          <button className='btn-transp-dark' style={{ margin: '2rem auto' }}  onClick={() => router.push('/homepage/#Contact')}>
+                <div>
+                  <svg
+                      className="icon-transp"
+                      viewBox="0 0 16 19"
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-label='Arrow Icon'
+                    >
+                      <path
+                        d="M7 18C7 18.5523 7.44772 19 8 19C8.55228 19 9 18.5523 9 18H7ZM8.70711 0.292893C8.31658 -0.0976311 7.68342 -0.0976311 7.29289 0.292893L0.928932 6.65685C0.538408 7.04738 0.538408 7.68054 0.928932 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292893ZM9 18L9 1H7L7 18H9Z"
+                        className="fill-white group-hover:fill-white"
+                      ></path>
+                  </svg>
+                  <p className='btn-transp-p' style={{color:'white'}}>
+                    {cta[1]}
+                  </p>
+                </div>
+          </button>
+        </div>
       </div>
-      </div>
+     
     </>
   );
 }

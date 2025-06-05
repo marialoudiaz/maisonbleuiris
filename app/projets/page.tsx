@@ -45,8 +45,8 @@ const Projets = () => {
   // Determine language settings
   const isEnglish = indepArray[0].Lang === 'EN';
   const variableENorFr = [
-    ['My latest projects', 'Discover', 'Previous', 'scroll right to learn more', 'Discover my other projects'],
-    ['Mes derniers projets', 'Découvrir', 'Précédent', 'scroller à droite pour en apprendre +', 'Découvrir mes autres projets']
+    ['Works, Works, Works', 'Discover', 'Previous', 'scroll right to learn more', 'Discover my other projects'],
+    ['Projets, projets, projets', 'Découvrir', 'Précédent', 'scroller à droite pour en apprendre +', 'Découvrir mes autres projets']
   ];
   const textVariables = isEnglish ? variableENorFr[0] : variableENorFr[1];
   const prev = '/icons/interface/icon-eye-1.png';
@@ -73,113 +73,39 @@ const Projets = () => {
         link: ['Discover the project',"Découvrir le projet"],
         onClick: ['https://manade-bec.fr', '_blank']
       },
-      //pl
+      //georges
       {
         id: 2,
-        img: '/projets/pl/pl-img.jpg',
-        video: '/projets/pl/pl-video-hover.mp4',
-        title: ["Pascale Laffon","Pascale Laffon"],
-        baseline: ['Micropracy','La micropraxie'],
-        text:["Pascale Laffon is a showcase website dedicated to her work as a micropractitioner. Explore her gentle and unique universe", "Pascale Laffon est un site vitrine dédié à son activité de micropraticienne. Explorez son univers doux et unique"],
-        text2:["as well as her practice of holistic medicine through refined graphic design and intuitive experience.","ainsi que sa pratique de la médecine holistique à travers un design graphique raffiné et une expérience utilisateur unique et intuitive."],
+        img: '/projets/georges/georges-hp.png',
+        video: '/projets/georges/georges-hp.mp4',
+        title: ["Georges", "Georges"],
+        baseline: ['The soul of the Canigou',"L'âme du Canigou"],
+        text:[
+          "Born from a legend rooted at the summit of Mount Canigou, Georges aïoli is more than a sauce — it's the living memory of an ancient craft, passed down by a solitary and wise hermit. Each jar holds the strength of the mountains, the scent of wild garlic, and the patience of a hand-forged ritual.", 
+          ""],
+        text2:[
+          "This simple, authentic packaging pays tribute to that story — of a man, a mountain, and a promise. More than a sauce: the soul of Canigou.",
+          ""],
         link: ['Discover the project',"Découvrir le projet"],
-        onClick: ['https://pascale-laffon.fr', '_blank']
+        onClick: ['https://georges-aioli.fr', '_blank']
       },
-      //vb
+      //soup
       {
         id: 3,
-        img: '/projets/vb/vb-img.jpg',
-        video: '/projets/vb/vb-video-hover.mp4',
-        title: ["VB Avocats","VB Avocats"],
-        baseline: ["Modernize a graphic identity","Moderniser une identité graphique"],
+        img: '/projets/soup/mockup-livre.jpg',
+        video: '/projets/soup/soup_hover.mp4',
+        title: ["Soups","Soup"],
+        baseline: ["An eye for an eye, a story for a soup","Oeil pour oeil, soupe pour souvenir"],
         text:[
-              "VB Avocats, formerly Valette & Berthelsen, sought to revitalize their graphic identity while preserving the firm's essence.",
-              "VB Avocats, anciennement Valette & Berthelsen, ont souhaité revitaliser leur identité graphique tout en préservant l'essence du cabinet."
-            ],      
+          "This cover captures the warm and authentic spirit of Soupes, a heartfelt collection of traditional recipes, family memories, and time-honored skills passed down through generations.", 
+          ""],
         text2:[
-              "The redesign aimed to bring new dynamism while respecting the company's values and history. This included a revamp of the logo, stationery and signage elements.",
-              "La refonte visait à insuffler un nouveau dynamisme tout en respectant les valeurs et l'histoire de l'entreprise. Cela comprenait une refonte du logo, de la papeterie & de la signalétique."
-              ],
-              link: ['Discover the project',"Découvrir le projet"],
-              onClick: ['https://www.vb-avocats.fr', '_blank']      
-      },
-      //nda
-      {
-        id: 4,
-        img: '/projets/nda/nda-2.png',
-        video: '/projets/nda/nda_hover.mp4',
-        title: ["Birth of a friendship","Naissance d'une amitié"],
-        baseline: ["Friendship is a soul in two bodies","L'amitié est une âme en deux corps"],
-        text:[
-          "Birth of a friendship is a novel written by Émile Trubert that portrays the birth of a touching friendship between an old man, weighed down by grief after losing his beloved spouse, and Eva.", 
-          "Naissance d'une amitié est un roman écrit par Émile Trubert qui dépeint la naissance d'une amitié émouvante entre un vieil homme, accablé par le chagrin après la perte de son épouse bien-aimée, et Eva."],
-        text2:[
-          "Their connection brings color back into his life, transforming it in ways he never imagined.",
-          "Leur lien redonne des couleurs à sa vie, la transformant de manière inattendue."],
+          "The delicate red sketch evokes a rustic kitchen where the comforting flavors of Southern France gently simmer. The refined typography, paired with the textured paper, pays tribute to the simplicity and richness of the culinary heritage passed on by the author Gisèle Perrin’s grandmother.",
+          ""],
         link: ['Discover the project',"Découvrir le projet"],
         onClick: ['https://marialoudiaz.fr', '_blank']
       },
-      //os
-      // {
-      //   id: 4,
-      //   img: '/projets/os/os-img.png',
-      //   video: '/projets/os/video-onsight-hover.mp4',
-      //   title: ["OnSight","OnSight"],
-      //   baseline: ['An app to keep an eye on your films','Une application mobile pour garder un oeil sur tes films'],
-      //   text:[
-      //     "OnSight is an application that allows you to search for any movie or TV series and add it to a list that you can regularly update based on new releases or your preferences.",
-      //     "OnSight est une application qui vous permet de rechercher n'importe quel film ou série et de l'ajouter à une liste que vous pouvez régulièrement mettre à jour en fonction des nouvelles sorties ou de vos préférences. ",
-      //   ],      
-      //   text2:[
-      //     "Immerse yourself in a retro universe inspired by the 80s, where each interaction takes you into cinematic history. With OnSight, you can easily manage your movies and series to watch all while enjoying a captivating vintage design. Available on iOS.",
-      //     "Plongez dans un univers graphique rétro inspiré des années 80, où chaque interaction vous fait voyager. Avec OnSight, vous pouvez facilement gérer vos films et séries à regarder tout en profitant d'un design vintage captivant. Découvrez l'application sur iOS."
-      //   ],
-      //   link: ['Discover the project',"Découvrir le projet"],
-      //   onClick: ['https://apps.apple.com/fr/app/movies-on-sight/id6450311314', '_blank']
-      // },
-      //pilepoele
-      // {
-      //   id: 5,
-      //   img: '/projets/pp/pp-img.png',
-      //   video: '/projets/pp/video_type.mp4',
-      //   title: ["Pile-Poële (On thyme)","Pile-Poële"],
-      //   baseline: [
-      //             "Promoting an inclusive humanism focused on cuisine",
-      //             "Promouvoir un humanisme inclusif axé sur la cuisine"
-      //             ],
-      //   text:["Pile-Poële is a gender-inclusive typeface focused on cooking created as part of a master's research project at the University of Toulouse Jean Jaurès in 2021. It promotes gender parity and allows for the replacement of words referring to tools, ustensils and food with pictograms.",
-      //         "Pile-Poële est une fonte de caractères inclusive basée sur la cuisine, créée dans le cadre d'une recherche de master à l'Université Toulouse Jean Jaurès en 2021. Elle favorise la parité des genres et permet de remplacer les mots désignant des outils, ustensiles et aliments par des pictogrammes."],      
-      //   text2:[
-      //         "The project aims to facilitate universal and intercultural culinary communication. While gender inclusivity is integrated it is not the main focus but rather an inherent aspect of the communication.",
-      //         "Le projet vise à faciliter une communication culinaire universelle et interculturelle. Bien que l'inclusivité des genres soit intégrée, ce n'est pas l'objectif principal du projet mais un aspect évident & crucial de la communication."
-      //         ],
-      //   link: ['Discover the project',"Découvrir le projet"],
-      //   onClick: ['', '_blank']      
-      // },
-      //dessin
-      // {
-      //   id: 7,
-      //   img: '/projets/topos/topos-img.png',
-      //   video: '/projets/topos/topos-video-hover.mp4',
-      //   title: ["Topographies",'Topographies'],
-      //   baseline: 
-      //   [
-      //     "Designing the city through its ornaments",
-      //     "Dessiner la ville par ses ornementations"
-      //   ],
-      //   text:
-      //   [
-      //     "Topographies is an artistic exploration of the city of Nîmes through its architectural ornaments.",
-      //     "Topographies est une exploration artistique de la ville de Nîmes à travers ses ornements architecturaux."
-      //   ],
-      //   text2:
-      //   [
-      //     "This project aims to visually map the city through detailed drawings and unique urban patterns identifiable on various facades and door fronts.",
-      //     "Ce projet vise à cartographier visuellement la ville à travers des dessins détaillés et des motifs urbains uniques identifiables sur les différentes façades et devantures de portes."
-      //   ],
-      //   link: ['Discover the project',"Découvrir le projet"],
-      //   onClick: ['', '_blank']
-      // },
+      
     ]; 
 
   // Functions to handle hover effects and toggling text

@@ -4,7 +4,7 @@ import { useRouter } from 'next/navigation'; // Importer useRouter depuis next/n
 import { useData } from '@/app/context/DataContext';
 import '../../styles/App.scss';
 import Image from 'next/image';
-import branding_specialist from '../../public/img/marialoudiaz-agence.jpg';
+// import branding_specialist from '../../public/img/marialoudiaz-agence.jpg';
 
 const Logo = () => {
   const router = useRouter();
@@ -52,7 +52,7 @@ const Logo = () => {
         'Rechercher l\'essence d\'une idée pour communiquer avec mémorabilité.',
         'Couleur',
         'Exprimer une émotion & animer votre univers par la puissance de la couleur.',
-        branding_specialist
+        // branding_specialist
       ],
       deroule:['flex', 'Votre projet', "Chaque projet est unique tout comme vous. Ainsi, je vous accompagne à chaque étape afin de créer une solution sur-mesure la mieux adaptée à vos besoins.", "Juste une mise au point", "Nous parlons de votre projet et établissons ensemble une stratégie. Nous définissons alors les services qu'il vous faut. Chaque devis est réalisé sur-mesure pour être au plus près de vos besoins.", "L’aventure commence", "Je vous retourne un devis comprenant tous les services ainsi que le temps nécessaire à leurs réalisations. La date du livrable est établie.", "Tada!", "C’est le jour où vous recevez votre premier livrable. À partir de là, vous avez la possibilité de demander deux modifications (offertes)."],
       citation: 'Pour un design qui vous ressemble.',
@@ -62,7 +62,7 @@ const Logo = () => {
         "Mentions Légales",
         "À propos Maria Lou Diaz",
         "Éditeurs du site",
-        "Le site www.marialoudiaz.fr est édité par Maria Lou Diaz, micro-entreprise immatriculée au Registre du Commerce et des Sociétés de Nîmes sous le numéro 892878067, dont le siège social est situé au 2 rue de la Chicanette, 30250 Combas, France. Contact : contact@marialoudiaz.fr. Hébergeur : Vercel, Inc., 340 S Lemon Ave #4133, Walnut, CA 91789, États-Unis. Conception et développement : Maria Lou Diaz",
+        "Le site www.marialoudiaz.fr est édité par Maria Lou Diaz, micro-entreprise immatriculée au Registre du Commerce et des Sociétés de Nîmes sous le numéro 892878067, dont le siège social est situé au 2 rue de la Chicanette, 30250 Combas, France.Contact : contact@marialoudiaz.fr. Hébergeur : Vercel, Inc., 340 S Lemon Ave #4133, Walnut, CA 91789, États-Unis. Conception et développement : Maria Lou Diaz",
         "Propriété intellectuelle",
         "La présentation et le contenu de ce site, protégés par la législation en vigueur, appartiennent à Maria Lou Diaz. Aucune reproduction, représentation, adaptation, traduction et /ou modification, partielle ou intégrale, ou transfert vers un autre site, ne pourra en être faite sans l’accord préalable et écrit de Maria Lou Diaz. Toute exploitation non autorisée du site ou de l’un quelconque des éléments qu’il contient sera considérée comme constitutive d’une contrefaçon et poursuivie conformément aux dispositions des articles L.335-2 et suivants du Code de Propriété Intellectuelle.",
         "Politique de confidentialité",

@@ -23,6 +23,8 @@ const Cible: React.FC<CibleProps> = ({ scrollYProgress }) => {
   const [isHovered, setisHovered] = useState<boolean>(false);
   const router = useRouter();
   const isMobile = window.innerWidth <= 768;
+  const [isVisible, setIsVisible] = useState(false);
+
 
   const sendChildren = () => {
     setisHovered(true);
@@ -40,33 +42,37 @@ const Cible: React.FC<CibleProps> = ({ scrollYProgress }) => {
   }  },[]); 
   //  }  },[isMobile]); -> re-render constant ?
 
+  useEffect(() => {
+    setIsVisible(true);
+  }, []);
+  
   return (
     <motion.div 
-  style={{ scale, rotate }} 
-  onMouseEnter={sendChildren}  
-  onMouseLeave={handleMouseLeave}
-  id='div-hp'
-  className="relative h-screen text-[3.5vw] text-center flex flex-col items-center justify-center text-white pb-[10vh] overflow-hidden"
->
+      style={{ scale, rotate }} 
+      onMouseEnter={sendChildren}  
+      onMouseLeave={handleMouseLeave}
+      id='div-hp'
+      className="relative h-screen text-[3.5vw] text-center flex flex-col items-center justify-center text-white pb-[10vh] overflow-hidden"
+     >
   {/* VIDEO DE FOND */}
-  <video 
-    className="absolute top-0 left-0 w-full h-full object-cover z-[-1]" 
-    autoPlay 
-    loop 
-    muted 
-    playsInline
-  >
-    <source src="/video/iris2.mp4" />
-    Ton navigateur ne supporte pas les vidéos HTML5.
-  </video>
+    <video 
+      className="absolute top-0 left-0 w-full h-full object-cover z-[-1]" 
+      autoPlay 
+      loop 
+      muted 
+      playsInline
+    >
+      <source src="/video/iris2.mp4" />
+      Ton navigateur ne supporte pas les vidéos HTML5.
+    </video>
 
-  <h1>{indepArray[0].hp[0]}</h1>
-  
-  <TextDisperse element={indepArray[0].hp[1]} props={isHovered ? 'true' : 'false'}>
-    <h2 id='text-disperse'>{indepArray[0].hp[1]}</h2>
-  </TextDisperse>
-
-  <h2 style={{ color: 'white' }}>{indepArray[0].hp[2]}</h2>
+  <div className='container'>
+    <h1 className={`text ${isVisible ? 'textVisible' : ''}`}> 
+      {indepArray[0].hp[0]}
+    </h1>
+    <h2 className={`text ${isVisible ? 'textVisible2' : ''}`}>{indepArray[0].hp[1]}</h2>
+    <h2 className={`text ${isVisible ? 'textVisible3' : ''}`}>{indepArray[0].hp[2]}</h2>
+  </div> 
   
   <button className='btn-transp'>
     <div>

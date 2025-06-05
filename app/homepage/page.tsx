@@ -17,9 +17,6 @@ const Main = dynamic(() => import('../../components/main'), {
 const Prez = dynamic(() => import('../../components/prez'), {
   loading: () => <div>Loading Prez...</div>,
 });
-const Approche = dynamic(() => import('../../components/approche'), {
-  loading: () => <div>Loading Approche...</div>,
-});
 const Deroule = dynamic(() => import('../../components/deroule'), {
   loading: () => <div>Loading Deroule...</div>,
 });
@@ -39,7 +36,6 @@ const Homepage = () => {
 // au chargement de la page indepArray est en anglais 
 // recharger indepArray en francais si cliqué par user (plus tard dans le site)
 
-
   // Redir si pas datas
     useEffect(()=>{
       if (!indepArray){
@@ -49,32 +45,12 @@ const Homepage = () => {
     if (!indepArray){
       return <div>Loading...</div>
     }
-    // LOGIQUE AVEC LS
-    // useEffect(()=>{
-      //Récupère les données stockées dans localStorage
-    //   const storedData = JSON.parse(localStorage.getItem('data'));
-    //   if (storedData){
-    //     setData(storedData);
-    //   }
-    // },[])
-    // Les infos dans les arrays a recuperer du local storage
-    // if (data){
-    //   try{
-    //     infos = data.arrayRecue[0]; //recup arrays dans localStorage
-    //   } catch (error) {
-    //     console.error('Erreur lors de la récupération des données:', error);
-    //   }
-    // }
-    // if (infos.length === 0){
-    //   return <div>Pas d'informations disponibles.</div>
-    // }
 
   return (
     <div className='scrollable-container'>
           <Header/>
           <Main/>
           <Prez/>
-          <Approche />
           <Deroule/>
           <Formulaire/>
           <Footer />
