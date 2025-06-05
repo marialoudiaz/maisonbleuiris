@@ -51,14 +51,6 @@ function Projet() {
         technologies: ['React', 'After effects', 'Illustrator', 'Figma', 'Adobe Creative Suite', 'Express'],
         sections: 
         [
-          // {
-          // subtitle: ['Repenser la prise de notes avec style', 'Rethinking Note-Taking with Style'],
-          // text: [
-          //   "'OnSight' c'est l'idée de créer une application mobile pour garder en mémoire ses films et séries préférés en ajoutant une composante nostalgique. OnSight plonge les utilisateurs dans une ambiance vintage tout en leur offrant une plateforme élégante et intuitive pour créer et gérer leur liste de films et séries préférés. Inspirée par l'esthétique des années 80 et 90, l'interface se distingue par des tons bleus calmes mais profonds & des police d'écritures rétro. Les utilisateurs peuvent ajouter autant de titres qu'ils le souhaitent. Les films & séries s'ajoutent et s'empilent sous la forme de pilules comme pour rappeler à l'utilisateur de prendre sa dose quotidienne de cinéma - rendant ainsi la gestion de sa vidéothèque plus ludique.",
-          //   "OnSight is about creating a simple mobile app to keep track of your favorite movies and series. The idea was to rethink the aesthetics to add a nostalgic component. OnSight immerses users in a vintage atmosphere while offering an elegant and intuitive platform to create and manage their list of favorite movies and series. Inspired by the aesthetics of the 80s and 90s, the interface features calm yet deep blue tones and retro fonts. Users can add as many titles as they wish. Movies and series are added and stacked in the form of pills, reminding users to take their daily dose of cinema, making the management of their video library more playful."
-          // ],
-          // image: '/projets/os/os-section1.jpg',
-          // },
           {
           subtitle: ['au coeur de la camargue exactement', 'Right in the heart of the Camargue'],
           text: [
@@ -67,20 +59,32 @@ function Projet() {
           ],
           video: '/projets/bec/bec-site-deroule.mp4',
           },
+          {
+          subtitle: [ "Réenchanter le Web – L’Art du Storytelling Visuel","Re-enchanting the Web – The Art of Visual Storytelling"],
+          text: [
+          "Dans le monde digital, le toucher semble perdu. Mais et si… on pouvait recréer la sensation du réel ? Réserver devient rituel. Un ticket inspiré du réel — ses coins arrondis, sa texture papier, sa typographie imparfaite. Un geste qui ancre. Un détail skeuomorphe qui ramène à l’expérience concrète. Les symboles se révèlent. Comme de l’encre qui s’épanche lentement sur une page ancienne. Ils apparaissent. Suggèrent plus qu’ils ne montrent. Une invitation à l’interprétation, au mystère. Le texte s’écrit sous vos yeux. Lettre après lettre, comme une machine à écrire ou les pages d’un vieux grimoire. L’histoire ne se donne pas, elle se compose en direct. L’écran devient livre. Le web, une expérience narrative, vivante, charnelle.",
+          "In the digital world, touch seems lost. But what if… we could recreate the feeling of matter? Booking becomes ritual. A ticket drawn from real life — rounded corners, paper textures, imperfect type. A gesture that grounds. A skeuomorphic detail that brings back the sense of presence. Symbols reveal themselves. Like ink slowly blooming across an old page. They appear gradually. Suggest more than they show. An invitation to mystery and meaning. Words write themselves before your eyes. Letter by letter — like a typewriter or the pages of an old storybook. The narrative doesn't arrive all at once. It unfolds. The screen becomes a book. The web, a living, breathing experience."
+          ],
+          image: '/projets/bec/bec-hp-1.jpg',
+          },
+          {
+          subtitle: [ 
+            "Retrouver la Matière – Créer une Expérience Authentique",
+            "Bringing Back the Tangible – Designing an Authentic Experience"],
+          text: [
+            "Et si chaque page était une porte ? Un seuil franchi, une atmosphère qui enveloppe, un souffle qui raconte… Dans un monde saturé d’informations, nous choisissons l’enchantement. La vidéo devient guide. Sur la page d’accueil comme sur les chemins intérieurs du site, elle ne vend pas, elle invite. Elle ouvre un monde. Elle incarne une présence. Elle raconte ce que les mots ne peuvent dire seuls. Chaque page est un chapitre. Non plus seulement informative, mais sensible. Elle s’écoute. Elle se ressent. Une lumière, une texture, un son, un mouvement — tout participe à tisser une narration. Ici, le design devient conte, et le visiteur devient voyageur.",
+            "What if every page was a doorway? A threshold crossed, an atmosphere that wraps around you, a breath that tells a story… In a world saturated with information, we choose enchantment. Video becomes a guide. From the homepage to the inner paths of the site, it doesn’t sell — it invites. It opens a world. It embodies presence. It tells what words alone cannot. Every page is a chapter. Not just informative, but ambient. It speaks softly. It is felt. A light, a texture, a sound, a movement — all come together to weave a narrative. Here, design becomes a tale, and the visitor becomes a traveler."],
+          image: '/projets/bec/bec-2.jpg',
+          },
         ],
-        sectionsImg: 
-        [
-          ['/projets/bec/bec-menu.jpg','/projets/bec/bec-2.jpg'],
-          []
-        ]
       },
       //georges
       {
         id: 2,
         client: 'Maison Bleu Iris',
         discover: ["scroller pour découvrir le projet","scroll down to discover the project"],
-        videoDesktop: '/projets/georges/georges-hp.mp4',
-        videoMobile: '/projets/georges/georges-hp-hover.mp4',
+        videoDesktop: '/projets/georges/video-hover.mp4',
+        videoMobile: '/projets/georges/video-hover.mp4',
         image: '/projets/georges/georges-hp.png',
         title: 'Georges, aioli catalan',
         baseline: [
@@ -107,7 +111,7 @@ function Projet() {
       "L’approche visuelle s’est inspirée des éléments naturels et de la sobriété monacale. Le pot évoque la pierre brute du Canigou, l’étiquette se fait parchemin. L’identité graphique est minimale mais habitée : une typographie gravée, un dessin discret d’ail sauvage, et une palette réduite aux tons de terre et d’or patiné. Tout évoque la lenteur, la patience, et le sacré du geste. Nous avons conçu l’emballage comme un talisman : modeste en apparence, mais chargé de mémoire.",
       "The visual approach drew from nature’s rawness and monastic simplicity. The jar echoes the rugged stone of Canigou; the label feels like aged parchment. The graphic identity is minimal yet alive: engraved typography, a subtle drawing of wild garlic, and a muted palette of earth and weathered gold. Every detail speaks of slowness, patience, and sacred ritual. We designed the packaging like a talisman: modest on the surface, yet rich with legacy."
     ],
-    image: '/projets/georges/affiche-georges-aioli4.jpg',
+    image: '/projets/georges/affiche-georges-pierre.png',
   },
   {
     subtitle: ['Créer une légende autour de ta mémoire', 'To create a tale from your memory.'],
@@ -116,7 +120,7 @@ function Projet() {
       "Né d’une légende enracinée au sommet du Canigou, l’aïoli Georges incarne plus qu’un simple condiment : il est la mémoire vivante d’un savoir ancien, transmis par un ermite solitaire et sage. Chaque pot contient la puissance des éléments, le parfum de l’ail sauvage, et la patience du geste artisanal. Ce packaging sobre et authentique rend hommage à cette histoire : celle d’un homme, d’une montagne, et d’une promesse. Plus qu’une sauce : l’âme du Canigou.",
       "Born from a legend rooted at the summit of Mount Canigou, Georges aïoli is more than a sauce — it's the living memory of an ancient craft, passed down by a solitary and wise hermit. Each jar holds the strength of the mountains, the scent of wild garlic, and the patience of a hand-forged ritual. This simple, authentic packaging pays tribute to that story — of a man, a mountain, and a promise. More than a sauce: the soul of Canigou."
     ],
-    image: '/projets/georges/affiche-georges-aioli3.jpg',
+    image: '/projets/georges/georges-signature.png',
   },
   {
     subtitle: ["Georges & la légende de l'aïoli Catalan", "Georges and the legend of catalan aioli"],
@@ -130,8 +134,8 @@ function Projet() {
         
 ],
         sectionsImg: [
-          ['/projets/georges/etiquette-pot.jpg','/projets/georges/georges-signature.png','/projets/georges/boite-georges.jpg'],
-          ['/projets/georges/etiquette-pot.jpg','/projets/georges/georges-signature.png','/projets/georges/boite-georges.jpg'],
+          ['/projets/georges/etiquette-pot.jpg','/projets/georges/boite-georges.jpg'],
+          ['/projets/georges/etiquette-pot.jpg','/projets/georges/boite-georges.jpg'],
         ],
 },
 
@@ -139,8 +143,8 @@ function Projet() {
         id: 3,
         client: 'Gisèle Perrin',
         discover: ["scroller pour découvrir le projet","scroll down to discover the project"],
-        videoDesktop: '/projets/soup/soup-2_hover.mp4',
-        videoMobile: '/projets/soup/soup-2_hover.mp4',
+        videoDesktop: '/projets/soup/video-hover_1.mp4',
+        videoMobile: '/projets/soup/video-hover_1.mp4',
         image: '/projets/soup/mockup-livre.jpg',
         title: "Soupes",
         baseline: ["Oeil pour oeil, soupe pour souvenir", "An eye for an eye, a story for a soup"],
@@ -167,7 +171,7 @@ function Projet() {
             "Nous avons abordé ce projet comme un carnet de souvenirs : avec délicatesse, texture et sincérité. L’univers visuel puise dans les carnets de croquis, les recettes manuscrites et les gestes de la cuisine paysanne. Le fond texturé rappelle le grain du papier ancien, tandis que la typographie allie sobriété littéraire et douceur rustique. Le croquis rouge — une marmite sur le feu — agit comme une fenêtre ouverte sur une scène de vie, pleine de chaleur et de réminiscences. L’esthétique choisie ne cherche pas à être tendance, mais vraie. Elle invite à ralentir, à s’imprégner d’un monde où chaque soupe est une histoire, chaque ingrédient un héritage.",
             "We approached this project like a preserved memory – with care, texture, and a human touch. The visual tone was drawn from old sketchbooks, handwritten notes, and vintage cookery traditions. We opted for a textured, paper-like background to echo the feel of an old recipe journal. The typography evokes literary elegance and rural authenticity, while the red line illustration — a pot gently bubbling on the stove — adds an emotional, almost cinematic depth. The design is not just nostalgic; it’s rooted. It invites the reader to step into a slow, sun-drenched world of shared meals and inherited wisdom — a world that feels both deeply familiar and quietly sacred.",
           ],
-          image: '/projets/soup/serv-livre.jpg',
+          image: '/projets/soup/mockup-livre.jpg',
           },
           {
           subtitle: ['Résultat', 'Result'],
