@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 
@@ -34,7 +34,7 @@ function Services() {
 
   return (
 
-    <div className='grid-col3' style={{margin:'2rem'}}>
+    <div className='grid-col3' id='grid-srv' style={{margin:'2rem'}}>
 
       {services.map((item) => (
         <div key={item.id} id='Services' className='serv-flat-div' onClick={() => router.push(`${item.link}`)}>

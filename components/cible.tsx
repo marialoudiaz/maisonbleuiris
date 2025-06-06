@@ -2,12 +2,10 @@
 'use client'
 import React, { useEffect, useState } from 'react';
 import { motion, useTransform, MotionValue } from 'framer-motion';
-import TextDisperse from './TextDisperse/index';
 import { useData } from '@/app/context/DataContext'; // Importer le contexte
 import { useRouter} from 'next/navigation';
 import '../styles/App.scss';
 import '../globals.css';
-import Marquee from "react-fast-marquee";
 
 
 interface CibleProps {
@@ -32,16 +30,6 @@ const Cible: React.FC<CibleProps> = ({ scrollYProgress }) => {
   const handleMouseLeave = () => {
     setisHovered(false);
   };
-
-  // Lancer le text disperse au montage du composant directement en mode mobile
-  useEffect(() => {
-    if (isMobile) {
-      setisHovered(true);
-  } else {
-      setisHovered(false);
-  }  },[]); 
-  //  }  },[isMobile]); -> re-render constant ?
-
   useEffect(() => {
     setIsVisible(true);
   }, []);
@@ -70,7 +58,7 @@ const Cible: React.FC<CibleProps> = ({ scrollYProgress }) => {
     <h1 className={`text ${isVisible ? 'textVisible' : ''}`}> 
       {indepArray[0].hp[0]}
     </h1>
-    <h2 className={`text ${isVisible ? 'textVisible2' : ''}`}>{indepArray[0].hp[1]}</h2>
+    <h2 className={`text gold ${isVisible ? 'textVisible2' : ''}`}>{indepArray[0].hp[1]}</h2>
     <h2 className={`text ${isVisible ? 'textVisible3' : ''}`}>{indepArray[0].hp[2]}</h2>
   </div> 
   

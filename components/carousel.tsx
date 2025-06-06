@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import '../styles/App.scss';
 import Image, { StaticImageData } from 'next/image';
-import fleche from '../public/icons/interface/fleche.png'
 
 
 interface CarouselProps {
@@ -19,20 +18,15 @@ const Carousel: React.FC<CarouselProps> = ({dataArray}) => {
    const [activeIndex, setActiveIndex] = useState(0);
    const [isMobile, setIsMobile] = useState(false);
 
-   // Fonction pour changer l'image active
-   const changeActiveImage = ()=>{
-    setActiveIndex((prevIndex) => (prevIndex + 3) % dataArray.length); // avancer dans l'index (index précédent +1 /longueur total array(3))
-  };
      // Si en mode mobile, afficher tous les éléments
      const activeItems = isMobile ? dataArray : dataArray.slice(activeIndex, activeIndex + 3);
-     
      if (!isMobile && activeItems.length < 3) {
        activeItems.push(...dataArray.slice(0, 3 - activeItems.length));
      }
-   // Fonction pour vérifier la taille de l'écran
-   const handleResize = () => {
-     setIsMobile(window.innerWidth <= 768);
-   };
+    // Fonction pour vérifier la taille de l'écran
+    const handleResize = () => {
+    setIsMobile(window.innerWidth <= 768);
+    };
  
    useEffect(() => {
     setIsMobile(window.innerWidth <= 768); // Initialisation lors du premier rendu côté client

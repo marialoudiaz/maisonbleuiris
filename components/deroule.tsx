@@ -101,8 +101,8 @@ const Deroule: React.FC = () => {
               <p>{deroule[8]}</p>
             </div>
           </div>
-
         </div>
+        
         <button className='btn-transp-dark' style={{ margin: '2rem auto' }}  onClick={() => router.push('/projets')}>
             <div>
                             <svg
@@ -120,7 +120,7 @@ const Deroule: React.FC = () => {
                               {indepArray[0].cta[2]}
                             </p>
             </div>
-          </button>
+        </button>
       </section>
     </>
   );

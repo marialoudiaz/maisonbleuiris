@@ -16,11 +16,7 @@ const Approche: React.FC = () => {
       if (!indepArray[0] || !indepArray[0].approche){
         return <div>Loading...</div>
       }
-      //le portrait
-      const portrait = indepArray[0].approche[14].src;
-      // Les éléments de la section
-      const approchez = indepArray[0].approche[0];
-      const citation = indepArray[0].approche[1];
+      
        // Les élements du carousel
        const dataArray = [
         {
