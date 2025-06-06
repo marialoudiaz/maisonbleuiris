@@ -12,6 +12,7 @@ const Header = () => {
 //Variables
   const router = useRouter();
   const { indepArray } = useData();
+
   const mobile = indepArray[0].header;
   const [hoveredLink, setHoveredLink] = useState('');
   const [isOpen, setIsOpen] = useState(false);
@@ -19,7 +20,7 @@ const Header = () => {
   const navLinks = [
     { href: '#Services', label: indepArray[0].header[0], id: 'service', route:'/homepage/#Services' },
     { href: '#Projets', label: indepArray[0].header[1], id: 'projets', route:'/projets', langz: Lang },
-    { href: '#Contact', label: 'Contact', id: 'contact', route:'/homepage/#Contact'}
+    { href: '#Contact', label: 'Contact', id: 'contact', route:'/homepage/#Contact'},    
   ];
 
 // Fonctions Hover
@@ -60,6 +61,8 @@ const Header = () => {
                 </p>
               </div>
             ))}
+            <div>
+    </div>
           </div>
 
         </div>
