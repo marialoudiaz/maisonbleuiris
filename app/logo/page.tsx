@@ -10,7 +10,8 @@ const Logo = () => {
   const router = useRouter();
   const {updateData} = useData();
   const [opacity, setOpacity] = useState(1);
-    // Données des projets
+  const { lang, updateLang } = useData();
+  // Données des projets
   const indepArray = [
    {
   ids: 0,
@@ -57,8 +58,7 @@ const Logo = () => {
     "Maria Lou Diaz s’efforce d’assurer un accès continu au site www.marialoudiaz.fr. Toutefois, des interruptions peuvent survenir pour des raisons de maintenance ou techniques, sans que cela n’engage la responsabilité de l’éditeur quant aux conséquences qui en résulteraient."
   ]
 }
-  ];
-    
+  ];  
   const indepArrayEN = [
     {
       ids: 1,
@@ -104,13 +104,13 @@ const Logo = () => {
         "Site Access",
         "Maria Lou Diaz strives to ensure continuous access to the website www.marialoudiaz.fr. However, interruptions may occur for maintenance or technical reasons, without liability for the publisher for any resulting consequences."]
 },]; 
-
   
 // Aller à page chargement après Animation du logo
 //Faire au chargement du site (envoyé indepArrayEn par defaut)
 // Envoyer indepArrayFR si props FR recu
 useEffect(() => {
-  const lang = localStorage.getItem('lang') || 'en';
+  // const lang = localStorage.getItem('lang') || 'en';
+  console.log(lang, 'lang');
   const array = lang === 'fr' ? indepArray : indepArrayEN;
 
   setTimeout(() => {
@@ -121,7 +121,7 @@ useEffect(() => {
     updateData(array);
     router.push(`/homepage`);
   }, 2000);
-}, []);
+}, [lang]);
 
   return (
     <>
