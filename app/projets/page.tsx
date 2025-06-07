@@ -82,10 +82,11 @@ const Projets = () => {
         baseline: ['The soul of the Canigou',"L'âme du Canigou"],
         text:[
           "Born from a legend rooted at the summit of Mount Canigou, Georges aïoli is more than a sauce — it's the living memory of an ancient craft, passed down by a solitary and wise hermit. Each jar holds the strength of the mountains, the scent of wild garlic, and the patience of a hand-forged ritual.", 
-          ""],
+          "Né d’une légende ancrée au sommet du mont Canigou, Georges aïoli est bien plus qu’une sauce — c’est la mémoire vivante d’un savoir ancien, transmis par un ermite solitaire et sage. Chaque pot renferme la force des montagnes, le parfum de l’ail sauvage, et la patience d’un rituel forgé à la main.",
+        ],
         text2:[
           "This simple, authentic packaging pays tribute to that story — of a man, a mountain, and a promise. More than a sauce: the soul of Canigou.",
-          ""],
+          "Ce packaging simple et authentique rend hommage à cette histoire — celle d’un homme, d’une montagne, et d’une promesse. Bien plus qu’une sauce : l’âme du Canigou."],
         link: ['Discover the project',"Découvrir le projet"],
         onClick: ['https://georges-aioli.fr', '_blank']
       },
@@ -98,10 +99,10 @@ const Projets = () => {
         baseline: ["An eye for an eye, a story for a soup","Oeil pour oeil, soupe pour souvenir"],
         text:[
           "This cover captures the warm and authentic spirit of Soupes, a heartfelt collection of traditional recipes, family memories, and time-honored skills passed down through generations.", 
-          ""],
+          "Cette couverture reflète l’esprit chaleureux et authentique de Soupes, une collection sincère de recettes traditionnelles, de souvenirs de famille et de savoir-faire transmis de génération en génération."],
         text2:[
           "The delicate red sketch evokes a rustic kitchen where the comforting flavors of Southern France gently simmer. The refined typography, paired with the textured paper, pays tribute to the simplicity and richness of the culinary heritage passed on by the author Gisèle Perrin’s grandmother.",
-          ""],
+          "Le délicat croquis rouge évoque une cuisine rustique où mijotent doucement les saveurs réconfortantes du Sud de la France. La typographie raffinée, associée au papier texturé, rend hommage à la simplicité et à la richesse de l’héritage culinaire transmis par la grand-mère de l’autrice, Gisèle Perrin."],
         link: ['Discover the project',"Découvrir le projet"],
         onClick: ['https://marialoudiaz.fr', '_blank']
       },
