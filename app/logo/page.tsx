@@ -109,11 +109,9 @@ const Logo = () => {
 //Faire au chargement du site (envoyé indepArrayEn par defaut)
 // Envoyer indepArrayFR si props FR recu
 useEffect(() => {
-  // const lang = localStorage.getItem('lang') || 'en';
-  console.log(lang, 'lang');
   const array = lang === 'fr' ? indepArray : indepArrayEN;
-
   setTimeout(() => {
+    opacity;
     setOpacity(0);
   }, 1000);
 
