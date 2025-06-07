@@ -111,7 +111,7 @@ const Logo = () => {
 useEffect(() => {
   const array = lang === 'fr' ? indepArray : indepArrayEN;
   setTimeout(() => {
-    opacity;
+    console.log(opacity);
     setOpacity(0);
   }, 1000);
 

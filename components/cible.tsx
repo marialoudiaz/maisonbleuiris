@@ -25,7 +25,7 @@ const Cible: React.FC<CibleProps> = ({ scrollYProgress }) => {
 
 
   const sendChildren = () => {
-    isHovered;
+    console.log(isHovered);
     setisHovered(true);
   };
   const handleMouseLeave = () => {
