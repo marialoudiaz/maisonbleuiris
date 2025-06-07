@@ -10,7 +10,7 @@ const Logo = () => {
   const router = useRouter();
   const {updateData} = useData();
   const [opacity, setOpacity] = useState(1);
-  const { lang, updateLang } = useData();
+  const {lang} = useData();
   // Données des projets
   const indepArray = [
    {

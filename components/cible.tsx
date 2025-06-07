@@ -20,11 +20,12 @@ const Cible: React.FC<CibleProps> = ({ scrollYProgress }) => {
   const rotate = useTransform(scrollYProgress, [0, 1], [0, -5]);
   const [isHovered, setisHovered] = useState<boolean>(false);
   const router = useRouter();
-  const isMobile = window.innerWidth <= 768;
+  // const isMobile = window.innerWidth <= 768;
   const [isVisible, setIsVisible] = useState(false);
 
 
   const sendChildren = () => {
+    isHovered;
     setisHovered(true);
   };
   const handleMouseLeave = () => {
