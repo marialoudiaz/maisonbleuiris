@@ -1,6 +1,5 @@
 import React, { useRef, useState } from 'react';
 import { useData } from '@/app/context/DataContext';
-import CustomCard from './card';
 import '../styles/App.scss';
 import '../globals.css';
 import ReactLenis from "@studio-freight/react-lenis";
