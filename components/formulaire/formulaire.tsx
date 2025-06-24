@@ -14,7 +14,7 @@ const Form: React.FC = () => {
   const words = indepArray[0].words ? indepArray[0].words : ['gogo']; // Assurez-vous que c'est un tableau
   const blabla = indepArray[0].form[12];
   const [index, setIndex] = useState(0);
-  const langDisplay = indepArray[0].lang;
+  const langDisplay = indepArray[0].Lang;
 
   useEffect(() => {
     const intervalId = setInterval(
@@ -52,7 +52,7 @@ const Form: React.FC = () => {
           {/* PARTIE DROITE */}
           <div className='grid-col2-asym'>
             <div className='formulaire'>
-              <ContactForm lang={langDisplay} infos={indepArray[0]} />
+              <ContactForm langz={langDisplay} infos={indepArray[0]} />
             </div>
           </div>
           

@@ -29,6 +29,9 @@ const Formulaire = dynamic(() => import('../../components/formulaire/formulaire'
 const Footer = dynamic(() => import('../../components/footer'), {
   loading: () => <div>Loading Footer...</div>
 });
+const Footer2 = dynamic(() => import('../../components/footer2'), {
+  loading: () => <div>Loading Footer...</div>
+});
 
 const Homepage = () => {
 
@@ -58,6 +61,7 @@ const Homepage = () => {
           <Deroule/>
           <Formulaire/>
           <Footer />
+          <Footer2 />
     </div>    
   );
 };

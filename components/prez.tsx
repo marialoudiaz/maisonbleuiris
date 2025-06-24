@@ -10,7 +10,7 @@ import authenticity from '../public/icons/approche/authenticity.png';
 import nature from '../public/icons/approche/nature.png';
 import minimalism from '../public/icons/approche/minimalism.png';
 import Carousel from '../components/carousel';
-
+import Typewriter from 'typewriter-effect';
 
 
 
@@ -63,8 +63,18 @@ const Prez: React.FC = () => {
           <h1> MAISON BLEU IRIS | BRANDING POÉTHIQUE</h1>
         </div>
         <div className='prez'>
-          <h4 id='p-hp'style={{color:'black'}}> {presentation[0]}</h4>
-          <p id='prez-txt'> {presentation[1]}</p>
+
+        <h2>
+          <Typewriter
+            options={{
+              strings: [`${presentation[0]}`],
+              autoStart: true,
+              loop: true,
+            }}
+          />
+        </h2>
+          <h4 id='p-hp'style={{color:'black'}}> {presentation[1]}</h4>
+          <p id='prez-txt'> {presentation[2]}</p>
           {/* <p id='prez-txt'> {presentation[2]}</p> */}
           
           <Carousel dataArray={dataArray} />

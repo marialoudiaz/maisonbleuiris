@@ -6,12 +6,13 @@ interface contactFormProps {
   infos: {
     form: string[],
   };
-  lang: string
+  langz: string
 }
-const ContactForm: React.FC<contactFormProps> = ({infos, lang}) => {
+const ContactForm: React.FC<contactFormProps> = ({infos, langz}) => {
 
   // EN OU FR pour messages erreurs
-	const isEnglish = lang
+	const isEnglish = langz;
+	console.log('lang', langz);
 	const yesmessage = [ 'Thank you for your message !', "I'll come back to you really soon",'Reçu 5/5 !', 'Je reviens vers vous très prochainement'];
 	const nomessage = ["Oh no.., it looks like it didn't work",'Please, try again soon :)',"Oops.. Ça n'a pas fonctionné",'Merci de réessayer dans un moment :)'];
 	
@@ -194,7 +195,7 @@ return (
 
 
 	<div className='flexForm'>
-					<div
+					<button
 						className='btn-transp-dark'
 						onClick={sendEmail} //Handle click to trigger form submission
 						role="button" // Optional: Make it clear that this is an interactive element
@@ -214,7 +215,7 @@ return (
 						</svg>
 									{infos.form[13]}
 						</div>  
-					</div>
+					</button>
 					<p>{message}</p>
 
 
