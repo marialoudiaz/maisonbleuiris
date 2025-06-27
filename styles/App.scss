@@ -1,36 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Syne:wght@400..800&display=swap');
+@import url("https://use.typekit.net/rso1pzk.css");
 
 // *{
 //   cursor: url('/images/curseur-special.png'), auto;
 // }
-//tertiaire
-.syne-reg {
-  font-family: "Syne", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-.syne-bold {
-  font-family: "Syne", sans-serif!important;
-  font-optical-sizing: auto!important;
-  font-weight: 600!important;
-  font-style: normal!important;
-}
-// .rfm-child h3{
-//   font-size: 40px!important;
-// }
-.footer-p{
-    // font-family: "Syne", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-}
+//fonts
 //titres
-.barlow-condensed-thin {
-  font-family: "Barlow Condensed", sans-serif;
-  font-weight: 100;
-  font-style: normal;
+.reg {
+font-family: "operetta-18", serif;
+font-weight: 400;
+font-style: normal;
 }
+.ita {
+font-family: "operetta-18", serif;
+font-weight: 400;
+font-style: italic;
+}
+.bold {
+font-family: "operetta-18", serif;
+font-weight: 700;
+font-style: normal;
+}
+
 //bodytexte
 .barlow-regular {
   font-family: "Barlow", sans-serif;
@@ -47,6 +38,16 @@
   font-weight: 700;
   font-style: normal;
 }
+
+
+
+.footer-p{
+    // font-family: "Syne", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
 .material-symbols-outlined {
   font-variation-settings:
   'FILL' 0,
@@ -56,10 +57,10 @@
 }
 
 :root{
-  --Titles: "Syne", sans-serif;//"Barlow", sans-serif;
+  --Title-font-family: "operetta-18", serif;
+  --Title-font-weight: 400;
+  --Title-font-style: normal;
   --Body: "Barlow", sans-serif;
-  --Tertiaire : "Syne", sans-serif;
-  --Tertiaire-Weight : 600;
   /*COULEURS*/
   --bgColor : white;
   --primary: #272221;
@@ -100,41 +101,48 @@ body{
   overflow-x: hidden;
 }
 h1{
-  font-family: var(--Titles)!important;
+  font-family: var(--Title-font-family)!important;
   font-size: var(--titres)!important;
-  font-weight: 600!important;
-
-  // text-transform:uppercase!important;
+  font-weight: 500!important;
+  font-style: var(--Title-font-style);
+  text-transform: uppercase;
+  letter-spacing: 0.1em; /* or px if you prefer */
 }
 h2{
-  font-family: var(--Titles)!important;
+  font-family: var(--Title-font-family)!important;
   font-size: var(--titres)!important;
   color: var(--primary);
-  font-weight: 600!important;
-
-  // text-transform:uppercase;
+  font-weight: 500!important;
+  font-style: var(--Title-font-style);
+  text-transform: uppercase;
+  letter-spacing: 0.02em; /* or px if you prefer */
 }
 h3{ // Police de titres (sorte de mini-titres - a utiliser dans des paragraphes
-  font-family: var(--Titles)!important;
+  font-family: var(--Title-font-family)!important;
   font-size: var(--h3)!important;
-  font-weight: 600!important;
+  font-weight: 400!important;
   color: var(--primary);
-
+  font-style: var(--Title-font-style);
+  text-transform: uppercase;
 }
 h4{ // different d'un titre s'utilise pour les paragraphes et carousel avec elements a mettre en bold
   font-family: var(--Body)!important;
-  font-weight: 600!important;
+  font-weight: 400!important;
   font-size: var(--h4)!important;
   color: var(--primary);
-
+  font-style: var(--Title-font-style);
+  text-transform: uppercase;
 }
+
 p{
   font-family: var(--Body)!important;
   font-weight: 300!important;
   font-size: var(--body);
   color: var(--primary);
-  line-height: 1.5!important;
+  line-height: 1.2!important;
+  font-style: var(--Title-font-style);
 }
+
 label{
   font-family: var(--Body);
   font-size: 18px;
@@ -307,7 +315,7 @@ label{
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
-  font-family: var(--Tertiaire)!important;
+  font-family: var(--Body)!important;
   font-size: 1.125rem;
   font-weight: 600;
   isolation: isolate;
@@ -450,7 +458,7 @@ label{
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
-  font-family: var(--Tertiaire)!important;
+  font-family: var(--Body)!important;
   font-size: 1.125rem;
   font-weight: 600;
   isolation: isolate;
@@ -537,8 +545,8 @@ label{
     font-size: var(--bodyM);
     & a, p{
       color: #272221;
-      font-family: var(--Tertiaire);
-      font-weight: var(--Tertiaire-Weight);
+      font-family: var(--Body);
+      font-weight: 400;
     }
     & a:hover,
       a h3:hover,
@@ -564,7 +572,7 @@ label{
   color: #000000;
 
   font-weight: 600!important;
-  font-family: var(--Tertiaire)!important;
+  font-family: var(--Body)!important;
   &:hover{
     font-weight: 800;
     color: white;
@@ -581,7 +589,7 @@ label{
 .btn-transp-hp:hover{
 background-color: var(--gold);
 & p{
-  font-family: var(--Tertiaire);
+  font-family: var(--Body);
 }
 }
 /*boutons dans du texte*/
@@ -595,8 +603,8 @@ background-color: var(--gold);
   font-size: var(--bodyM);
   & p{
     color: var(--primary);
-    font-family: var(--Tertiaire)!important;
-    font-weight: var(--Tertiaire-Weight)!important;
+    font-family: var(--Body)!important;
+    font-weight: 400!important;
   }
   & a:hover,
     a h3:hover,
@@ -724,7 +732,7 @@ pointer-events: auto;
   gap: .5rem;
   &:hover p{
     color: white;
-    font-family: var(--Tertiaire)!important;
+    font-family: var(--Body)!important;
     font-weight: 700!important;
     transition: font-family 0.3s ease, font-weight 0.3s ease, color 0.3s ease!important; /* Ajout de la transition */  
   }
@@ -738,7 +746,7 @@ pointer-events: auto;
   z-index: 110;
 }
 .hovered-link{
-  font-family: var(--Tertiaire);
+  font-family: var(--Body);
   font-weight: 700;
   color: var(--gold);
   transition: font-family 0.3s ease, font-weight 0.3s ease, color 0.3s ease; /* Ajout de la transition */
@@ -943,7 +951,7 @@ pointer-events: auto;
     }
   }
   & .mobile-button-navbar p:hover{
-    font-family: var(--Tertiaire);
+    font-family: var(--Body);
     font-weight: 800;
     align-items: center;
     color: var(--gold);
@@ -1115,13 +1123,9 @@ transform: scale(1.1);
 .gold{
   color: var(--gold)!important;
 }
-.syne{
-  font-family: var(--Tertiaire)!important;
-  font-weight: var(--Tertiaire-Weight) !important;
-}
 .text-hovered{
   color: var(--gold)!important;
-  font-family: var(--Tertiaire)!important;
+  font-family: var(--Body)!important;
   text-transform: lowercase!important;
   font-weight: 700!important;
 }
@@ -1861,8 +1865,8 @@ form{
   align-items: baseline;
   & button {
       color: #272221;
-      font-family: var(--Tertiaire);
-      font-weight: var(--Tertiaire-Weight);
+      font-family: var(--Body);
+      font-weight: 400!important;
     & button:hover{
       color: white;
     }

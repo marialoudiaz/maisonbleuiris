@@ -32,7 +32,7 @@ const Form: React.FC = () => {
           <div className='flex-col'>
             <h2>{form[0]}</h2>
             <h2>{form[1]}</h2>
-            <h2 className='syne gold' style={{textTransform:'lowercase'}}>{form[2]}</h2>
+            <h2 className='gold'>{form[2]}</h2>
             
             <div className='text-block' style={{ borderTop: 'black 1px solid', paddingTop: '1rem', display: display, flexDirection: 'column' }}>
               <TextTransition springConfig={presets.gentle}>
