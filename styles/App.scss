@@ -106,7 +106,7 @@ h1{
   font-weight: 500!important;
   font-style: var(--Title-font-style);
   text-transform: uppercase;
-  letter-spacing: 0.1em; /* or px if you prefer */
+  // letter-spacing: 0.1em; /* or px if you prefer */
 }
 h2{
   font-family: var(--Title-font-family)!important;
@@ -115,7 +115,7 @@ h2{
   font-weight: 500!important;
   font-style: var(--Title-font-style);
   text-transform: uppercase;
-  letter-spacing: 0.02em; /* or px if you prefer */
+  // letter-spacing: 0.02em; /* or px if you prefer */
 }
 h3{ // Police de titres (sorte de mini-titres - a utiliser dans des paragraphes
   font-family: var(--Title-font-family)!important;
