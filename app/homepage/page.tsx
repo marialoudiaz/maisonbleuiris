@@ -57,7 +57,7 @@ const Homepage = () => {
           <Header/>
           <Main/>
           <Prez/>
-          <Reco/>
+          {/* <Reco/> */}
           <Deroule/>
           <Formulaire/>
           <Footer />
