@@ -187,7 +187,7 @@ function Projet() {
       
       // pile-poele
       {
-        id: 6,
+        id: 4,
         client: 'Maria Lou Diaz',
         discover: ["scroller pour découvrir le projet","scroll down to discover the project"],
         videoDesktop: '/projets/pp/video_type_hp.mp4', //video dintro
@@ -252,7 +252,7 @@ function Projet() {
       },
       //memoire
       {
-        id: 9,
+        id: 5,
         client: 'Université Toulouse Jean-Jaurès 2',
         discover: ["scroller pour découvrir le projet","scroll down to discover the project"],
         videoDesktop: '/projets/memoire/memoire-hover.mp4', 
@@ -280,8 +280,8 @@ function Projet() {
         ],
         sectionsImg:
         [
-          ['/projets/memoire/memoire1.jpg','/projets/memoire/memoire2.jpg','/projets/memoire/memoire3.jpg','/projets/memoire/memoire4.jpg','/projets/memoire/memoire5.jpg','/projets/memoire/memoire6.jpg','/projets/memoire/memoire7.jpg','/projets/memoire/memoire8.jpg','/projets/memoire/memoire9.jpeg'],
-          ['/projets/memoire/memoire1.jpg','/projets/memoire/memoire2.jpg','/projets/memoire/memoire3.jpg','/projets/memoire/memoire4.jpg','/projets/memoire/memoire5.jpg','/projets/memoire/memoire6.jpg','/projets/memoire/memoire7.jpg','/projets/memoire/memoire8.jpg','/projets/memoire/memoire9.jpeg'],
+          ['/projets/memoire/memoire1.jpg','/projets/memoire/memoire2.jpg','/projets/memoire/memoire3.jpg','/projets/memoire/memoire4.jpg','/projets/memoire/memoire5.jpg','/projets/memoire/memoire6.jpg','/projets/memoire/memoire7.jpg'],
+          ['/projets/memoire/memoire1.jpg','/projets/memoire/memoire2.jpg','/projets/memoire/memoire3.jpg','/projets/memoire/memoire4.jpg','/projets/memoire/memoire5.jpg','/projets/memoire/memoire6.jpg','/projets/memoire/memoire7.jpg'],
         ]
       }, 
     ];

@@ -41,7 +41,7 @@ const Projets = () => {
       
       // pile-poele
       {
-        id: 6,
+        id: 4,
         title: 'Pile-Poële',
         img: '/projets/pp/pp-img.png',
         video: '/projets/pp/video_type_hp.mp4',
@@ -49,7 +49,7 @@ const Projets = () => {
       
       //memoire
       {
-        id: 9,
+        id: 5,
         title: "En faveur d'une ...",
         img: '/projets/memoire/memoire1.jpg',
         video: '/projets/memoire/memoire-hover.mp4',
