@@ -19,8 +19,8 @@ const Logo = () => {
   header: ['Mes Services', 'Mes Projets'],
   footer: "designons votre singularité",
   hp: ['Maison Bleu Iris', 'soutient', 'les artisans du sens'],
-  videoOrdi: 'videoReveal5',
-  videoTel: 'videoReveal6',
+  videoOrdi: 'videoReveal1',
+  videoTel: 'videoReveal2',
   discover: 'découvrir le showreel',
   location: ['actuellement à', 'Sydney, AUS.'],
   cta: [
@@ -67,8 +67,8 @@ const Logo = () => {
       header:['My Services','My Projects'],
       footer:"let's design your uniqueness",
       hp:['Maison Bleu Iris','supports','the makers of meaning'],
-      videoOrdi: 'videoReveal5',
-      videoTel: 'videoReveal6',
+      videoOrdi: 'videoReveal3',
+      videoTel: 'videoReveal4',
       discover: 'discover the showreel',
       location: ['currently in','Sydney, AUS.'], // location
       cta: [
