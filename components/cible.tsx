@@ -56,11 +56,11 @@ const Cible: React.FC<CibleProps> = ({ scrollYProgress }) => {
     </video>
 
   <div className='container'>
-    <h1 className={`text ${isVisible ? 'textVisible' : ''}`}> 
+    <h1 className='textVisible freight-book'> 
       {indepArray[0].hp[0]}
     </h1>
-    <h2 className={`text gold ${isVisible ? 'textVisible2' : ''}`}>{indepArray[0].hp[1]}</h2>
-    <h2 className={`text ${isVisible ? 'textVisible3' : ''}`}>{indepArray[0].hp[2]}</h2>
+    <h2 className='text gold textVisible freight-ita'>{indepArray[0].hp[1]}</h2>
+    <h2 className='textVisible freight-book' style={{color:'white'}}>{indepArray[0].hp[2]}</h2>
   </div> 
   
   <button className='btn-transp'>

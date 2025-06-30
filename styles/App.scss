@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Syne:wght@400..800&display=swap');
 @import url("https://use.typekit.net/rso1pzk.css");
 
+
 // *{
 //   cursor: url('/images/curseur-special.png'), auto;
 // }
 //fonts
-//titres
+//operetta
 .reg {
 font-family: "operetta-18", serif;
 font-weight: 400;
@@ -21,6 +22,20 @@ font-family: "operetta-18", serif;
 font-weight: 700;
 font-style: normal;
 }
+//freight
+// FreightText Pro Medium Italic
+.freight-ita {
+font-family: "freight-text-pro", serif;
+font-weight: 500;
+font-style: italic;
+}
+// FreightText Pro Book
+.freight-book {
+font-family: "freight-text-pro", serif;
+font-weight: 400;
+font-style: normal;
+}
+
 
 //bodytexte
 .barlow-regular {
@@ -57,7 +72,7 @@ font-style: normal;
 }
 
 :root{
-  --Title-font-family: "operetta-18", serif;
+  --Title-font-family: "freight-text-pro", serif;
   --Title-font-weight: 400;
   --Title-font-style: normal;
   --Body: "Barlow", sans-serif;
@@ -103,27 +118,28 @@ body{
 h1{
   font-family: var(--Title-font-family)!important;
   font-size: var(--titres)!important;
-  font-weight: 500!important;
+  font-weight: 400!important;
   font-style: var(--Title-font-style);
-  text-transform: uppercase;
+  // text-transform: uppercase;
   // letter-spacing: 0.1em; /* or px if you prefer */
 }
 h2{
+  color: var(--primary);
   font-family: var(--Title-font-family)!important;
   font-size: var(--titres)!important;
-  color: var(--primary);
-  font-weight: 500!important;
+  font-weight: 400!important;
   font-style: var(--Title-font-style);
-  text-transform: uppercase;
+  // text-transform: uppercase;
   // letter-spacing: 0.02em; /* or px if you prefer */
 }
 h3{ // Police de titres (sorte de mini-titres - a utiliser dans des paragraphes
-  font-family: var(--Title-font-family)!important;
   font-size: var(--h3)!important;
-  font-weight: 400!important;
   color: var(--primary);
+  // text-transform: uppercase;
+  font-family: var(--Title-font-family)!important;
+  font-size: var(--titres)!important;
+  font-weight: 400!important;
   font-style: var(--Title-font-style);
-  text-transform: uppercase;
 }
 h4{ // different d'un titre s'utilise pour les paragraphes et carousel avec elements a mettre en bold
   font-family: var(--Body)!important;
@@ -131,9 +147,11 @@ h4{ // different d'un titre s'utilise pour les paragraphes et carousel avec elem
   font-size: var(--h4)!important;
   color: var(--primary);
   font-style: var(--Title-font-style);
-  text-transform: uppercase;
+  // text-transform: uppercase;
 }
-
+#new{
+  font-weight: 100!important;
+}
 p{
   font-family: var(--Body)!important;
   font-weight: 300!important;

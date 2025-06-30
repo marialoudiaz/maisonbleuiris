@@ -17,9 +17,9 @@ const Main = dynamic(() => import('../../components/main'), {
 const Prez = dynamic(() => import('../../components/prez'), {
   loading: () => <div>Loading Prez...</div>,
 });
-const Reco = dynamic(() => import('../../components/recognition'), {
-  loading: () => <div>Loading Deroule...</div>,
-});
+// const Reco = dynamic(() => import('../../components/recognition'), {
+//   loading: () => <div>Loading Deroule...</div>,
+// });
 const Deroule = dynamic(() => import('../../components/deroule'), {
   loading: () => <div>Loading Deroule...</div>,
 });
