@@ -59,12 +59,9 @@ const Header = () => {
                 </p>
               </div>
             ))}
-            <div>
-    </div>
           </div>
-
+          </div>
         </div>
-      </div>
 
       {/* Navbar mobile */}
       <div className="md:hidden"> {/* Cache sur les écrans >= 768px */}
