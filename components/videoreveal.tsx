@@ -73,7 +73,6 @@ const VideoReveal: React.FC<VideoProps> = ({ scrollYProgress }) => {
         <div className="desktop" style={{ position: 'relative' }}>
           <video
             ref={desktopVideoRef}
-            muted
             playsInline
             poster="/projets/maisonbleuiris_services.png"
             onClick={() => handlePlayVideo(desktopVideoRef)}
@@ -110,7 +109,6 @@ const VideoReveal: React.FC<VideoProps> = ({ scrollYProgress }) => {
         <div className="mobile" style={{height:'100%', objectFit: 'cover'}}>
           <video
             ref={mobileVideoRef}
-            muted
             playsInline
             poster="/projets/marialoudiaz_showreel2.png"
             onClick={() => handlePlayVideo(mobileVideoRef)}
