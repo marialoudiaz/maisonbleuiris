@@ -234,8 +234,8 @@ const Projets = () => {
 
               <button 
                 className='btn-transp-dark' 
-                // onClick={() => window.open('https://www.behance.net/mariadiaz116', '_blank', 'noreferrer')}
-                onClick={() =>handleDiscoverProj()}
+                onClick={() => window.open('https://www.behance.net/marialoudiaz', '_blank', 'noreferrer')}
+                // onClick={() =>handleDiscoverProj()}
               >
                         <div>
                           <svg
