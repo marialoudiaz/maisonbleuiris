@@ -113,7 +113,7 @@ const Projets = () => {
         img: '/projets/pp/pp-img.png',
         video: '/projets/pp/video_type_hp.mp4',
         title: ["On-Thyme","Pile-Poele"],
-        baseline: ["An eye for an eye, a story for a soup","Oeil pour oeil, soupe pour souvenir"],
+        baseline: ['Open up to the World through Cuisine',"Ouvrez-vous au monde par la cuisine."],
        text:[
           "Pile-Poële is a gender-inclusive typeface featuring pictographic glyphs centered on cuisine. Developed during a master’s project at the University of Toulouse Jean Jaurès (2021),", 
           "Pile-Poële est une typographie inclusive intégrant des pictogrammes liés à la cuisine. Conçue lors d’un projet de master à l’Université Toulouse Jean Jaurès (2021),"],
@@ -249,7 +249,7 @@ const Projets = () => {
                             ></path>
                           </svg>
                           <p className='btn-transp-p' style={{ color: 'white' }}>
-                          {cta[1]}
+                          {cta[2]}
                           </p>
                         </div>
               </button>

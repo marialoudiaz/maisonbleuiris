@@ -23,7 +23,7 @@ export const DataProvider = ({ children }) => {
       cta: [
         "an idea? let's make it flourish",
         "I book a consultation",
-        "I discover the projects",
+        "I discover other projects",
         "schedule a video call",
         "I'd rather call you"
       ],

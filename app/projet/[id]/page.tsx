@@ -280,8 +280,8 @@ function Projet() {
         ],
         sectionsImg:
         [
-          ['/projets/memoire/memoire1.jpg','/projets/memoire/memoire2.jpg','/projets/memoire/memoire3.jpg','/projets/memoire/memoire4.jpg','/projets/memoire/memoire5.jpg','/projets/memoire/memoire6.jpg','/projets/memoire/memoire7.jpg'],
-          ['/projets/memoire/memoire1.jpg','/projets/memoire/memoire2.jpg','/projets/memoire/memoire3.jpg','/projets/memoire/memoire4.jpg','/projets/memoire/memoire5.jpg','/projets/memoire/memoire6.jpg','/projets/memoire/memoire7.jpg'],
+          ['/projets/memoire/memoire1.jpg','/projets/memoire/memoire2.jpg','/projets/memoire/memoire3.jpg','/projets/memoire/memoire4.jpg','/projets/memoire/memoire5.jpg','/projets/memoire/memoire6.jpg'],
+          ['/projets/memoire/memoire1.jpg','/projets/memoire/memoire2.jpg','/projets/memoire/memoire3.jpg','/projets/memoire/memoire4.jpg','/projets/memoire/memoire5.jpg','/projets/memoire/memoire6.jpg'],
         ]
       }, 
     ];

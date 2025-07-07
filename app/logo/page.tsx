@@ -26,7 +26,7 @@ const Logo = () => {
   cta: [
     "une idée ? faisons-la fleurir",
     "je réserve une consultation",
-    "je découvre les projets",
+    "je découvre les autres projets",
     "planifier un appel vidéo",
     "je préfère vous appeler"
   ],
@@ -74,7 +74,7 @@ const Logo = () => {
       cta: [
         "an idea? let's make it flourish",
         "I book a consultation",
-        "I discover the projects",
+        "I discover other projects",
         "schedule a video call",
         "I'd rather call you"
       ],
