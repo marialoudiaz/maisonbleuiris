@@ -148,8 +148,7 @@ const Projets = () => {
 
   // Function to navigate to project details
   const handleDiscover = (projectId) => router.push(`/projet/${projectId}`);
-  // Function to navigate to all projects
-  const handleDiscoverProj = () => router.push(`/projets_all`);
+
 
   return (
     <>
