@@ -187,7 +187,7 @@ function Projet() {
       
       // pile-poele
       {
-        id: 4,
+        id: 5,
         client: 'Maria Lou Diaz',
         discover: ["scroller pour découvrir le projet","scroll down to discover the project"],
         videoDesktop: '/projets/pp/video_type_hp.mp4', //video dintro
@@ -252,8 +252,8 @@ function Projet() {
       },
       //memoire
       {
-        id: 5,
-        client: 'Université Toulouse Jean-Jaurès 2',
+        id: 6,
+        client: "Université Toulouse Jean-Jaurès 2",
         discover: ["scroller pour découvrir le projet","scroll down to discover the project"],
         videoDesktop: '/projets/memoire/memoire-hover.mp4', 
         videoMobile: '/projets/memoire/memoire-hover.mp4', 

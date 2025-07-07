@@ -106,7 +106,39 @@ const Projets = () => {
         link: ['Discover the project',"Découvrir le projet"],
         onClick: ['https://marialoudiaz.fr', '_blank']
       },
-      
+      //posters
+      // pile-poele
+      {
+        id: 5,
+        img: '/projets/pp/pp-img.png',
+        video: '/projets/pp/video_type_hp.mp4',
+        title: ["On-Thyme","Pile-Poele"],
+        baseline: ["An eye for an eye, a story for a soup","Oeil pour oeil, soupe pour souvenir"],
+       text:[
+          "Pile-Poële is a gender-inclusive typeface featuring pictographic glyphs centered on cuisine. Developed during a master’s project at the University of Toulouse Jean Jaurès (2021),", 
+          "Pile-Poële est une typographie inclusive intégrant des pictogrammes liés à la cuisine. Conçue lors d’un projet de master à l’Université Toulouse Jean Jaurès (2021),"],
+        text2:[
+          "it allows words for tools, utensils, and food to be replaced with symbols. Promoting intercultural culinary communication, it naturally integrates gender inclusivity as part of its visual language.",
+          "elle permet de remplacer des mots comme ustensiles ou aliments par des symboles. Elle vise une communication culinaire interculturelle où l’inclusivité de genre s’impose naturellement."],
+        link: ['Discover the project',"Découvrir le projet"],
+        onClick: ['https://marialoudiaz.fr', '_blank']
+      },
+      //memoire
+      {
+        id: 6,
+        img: '/projets/memoire/memoire1.jpg',
+        video: '/projets/memoire/memoire-hover.mp4',
+        title: ["Advocating for ...","En faveur d'une ..."],
+        baseline: ["Cuisine as a mean of communiating","Communiquer universellement par la cuisine"],
+        text:[
+          "Cooking defines us as humans. Beyond gastronomy, popular culinary memory—skills, gestures, recipes—is a heritage worth preserving.", 
+          "La cuisine nous définit en tant qu’humains. Au-delà de la gastronomie, la mémoire culinaire populaire — gestes, savoir-faire, recettes — est un patrimoine à préserver."],
+        text2:[
+          "As industrialization grows, practicing cooking remains essential. How can design help transmit this collective memory?",
+          "Face à l’industrialisation, il devient essentiel de continuer à pratiquer la cuisine. Comment le design peut-il aider à transmettre cette mémoire collective ?"],
+        link: ['Discover the project',"Découvrir le projet"],
+        onClick: ['https://marialoudiaz.fr', '_blank']
+      }, 
     ]; 
 
   // Functions to handle hover effects and toggling text
@@ -199,28 +231,6 @@ const Projets = () => {
 
           <div className='center'>
             <div className='flex-wrap-center'>
-              <button 
-                className='btn-transp-dark' 
-                // onClick={() => window.open('https://www.behance.net/mariadiaz116', '_blank', 'noreferrer')}
-                onClick={() =>handleDiscoverProj()}
-              >
-                        <div>
-                          <svg
-                            className="icon-transp"
-                            viewBox="0 0 16 19"
-                            xmlns="http://www.w3.org/2000/svg"
-                            aria-label='Arrow Icon'
-                          >
-                            <path
-                              d="M7 18C7 18.5523 7.44772 19 8 19C8.55228 19 9 18.5523 9 18H7ZM8.70711 0.292893C8.31658 -0.0976311 7.68342 -0.0976311 7.29289 0.292893L0.928932 6.65685C0.538408 7.04738 0.538408 7.68054 0.928932 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292893ZM9 18L9 1H7L7 18H9Z"
-                              className="fill-white group-hover:fill-gray-400"
-                            ></path>
-                          </svg>
-                          <p className='btn-transp-p' style={{ color: 'white' }}>
-                          {textVariables[4]}
-                          </p>
-                        </div>
-              </button>
 
               <button 
                 className='btn-transp-dark' 
@@ -265,7 +275,7 @@ const Projets = () => {
               </div>
               <div
                   className="btn-transp-rs"
-                  onClick={() => window.open('https://www.instagram.com/marialoudiaz/', '_blank', 'noreferrer')}
+                  onClick={() => window.open('https://www.instagram.com/maisonbleuiris/', '_blank', 'noreferrer')}
               >
                 <div>
                   <FontAwesomeIcon className='icon-transp-big' icon={faInstagram} />
