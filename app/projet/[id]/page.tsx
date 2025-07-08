@@ -99,7 +99,7 @@ function Projet() {
         ],
         onClick: ['https://www.georges-aioli.fr', '_blank'],
         besoins:[
-          ["Le projet avait besoin d’un récit visuel fort, capable de porter à la fois une légende ancienne et une identité contemporaine. Il fallait ancrer le produit dans un imaginaire sacré, mais accessible, en respectant l’intimité d’une fabrication artisanale et la force d’un terroir. L’emballage devait être à la hauteur de ce double héritage : celui d’un savoir oublié et d’un goût intemporel. Enfin, le tout devait s’inscrire dans un langage de marque sobre, élégant et sincère, pour séduire autant les épicuriens que les rêveurs."],
+          ["Le projet avait besoin d’un récit visuel fort, capable de porter à la fois une légende ancienne et une identité contemporaine. Il fallait ancrer le produit dans un imaginaire sacré, mais accessible, en respectant l’intimité d’une fabrication artisanale et la force d’un terroir. L’emballage devait être à la hauteur de ce double héritage : celui d’un savoir ancestral et d’un goût intemporel. Enfin, le tout devait s’inscrire dans un langage de marque sobre, élégant et sincère, pour séduire autant les épicuriens que les rêveurs."],
           ["The project required a strong visual narrative — one that could carry both an ancient legend and a modern identity. It needed to root the product in a sacred yet accessible imagination, honouring the intimacy of artisanal making and the strength of its local origins. The packaging had to live up to this dual legacy: forgotten knowledge and timeless flavour. And ultimately, everything needed to align with a brand language that was sober, elegant and sincere — appealing to both epicureans and dreamers."],
         ],
         technologies: ['React', 'After effects', 'Illustrator', 'Ink handdrawing', 'Figma', 'Adobe Creative Suite', 'Express'],
@@ -108,7 +108,7 @@ function Projet() {
   {
     subtitle: ['Approche', 'Approach'],
     text: [
-      "L’approche visuelle s’est inspirée des éléments naturels et de la sobriété monacale. Le pot évoque la pierre brute du Canigou, l’étiquette se fait parchemin. L’identité graphique est minimale mais habitée : une typographie gravée, un dessin discret d’ail sauvage, et une palette réduite aux tons de terre et d’or patiné. Tout évoque la lenteur, la patience, et le sacré du geste. Nous avons conçu l’emballage comme un talisman : modeste en apparence, mais chargé de mémoire.",
+      "L’approche visuelle s’est inspirée des éléments naturels et de la sobriété monacale. Le pot évoque la pierre brute du Canigou, l’étiquette se fait parchemin. L’identité graphique est minimale mais habitée : une typographie gravée, un dessin discret d’ail sauvage, et une palette réduite aux tons de terre et d’or patiné. Tout évoque la lenteur, la patience, et la sacralité du geste. Nous avons conçu l’emballage comme un talisman : modeste en apparence, mais chargé de mémoire.",
       "The visual approach drew from nature’s rawness and monastic simplicity. The jar echoes the rugged stone of Canigou; the label feels like aged parchment. The graphic identity is minimal yet alive: engraved typography, a subtle drawing of wild garlic, and a muted palette of earth and weathered gold. Every detail speaks of slowness, patience, and sacred ritual. We designed the packaging like a talisman: modest on the surface, yet rich with legacy."
     ],
     image: '/projets/georges/georgesaioli-poster-rochercitation.png',
@@ -117,10 +117,10 @@ function Projet() {
     subtitle: ['Créer une légende autour de ta mémoire', 'To create a tale from your memory.'],
     
     text: [
-      "Né d’une légende enracinée au sommet du Canigou, l’aïoli Georges incarne plus qu’un simple condiment : il est la mémoire vivante d’un savoir ancien, transmis par un ermite solitaire et sage. Chaque pot contient la puissance des éléments, le parfum de l’ail sauvage, et la patience du geste artisanal. Ce packaging sobre et authentique rend hommage à cette histoire : celle d’un homme, d’une montagne, et d’une promesse. Plus qu’une sauce : l’âme du Canigou.",
-      "Born from a legend rooted at the summit of Mount Canigou, Georges aïoli is more than a sauce — it's the living memory of an ancient craft, passed down by a solitary and wise hermit. Each jar holds the strength of the mountains, the scent of wild garlic, and the patience of a hand-forged ritual. This simple, authentic packaging pays tribute to that story — of a man, a mountain, and a promise. More than a sauce: the soul of Canigou."
+      "Né d’une légende enracinée au sommet du Canigou, l’aïoli Georges incarne bien plus qu’un simple condiment : il est la mémoire vivante d’un savoir ancien, celui de la recette transmise par feu mon grand-père. Dans le désir d’honorer sa mémoire à travers un projet à partager — pour continuer de le faire vivre dans le présent — j’ai imaginé une légende autour de son nom : Georges, l’ermite catalan. Cette histoire se traduit graphiquement par la création d’un logotype inspiré de sa signature, auquel s’ajoute une typographie des années 50 pour le nom AIOLI CATALAN, ancrant visuellement la recette dans l’époque et l’héritage de mon grand-père. Le timbre, apposé sur le couvercle tel un sceau, complète l’ensemble. On y retrouve le rouge du drapeau catalan, les coordonnées GPS du sommet du Canigou, ses lignes de crêtes, et deux izards sauvages — gardiens silencieux de cette terre. Le timbre, c’est l’invitation au voyage. Le sceau d’une promesse.",
+      "Born from a legend rooted at the summit of Mount Canigou, aïoli Georges is much more than a simple condiment: it is the living memory of ancestral knowledge, the recipe passed down from my late grandfather. Driven by the desire to honour his memory through a shared project — to keep his presence alive in the present — I created a legend around his name: Georges, the Catalan hermit. This story is expressed visually through the creation of a logotype inspired by his signature, complemented by a 1950s-style typeface for the name AIOLI CATALAN, grounding the recipe in the era and heritage of my grandfather. A stamp, placed on the lid like a seal, completes the design. It features the red of the Catalan flag, the GPS coordinates of Mount Canigou’s summit, its ridgelines, and two wild izards — silent guardians of this land. The stamp is an invitation to travel. The seal of a promise."
     ],
-    image: '/projets/georges/georges-signature.png',
+    image: '/projets/georges/georges-signature-timbre.png',
   },
   {
     subtitle: ["Georges & la légende de l'aïoli Catalan", "Georges and the legend of catalan aioli"],
@@ -134,8 +134,8 @@ function Projet() {
         
 ],
         sectionsImg: [
-          ['/projets/georges/etiquette-pot.jpg','/projets/georges/boite-georges.jpg','georges-boitelivraison.png'],
-          ['/projets/georges/etiquette-pot.jpg','/projets/georges/boite-georges.jpg','georges-boitelivraison.png'],
+          ['/projets/georges/etiquette-pot.jpg','/projets/georges/boite-georges.jpg','/projets/georges/georges-boitelivraison.png'],
+          ['/projets/georges/etiquette-pot.jpg','/projets/georges/boite-georges.jpg','/projets/georges/georges-boitelivraison.png'],
         ],
 },
 

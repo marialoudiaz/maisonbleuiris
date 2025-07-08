@@ -43,7 +43,18 @@ const Logo = () => {
   deroule: ['flex','Votre projet',"Chaque projet est unique, tout comme vous. C’est pourquoi je vous accompagne à chaque étape pour créer une solution sur mesure, en accord avec vos besoins.","Juste une mise au point","Nous discutons de votre projet et établissons ensemble une stratégie. Selon vos besoins, nous définissons les services nécessaires. Chaque devis est conçu sur mesure.","L’aventure commence","Je vous envoie un devis détaillant l’ensemble des prestations ainsi que les délais de réalisation. Une date de livraison est fixée.","Tada !","C’est le jour où vous recevez votre premier livrable. Vous avez alors la possibilité de demander deux modifications (gratuites)."],
   citation: 'Pour un design qui vous ressemble.',
   form: ["Racontons",'votre','histoire','Prénom & Nom','Email','Entreprise/Projet','Secteur d’activité','Quel type de projet envisagez-vous ?','Site web', 'Identité visuelle', 'Autre (précisez)','Parlez-moi de votre projet',"Collaborons pour faire grandir votre activité 🌱. Une idée, une question, une envie forte de vous lancer ? Je suis à l'écoute.","Envoyer"],
-  words: ['local artisans', 'organic farmers', 'plant-based chefs', 'ethical producers', 'slow food brands','hand-made brands', 'holistic hospitality venues','conscious restaurants', 'eco-conscious cafés', 'holistic guest experiences'],      
+words: [
+  'artisans locaux',
+  'agriculteurs biologiques',
+  'chefs végétaux',
+  'producteurs éthiques',
+  'marques slow food',
+  'marques artisanales',
+  'lieux d’hospitalité holistique',
+  'restaurants engagés',
+  'cafés éco-conscients',
+  'expériences holistiques pour les invités'
+  ],  
   ml: [
     "Mentions légales",
     "À propos de Maison Bleu Iris",
