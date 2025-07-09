@@ -110,7 +110,7 @@ const VideoReveal: React.FC<VideoProps> = ({ scrollYProgress }) => {
           <video
             ref={mobileVideoRef}
             playsInline
-            poster="/projets/marialoudiaz_showreel2.png"
+            poster="/projets/maisonbleuiris_services.png"
             onClick={() => handlePlayVideo(mobileVideoRef)}
             controls={true}
           >
