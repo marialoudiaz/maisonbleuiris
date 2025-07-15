@@ -14,7 +14,7 @@ export const metadata = {
   openGraph: {
     title: "Maison Bleu Iris",
     description: "Branding studio for ethical food and hospitality.",
-    url: "https://www.marialoudiaz.fr",
+    url: "https://www.maisonbleuiris.fr",
     siteName: "Maison Bleu Iris",
     // images: [
     //   {
