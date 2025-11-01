@@ -17,12 +17,6 @@ const Main = dynamic(() => import('../../components/main'), {
 const Prez = dynamic(() => import('../../components/prez'), {
   loading: () => <div>Loading Prez...</div>,
 });
-// const Reco = dynamic(() => import('../../components/recognition'), {
-//   loading: () => <div>Loading Deroule...</div>,
-// });
-const Deroule = dynamic(() => import('../../components/deroule-scroll'), {
-  loading: () => <div>Loading Deroule...</div>,
-});
 const Formulaire = dynamic(() => import('../../components/formulaire/formulaire'), {
   loading: () => <div>Loading Formulaire...</div>,
 });
