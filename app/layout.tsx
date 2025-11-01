@@ -16,15 +16,15 @@ export const metadata = {
     description: "Branding studio for ethical food and hospitality.",
     url: "https://www.maisonbleuiris.fr",
     siteName: "Maison Bleu Iris",
-    // images: [
-    //   {
-    //     url: "https://www.votresite.com/image.jpg",
-    //     width: 800,
-    //     height: 600,
-    //     alt: "Texte alternatif pour l'image",
-    //   },
-    // ],
-    locale: "en_EN",
+    images: [
+      {
+        url: "https://www.maisonbleuiris.fr/fav.png",
+        width: 800,
+        height: 600,
+        alt: "Texte alternatif pour l'image",
+      },
+    ],
+    locale: "en_US",
     type: "website",
   },
 };

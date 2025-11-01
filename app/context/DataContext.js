@@ -9,6 +9,7 @@ export const DataProvider = ({ children }) => {
   const [lang, setLang] = useState('en'); // 'fr' ou 'en'
   const [indepArray, setIndepArray] = useState(null);  // Array FR ou EN
   console.log('arrayDatac', indepArray);
+
     const indepArrayEN = [
     {
       ids: 1,
@@ -19,13 +20,13 @@ export const DataProvider = ({ children }) => {
       videoOrdi: 'videoReveal5',
       videoTel: 'videoReveal6',
       discover: 'discover the showreel',
-      location: ['currently in','Sydney, AUS.'], // location
+      location: ['currently in','Montpellier, FR.'], // location
       cta: [
-        "an idea? let's make it flourish",
-        "I book a consultation",
+        "Dive-in",
+        "I want to talk about my project",
         "I discover other projects",
         "schedule a video call",
-        "I'd rather call you"
+        "I'd rather call you",
       ],
       presentation: [
         "Supporting those who shape the world with love and care.", 
@@ -34,7 +35,22 @@ export const DataProvider = ({ children }) => {
       ],
       expertise: [' • Print • Packaging • Web development • Motion • Video • Photo • Copywriting • Social Media • Illustration '],
       services: ['My services','A multitude of skills for a unique project.','We develop, together, a tailor-made offer according to your needs.','Showcase website', 'Multipage website','Videos & photos', 'Social medias', 'Blog', 'Visual identity', 'Logotype', 'Signage', 'Packaging', 'Illustration'],
-      values: ["Ethic","Giving voice and visibility to conscious projects that respect life in all its forms.","Minimalism","Seeking the essence of an idea to communicate it with memorability.", "Elegance","Timeless design, rooted in values."],
+      // values: [
+      //   "Ethic",
+      //   "Giving voice and visibility to conscious projects that respect life in all its forms.",
+      //   "Minimalism",
+      //   "Seeking the essence of an idea to communicate it with memorability.",
+      //   "Elegance", //4
+      //   "Timeless design, rooted in values."
+      //],
+    values:[
+    "Ethic",
+    "Giving voice and visibility to conscious projects that respect life in all its forms.",
+    "Transparency",
+     "Clear and honest philosophy",
+     "Authenticity",
+      "Impactful and memorable storytelling",
+  ],
       reco:["Awards & Publications","Best website of 2025 at Trophées de la Communication, Paris","On-Thyme typeface addition to  Bye-Bye Binary collective inventory (2017-2023)"],
       deroule:['flex','Your project',"Each project is unique, just like you. That's why I support you at every step, to create a custom solution that best fits your needs.","Just a clarification","We discuss your project and together establish a strategy. Depending on your project, we define the services required. Each quote is custom-made to closely match your needs.","The adventure begins","I will send you a quote including all services as well as the time needed for their completion. The delivery date is set.","Tada!","This is the day you receive your first deliverable. From then on, you have the option to request two modifications (free of charge)."],
       citation: 'For a design that suits you.',

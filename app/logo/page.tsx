@@ -22,10 +22,10 @@ const Logo = () => {
   videoOrdi: 'videoReveal1',
   videoTel: 'videoReveal2',
   discover: 'découvrir le showreel',
-  location: ['actuellement à', 'Sydney, AUS.'],
+  location: ['actuellement à', 'Montpellier, FR'],
   cta: [
-    "une idée ? faisons-la fleurir",
-    "je réserve une consultation",
+    "découvrir notre mission",
+    "je veux vous parler de mon projet",
     "je découvre les autres projets",
     "planifier un appel vidéo",
     "je préfère vous appeler"
@@ -33,16 +33,48 @@ const Logo = () => {
   presentation: [
     "Le luxe c'est l'essentiel devenu rare",
     "Accompagner celles et ceux qui façonnent le monde avec amour et conscience.",
-    "Je crée des identités visuelles sensibles et porteuses de sens pour les artisan·es, paysan·nes, chef·fes, producteur·ices engagé·es, marques alimentaires et lieux d’hospitalité. Des projets qui parlent de saisons, de mains qui créent, d’éthique et de beauté du vivant. Des projets qui contribuent à faire éclore une vision du monde plus juste, chaleureuse et profondément humaine. Mon approche mêle narration, esthétique naturelle et valeurs éthiques pour construire des marques qui nourrissent autrement. Issue d'une formation solide en design graphique, je propose une offre complète : production imprimée, packaging, webdesign et illustration.",
+    "Nous développons l'image de marque de tous ceux qui promeut une philosophie bien-être, éco-responsable et éthique: lieux, marques, artisans, praticiens, etc…",
+    //Mon approche mêle narration, esthétique naturelle et valeurs éthiques. Issue d'une formation solide en design graphique, je propose une offre complète : production imprimée, packaging, webdesign et illustration.",
     "À propos"
   ],
   expertise: [' • Print • Packaging • Développement web • Motion • Vidéo • Photo • Rédaction • Réseaux sociaux • Illustration '],
   services: ['Mes services','Une multitude de compétences pour un projet unique.','Nous développons ensemble une offre sur mesure selon vos besoins.','Site vitrine', 'Site multipage', 'Vidéos & photos', 'Réseaux sociaux', 'Blog', 'Identité visuelle', 'Logotype', 'Signalétique', 'Packaging', 'Illustration'],
-  values: ["Éthique","Donner voix et visibilité aux projets conscients qui respectent la vie sous toutes ses formes.","Minimalisme","Aller à l’essence d’une idée pour la transmettre avec justesse.","Élégance","Un design intemporel, ancré dans les valeurs."],
-   reco:["Nouveautés","Domaine de la Pinède - Meilleur site internet de 2025 aux Trophées de la Communication, Paris","On-Thyme typeface addition to  Bye-Bye Binary collective inventory (2017-2023)"],
-  deroule: ['flex','Votre projet',"Chaque projet est unique, tout comme vous. C’est pourquoi je vous accompagne à chaque étape pour créer une solution sur mesure, en accord avec vos besoins.","Juste une mise au point","Nous discutons de votre projet et établissons ensemble une stratégie. Selon vos besoins, nous définissons les services nécessaires. Chaque devis est conçu sur mesure.","L’aventure commence","Je vous envoie un devis détaillant l’ensemble des prestations ainsi que les délais de réalisation. Une date de livraison est fixée.","Tada !","C’est le jour où vous recevez votre premier livrable. Vous avez alors la possibilité de demander deux modifications (gratuites)."],
+  values: [
+    "Éthique",
+    // "Donner une voix et une visibilité aux projets conscients qui respectent la vie dans toutes ses formes.",
+    "Transparence",
+    "Une philosophie claire et honnête",
+    "Authenticité",
+    "Une narration impactante et mémorable",
+     //concret, engagé, humain, éco-responsable, sincérité, Minimalisme, Élégance
+    // "Donner voix et visibilité aux projets conscients qui respectent la vie sous toutes ses formes.",
+    // "Aller à l’essence d’une idée pour la transmettre avec justesse.",
+    // "Un design intemporel, ancré dans les valeurs."
+  ],
+  deroule: [
+    'flex',
+    'Votre projet',
+    "Chaque projet est unique, tout comme vous. C’est pourquoi je vous accompagne à chaque étape pour créer une solution sur mesure, en accord avec vos besoins.",
+    "Juste une mise au point","Nous discutons de votre projet et établissons ensemble une stratégie. Selon vos besoins, nous définissons les services nécessaires. Chaque devis est conçu sur mesure.",
+    "L’aventure commence","Je vous envoie un devis détaillant l’ensemble des prestations ainsi que les délais de réalisation. Une date de livraison est fixée.","Tada !","C’est le jour où vous recevez votre premier livrable. Vous avez alors la possibilité de demander deux modifications (gratuites)."
+  ],
   citation: 'Pour un design qui vous ressemble.',
-  form: ["Racontons",'votre','histoire','Prénom & Nom','Email','Entreprise/Projet','Secteur d’activité','Quel type de projet envisagez-vous ?','Site web', 'Identité visuelle', 'Autre (précisez)','Parlez-moi de votre projet',"Collaborons pour faire grandir votre activité 🌱. Une idée, une question, une envie forte de vous lancer ? Je suis à l'écoute.","Envoyer"],
+  form: [
+    "Racontons",
+    'votre',
+    'histoire',
+    'Prénom & Nom',
+    'Email',
+    'Entreprise/Projet',
+    'Secteur d’activité',
+    'Quel type de projet envisagez-vous ?',
+    'Site web', 
+    'Identité visuelle',
+    'Autre (précisez)',
+    'Parlez-moi de votre projet',
+    "Collaborons pour faire grandir votre activité 🌱. Une idée, une question, une envie forte de vous lancer ? Je suis à l'écoute.",
+    "Envoyer"
+  ],
 words: [
   'artisans locaux',
   'agriculteurs biologiques',
@@ -81,10 +113,10 @@ words: [
       videoOrdi: 'videoReveal3',
       videoTel: 'videoReveal4',
       discover: 'discover the showreel',
-      location: ['currently in','Sydney, AUS.'], // location
+      location: ['currently in','Montpellier, FR.'], // location
       cta: [
-        "an idea? let's make it flourish",
-        "I book a consultation",
+        "discover our mission",
+        "I want to talk about my project",
         "I discover other projects",
         "schedule a video call",
         "I'd rather call you"
@@ -92,13 +124,21 @@ words: [
       presentation: [
         "Luxury is the essential made rare",
         "Supporting those who shape the world with love and care.", 
-        "I create thoughtful and meaningful visual identities for artisans, farmers, chefs, conscious producers, food brands, and hospitality spaces. Projects that speak of seasons, of hands that create, of ethics and the beauty of the living world. Projects that help a new vision of the world blossom — one that is fair, warm, and deeply human. My approach blends storytelling, natural aesthetics, and ethical, fair values — to build brands that nourish the world differently. With a solid background in graphic design, I offer a complete service including print production, packaging, web design, and illustration.",
+        " We develop brand identities of those who promote a wellbeing, ethical and conscious philosophy: spaces, brands, craftmen, practicionners, etc…",
         "About us"
+        // With a solid background in graphic design, I offer a complete service including print production, packaging, web design, and illustration
+        //to build brands that nourish the world differently
       ],
       expertise: [' • Print • Packaging • Web development • Motion • Video • Photo • Copywriting • Social Media • Illustration '],
       services: ['My services','A multitude of skills for a unique project.','We develop, together, a tailor-made offer according to your needs.','Showcase website', 'Multipage website','Videos & photos', 'Social medias', 'Blog', 'Visual identity', 'Logotype', 'Signage', 'Packaging', 'Illustration'],
-      values: ["Ethic","Giving voice and visibility to conscious projects that respect life in all its forms.","Minimalism","Seeking the essence of an idea to communicate it with memorability.", "Elegance","Timeless design, rooted in values."],
-      reco:["News","Domaine de la Pinède - Best website of 2025 at Trophées de la Communication, Paris","On-Thyme typeface addition to  Bye-Bye Binary collective inventory (2017-2023)"],
+        values:[
+    "Ethic",
+    "Giving voice and visibility to conscious projects that respect life in all its forms.",
+    "Transparency",
+    "Clear and honest philosophy",
+    "Authenticity",
+    "Impactful and memorable storytelling",
+  ],
       deroule:['flex','Your project',"Each project is unique, just like you. That's why I support you at every step, to create a custom solution that best fits your needs.","Just a clarification","We discuss your project and together establish a strategy. Depending on your project, we define the services required. Each quote is custom-made to closely match your needs.","The adventure begins","I will send you a quote including all services as well as the time needed for their completion. The delivery date is set.","Tada!","This is the day you receive your first deliverable. From then on, you have the option to request two modifications (free of charge)."],
       citation: 'For a design that suits you.',
       form: ["Let's tell",'your','story','First & Last Name','Email','Company/Project','Industry/Sector','What kind of project are you after ?','Website', 'Visual identity', 'Other (explain)','Tell me more about your project',"Let's collaborate to take your business to the next level and make it flourish 🌱. Ideas, questions, a strong desire to get in touch? I'm listening.","Send"],

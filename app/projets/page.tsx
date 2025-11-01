@@ -45,8 +45,8 @@ const Projets = () => {
   // Determine language settings
   const isEnglish = indepArray[0].Lang === 'EN';
   const variableENorFr = [
-    ['Works, Works, Works', 'Discover', 'Previous', 'scroll right to learn more', 'Discover my other projects'],
-    ['Projets, projets, projets', 'Découvrir', 'Précédent', 'scroller à droite pour en apprendre +', 'Découvrir mes autres projets']
+    ['Latest projects', 'Discover', 'Previous', 'scroll right to learn more', 'Discover my other projects'],
+    ['Projets phares', 'Découvrir', 'Précédent', 'scroller à droite pour en apprendre +', 'Découvrir mes autres projets']
   ];
   const textVariables = isEnglish ? variableENorFr[0] : variableENorFr[1];
   const prev = '/icons/interface/icon-eye-1.png';
@@ -90,6 +90,22 @@ const Projets = () => {
         link: ['Discover the project',"Découvrir le projet"],
         onClick: ['https://georges-aioli.fr', '_blank']
       },
+            //posters
+      //   {
+      //   id: 4,
+      //   img: '/projets/posters/posters-img.jpg',
+      //   video: '/projets/posters/video_type_hp.mp4',
+      //   title: ["Douce France","Douce France"],
+      //   baseline: ['Embellish your interior with unique posters',"Embellissez votre intérieur avec des posters uniques"],
+      //  text:[
+      //     "Pile-Poële is a gender-inclusive typeface featuring pictographic glyphs centered on cuisine. Developed during a master’s project at the University of Toulouse Jean Jaurès (2021),", 
+      //     "Pile-Poële est une typographie inclusive intégrant des pictogrammes liés à la cuisine. Conçue lors d’un projet de master à l’Université Toulouse Jean Jaurès (2021),"],
+      //   text2:[
+      //     "it allows words for tools, utensils, and food to be replaced with symbols. Promoting intercultural culinary communication, it naturally integrates gender inclusivity as part of its visual language.",
+      //     "elle permet de remplacer des mots comme ustensiles ou aliments par des symboles. Elle vise une communication culinaire interculturelle où l’inclusivité de genre s’impose naturellement."],
+      //   link: ['Discover the project',"Découvrir le projet"],
+      //   onClick: ['https://marialoudiaz.fr', '_blank']
+      // },
       //soup
       {
         id: 3,
@@ -106,7 +122,7 @@ const Projets = () => {
         link: ['Discover the project',"Découvrir le projet"],
         onClick: ['https://marialoudiaz.fr', '_blank']
       },
-      //posters
+
       // pile-poele
       {
         id: 5,

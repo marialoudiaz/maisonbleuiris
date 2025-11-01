@@ -20,7 +20,7 @@ const Prez = dynamic(() => import('../../components/prez'), {
 // const Reco = dynamic(() => import('../../components/recognition'), {
 //   loading: () => <div>Loading Deroule...</div>,
 // });
-const Deroule = dynamic(() => import('../../components/deroule'), {
+const Deroule = dynamic(() => import('../../components/deroule-scroll'), {
   loading: () => <div>Loading Deroule...</div>,
 });
 const Formulaire = dynamic(() => import('../../components/formulaire/formulaire'), {
@@ -38,9 +38,8 @@ const Homepage = () => {
   //l'array updatée dans chargement
   const { indepArray } = useData();
   const router = useRouter();
-
-// au chargement de la page indepArray est en anglais 
-// recharger indepArray en francais si cliqué par user (plus tard dans le site)
+  // au chargement de la page indepArray est en anglais 
+  // recharger indepArray en francais si cliqué par user (plus tard dans le site)
 
   // Redir si pas datas
     useEffect(()=>{
@@ -57,9 +56,7 @@ const Homepage = () => {
           <Header/>
           <Main/>
           <Prez/>
-          {/* <Reco/> */}
-          <Deroule/>
-          <Formulaire/>
+          {/* <Deroule/> */}
           <Footer />
           <Footer2 />
     </div>    

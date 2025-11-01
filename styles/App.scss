@@ -1986,3 +1986,26 @@ textarea{
     }
   }
 }
+.section-scroll {
+  font-size: 2rem;
+  background-color: #f0f0f0;
+  margin-bottom: 20px;
+    flex: 0 0 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#der {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+#deroule-cont {
+  display: flex;
+  width: max-content;
+  height: 100vh;
+  margin-bottom: 20vh ;
+}

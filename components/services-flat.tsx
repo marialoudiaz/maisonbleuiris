@@ -13,33 +13,33 @@ function Services() {
     {
       id: 1,
       title: ['Web dev', 'Développement web'],
-      img: '/projets/services/serv-web.png',
+      img: '/services/serv-web.png',
       alt: 'Site Web Design',
       txt: [
-        'Design & development of websites. Onepage, multipages and e-commerce.',
-        'Conception et développement de sites web. Onepage, multipages et e-commerce.',
+        'Design & development of all types of websites. Onepage, multipages and e-commerce.',
+        'Conception et développement de tous types de sites web. Même les plus complexes et créatifs.',
       ],
       link: '/projet/1',
     },
     {
       id: 2,
-      title: ['Print & Packaging', 'Design imprimé'],
-      img: '/projets/services/serv-packa.png',
+      title: ['Branding strategy', 'Stratégie de marque'],
+      img: '/services/serv-packa.png',
       alt: 'print',
       txt: [
-        'Ideal for artisans, farmers, chefs, conscious producers, food brands & hospitality spaces',
-        'Idéal pour les artisans, agriculteurs, chefs, producteurs engagés, marques alimentaires et lieux de restauration éthiques et responsables',
+        'Creation and promotion of your brand: from strategy to visual conception.',
+        'Développement et promotion de votre image : de la stratégie à la conception graphique.',
       ],
       link: '/projet/2',
     },
     {
       id: 3,
-      title: ['Illustration', 'Illustration'],
-      img: '/projets/services/serv-livre.png',
+      title: ['Publishing & Illustration', 'Édition & Illustration'],
+      img: '/services/nda-2.png',
       alt: 'Illustration Artistique',
       txt: [
-        'All types of illustrations for brand identity and book covers',
-        'Tous types d’illustrations pour les identités visuelles et les couvertures de livres',
+        'All types of illustrations: brand identities, scientific diagrams, book covers.',
+        'Tous types d’illustrations: identités visuelles, graphiques scientifiques, couvertures de livres',
       ],
       link: '/projet/3',
     },
@@ -66,6 +66,7 @@ function Services() {
           </div>
         </div>
       ))}
+      <div>ajouter bouton vers packages</div>
     </div>
   );
 }
