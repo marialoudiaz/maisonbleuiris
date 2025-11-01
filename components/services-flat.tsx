@@ -66,7 +66,7 @@ function Services() {
           </div>
         </div>
       ))}
-      <div>ajouter bouton vers packages</div>
+      {/* <div>ajouter bouton vers packages</div> */}
     </div>
   );
 }
