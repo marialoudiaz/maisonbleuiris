@@ -94,7 +94,8 @@ const Prez: React.FC = () => {
           <Carousel dataArray={dataArray} />
 
           {/* CTA vers le déroulé + formulaire */}
-          <button className='btn-transp-dark' style={{ margin: '2rem auto' }}  onClick={() => router.push('/projets')}>
+          <button className='btn-transp-dark' style={{ margin: '2rem auto' }}    onClick={() => window.location.href = 'mailto:contact@maisonbleuiris.fr'}>
+            {/* <button className='btn-transp-dark' style={{ margin: '2rem auto' }}  onClick={() => router.push('/projets')}></button> */}
           <div>
               <svg
                                 className="icon-transp"
