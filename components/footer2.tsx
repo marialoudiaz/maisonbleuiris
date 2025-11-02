@@ -65,7 +65,8 @@ const Footer2: React.FC = () => {
               </div>
               <div
                   
-                  onClick={() => window.open('https://www.linkedin.com/in/maria-lou-diaz-1b7ba8143/', '_blank', 'noreferrer')}
+                  onClick={() => window.open('https://www.instagram.com/maisonbleuiris/', '_blank', 'noreferrer')}
+                  
               >
                 <div className='footer-icon'>
                   <FontAwesomeIcon  icon={faInstagram} />
