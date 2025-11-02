@@ -40,11 +40,10 @@ const Logo = () => {
   expertise: [' • Print • Packaging • Développement web • Motion • Vidéo • Photo • Rédaction • Réseaux sociaux • Illustration '],
   services: ['Mes services','Une multitude de compétences pour un projet unique.','Nous développons ensemble une offre sur mesure selon vos besoins.','Site vitrine', 'Site multipage', 'Vidéos & photos', 'Réseaux sociaux', 'Blog', 'Identité visuelle', 'Logotype', 'Signalétique', 'Packaging', 'Illustration'],
   values: [
-    "Éthique",
-    // "Donner une voix et une visibilité aux projets conscients qui respectent la vie dans toutes ses formes.",
-    "Transparence",
-    // "Une philosophie claire et honnête",
+    "Éthique",// "Donner une voix et une visibilité aux projets conscients qui respectent la vie dans toutes ses formes.",
+    "Transparence",// "Une philosophie claire et honnête",
     "Authenticité",
+    "Transparence",
     // "Une narration impactante et mémorable",
      //concret, engagé, humain, éco-responsable, sincérité, Minimalisme, Élégance
     // "Donner voix et visibilité aux projets conscients qui respectent la vie sous toutes ses formes.",
