@@ -4,7 +4,7 @@ import Marquee from "react-fast-marquee";
 import '../styles/App.scss';
 import '../globals.css';
 import { useData } from '@/app/context/DataContext'; // Import du contexte
-import { useRouter} from 'next/navigation';
+// import { useRouter} from 'next/navigation';
 import Services from '../components/services-flat';
 
 import authenticity from '../public/icons/approche/authenticity.png';
@@ -18,7 +18,7 @@ import Typewriter from 'typewriter-effect';
 
 const Prez: React.FC = () => {
 
-  const router = useRouter();
+  // const router = useRouter();
   const { indepArray } = useData(); 
   if (!indepArray || !indepArray[0].presentation || !indepArray[0].expertise || !indepArray[0].cta) {
     return <div>Loading...</div>;
