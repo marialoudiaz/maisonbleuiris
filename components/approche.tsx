@@ -13,7 +13,7 @@ const Approche: React.FC = () => {
       //Array recue
       const {indepArray}=useData();
       //Si données pas encore dispos
-      if (!indepArray[0] || !indepArray[0].approche){
+      if (!indepArray[0] || !indepArray[0].values){
         return <div>Loading...</div>
       }
       
@@ -24,21 +24,21 @@ const Approche: React.FC = () => {
           image: authenticity,
           alt: "cercle avec un trait noir au centre à l'encre de chine",
           titre: `${indepArray[0].values[0]}`,
-          text: `${indepArray[0].values[1]}`,
+          // text: `${indepArray[0].values[0]}`,
         },
         {
           index: 1,
           image: minimalism,
           alt: "trombone stylisé à l'encre de chine",
-          titre: `${indepArray[0].values[3]}`,
-          text: `${indepArray[0].values[4]}`,
+          titre: `${indepArray[0].values[1]}`,
+          // text: `${indepArray[0].values[1]}`,
         },
          {
           index: 2,
           image: nature,
           alt: "plante a lencre de chine",
-          titre: `${indepArray[0].values[5]}`,
-          text: `${indepArray[0].values[6]}`,
+          titre: `${indepArray[0].values[2]}`,
+          // text: `${indepArray[0].values[2]}`,
         },
       ];
 

@@ -3,8 +3,8 @@ import React, { useRef, useState, useEffect } from 'react';
 import { useData } from '../context/DataContext';
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedinIn, faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faLinkedinIn, faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import '../../styles/App.scss';
 import '../../globals.css';
 import Header from '../../components/navbar/header';
@@ -45,8 +45,8 @@ const Projets = () => {
   // Determine language settings
   const isEnglish = indepArray[0].Lang === 'EN';
   const variableENorFr = [
-    ['Latest projects', 'Discover', 'Previous', 'scroll right to learn more', 'Discover my other projects'],
-    ['Projets phares', 'Découvrir', 'Précédent', 'scroller à droite pour en apprendre +', 'Découvrir mes autres projets']
+    ['Discover our key projects', 'Discover', 'Previous', 'scroll right to learn more', 'Discover our other projects'],
+    ['Découvrez nos projets clefs', 'Découvrir', 'Précédent', 'scroller à droite pour en apprendre +', 'Découvrir nos autres projets']
   ];
   const textVariables = isEnglish ? variableENorFr[0] : variableENorFr[1];
   const prev = '/icons/interface/icon-eye-1.png';
@@ -57,11 +57,13 @@ const Projets = () => {
 
     // Menu des projets
     const projectsArr = [
+      //MISE EN AVANT DE 4 PROJETS_CLEFS
       //bec
       {
         id: 1,
-        img: '/projets/bec/bec-hp-1.jpg',
-        video: '/projets/bec/bec-hover.mp4',
+        pastille:["Tailor-made website",'Site internet sur-mesure'],
+        img: '/projets/web/bec/bec-hp-1.jpg',
+        video: '/projets/web/bec/bec-hover.mp4',
         title: ["Domaine de la Pinède", "Domaine de la Pinède"],
         baseline: ['Right in the heart of the Camargue','Au coeur de la Camargue exactement'],
         text:[
@@ -76,8 +78,9 @@ const Projets = () => {
       //georges
       {
         id: 2,
-        img: '/projets/georges/georges-hp.png',
-        video: '/projets/georges/georges-hp.mp4',
+        pastille:['Branding Strategy', "Stratégie d'image de marque complète"],
+        img: '/projets/branding-strategy/georges/georges-hp.png',
+        video: '/projets/branding-strategy/georges/georges-hp.mp4',
         title: ["Georges", "Georges"],
         baseline: ['The soul of the Canigou',"L'âme du Canigou"],
         text:[
@@ -90,7 +93,44 @@ const Projets = () => {
         link: ['Discover the project',"Découvrir le projet"],
         onClick: ['https://georges-aioli.fr', '_blank']
       },
-            //posters
+      //vb
+      {
+        id: 3,
+        pastille:['Branding Strategy', "Stratégie d'image de marque complète"],
+        img: '/projets/branding-strategy/vb/vb-img.jpg',
+        video: '/projets/branding-strategy/vb/vb-video-hover.mp4',
+        title: ["VB Avocats","VB Avocats"],
+        baseline: ["Modernize a graphic identity","Moderniser une identité graphique"],
+        text:[
+              "VB Avocats, formerly Valette & Berthelsen, sought to revitalize their graphic identity while preserving the firm's essence.",
+              "VB Avocats, anciennement Valette & Berthelsen, ont souhaité revitaliser leur identité graphique tout en préservant l'essence du cabinet."
+            ],      
+        text2:[
+              "The redesign aimed to bring new dynamism while respecting the company's values and history. This included a revamp of the logo, stationery and signage elements.",
+              "La refonte visait à insuffler un nouveau dynamisme tout en respectant les valeurs et l'histoire de l'entreprise. Cela comprenait une refonte du logo, de la papeterie & de la signalétique."
+              ],
+              link: ['Discover the project',"Découvrir le projet"],
+              onClick: ['https://www.vb-avocats.fr', '_blank']      
+      },
+      //nda
+      {
+        id: 4,
+        pastille:['Book cover illustration', "Illustration de couverture"],
+        img: '/projets/illu_edition/nda/nda-2.png',
+        video: '/projets/illu_edition/nda/nda_hover.mp4',
+        title: ["Birth of a friendship","Naissance d'une amitié"],
+        baseline: ["Friendship is a soul in two bodies","L'amitié est une âme en deux corps"],
+        text:[
+          "Birth of a friendship is a novel written by Émile Trubert that portrays the birth of a touching friendship between an old man, weighed down by grief after losing his beloved spouse, and Eva.", 
+          "Naissance d'une amitié est un roman écrit par Émile Trubert qui dépeint la naissance d'une amitié émouvante entre un vieil homme, accablé par le chagrin après la perte de son épouse bien-aimée, et Eva."],
+        text2:[
+          "Their connection brings color back into his life, transforming it in ways he never imagined.",
+          "Leur lien redonne des couleurs à sa vie, la transformant de manière inattendue."],
+        link: ['Discover the project',"Découvrir le projet"],
+        onClick: ['https://marialoudiaz.fr', '_blank']
+      },
+      // ANCIENS PROJETS FOOD
+      //posters
       //   {
       //   id: 4,
       //   img: '/projets/posters/posters-img.jpg',
@@ -107,70 +147,69 @@ const Projets = () => {
       //   onClick: ['https://marialoudiaz.fr', '_blank']
       // },
       //soup
-      {
-        id: 3,
-        img: '/projets/soup/mockup-livre.jpg',
-        video: '/projets/soup/soup_hover.mp4',
-        title: ["Soups","Soup"],
-        baseline: ["An eye for an eye, a story for a soup","Oeil pour oeil, soupe pour souvenir"],
-        text:[
-          "This cover captures the warm and authentic spirit of Soupes, a heartfelt collection of traditional recipes, family memories, and time-honored skills passed down through generations.", 
-          "Cette couverture reflète l’esprit chaleureux et authentique de Soupes, une collection sincère de recettes traditionnelles, de souvenirs de famille et de savoir-faire transmis de génération en génération."],
-        text2:[
-          "The delicate red sketch evokes a rustic kitchen where the comforting flavors of Southern France gently simmer. The refined typography, paired with the textured paper, pays tribute to the simplicity and richness of the culinary heritage passed on by the author Gisèle Perrin’s grandmother.",
-          "Le délicat croquis rouge évoque une cuisine rustique où mijotent doucement les saveurs réconfortantes du Sud de la France. La typographie raffinée, associée au papier texturé, rend hommage à la simplicité et à la richesse de l’héritage culinaire transmis par la grand-mère de l’autrice, Gisèle Perrin."],
-        link: ['Discover the project',"Découvrir le projet"],
-        onClick: ['https://marialoudiaz.fr', '_blank']
-      },
-
+      // {
+      //   id: 3,
+      //   img: '/projets/soup/mockup-livre.jpg',
+      //   video: '/projets/soup/soup_hover.mp4',
+      //   title: ["Soups","Soup"],
+      //   baseline: ["An eye for an eye, a story for a soup","Oeil pour oeil, soupe pour souvenir"],
+      //   text:[
+      //     "This cover captures the warm and authentic spirit of Soupes, a heartfelt collection of traditional recipes, family memories, and time-honored skills passed down through generations.", 
+      //     "Cette couverture reflète l’esprit chaleureux et authentique de Soupes, une collection sincère de recettes traditionnelles, de souvenirs de famille et de savoir-faire transmis de génération en génération."],
+      //   text2:[
+      //     "The delicate red sketch evokes a rustic kitchen where the comforting flavors of Southern France gently simmer. The refined typography, paired with the textured paper, pays tribute to the simplicity and richness of the culinary heritage passed on by the author Gisèle Perrin’s grandmother.",
+      //     "Le délicat croquis rouge évoque une cuisine rustique où mijotent doucement les saveurs réconfortantes du Sud de la France. La typographie raffinée, associée au papier texturé, rend hommage à la simplicité et à la richesse de l’héritage culinaire transmis par la grand-mère de l’autrice, Gisèle Perrin."],
+      //   link: ['Discover the project',"Découvrir le projet"],
+      //   onClick: ['https://marialoudiaz.fr', '_blank']
+      // },
       // pile-poele
-      {
-        id: 5,
-        img: '/projets/pp/pp-img.png',
-        video: '/projets/pp/video_type_hp.mp4',
-        title: ["On-Thyme","Pile-Poele"],
-        baseline: ['Open up to the World through Cuisine',"Ouvrez-vous au monde par la cuisine."],
-       text:[
-          "Pile-Poële is a gender-inclusive typeface featuring pictographic glyphs centered on cuisine. Developed during a master’s project at the University of Toulouse Jean Jaurès (2021),", 
-          "Pile-Poële est une typographie inclusive intégrant des pictogrammes liés à la cuisine. Conçue lors d’un projet de master à l’Université Toulouse Jean Jaurès (2021),"],
-        text2:[
-          "it allows words for tools, utensils, and food to be replaced with symbols. Promoting intercultural culinary communication, it naturally integrates gender inclusivity as part of its visual language.",
-          "elle permet de remplacer des mots comme ustensiles ou aliments par des symboles. Elle vise une communication culinaire interculturelle où l’inclusivité de genre s’impose naturellement."],
-        link: ['Discover the project',"Découvrir le projet"],
-        onClick: ['https://marialoudiaz.fr', '_blank']
-      },
+      // {
+      //   id: 5,
+      //   img: '/projets/pp/pp-img.png',
+      //   video: '/projets/pp/video_type_hp.mp4',
+      //   title: ["On-Thyme","Pile-Poele"],
+      //   baseline: ['Open up to the World through Cuisine',"Ouvrez-vous au monde par la cuisine."],
+      //  text:[
+      //     "Pile-Poële is a gender-inclusive typeface featuring pictographic glyphs centered on cuisine. Developed during a master’s project at the University of Toulouse Jean Jaurès (2021),", 
+      //     "Pile-Poële est une typographie inclusive intégrant des pictogrammes liés à la cuisine. Conçue lors d’un projet de master à l’Université Toulouse Jean Jaurès (2021),"],
+      //   text2:[
+      //     "it allows words for tools, utensils, and food to be replaced with symbols. Promoting intercultural culinary communication, it naturally integrates gender inclusivity as part of its visual language.",
+      //     "elle permet de remplacer des mots comme ustensiles ou aliments par des symboles. Elle vise une communication culinaire interculturelle où l’inclusivité de genre s’impose naturellement."],
+      //   link: ['Discover the project',"Découvrir le projet"],
+      //   onClick: ['https://marialoudiaz.fr', '_blank']
+      // },
       //memoire
-      {
-        id: 6,
-        img: '/projets/memoire/memoire1.jpg',
-        video: '/projets/memoire/memoire-hover.mp4',
-        title: ["Advocating for ...","En faveur d'une ..."],
-        baseline: ["Cuisine as a mean of communiating","Communiquer universellement par la cuisine"],
-        text:[
-          "Cooking defines us as humans. Beyond gastronomy, popular culinary memory—skills, gestures, recipes—is a heritage worth preserving.", 
-          "La cuisine nous définit en tant qu’humains. Au-delà de la gastronomie, la mémoire culinaire populaire — gestes, savoir-faire, recettes — est un patrimoine à préserver."],
-        text2:[
-          "As industrialization grows, practicing cooking remains essential. How can design help transmit this collective memory?",
-          "Face à l’industrialisation, il devient essentiel de continuer à pratiquer la cuisine. Comment le design peut-il aider à transmettre cette mémoire collective ?"],
-        link: ['Discover the project',"Découvrir le projet"],
-        onClick: ['https://marialoudiaz.fr', '_blank']
-      }, 
+      // {
+      //   id: 6,
+      //   img: '/projets/memoire/memoire1.jpg',
+      //   video: '/projets/memoire/memoire-hover.mp4',
+      //   title: ["Advocating for ...","En faveur d'une ..."],
+      //   baseline: ["Cuisine as a mean of communiating","Communiquer universellement par la cuisine"],
+      //   text:[
+      //     "Cooking defines us as humans. Beyond gastronomy, popular culinary memory—skills, gestures, recipes—is a heritage worth preserving.", 
+      //     "La cuisine nous définit en tant qu’humains. Au-delà de la gastronomie, la mémoire culinaire populaire — gestes, savoir-faire, recettes — est un patrimoine à préserver."],
+      //   text2:[
+      //     "As industrialization grows, practicing cooking remains essential. How can design help transmit this collective memory?",
+      //     "Face à l’industrialisation, il devient essentiel de continuer à pratiquer la cuisine. Comment le design peut-il aider à transmettre cette mémoire collective ?"],
+      //   link: ['Discover the project',"Découvrir le projet"],
+      //   onClick: ['https://marialoudiaz.fr', '_blank']
+      // }, 
     ]; 
 
   // Functions to handle hover effects and toggling text
   const handleHover = () => setImageSource(next);
   const handleHoverOut = () => setImageSource(prev);
   const toggleFullText = () => setShowFullText(!showFullText);
-
   // Function to navigate to project details
   const handleDiscover = (projectId) => router.push(`/projet/${projectId}`);
+    const handleDiscoverAll = () => router.push(`/projets_all`);
 
 
   return (
     <>
       <Header />
       <div className='section' id='projets' style={{ marginTop: '7rem' }}>
-        <h2>{textVariables[0]}</h2>
+        <h2 style={{marginLeft:'2rem'}}>{textVariables[0]}</h2>
 
         <div id='projets'>
           <div className='grid-container-projets' ref={gridContainerRef}>
@@ -201,8 +240,14 @@ const Projets = () => {
                   )}
                 </div>
 
+
+
+                {/* PARTIE DESCRIPTION */}
                 <div className='project-description' ref={descriptionRef}>
+                  <div className='pastille-mob' style={{paddingLeft:'3rem'}}><p className='pastille'>{project.pastille[isEnglish ? 0 : 1]}</p></div>
                   <h3 className='project-title'>{project.baseline[isEnglish ? 0 : 1]}</h3>
+
+                  {/* // AFFICHER TEXTE SUR MOBILE */}
                   <p className='project-txt short-text' style={{ paddingLeft: '3rem', paddingRight: '2rem' }}>
                     {isMobile && !showFullText ? `${project.text[isEnglish ? 0 : 1].slice(0, 200)}...` : project.text[isEnglish ? 0 : 1]}
                   </p>
@@ -247,31 +292,31 @@ const Projets = () => {
           <div className='center'>
             <div className='flex-wrap-center'>
 
+            {/* boutons tous les projets - refaire lien */}
               <button 
-                className='btn-transp-dark' 
-                onClick={() => window.open('https://www.behance.net/marialoudiaz', '_blank', 'noreferrer')}
-                // onClick={() =>handleDiscoverProj()}
+              className='btn-transp-dark' 
+              onClick={() => handleDiscoverAll()} // onClick={() =>handleDiscoverProj()}
               >
-                        <div>
-                          <svg
-                            className="icon-transp"
-                            viewBox="0 0 16 19"
-                            xmlns="http://www.w3.org/2000/svg"
-                            aria-label='Arrow Icon'
-                          >
-                            <path
-                              d="M7 18C7 18.5523 7.44772 19 8 19C8.55228 19 9 18.5523 9 18H7ZM8.70711 0.292893C8.31658 -0.0976311 7.68342 -0.0976311 7.29289 0.292893L0.928932 6.65685C0.538408 7.04738 0.538408 7.68054 0.928932 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292893ZM9 18L9 1H7L7 18H9Z"
-                              className="fill-white group-hover:fill-gray-400"
-                            ></path>
-                          </svg>
-                          <p className='btn-transp-p' style={{ color: 'white' }}>
-                          {cta[2]}
-                          </p>
-                        </div>
+              <div>
+                <svg
+                  className="icon-transp"
+                  viewBox="0 0 16 19"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-label='Arrow Icon'
+                >
+                <path
+                  d="M7 18C7 18.5523 7.44772 19 8 19C8.55228 19 9 18.5523 9 18H7ZM8.70711 0.292893C8.31658 -0.0976311 7.68342 -0.0976311 7.29289 0.292893L0.928932 6.65685C0.538408 7.04738 0.538408 7.68054 0.928932 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292893ZM9 18L9 1H7L7 18H9Z"
+                  className="fill-white group-hover:fill-gray-400"
+                >  
+                </path>
+                  </svg>
+                  <p className='btn-transp-p' style={{ color: 'white' }}>
+                    {cta[2]}
+                  </p>
+                </div>
               </button>
-              
-            
-            <div className='flex-wrap-center'>
+            {/* boutons vers rs */}
+            {/* <div className='flex-wrap-center'>
               <div
                     className="btn-transp-rs"
                     onClick={() => window.open('https://www.linkedin.com/in/maria-lou-diaz-1b7ba8143/', '_blank', 'noreferrer')}
@@ -296,13 +341,9 @@ const Projets = () => {
                   <FontAwesomeIcon className='icon-transp-big' icon={faInstagram} />
                 </div>
               </div>
+            </div> */}
             </div>
-              
-            </div>
-           
-
           </div>
-
       </div>
     </div>
     </>

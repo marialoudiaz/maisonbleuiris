@@ -15,9 +15,11 @@ function MobileHeader({ isOpen, toggleMenu, infos, onHover, onLeave, hoveredLink
   const Lang = indepArray[0].lang;
   
   const navLinks = [
-    { href: '#Services', label: header[0], id: 'service', route:'/homepage/#Services' },
-    { href: '#Projets', label: header[1], id: 'projets', route:'/projets', langz: Lang },
-    { href: '#Contact', label: 'Contact', id: 'contact', route:'/homepage/#Contact'}
+    { href: '#Philosophie', label: indepArray[0].header[0], id: 'philo', route:'/philo', langz: Lang},
+    { href: '#Services', label: indepArray[0].header[1], id: 'service', route:'/homepage/#Services' },
+    { href: '#Projets', label: indepArray[0].header[2], id: 'projets', route:'/projets', langz: Lang },
+    { href: '#Contact', label: indepArray[0].header[3], id: 'contact', route:'/homepage/#Contact'}
+    
   ];
 
   return (

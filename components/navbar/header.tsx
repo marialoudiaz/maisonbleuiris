@@ -17,9 +17,10 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const Lang = indepArray && indepArray[0] && indepArray[0].Lang ? JSON.stringify(indepArray[0].Lang) : '';
   const navLinks = [
-    { href: '#Services', label: indepArray[0].header[0], id: 'service', route:'/homepage/#Services' },
-    { href: '#Projets', label: indepArray[0].header[1], id: 'projets', route:'/projets', langz: Lang },
-    { href: '#Contact', label: 'Contact', id: 'contact', route:'/homepage/#Contact'}
+    { href: '#Philosophie', label: indepArray[0].header[0], id: 'philo', route:'/philo', langz: Lang},
+    { href: '#Services', label: indepArray[0].header[1], id: 'service', route:'/homepage/#Services' },
+    { href: '#Projets', label: indepArray[0].header[2], id: 'projets', route:'/projets', langz: Lang },
+    { href: '#Contact', label: indepArray[0].header[3], id: 'contact', route:'/homepage/#Contact'}
   ];
 // Fonctions Hover
   const onHover = (lien:string) => {
