@@ -75,9 +75,13 @@ const Logo = () => {
   expertise: [' • Print • Packaging • Développement web • Motion • Vidéo • Photo • Rédaction • Réseaux sociaux • Illustration '],
   services: ['Mes services','Une multitude de compétences pour un projet unique.','Nous développons ensemble une offre sur mesure selon vos besoins.','Site vitrine', 'Site multipage', 'Vidéos & photos', 'Réseaux sociaux', 'Blog', 'Identité visuelle', 'Logotype', 'Signalétique', 'Packaging', 'Illustration'],
   values: [
-    "Éthique",// "Donner une voix et une visibilité aux projets conscients qui respectent la vie dans toutes ses formes.",
+    "Éthique",
+    "Donner une voix et une visibilité aux projets conscients qui respectent la vie dans toutes ses formes.",
     "Authenticité",
+    "Une philosophie simple et honnête",
     "Transparence",
+    "Une narration mémorable & impactante",
+
     // "Une narration impactante et mémorable",
      //concret, engagé, humain, éco-responsable, sincérité, Minimalisme, Élégance
     // "Donner voix et visibilité aux projets conscients qui respectent la vie sous toutes ses formes.",
@@ -199,9 +203,12 @@ experience: [
       expertise: [' • Print • Packaging • Web development • Motion • Video • Photo • Copywriting • Social Media • Illustration '],
       services: ['My services','A multitude of skills for a unique project.','We develop, together, a tailor-made offer according to your needs.','Showcase website', 'Multipage website','Videos & photos', 'Social medias', 'Blog', 'Visual identity', 'Logotype', 'Signage', 'Packaging', 'Illustration'],
         values:[
-    "Ethic",// "Giving voice and visibility to conscious projects that respect life in all its forms.",
-    "Transparency",// "Clear and honest philosophy",
-    "Authenticity",// "Impactful and memorable storytelling",
+    "Ethic",
+    "Giving voice and visibility to conscious projects that respect life in all its forms.",
+    "Transparency",
+    "Clear and honest philosophy",
+    "Authenticity",
+    "Impactful and memorable storytelling",
   ],
       deroule:['flex','Your project',"Each project is unique, just like you. That's why I support you at every step, to create a custom solution that best fits your needs.","Just a clarification","We discuss your project and together establish a strategy. Depending on your project, we define the services required. Each quote is custom-made to closely match your needs.","The adventure begins","I will send you a quote including all services as well as the time needed for their completion. The delivery date is set.","Tada!","This is the day you receive your first deliverable. From then on, you have the option to request two modifications (free of charge)."],
       citation: 'For a design that suits you.',

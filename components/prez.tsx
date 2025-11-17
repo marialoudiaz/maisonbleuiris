@@ -36,14 +36,14 @@ const Prez: React.FC = () => {
             index: 1,
             image: detail,
             alt: "trombone stylisé à l'encre de chine",
-            titre: `${indepArray[0].values[1]}`,
+            titre: `${indepArray[0].values[2]}`,
             text: `${indepArray[0].values[3]}`,
           },
            {
             index: 2,
             image: authenticity,
             alt: "plante a lencre de chine",
-            titre: `${indepArray[0].values[2]}`,
+            titre: `${indepArray[0].values[4]}`,
             text: `${indepArray[0].values[5]}`,
           },
         ];
