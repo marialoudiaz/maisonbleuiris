@@ -24,16 +24,18 @@ const Philo: React.FC = () => {
 
   const router = useRouter();
   const { indepArray } = useData(); 
-  if (!indepArray || !indepArray[0].philo) {
-    return <div>Loading...</div>;
-  }
+
   // Redirect if `indepArray` is not defined
     useEffect(() => {
       if (!indepArray) {
         router.push('/');
       }
     }, [indepArray, router]);
-    if (!indepArray) {
+
+  if (!indepArray || !indepArray[0].philo) {
+    return <div>Loading...</div>;
+  }
+  if (!indepArray) {
     return <div>Loading...</div>;
   }
   const ordi = 'video/gif-iris.mp4';
