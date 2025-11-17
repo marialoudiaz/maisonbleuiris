@@ -1,10 +1,10 @@
 'use client';
 import '../../styles/App.scss';
 import '../../globals.css';
-// import { useRouter} from 'next/navigation';
+import { useRouter} from 'next/navigation';
 import { useData } from '@/app/context/DataContext'; // Import du contexte
 import Image from 'next/image';
-import React from 'react';
+import React, { useEffect } from 'react';
 
 
 import Header from '../../components/navbar/header';
@@ -25,7 +25,7 @@ import Carousel from '../../components/carousel';
 
 const Philo: React.FC = () => {
 
-  // const router = useRouter();
+  const router = useRouter();
   const { indepArray } = useData(); 
 
   if (!indepArray || !indepArray[0].philo) {
@@ -103,15 +103,15 @@ const Philo: React.FC = () => {
           },
         ];
 
-  //   // Redirect if `indepArray` is not defined
-  //   useEffect(() => {
-  //     if (!indepArray) {
-  //       router.push('/');
-  //     }
-  //   }, [indepArray, router]);
-  //   if (!indepArray) {
-  //   return <div>Loading...</div>;
-  // }
+    // Redirect if `indepArray` is not defined
+    useEffect(() => {
+      if (!indepArray) {
+        router.push('/');
+      }
+    }, [indepArray, router]);
+    if (!indepArray) {
+    return <div>Loading...</div>;
+  }
 
   return (
     <>

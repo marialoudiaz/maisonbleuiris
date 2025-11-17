@@ -24,21 +24,21 @@ const Approche: React.FC = () => {
           image: authenticity,
           alt: "cercle avec un trait noir au centre à l'encre de chine",
           titre: `${indepArray[0].values[0]}`,
-          // text: `${indepArray[0].values[0]}`,
+          text: `${indepArray[0].values[0]}`,
         },
         {
           index: 1,
           image: minimalism,
           alt: "trombone stylisé à l'encre de chine",
           titre: `${indepArray[0].values[1]}`,
-          // text: `${indepArray[0].values[1]}`,
+          text: `${indepArray[0].values[1]}`,
         },
          {
           index: 2,
           image: nature,
           alt: "plante a lencre de chine",
           titre: `${indepArray[0].values[2]}`,
-          // text: `${indepArray[0].values[2]}`,
+          text: `${indepArray[0].values[2]}`,
         },
       ];
 
