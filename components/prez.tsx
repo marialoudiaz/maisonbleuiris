@@ -30,21 +30,21 @@ const Prez: React.FC = () => {
             image: nature,
             alt: "cercle avec un trait noir au centre à l'encre de chine",
             titre: `${indepArray[0].values[0]}`,
-            // text: `${indepArray[0].values[1]}`,
+            text: `${indepArray[0].values[1]}`,
           },
           {
             index: 1,
             image: detail,
             alt: "trombone stylisé à l'encre de chine",
             titre: `${indepArray[0].values[1]}`,
-            // text: `${indepArray[0].values[3]}`,
+            text: `${indepArray[0].values[3]}`,
           },
            {
             index: 2,
             image: authenticity,
             alt: "plante a lencre de chine",
             titre: `${indepArray[0].values[2]}`,
-            // text: `${indepArray[0].values[5]}`,
+            text: `${indepArray[0].values[5]}`,
           },
         ];
   
