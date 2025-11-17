@@ -5,12 +5,9 @@ import { useRouter} from 'next/navigation';
 import { useData } from '@/app/context/DataContext'; // Import du contexte
 import Image from 'next/image';
 import React, { useEffect } from 'react';
-
-
 import Header from '../../components/navbar/header';
 import Footer from '../../components/footer';
 import Footer2 from '../../components/footer2';
-
 import print from '../../public/icons/services/icon-piliers-04.png';
 import web from '../../public/icons/services/icon-piliers-01.png';
 import illu from '../../public/icons/services/icon-piliers-05.png';
@@ -27,14 +24,20 @@ const Philo: React.FC = () => {
 
   const router = useRouter();
   const { indepArray } = useData(); 
-
   if (!indepArray || !indepArray[0].philo) {
     return <div>Loading...</div>;
   }
-
+  // Redirect if `indepArray` is not defined
+    useEffect(() => {
+      if (!indepArray) {
+        router.push('/');
+      }
+    }, [indepArray, router]);
+    if (!indepArray) {
+    return <div>Loading...</div>;
+  }
   const ordi = 'video/gif-iris.mp4';
   const pola= '/img/pola.png'
-
   const dataArray = [
           {
             index: 0,
@@ -103,16 +106,7 @@ const Philo: React.FC = () => {
           },
         ];
 
-    // Redirect if `indepArray` is not defined
-    useEffect(() => {
-      if (!indepArray) {
-        router.push('/');
-      }
-    }, [indepArray, router]);
-    if (!indepArray) {
-    return <div>Loading...</div>;
-  }
-
+    
   return (
     <>
     <Header/>
@@ -121,7 +115,7 @@ const Philo: React.FC = () => {
         
         {/* philosphie */}
         <div className='philo-prez' style={{paddingTop:'5rem'}}>
-          <h1> {indepArray[0].philo[0]}</h1>
+          <h1>{indepArray[0].philo[0]}</h1>
           
           <video
               playsInline
@@ -131,7 +125,7 @@ const Philo: React.FC = () => {
               muted
               src={ordi}
               style={{ width: '40%', height: 'auto', display: 'block' }}
-          >          </video>
+          ></video>
 
           <h4> {indepArray[0].philo[1]}</h4>
 
