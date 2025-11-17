@@ -11,7 +11,7 @@ function MobileHeader({ isOpen, toggleMenu, infos, onHover, onLeave, hoveredLink
 
   const router = useRouter();
   const { indepArray } = useData();
-  const header = infos;
+  const header = infos;  console.log(header);
   const Lang = indepArray[0].lang;
   
   const navLinks = [

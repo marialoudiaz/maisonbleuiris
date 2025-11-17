@@ -17,9 +17,9 @@ const Main = dynamic(() => import('../../components/main'), {
 const Prez = dynamic(() => import('../../components/prez'), {
   loading: () => <div>Loading Prez...</div>,
 });
-const Philo = dynamic(() => import('../philo/page'), {
-  loading: () => <div>Loading Philo...</div>,
-});
+// const Philo = dynamic(() => import('../philo/page'), {
+//   loading: () => <div>Loading Philo...</div>,
+// });
 // const Formulaire = dynamic(() => import('../../components/formulaire/formulaire'), {
 //   loading: () => <div>Loading Formulaire...</div>,
 // });

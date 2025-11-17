@@ -103,15 +103,15 @@ const Philo: React.FC = () => {
           },
         ];
 
-    // Redirect if `indepArray` is not defined
-    useEffect(() => {
-      if (!indepArray) {
-        router.push('/');
-      }
-    }, [indepArray, router]);
-    if (!indepArray) {
-    return <div>Loading...</div>;
-  }
+  //   // Redirect if `indepArray` is not defined
+  //   useEffect(() => {
+  //     if (!indepArray) {
+  //       router.push('/');
+  //     }
+  //   }, [indepArray, router]);
+  //   if (!indepArray) {
+  //   return <div>Loading...</div>;
+  // }
 
   return (
     <>
