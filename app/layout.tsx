@@ -8,12 +8,13 @@ import '../globals.css';
 //   title: 'Maria Lou Diaz',
 //   description: 'Art director (graphic designer and web developper) specialized in branding. From web development to print design, I help independent workers build their visual identity and launch their project.',
 // }
+//Développment d’image de marque pour tous ceux qui promeut une philosophie bien-être, éco-responsable et éthique: lieux, marques, artisans, praticiens, etc…
 export const metadata = {
   title: "Maison Bleu Iris",
-  description: "Branding studio for ethical food and hospitality.",
+  description: "Studio de développment d’image de marque pour tous ceux qui promeut une philosophie éco-responsable et éthique.",
   openGraph: {
     title: "Maison Bleu Iris",
-    description: "Branding studio for ethical food and hospitality.",
+    description: "Studio de développment d’image de marque pour tous ceux qui promeut une philosophie éco-responsable et éthique.",
     url: "https://www.maisonbleuiris.fr",
     siteName: "Maison Bleu Iris",
     images: [
