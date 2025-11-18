@@ -307,50 +307,50 @@ const descriptionprojectsArr = [
         ],
 },
 //POSTERS
-{
-        id: 6,
-        client: 'Maison Bleu Iris',
-        discover: ["scroller pour découvrir le projet","scroll down to discover the project"],
-        videoDesktop: '/projets/poster/video-hover_1.mp4',
-        videoMobile: '/projets/poster/video-hover_1.mp4',
-        image: '/projets/poster/mockup-poster.jpg',
-        title: "Douce France",
-        baseline: ["Tour de France des saveurs", "Tour de France of flavours"],
-        infos: [['2025', 'Illustration', 'Posters'],['2025', 'Illustration', 'Posters']],
-        categories: 
-        [
-          ['Illustration'],
-          ['Illustration']
-        ],
-        onClick: ['https:/www.marialoudiaz.fr', '_blank'],
-        besoins:[
-          ["Ce projet éditorial posait un défi singulier : comment rendre hommage à une tradition culinaire modeste mais profondément riche, tout en concevant une identité visuelle à la fois intime et intemporelle ? Il fallait donner forme à un recueil de recettes familiales, de récits du Sud et de savoir-faire transmis, en créant une couverture capable d’évoquer la chaleur d’une cuisine de grand-mère, tout en affirmant sa place en librairie comme un objet éditorial élégant, authentique et personnel."],
-          ["This book project came with a unique challenge: how to honour the humble yet rich tradition of soup-making while crafting a visual identity that feels both intimate and timeless. We needed to create a design that could embody a collection of heartfelt family recipes, regional storytelling, and deep-rooted culinary know-how. How could we evoke the warmth of a grandmother’s kitchen in Southern France, while making the book stand out on shelves as an elegant, authentic and personal object?"],
-        ],
-          technologies: [
-          ['Ink', 'Pencil','Illustrator', 'Photoshop', 'Indesign'],
-          ['Ink', 'Pencil','Illustrator', 'Photoshop', 'Indesign'],
-        ],
-        sections: 
-        [
-          {
-          subtitle: ['Approche', 'Approach'],
-          text: [
-            "Nous avons abordé ce projet comme un carnet de souvenirs : avec délicatesse, texture et sincérité. L’univers visuel puise dans les carnets de croquis, les recettes manuscrites et les gestes de la cuisine paysanne. Le fond texturé rappelle le grain du papier ancien, tandis que la typographie allie sobriété littéraire et douceur rustique. Le croquis rouge — une marmite sur le feu — agit comme une fenêtre ouverte sur une scène de vie, pleine de chaleur et de réminiscences. L’esthétique choisie ne cherche pas à être tendance, mais vraie. Elle invite à ralentir, à s’imprégner d’un monde où chaque soupe est une histoire, chaque ingrédient un héritage.",
-            "We approached this project like a preserved memory – with care, texture, and a human touch. The visual tone was drawn from old sketchbooks, handwritten notes, and vintage cookery traditions. We opted for a textured, paper-like background to echo the feel of an old recipe journal. The typography evokes literary elegance and rural authenticity, while the red line illustration — a pot gently bubbling on the stove — adds an emotional, almost cinematic depth. The design is not just nostalgic; it’s rooted. It invites the reader to step into a slow, sun-drenched world of shared meals and inherited wisdom — a world that feels both deeply familiar and quietly sacred.",
-          ],
-          image: '/projets/soup/mockup-livre.jpg',
-          },
-          {
-          subtitle: ['Résultat', 'Result'],
-          text: [
-            "Le résultat : une couverture qui raconte déjà une histoire avant même d’ouvrir le livre. Soupes de Gisèle Perrin n’est pas un simple livre de recettes — c’est un hommage. Le design traduit l’essence d’un foyer, d’un lien transmis, d’une cuisine de cœur et de saisons. Il se démarque en rayon non par le volume, mais par l’émotion. C’est un ouvrage qui ne crie pas, mais qui touche — comme le parfum d’un bouillon qui réveille la mémoire d’un dimanche en famille.",
-            "The result is a cover that tells a story before a single page is turned. Soupes by Gisèle Perrin is not just a cookbook — it’s a tribute. The design captures the essence of home, of ritual, and of resilience passed through generations of women. It stands out on a shelf not through loudness, but through feeling. This is a book that whispers, not shouts — yet its presence lingers, like the scent of simmering broth in a quiet kitchen at dusk."
-          ],
-          image: '/projets/illu_edition/posters/serv-posters.jpg',
-          },
-        ]
-},   
+// {
+//         id: 6,
+//         client: 'Maison Bleu Iris',
+//         discover: ["scroller pour découvrir le projet","scroll down to discover the project"],
+//         videoDesktop: '/projets/poster/video-hover_1.mp4',
+//         videoMobile: '/projets/poster/video-hover_1.mp4',
+//         image: '/projets/poster/mockup-poster.jpg',
+//         title: "Douce France",
+//         baseline: ["Tour de France des saveurs", "Tour de France of flavours"],
+//         infos: [['2025', 'Illustration', 'Posters'],['2025', 'Illustration', 'Posters']],
+//         categories: 
+//         [
+//           ['Illustration'],
+//           ['Illustration']
+//         ],
+//         onClick: ['https:/www.marialoudiaz.fr', '_blank'],
+//         besoins:[
+//           ["Ce projet éditorial posait un défi singulier : comment rendre hommage à une tradition culinaire modeste mais profondément riche, tout en concevant une identité visuelle à la fois intime et intemporelle ? Il fallait donner forme à un recueil de recettes familiales, de récits du Sud et de savoir-faire transmis, en créant une couverture capable d’évoquer la chaleur d’une cuisine de grand-mère, tout en affirmant sa place en librairie comme un objet éditorial élégant, authentique et personnel."],
+//           ["This book project came with a unique challenge: how to honour the humble yet rich tradition of soup-making while crafting a visual identity that feels both intimate and timeless. We needed to create a design that could embody a collection of heartfelt family recipes, regional storytelling, and deep-rooted culinary know-how. How could we evoke the warmth of a grandmother’s kitchen in Southern France, while making the book stand out on shelves as an elegant, authentic and personal object?"],
+//         ],
+//           technologies: [
+//           ['Ink', 'Pencil','Illustrator', 'Photoshop', 'Indesign'],
+//           ['Ink', 'Pencil','Illustrator', 'Photoshop', 'Indesign'],
+//         ],
+//         sections: 
+//         [
+//           {
+//           subtitle: ['Approche', 'Approach'],
+//           text: [
+//             "Nous avons abordé ce projet comme un carnet de souvenirs : avec délicatesse, texture et sincérité. L’univers visuel puise dans les carnets de croquis, les recettes manuscrites et les gestes de la cuisine paysanne. Le fond texturé rappelle le grain du papier ancien, tandis que la typographie allie sobriété littéraire et douceur rustique. Le croquis rouge — une marmite sur le feu — agit comme une fenêtre ouverte sur une scène de vie, pleine de chaleur et de réminiscences. L’esthétique choisie ne cherche pas à être tendance, mais vraie. Elle invite à ralentir, à s’imprégner d’un monde où chaque soupe est une histoire, chaque ingrédient un héritage.",
+//             "We approached this project like a preserved memory – with care, texture, and a human touch. The visual tone was drawn from old sketchbooks, handwritten notes, and vintage cookery traditions. We opted for a textured, paper-like background to echo the feel of an old recipe journal. The typography evokes literary elegance and rural authenticity, while the red line illustration — a pot gently bubbling on the stove — adds an emotional, almost cinematic depth. The design is not just nostalgic; it’s rooted. It invites the reader to step into a slow, sun-drenched world of shared meals and inherited wisdom — a world that feels both deeply familiar and quietly sacred.",
+//           ],
+//           image: '/projets/soup/mockup-livre.jpg',
+//           },
+//           {
+//           subtitle: ['Résultat', 'Result'],
+//           text: [
+//             "Le résultat : une couverture qui raconte déjà une histoire avant même d’ouvrir le livre. Soupes de Gisèle Perrin n’est pas un simple livre de recettes — c’est un hommage. Le design traduit l’essence d’un foyer, d’un lien transmis, d’une cuisine de cœur et de saisons. Il se démarque en rayon non par le volume, mais par l’émotion. C’est un ouvrage qui ne crie pas, mais qui touche — comme le parfum d’un bouillon qui réveille la mémoire d’un dimanche en famille.",
+//             "The result is a cover that tells a story before a single page is turned. Soupes by Gisèle Perrin is not just a cookbook — it’s a tribute. The design captures the essence of home, of ritual, and of resilience passed through generations of women. It stands out on a shelf not through loudness, but through feeling. This is a book that whispers, not shouts — yet its presence lingers, like the scent of simmering broth in a quiet kitchen at dusk."
+//           ],
+//           image: '/projets/illu_edition/posters/serv-posters.jpg',
+//           },
+//         ]
+// },   
 //pile-poele
 {
         id: 7,
