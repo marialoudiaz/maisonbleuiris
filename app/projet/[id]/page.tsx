@@ -448,7 +448,14 @@ const descriptionprojectsArr = [
 },
 ];
 
-      const imgStyle={display: 'flex',flexWrap: 'nowrap',margin: '.2rem 0rem 0rem .3rem', width:'40px',height:'auto',transition: 'transform 2s ease'};
+        const imgStyle: React.CSSProperties = {
+          display: 'flex',
+          flexWrap: 'nowrap',
+          margin: '.2rem 0rem 0rem .3rem',
+          width: '40px',
+          height: 'auto',
+          transition: 'transform 2s ease'
+      };      
       // Déterminer les indices en fonction de la langue
       // const Lang = indepArray[0].Lang;
       const Lang = indepArray?.[0]?.Lang ?? 'FR';
