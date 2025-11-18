@@ -446,14 +446,12 @@ const descriptionprojectsArr = [
           ['/projets/memoire/memoire1.jpg','/projets/memoire/memoire2.jpg','/projets/memoire/memoire3.jpg','/projets/memoire/memoire4.jpg','/projets/memoire/memoire5.jpg','/projets/memoire/memoire6.jpg'],
         ]
 },
-},
-},
 ];
 
       const imgStyle={display: 'flex',flexWrap: 'nowrap',margin: '.2rem 0rem 0rem .3rem', width:'40px',height:'auto',transition: 'transform 2s ease'};
       // Déterminer les indices en fonction de la langue
       // const Lang = indepArray[0].Lang;
-      const Lang = indepArray?.[0]?.Lang ?? 'FR'
+      const Lang = indepArray?.[0]?.Lang ?? 'FR';
       const langIndex = Lang === 'FR' ? 0 : 1;
 
      // Cliquer sur découvrir
