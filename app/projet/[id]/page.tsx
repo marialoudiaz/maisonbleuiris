@@ -234,9 +234,9 @@ const descriptionprojectsArr = [
         id: 5,
         client: 'Pascale Laffon',
         discover: ["scroller pour découvrir le projet","scroll down to discover the project"],
-        videoDesktop: '/projets/pl/pl_video.mp4',
-        videoMobile: '/projets/pl/pl_video.mp4',
-        image: '/projets/pl/pl-img.jpg',
+        videoDesktop: '/projets/web/pl/pl_video.mp4',
+        videoMobile: '/projets/web/pl/pl_video.mp4',
+        image: '/projets/web/pl/pl-img.jpg',
         title: 'Pascale Laffon',
         baseline:["Invincible est la douceur","Invincible is gentleness"],
         infos: [['2024', 'Site vitrine', 'Médecine holistique'],['2024', 'Showcase website', 'Holistic medicine']],
@@ -265,8 +265,8 @@ const descriptionprojectsArr = [
             "L’encre de chine comme symbole d’élégance et de finesse. Raconter graphiquement la pratique de la micropraxie, c’était parvenir à parler d’un univers doux, calme mais puissant. Ainsi l’encre de chine s’est révélée comme étant le médium le plus à même de nous transporter dans l’univers de Pascale Laffon. Un titre, une signature pour faire du nom de son entreprise un concept.",
             "Chinese ink as a symbol of elegance and refinement. Graphically depicting the practice of micropraxis meant conveying a gentle, calm yet powerful universe. Thus, Chinese ink emerged as the medium best suited to transport us into Pascale Laffon's world. A title, a signature, to transform the name of her business into a concept."
           ],
-          imageEN: '/projets/pl/pl-section1en.png',
-          image: '/projets/pl/pl-section1.png'
+          imageEN: '/projets/web/pl/pl-section1en.png',
+          image: '/projets/web/pl/pl-section1.png'
           },
           {title:'Pascale Laffon',
           categories: [
@@ -278,7 +278,7 @@ const descriptionprojectsArr = [
             "Tirer le portrait de Pascale et de son cabinet permettent d’aller à la rencontre du patient avant même qu’il prenne rendez-vous. Cette approche rend l'expérience vivante et chaleureuse, invitant ainsi les patients à entrer dans l'univers de Pascale et à établir une connexion personnelle dès le début.",
             "Capturing portraits of Pascale and her practice allows potential patients to get acquainted even before scheduling an appointment. This approach brings a lively and welcoming feel, inviting patients into Pascale's world and creating a warm, personal connection from the start.",
           ],
-          image: '/projets/pl/pl-section2.png',
+          image: '/projets/web/pl/pl-section2.png',
           },
           {title:'Pascale Laffon',
             categories: [
@@ -290,7 +290,7 @@ const descriptionprojectsArr = [
               "Pour immerger encore davantage les utilisateurs dans l'univers unique de Pascale, il est apparu évident de créer une iconographie exclusive. En concevant des pictogrammes spécialement imaginés pour illustrer la pratique de la micropraxie, nous avons pu raconter son histoire de manière authentique et engageante.",
               "To further immerse users in Pascale's unique world, it became clear that creating an exclusive iconography was essential. By designing custom pictograms that vividly narrate the practice of micropraxis, we were able to tell her story in an authentic and engaging way.",
             ],
-            image: '/projets/pl/pl-section3.png',
+            image: '/projets/web/pl/pl-section3.png',
             },
             {title:'Pascale Laffon',
               categories: [
@@ -302,7 +302,7 @@ const descriptionprojectsArr = [
                 "Afin de cristalliser, cette refonte, en dernier lieu, il est apparu essentiel de simplifier le logotype déjà existant de Pascale Laffon et de l’animer.",
                 "To finalize this redesign, it became essential to simplify Pascale Laffon's existing logotype and animate it.",
               ],
-              video: '/projets/pl/pl-section4.mp4',
+              video: '/projets/web/pl/pl-section4.mp4',
               },
         ],
 },
@@ -347,7 +347,7 @@ const descriptionprojectsArr = [
             "Le résultat : une couverture qui raconte déjà une histoire avant même d’ouvrir le livre. Soupes de Gisèle Perrin n’est pas un simple livre de recettes — c’est un hommage. Le design traduit l’essence d’un foyer, d’un lien transmis, d’une cuisine de cœur et de saisons. Il se démarque en rayon non par le volume, mais par l’émotion. C’est un ouvrage qui ne crie pas, mais qui touche — comme le parfum d’un bouillon qui réveille la mémoire d’un dimanche en famille.",
             "The result is a cover that tells a story before a single page is turned. Soupes by Gisèle Perrin is not just a cookbook — it’s a tribute. The design captures the essence of home, of ritual, and of resilience passed through generations of women. It stands out on a shelf not through loudness, but through feeling. This is a book that whispers, not shouts — yet its presence lingers, like the scent of simmering broth in a quiet kitchen at dusk."
           ],
-          image: '/projets/posters/serv-posters.jpg',
+          image: '/projets/illu_edition/posters/serv-posters.jpg',
           },
         ]
 },   
@@ -387,7 +387,7 @@ const descriptionprojectsArr = [
             "Écrire une recette se fait dans la plupart des cas, sur un bout de papier, à la main et de manière plutôt rapide. Pile-Poële dans son dessin tente de réunir cet aspect cursif de l’écriture propre à la prise de note manuscrite et le besoin de structure et de discipline de la discipline culinaire. L'exagération du type où les ligatures se dessinent naturellement ouvre de nouvelles perspectives typographiques et sociétales en facilitant la création de nouveaux glyphes. Les pictogrammes sont minimalistes dans un souci de les rendre simples à re-dessiner manuellement et facilement ré-appropriables. Toujours dans cette volonté d’inclusivité et d’accessibilité, les pictogrammes dessinent une cuisine universelle avec des ustensiles issus de la gastronomie mais également des cuisines familiales méditerranéennes (faitout, panier d’osier, pot de yaourt, etc). La cuisine à dessiner devient ainsi universelle et humaine. Au-delà des ustensiles et aliments, les systèmes métriques se représentent aussi humainement que possible : par la main (pincée, poignée, etc).",
             "Writing a recipe is typically done on a piece of paper, by hand, and often quickly. Pile-Poële's design seeks to merge the cursive aspect of handwritten notes with the structured and disciplined nature of culinary practice. The exaggeration of typefaces where ligatures naturally emerge opens up new typographic and societal perspectives by facilitating the creation of new glyphs. The pictograms are minimalist, designed to be easy to redraw manually and readily reappropriated. In the spirit of inclusivity and accessibility, the pictograms depict a universal cuisine, featuring utensils from gastronomy as well as Mediterranean family kitchens (such as a stew pot, wicker basket, yogurt pot, etc.). Thus, the cuisine depicted becomes universal and human. Beyond utensils and food items, metric systems are represented as humanely as possible: by hand (pinch, handful, etc.)."
           ],
-          image: '/projets/pp/pp-section1.jpg',
+          image: '/projets/illu_edition/pp/pp-section1.jpg',
           },
           {title:'Pile-Poële',
           subtitle: ['Améliorations du projet', 'Project Improvements'],
@@ -408,8 +408,8 @@ const descriptionprojectsArr = [
         ],
         sectionsImg:
         [
-          ['/projets/pp/pp-section4.png', '/projets/pp/pp-section5.png'],
-          ['/projets/pp/pp-section4.png', '/projets/pp/pp-section5.png'],
+          ['/projets/illu_edition/pp/pp-section4.png', '/projets/illu_edition/pp/pp-section5.png'],
+          ['/projets/illu_edition/pp/pp-section4.png', '/projets/illu_edition/pp/pp-section5.png'],
         ]
 },
 //memoire
@@ -417,9 +417,9 @@ const descriptionprojectsArr = [
         id: 8,
         client: "Université Toulouse Jean-Jaurès 2",
         discover: ["scroller pour découvrir le projet","scroll down to discover the project"],
-        videoDesktop: '/projets/memoire/memoire-hover.mp4', 
-        videoMobile: '/projets/memoire/memoire-hover.mp4', 
-        image: '/projets/memoire/memoire1.jpg',
+        videoDesktop: '/projets/illu_edition/memoire/memoire-hover.mp4', 
+        videoMobile: '/projets/illu_edition/memoire/memoire-hover.mp4', 
+        image: '/projets/illu_edition/memoire/memoire1.jpg',
         title: "En faveur d'une grammaire culinaire populaire",
         baseline:["Communiquer universellement par la cuisine","Cuisine as a mean of communiating"],
         infos: [
@@ -442,45 +442,46 @@ const descriptionprojectsArr = [
         ],
         sectionsImg:
         [
-          ['/projets/memoire/memoire1.jpg','/projets/memoire/memoire2.jpg','/projets/memoire/memoire3.jpg','/projets/memoire/memoire4.jpg','/projets/memoire/memoire5.jpg','/projets/memoire/memoire6.jpg'],
-          ['/projets/memoire/memoire1.jpg','/projets/memoire/memoire2.jpg','/projets/memoire/memoire3.jpg','/projets/memoire/memoire4.jpg','/projets/memoire/memoire5.jpg','/projets/memoire/memoire6.jpg'],
+          ['/projets/illu_edition/memoire/memoire1.jpg','/projets/illu_edition/memoire/memoire2.jpg','/projets/illu_edition/memoire/memoire3.jpg','/projets/illu_edition/memoire/memoire4.jpg','/projets/illu_edition/memoire/memoire5.jpg','/projets/illu_edition/memoire/memoire6.jpg'],
+          ['/projets/illu_edition/memoire/memoire1.jpg','/projets/illu_edition/memoire/memoire2.jpg','/projets/illu_edition/memoire/memoire3.jpg','/projets/illu_edition/memoire/memoire4.jpg','/projets/illu_edition/memoire/memoire5.jpg','/projets/illu_edition/memoire/memoire6.jpg'],
         ]
 },
 ];
 
-        const imgStyle: React.CSSProperties = {
+        
+const imgStyle: React.CSSProperties = {
           display: 'flex',
           flexWrap: 'nowrap',
           margin: '.2rem 0rem 0rem .3rem',
           width: '40px',
           height: 'auto',
           transition: 'transform 2s ease'
-      };      
-      // Déterminer les indices en fonction de la langue
-      // const Lang = indepArray[0].Lang;
-      const Lang = indepArray?.[0]?.Lang ?? 'FR';
-      const langIndex = Lang === 'FR' ? 0 : 1;
+};      
+  // Déterminer les indices en fonction de la langue
+  // const Lang = indepArray[0].Lang;
+const Lang = indepArray?.[0]?.Lang ?? 'FR';
+const langIndex = Lang === 'FR' ? 0 : 1;
 
-     // Cliquer sur découvrir
-      const prev = '/icons/interface/icon-eye-1.png';
-      const next= '/icons/interface/icon-eye-2.png';
-      const [imageSource, setImageSource] = useState(prev);
+// Cliquer sur découvrir
+  const prev = '/icons/interface/icon-eye-1.png';
+  const next= '/icons/interface/icon-eye-2.png';
+  const [imageSource, setImageSource] = useState(prev);
       
-      // Hover icon oeil
-      const handleHover = () => {setImageSource(next);};
-      const handleHoverOut = () => {setImageSource(prev);};
+// Hover icon oeil
+  const handleHover = () => {setImageSource(next);};
+  const handleHoverOut = () => {setImageSource(prev);};
 
       
-      // Ouvrir le lien
-      const handleDiscoverClick = () => {
-      const url = descriptionprojectsArr[Number(id)].onClick;
-      // Vérifiez si `url` est un tableau et sélectionnez le premier élément si nécessaire
-         const finalUrl = Array.isArray(url) ? url[0] : url;
-      // Assurez-vous que `finalUrl` est une chaîne avant d'appeler `window.open`
-        if (typeof finalUrl === 'string') {
-          window.open(finalUrl, '_blank'); // Ouvre dans un nouvel onglet
-        } else {console.error('URL non valide');}
-      };
+// Ouvrir le lien
+  const handleDiscoverClick = () => {
+  const url = descriptionprojectsArr[Number(id)].onClick;
+// Vérifiez si `url` est un tableau et sélectionnez le premier élément si nécessaire
+  const finalUrl = Array.isArray(url) ? url[0] : url;
+// Assurez-vous que `finalUrl` est une chaîne avant d'appeler `window.open`
+  if (typeof finalUrl === 'string') {
+    window.open(finalUrl, '_blank'); // Ouvre dans un nouvel onglet
+  } else {console.error('URL non valide');}
+  };
 
 
 
