@@ -22,9 +22,9 @@ function Projet() {
       if (!indepArray && !id){
         router.push('/');
       }
-    }, [indepArray, router, id])
+    }, [indepArray, router, id]);
 
-    const descriptionprojectsArr = [
+const descriptionprojectsArr = [
       // bec
       {
         id: 1,
@@ -34,11 +34,17 @@ function Projet() {
         videoMobile: '/projets/web/bec/bec-hover-black.mp4',
         image: '/projets/web/bec-hp1.jpg',
         title: 'Domaine de la Pinède',
-        baseline: [
+        baseline: 
+        [
           'Au coeur de la Camargue exactement',
-          'Right in the heart of the Camargue',],
+          'Right in the heart of the Camargue'
+        ],
 
-        infos: [['2024','Application web','Tourisme & Hôtellerie', 'Réalisé chez Cible Publicité'],['2024','Web App', 'Tourism & Hospitality', 'Done at Cible Publicité']],
+        infos: 
+        [
+          ['2024','Application web','Tourisme & Hôtellerie', 'Réalisé chez Cible Publicité'],
+          ['2024','Web App', 'Tourism & Hospitality', 'Done at Cible Publicité']
+        ],
         categories: 
         [
           ['Conception graphique','Expérience utilisateur','Application web','Maintenance','Développement Fullstack', 'Vidéo', 'Stroytelling'],
@@ -60,25 +66,28 @@ function Projet() {
           video: '/projets/web/bec/bec-site-deroule.mp4',
           },
           {
-          subtitle: [ "Réenchanter le Web – L’Art du Storytelling Visuel","Re-enchanting the Web – The Art of Visual Storytelling"],
-          text: [
+          subtitle:[ "Réenchanter le Web – L’Art du Storytelling Visuel","Re-enchanting the Web – The Art of Visual Storytelling"],
+          text:[
           "Dans le monde digital, le toucher semble perdu. Mais et si… on pouvait recréer la sensation du réel ? Réserver devient rituel. Un ticket inspiré du réel — ses coins arrondis, sa texture papier, sa typographie imparfaite. Un geste qui ancre. Un détail skeuomorphe qui ramène à l’expérience concrète. Les symboles se révèlent. Comme de l’encre qui s’épanche lentement sur une page ancienne. Ils apparaissent. Suggèrent plus qu’ils ne montrent. Une invitation à l’interprétation, au mystère. Le texte s’écrit sous vos yeux. Lettre après lettre, comme une machine à écrire ou les pages d’un vieux grimoire. L’histoire ne se donne pas, elle se compose en direct. L’écran devient livre. Le web, une expérience narrative, vivante, charnelle.",
           "In the digital world, touch seems lost. But what if… we could recreate the feeling of matter? Booking becomes ritual. A ticket drawn from real life — rounded corners, paper textures, imperfect type. A gesture that grounds. A skeuomorphic detail that brings back the sense of presence. Symbols reveal themselves. Like ink slowly blooming across an old page. They appear gradually. Suggest more than they show. An invitation to mystery and meaning. Words write themselves before your eyes. Letter by letter — like a typewriter or the pages of an old storybook. The narrative doesn't arrive all at once. It unfolds. The screen becomes a book. The web, a living, breathing experience."
           ],
           image: '/projets/bec/bec-hp-1.jpg',
           },
           {
-          subtitle: [ 
+          subtitle:
+          [ 
             "Retrouver la Matière – Créer une Expérience Authentique",
-            "Bringing Back the Tangible – Designing an Authentic Experience"],
-          text: [
+            "Bringing Back the Tangible – Designing an Authentic Experience"
+          ],
+          text:
+          [
             "Et si chaque page était une porte ? Un seuil franchi, une atmosphère qui enveloppe, un souffle qui raconte… Dans un monde saturé d’informations, nous choisissons l’enchantement. La vidéo devient guide. Sur la page d’accueil comme sur les chemins intérieurs du site, elle ne vend pas, elle invite. Elle ouvre un monde. Elle incarne une présence. Elle raconte ce que les mots ne peuvent dire seuls. Chaque page est un chapitre. Non plus seulement informative, mais sensible. Elle s’écoute. Elle se ressent. Une lumière, une texture, un son, un mouvement — tout participe à tisser une narration. Ici, le design devient conte, et le visiteur devient voyageur.",
-            "What if every page was a doorway? A threshold crossed, an atmosphere that wraps around you, a breath that tells a story… In a world saturated with information, we choose enchantment. Video becomes a guide. From the homepage to the inner paths of the site, it doesn’t sell — it invites. It opens a world. It embodies presence. It tells what words alone cannot. Every page is a chapter. Not just informative, but ambient. It speaks softly. It is felt. A light, a texture, a sound, a movement — all come together to weave a narrative. Here, design becomes a tale, and the visitor becomes a traveler."],
+            "What if every page was a doorway? A threshold crossed, an atmosphere that wraps around you, a breath that tells a story… In a world saturated with information, we choose enchantment. Video becomes a guide. From the homepage to the inner paths of the site, it doesn’t sell — it invites. It opens a world. It embodies presence. It tells what words alone cannot. Every page is a chapter. Not just informative, but ambient. It speaks softly. It is felt. A light, a texture, a sound, a movement — all come together to weave a narrative. Here, design becomes a tale, and the visitor becomes a traveler."
+          ],
           image: '/projets/bec/bec-2.jpg',
           },
-        ],
+        ]
       },
-
       //georges
       {
         id: 2,
@@ -90,9 +99,12 @@ function Projet() {
         title: 'Georges, aioli catalan',
         baseline: [
           "L'âme du Canigou",
-          'The soul of the Canigou',],
-
-        infos: [['2025','Site web','Packaging', 'Branding'],['2025','Website','Packaging', 'Branding']],
+          'The soul of the Canigou'
+        ],
+        infos: [
+          ['2025','Site web','Packaging', 'Branding'],
+          ['2025','Website','Packaging', 'Branding']
+      ],
         categories: 
         [
           ['Conception graphique','Expérience utilisateur','Application web','Maintenance','Développement Fullstack', 'Vidéo', 'Stroytelling'],
@@ -115,9 +127,8 @@ function Projet() {
               image: '/projets/branding-strategy/georges/georgesaioli-poster-rochercitation.png',
             },
             {
-              subtitle: ['Créer une légende autour de ta mémoire', 'To create a tale from your memory.'],
-              
-              text: [
+              subtitle: ["Créer une légende autour de ta mémoire", "To create a tale from your memory."],
+              text:[
                 "Né d’une légende enracinée au sommet du Canigou, l’aïoli Georges incarne bien plus qu’un simple condiment : il est la mémoire vivante d’un savoir ancien, celui de la recette transmise par feu mon grand-père. Dans le désir d’honorer sa mémoire à travers un projet à partager — pour continuer de le faire vivre dans le présent — j’ai imaginé une légende autour de son nom : Georges, l’ermite catalan. Cette histoire se traduit graphiquement par la création d’un logotype inspiré de sa signature, auquel s’ajoute une typographie des années 50 pour le nom AIOLI CATALAN, ancrant visuellement la recette dans l’époque et l’héritage de mon grand-père. Le timbre, apposé sur le couvercle tel un sceau, complète l’ensemble. On y retrouve le rouge du drapeau catalan, les coordonnées GPS du sommet du Canigou, ses lignes de crêtes, et deux izards sauvages — gardiens silencieux de cette terre. Le timbre, c’est l’invitation au voyage. Le sceau d’une promesse.",
                 "Born from a legend rooted at the summit of Mount Canigou, aïoli Georges is much more than a simple condiment: it is the living memory of ancestral knowledge, the recipe passed down from my late grandfather. Driven by the desire to honour his memory through a shared project — to keep his presence alive in the present — I created a legend around his name: Georges, the Catalan hermit. This story is expressed visually through the creation of a logotype inspired by his signature, complemented by a 1950s-style typeface for the name AIOLI CATALAN, grounding the recipe in the era and heritage of my grandfather. A stamp, placed on the lid like a seal, completes the design. It features the red of the Catalan flag, the GPS coordinates of Mount Canigou’s summit, its ridgelines, and two wild izards — silent guardians of this land. The stamp is an invitation to travel. The seal of a promise."
               ],
@@ -131,18 +142,16 @@ function Projet() {
                 "Long ago, in a time when men still feared the mountain peaks, there lived a hermit named Georges atop Mount Canigou. He lived alone, spoke little, but his hands told stories — of fire, of stone, and of oil. He dwelled in a stone hut, nestled against a rocky outcrop, battered by the winds yet warmed by chosen solitude, high where eternal snow brushes the sky and the silence weighs heavier than centuries. Each morning, he greeted the rising sun like an old friend, and would sometimes descend to the forest’s edge to gather herbs and roots, whispering softly the secrets of a land he had never stopped loving. Each day, he carried on his back a mortar he had carved from rich Conflent red marble, climbing the steep slopes in search of wild garlic — a rare plant found only in the shadow of beech trees, where izards carve hidden paths. The villagers said he had once been a great chef, who had given up fame to pursue the truth of taste. Rumour had it that he had learned to master the elements — the wind, the salt, and the fire — to create the perfect aïoli, a blend so powerful it could soften the hardest of hearts and restore strength to the weary. But Georges’ aïoli would not yield easily. It had to be beaten by hand, with patience, never wavering — like the izard that climbs the cliff face: without pause, without fear. Many climbed the mountain hoping to learn, but only the most steadfast were deemed worthy of the secret. One day, as fierce winds howled and winter crept down into the valley, Georges descended with a small golden jar. He entered the village square, placed it upon the stone table, and said: 'This is the soul of Canigou. It is not a sauce. It is a trial. A promise. A memory.' Then he left, followed only by a silent procession of izards. Since that day, each jar of Georges aïoli carries a trace of that legend: the strength of the mountains, the patience of the mortar and the mystery of wild garlic.",
               ],
               image: '/projets/branding-strategy/georges/georgesaioli-timbre.png',
-            },
-                  
+            }    
           ],
           sectionsImg: 
           [
             ['/projets/branding-strategy/georges/etiquette-pot.jpg','/projets/branding-strategy/georges/boite-georges.jpg','/projets/branding-strategy/georges/georges-boitelivraison.png'],
             ['/projets/branding-strategy/georges/etiquette-pot.jpg','/projets/branding-strategy/georges/boite-georges.jpg','/projets/branding-strategy/georges/georges-boitelivraison.png'],
-          ],
+          ]
 },
- 
 //vb
-{
+             {
               id: 3,
               client: 'Valette & Berthelsen Avocats',
               discover: ["scroller pour découvrir le projet","scroll down to discover the project"],
@@ -190,10 +199,10 @@ function Projet() {
                 ['/projets/branding-strategy/vb/vb-section1afr.png','/projets/branding-strategy/vb/vb-section2b.jpg','/projets/branding-strategy/vb/vb-section1fr.png','/projets/branding-strategy/vb/vb-section2d.jpg','/projets/branding-strategy/vb/vb-img.jpg','/projets/branding-strategy/vb/vb-section2c.jpg'],  
               ]
   },
-      // nda
+// nda
       {
         id: 4,
-        client: 'Émile Trubert',
+        client: "Émile Trubert",
         discover: ["scroller pour découvrir le projet","scroll down to discover the project"],
         videoDesktop: '/projets/illu_edition/nda/nda-2_hover.mp4',
         videoMobile: '/projets/nda/nda-2_hover.mp4',
@@ -220,7 +229,7 @@ function Projet() {
           ['/projets/illu_edition/nda/nda-1.png','/projets/illu_edition/nda/nda-2.png'],
         ]
       },
-      // pascale
+// pascale
 {
         id: 5,
         client: 'Pascale Laffon',
@@ -259,7 +268,6 @@ function Projet() {
           imageEN: '/projets/pl/pl-section1en.png',
           image: '/projets/pl/pl-section1.png'
           },
-
           {title:'Pascale Laffon',
           categories: [
               ['Illustration','Charte graphique'],
@@ -272,7 +280,6 @@ function Projet() {
           ],
           image: '/projets/pl/pl-section2.png',
           },
-
           {title:'Pascale Laffon',
             categories: [
               ['Illustration', 'Iconographie', 'Charte graphique', 'Motion'],
@@ -285,7 +292,6 @@ function Projet() {
             ],
             image: '/projets/pl/pl-section3.png',
             },
-
             {title:'Pascale Laffon',
               categories: [
                 ['Illustration', 'Iconographie', 'Charte graphique', 'Motion'],
@@ -300,7 +306,8 @@ function Projet() {
               },
         ],
 },
- {
+//POSTERS
+{
         id: 6,
         client: 'Maison Bleu Iris',
         discover: ["scroller pour découvrir le projet","scroll down to discover the project"],
@@ -342,9 +349,8 @@ function Projet() {
           ],
           image: '/projets/posters/serv-posters.jpg',
           },
-        ],
-},
-      
+        ]
+},   
 //pile-poele
 {
         id: 7,
@@ -363,8 +369,7 @@ function Projet() {
         [
           ['Typographie', 'Recherche'],
           ['Typography', 'Research'],
-        ],
-        // onClick: ['https:/www.pascalelaffon.fr', '_blank'],
+        ],// onClick: ['https:/www.pascalelaffon.fr', '_blank'],
         besoins:[
           ["Promouvoir un humanisme inclusif axé sur la cuisine. Pile-Poële est une fonte de caractères gender-inclusive avec un set de glyphes pictographiques centré autour de la cuisine. Elle prend forme dans le cadre d’une recherche de master autour de la constitution d’un système langagier basé sur la cuisine à l’Université Toulouse Jean Jaurès à Toulouse en 2021. Cette police propose une palette de caractères qui favorise la parité des genres tout en permettant dans son code de remplacer les mots désignant outils, ustensiles et aliments par leurs symboles pictographiques. Le signe alphabétique ou pictographique vient s’inscrire dans la recherche d’une transmission interculturelle culinaire. Le but premier est de permettre une forme de communication davantage universelle autour de la cuisine. Pile-Poële possède également des ligatures non-binaires. Toutefois, ici, la notion d’inclusivité des genres n’est pas le point central du projet mais devient annexe, comme une évidence dans la communication."],
           ["Promoting an inclusive humanism focused on cuisine. Pile-Poële is a gender-inclusive typeface with a set of pictographic glyphs centered around cuisine. It was developed as part of a master's research project on creating a language system based on cuisine at the University of Toulouse Jean Jaurès in Toulouse in 2021.This font offers a character set that promotes gender parity while allowing for the replacement of words denoting tools, utensils, and food with their pictographic symbols within its code. The alphabetic or pictographic symbols are part of a broader effort to achieve intercultural culinary communication. The primary goal is to enable a more universal form of communication around cuisine. Pile-Poële also features non-binary ligatures. However, in this context, gender inclusivity is not the project central focus but rather an inherent aspect of communication."],
@@ -384,7 +389,6 @@ function Projet() {
           ],
           image: '/projets/pp/pp-section1.jpg',
           },
-
           {title:'Pile-Poële',
           subtitle: ['Améliorations du projet', 'Project Improvements'],
           text: [
@@ -393,8 +397,7 @@ function Projet() {
           ],
           image: '/projets/pp/pp-section2.png',
           },
-
-          {title:'Pile-Poële',
+          { title:"Pile-Poële",
             subtitle: ['Publications', 'Publications'],
             text: [
               "Pile-Poele a été ajouté à l’invetaire créé par le collectif Bye-Bye Binary de 2017 à 2023.",
@@ -442,30 +445,27 @@ function Projet() {
           ['/projets/memoire/memoire1.jpg','/projets/memoire/memoire2.jpg','/projets/memoire/memoire3.jpg','/projets/memoire/memoire4.jpg','/projets/memoire/memoire5.jpg','/projets/memoire/memoire6.jpg'],
           ['/projets/memoire/memoire1.jpg','/projets/memoire/memoire2.jpg','/projets/memoire/memoire3.jpg','/projets/memoire/memoire4.jpg','/projets/memoire/memoire5.jpg','/projets/memoire/memoire6.jpg'],
         ]
-}
+},
+},
+},
 ];
 
-
-    const imgStyle={
-      display: 'flex',
-      fleWrap: 'nowrap',
-      margin: '.2rem 0rem 0rem .3rem', 
-      width:'40px',
-      height:'auto',
-      transition: 'transform 2s ease', // Adjust the duration and easing as needed
-    }, 
-
-  // Déterminer les indices en fonction de la langue
-      const Lang = indepArray[0].Lang;
+      const imgStyle={display: 'flex',flexWrap: 'nowrap',margin: '.2rem 0rem 0rem .3rem', width:'40px',height:'auto',transition: 'transform 2s ease'};
+      // Déterminer les indices en fonction de la langue
+      // const Lang = indepArray[0].Lang;
+      const Lang = indepArray?.[0]?.Lang ?? 'FR'
       const langIndex = Lang === 'FR' ? 0 : 1;
-  // Cliquer sur découvrir
+
+     // Cliquer sur découvrir
       const prev = '/icons/interface/icon-eye-1.png';
       const next= '/icons/interface/icon-eye-2.png';
       const [imageSource, setImageSource] = useState(prev);
+      
       // Hover icon oeil
       const handleHover = () => {setImageSource(next);};
       const handleHoverOut = () => {setImageSource(prev);};
 
+      
       // Ouvrir le lien
       const handleDiscoverClick = () => {
       const url = descriptionprojectsArr[Number(id)].onClick;
@@ -474,10 +474,9 @@ function Projet() {
       // Assurez-vous que `finalUrl` est une chaîne avant d'appeler `window.open`
         if (typeof finalUrl === 'string') {
           window.open(finalUrl, '_blank'); // Ouvre dans un nouvel onglet
-        } else {
-          console.error('URL non valide');
-        }
-    };
+        } else {console.error('URL non valide');}
+      };
+
 
 
   return (
@@ -617,6 +616,6 @@ function Projet() {
         </div>
       </>
   )
-}
+};
 
 export default Projet
