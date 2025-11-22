@@ -20,10 +20,8 @@ const VideoReveal: React.FC<VideoProps> = ({ scrollYProgress }) => {
 
   // Video map for fallback values
   const videoMap: { [key: string]: string } = {
-    'videoReveal1': '/video/videos-introductives/D-INDEP-FR.mp4',
-    'videoReveal2': '/video/videos-introductives/M-INDEP-FR.mp4',
-    'videoReveal3': '/video/videos-introductives/D-INDEP-EN.mp4',
-    'videoReveal4': '/video/videos-introductives/M-INDEP-EN.mp4',
+    'videoReveal1': '/video/videos-introductives/D.mp4',
+    'videoReveal2': '/video/videos-introductives/M.mp4',
   };
   const ordi = videoMap[videoOrdi];
   const tel = videoMap[videoTel];

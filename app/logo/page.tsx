@@ -147,8 +147,8 @@ words: [
       header:['Our Philosophy','Our Services','Our Projects','Contact us'],
       footer:"let's design your uniqueness",
       hp:['Maison Bleu Iris','supports','the makers of meaning'],
-      videoOrdi: 'videoReveal3',
-      videoTel: 'videoReveal4',
+      videoOrdi: 'videoReveal1',
+      videoTel: 'videoReveal2',
       videoPhilo:'videoPhilo',
       discover: 'discover the showreel',
       location: ['currently in','Montpellier, FR.'], // location
