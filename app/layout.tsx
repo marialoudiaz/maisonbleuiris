@@ -19,10 +19,10 @@ export const metadata = {
     siteName: "Maison Bleu Iris",
     images: [
       {
-        url: "https://www.maisonbleuiris.fr/fav.png",
+        url: "https://www.maisonbleuiris.fr/favicon.png",
         width: 800,
         height: 600,
-        alt: "Texte alternatif pour l'image",
+        alt: "Icon de l'iris bleu à l'encre de chine",
       },
     ],
     locale: "en_US",
