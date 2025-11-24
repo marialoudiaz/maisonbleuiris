@@ -4,7 +4,7 @@ import { useData } from '../context/DataContext';
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 import '../../styles/App.scss';
-import '../../globals.css';
+import '../globals.css';
 import Header from '../../components/navbar/header';
 
 const Projets = () => {

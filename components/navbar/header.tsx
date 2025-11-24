@@ -5,7 +5,7 @@ import { useData } from '../../app/context/DataContext';
 import '../../styles/App.scss';
 import Image from 'next/image';
 import logo from '../../public/logo/mbi-noir.png';
-import MobileNavbar from './MobileHeader';
+import MobileNavbar from './mobileHeader';
 
 const Header = () => {
 
