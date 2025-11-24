@@ -26,10 +26,8 @@ const Logo = () => {
   location: ['actuellement à', 'Montpellier, FR'],
   cta: [
     "découvrir notre mission",
-    "je veux vous parler de mon projet",
-    "Découvrir nos autre projets",
-    // "planifier un appel vidéo",
-    // "je préfère vous appeler"
+    "démarrer votre projet",
+    "découvrir nos autres projets",
   ],
   philo:[
         "Notre philosphie et mission",
@@ -80,12 +78,6 @@ const Logo = () => {
     "Une philosophie simple et honnête",
     "Transparence",
     "Une narration mémorable & impactante",
-
-    // "Une narration impactante et mémorable",
-     //concret, engagé, humain, éco-responsable, sincérité, Minimalisme, Élégance
-    // "Donner voix et visibilité aux projets conscients qui respectent la vie sous toutes ses formes.",
-    // "Aller à l’essence d’une idée pour la transmettre avec justesse.",
-    // "Un design intemporel, ancré dans les valeurs."
   ],
   deroule: [
     'flex',
@@ -115,14 +107,11 @@ const Logo = () => {
   words: [
     'artisans locaux',
     'agriculteurs biologiques',
-    'chefs végétaux',
     'producteurs éthiques',
-    'marques slow food',
     'marques artisanales',
     'lieux d’hospitalité holistique',
     'restaurants engagés',
     'cafés éco-conscients',
-    'expériences holistiques pour les invités'
     ],  
   ml: [
     "Mentions légales",
@@ -226,7 +215,14 @@ const Logo = () => {
         "Let's collaborate to take your business to the next level and make it flourish 🌱. Ideas, questions, a strong desire to get in touch? I'm listening.",
         "Send",
         "Contact us"],
-      words: ['local artisans', 'organic farmers', 'plant-based chefs', 'ethical producers', 'slow food brands','hand-made brands', 'holistic hospitality venues','conscious restaurants', 'eco-conscious cafés', 'holistic guest experiences'],      
+      words: [
+        'local artisans', 
+        'organic farmers', 
+        'ethical producers', 
+        'hand-made brands',
+        'holistic hospitality venues',
+        'conscious restaurants',
+      ],      
       ml: [
         "Legal Notice",
         "About Maison Bleu Iris",
