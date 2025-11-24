@@ -43,8 +43,8 @@ const Projets = () => {
     { id: 5, title: "Pascale Laffon", img: '/projets/web/pl/pl-img.jpg', video: '/projets/web/pl/pl-video-hover.mp4', category:["Web development","Développement web"] },
     //illu
     // { id: 6, title: "Posters", img: '/projets/illu_edition/posters/posters-img.jpg', video: '/projets/illu_edition/nda/nda-2_hover.mp4', category:["Illustration, Print & Publishing","Illustration & Édition"] },
-    { id: 7, title: "Pile-Poële", img: '/projets/illu_edition/pp/pp-img.png', video: '/projets/illu_edition/pp/video_type_hp.mp4', category:["Illustration, Print & Publishing","Illustration & Édition"] },
-    { id: 8, title: "En faveur d'une ...", img: '/projets/illu_edition/memoire/memoire1.jpg', video: '/projets/illu_edition/memoire/memoire-hover.mp4', category:["Illustration, Print & Publishing","Illustration & Édition"] },
+    { id: 6, title: "Pile-Poële", img: '/projets/illu_edition/pp/pp-img.png', video: '/projets/illu_edition/pp/video_type_hp.mp4', category:["Illustration, Print & Publishing","Illustration & Édition"] },
+    { id: 7, title: "En faveur d'une ...", img: '/projets/illu_edition/memoire/memoire1.jpg', video: '/projets/illu_edition/memoire/memoire-hover.mp4', category:["Illustration, Print & Publishing","Illustration & Édition"] },
   ];
 
   // --- Regrouper les projets par catégorie ---

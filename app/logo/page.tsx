@@ -16,7 +16,7 @@ const Logo = () => {
    {
   ids: 0,
   Lang: 'FR',
-  header: ['Philosophie','Nos Services', 'Nos Projets', 'Nous contacter'],
+  header: ['Notre Philosophie','Nos Services', 'Nos Projets', 'Nous contacter'],
   footer: "designons votre singularité",
   hp: ['Maison Bleu Iris', 'soutient', 'les artisans du sens'],
   videoOrdi: 'videoReveal1',
@@ -33,7 +33,7 @@ const Logo = () => {
   ],
   philo:[
         "Notre philosphie et mission",
-        "L’iris bleu - Plus qu’une couleur",
+        "L’iris bleu, plus qu’une couleur",
         "L’iris bleu symbolise la recherche et la cultivation de vérité et d’autenthicité.Au sein du processus créatif, cela se traduit par un principe de création consciente, de volonté d’accompagner et de faire fleurir des projets porteurs de sens, engagés dans une démarche éthique, consciente, bien-être.",
         "Symboliquement l’iris bleu, c’est une fleur mais aussi le contour de la pupille, soit l’idée d’une vision claire et alignée. Pour nous guider vers ce qui est vrai, essentiel et authentique.Ainsi l’iris bleu donne son nom à une couleur, une essence « Bleu Iris » pour colorer un Monde que l’on commence par rêver et que l’on dessine projets par projets pour le construire consciemment.",
         "Le symbole de la fleur c'est aussi celui de l'amour, selon une vision du Monde poétique. La recherche du beau, avec amour.",
@@ -41,10 +41,9 @@ const Logo = () => {
         "Pour un lancement complet de votre projet",
         "Notre histoire est celle d’un parcours créatif construit étape par étape.",
         "Tout a commencé avec l’illustration et l’édition, puis le print et la communication visuelle, où nous avons affiné notre regard et notre exigence du détail.",
-        "Nous avons ensuite perfectionné notre maîtrise web par la création sur-mesure de sites web et d'application mobile. Pour donner vie à des expériences digitales complètes et cohérentes. En parallèle, nous avons travaillé en agences et dans des campus en tant que Art Director et Brand Manager, ce qui nous a permis d’acquérir une vision stratégique et internationale de la marque",
-        "Depuis le début, nous avons également évolué en indépendants, développant des projets en autoentrepreneur entre la France et l’Australie.",
-        "Cette double expérience créative, technique et stratégique a naturellement mené à la création d’une agence 360°, capable d’accompagner chaque projet de la vision à la réalisation, dans une démarche consciente et cohérente.",
-        "Print",
+        "Nous avons ensuite perfectionné notre maîtrise web par la création sur-mesure de sites web et d'application mobile. Pour donner vie à des expériences digitales complètes et cohérentes. En parallèle, nous avons travaillé en agences et dans des campus en tant que Art Director et Brand Manager, ce qui nous a permis d’acquérir une vision stratégique et internationale de la marque. Depuis le début, nous avons également évolué en indépendants, développant des projets en autoentrepreneur entre la France et l’Australie.Cette double expérience créative, technique et stratégique a naturellement mené à la création d’une agence 360°, capable d’accompagner chaque projet de la vision à la réalisation, dans une démarche consciente et cohérente.",
+       //13
+       "Print",
         "Affichages,Publicité, Papeterie, Packaging",
         "Web",
         "Conception et encodage de votre site",
@@ -168,6 +167,7 @@ words: [
   "The Three Pillars of our expertise",
   "For a complete launch of your project",
   "Our story is that of a creative journey built step by step. It all began with illustration and publishing, then print and visual communication, where we refined our eye and attention to detail.We then perfected our web expertise through custom creation of websites and mobile applications, bringing to life complete and coherent digital experiences. In parallel, we worked in agencies and campuses as Art Directors and Brand Managers, which allowed us to gain a strategic and international vision of branding.",
+  //9
   "From the start, we also worked independently, developing projects as freelancers between France and Australia.",
   "This dual creative, technical, and strategic experience naturally led to the creation of a 360° agency, capable of guiding each project from vision to execution, in a conscious and coherent approach.",
   "Print",

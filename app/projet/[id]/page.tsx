@@ -56,7 +56,7 @@ const descriptionprojectsArr = [
         sections: 
         [
           {
-          subtitle: ['au coeur de la camargue exactement', 'Right in the heart of the Camargue'],
+          subtitle: ['Au coeur de la camargue exactement', 'Right in the heart of the Camargue'],
           text: [
             "La conception graphique du site s'attache à chaque détail pour offrir au visiteur une expérience immersive au cœur de la Camargue. Dès la première vidéo de présentation, le décor est planté, plongeant l'utilisateur dans l'atmosphère unique du domaine. Par la suite, il est guidé à travers les pages comme s'il tournait les pages d'un livre. Cette approche créative réinvente le webdesign en s'inspirant des codes intemporels du livre imprimé. Par exemple, sur la page dédiée à la manade, le visiteur découvre des citations soigneusement choisies, reflétant l'esprit authentique et l'ambiance singulière du Domaine de la Pinède. Le même soin est apporté à la page d'accueil, renforçant l'impression d'une plongée dans un univers enchanteur.",
             "The website's graphic design pays meticulous attention to detail, offering visitors an immersive journey into the heart of the Camargue. From the opening presentation video, the tone is set, drawing users into the unique atmosphere of the domain. They are then guided through the pages as if leafing through the chapters of a book. This creative approach reimagines web design by drawing inspiration from the timeless aesthetics of printed books. For instance, on the page dedicated to the manade, visitors can explore carefully selected quotes that capture the authentic spirit and unique ambiance of the Domaine de la Pinède. The same thoughtful design is reflected on the homepage, enhancing the sense of being transported into an enchanting world.",
@@ -69,7 +69,7 @@ const descriptionprojectsArr = [
           "Dans le monde digital, le toucher semble perdu. Mais et si… on pouvait recréer la sensation du réel ? Réserver devient rituel. Un ticket inspiré du réel — ses coins arrondis, sa texture papier, sa typographie imparfaite. Un geste qui ancre. Un détail skeuomorphe qui ramène à l’expérience concrète. Les symboles se révèlent.Comme de l’encre qui s’épanche lentement sur une page ancienne. Ils apparaissent. Suggèrent plus qu’ils ne montrent. Une invitation à l’interprétation, au mystère. Le texte s’écrit sous vos yeux. Lettre après lettre, comme une machine à écrire ou les pages d’un vieux grimoire. L’histoire ne se donne pas, elle se compose en direct. L’écran devient livre. Le web, une expérience narrative, vivante, charnelle.",
           "In the digital world, touch seems lost. But what if… we could recreate the feeling of matter? Booking becomes ritual. A ticket drawn from real life — rounded corners, paper textures, imperfect type. A gesture that grounds. A skeuomorphic detail that brings back the sense of presence. Symbols reveal themselves. Like ink slowly blooming across an old page.They appear gradually. Suggest more than they show. An invitation to mystery and meaning. Words write themselves before your eyes. Letter by letter — like a typewriter or the pages of an old storybook. The narrative doesn't arrive all at once. It unfolds. The screen becomes a book. The web, a living, breathing experience."
           ],
-          image: '/projets/bec/bec-hp-1.jpg',
+          image: '/projets/web/bec/bec-hp-1.jpg',
           },
           {
           subtitle:
@@ -82,7 +82,7 @@ const descriptionprojectsArr = [
             "Et si chaque page était une porte ? Un seuil franchi, une atmosphère qui enveloppe, un souffle qui raconte… Dans un monde saturé d’informations, nous choisissons l’enchantement. La vidéo devient guide. Sur la page d’accueil comme sur les chemins intérieurs du site, elle ne vend pas, elle invite. Elle ouvre un monde. Elle incarne une présence. Elle raconte ce que les mots ne peuvent dire seuls. Chaque page est un chapitre. Non plus seulement informative, mais sensible. Elle s’écoute. Elle se ressent. Une lumière, une texture, un son, un mouvement — tout participe à tisser une narration. Ici, le design devient conte, et le visiteur devient voyageur.",
             "What if every page was a doorway? A threshold crossed, an atmosphere that wraps around you, a breath that tells a story… In a world saturated with information, we choose enchantment. Video becomes a guide. From the homepage to the inner paths of the site, it doesn’t sell — it invites. It opens a world. It embodies presence. It tells what words alone cannot. Every page is a chapter. Not just informative, but ambient. It speaks softly. It is felt. A light, a texture, a sound, a movement — all come together to weave a narrative. Here, design becomes a tale, and the visitor becomes a traveler."
           ],
-          image: '/projets/bec/bec-2.jpg',
+          image: '/projets/web/bec/bec-2.jpg',
           },
         ]
       },
@@ -130,7 +130,7 @@ const descriptionprojectsArr = [
                 "Né d’une légende enracinée au sommet du Canigou, l’aïoli Georges incarne bien plus qu’un simple condiment : il est la mémoire vivante d’un savoir ancien, celui de la recette transmise par feu mon grand-père. Dans le désir d’honorer sa mémoire à travers un projet à partager — pour continuer de le faire vivre dans le présent — j’ai imaginé une légende autour de son nom : Georges, l’ermite catalan. Cette histoire se traduit graphiquement par la création d’un logotype inspiré de sa signature, auquel s’ajoute une typographie des années 50 pour le nom AIOLI CATALAN, ancrant visuellement la recette dans l’époque et l’héritage de mon grand-père. Le timbre, apposé sur le couvercle tel un sceau, complète l’ensemble. On y retrouve le rouge du drapeau catalan, les coordonnées GPS du sommet du Canigou, ses lignes de crêtes, et deux izards sauvages — gardiens silencieux de cette terre. Le timbre, c’est l’invitation au voyage. Le sceau d’une promesse.",
                 "Born from a legend rooted at the summit of Mount Canigou, aïoli Georges is much more than a simple condiment: it is the living memory of ancestral knowledge, the recipe passed down from my late grandfather. Driven by the desire to honour his memory through a shared project — to keep his presence alive in the present — I created a legend around his name: Georges, the Catalan hermit. This story is expressed visually through the creation of a logotype inspired by his signature, complemented by a 1950s-style typeface for the name AIOLI CATALAN, grounding the recipe in the era and heritage of my grandfather. A stamp, placed on the lid like a seal, completes the design. It features the red of the Catalan flag, the GPS coordinates of Mount Canigou’s summit, its ridgelines, and two wild izards — silent guardians of this land. The stamp is an invitation to travel. The seal of a promise."
               ],
-              image: '/projets/georges/georges-signature-timbre.png',
+              image: '/projets/branding-strategy/georges/georges-signature-timbre.png',
             },
             {
               subtitle: ["Georges & la légende de l'aïoli Catalan", "Georges and the legend of catalan aioli"],
@@ -155,7 +155,7 @@ const descriptionprojectsArr = [
               discover: ["scroller pour découvrir le projet","scroll down to discover the project"],
               videoDesktop: '/projets/branding-strategy/vb/vb-video-hover.mp4',
               videoMobile: '/projets/branding-strategy/vb/vb-video-hover.mp4',
-              image: '/projets/vb/vb-img.jpg',
+              image: '/projets/branding-strategy/vb/vb-img.jpg',
               title: 'VB Avocats',
               baseline:["Redéfinir l'excellence juridique","Redefining Legal Excellence"],
               infos: [
@@ -203,7 +203,7 @@ const descriptionprojectsArr = [
         client: "Émile Trubert",
         discover: ["scroller pour découvrir le projet","scroll down to discover the project"],
         videoDesktop: '/projets/illu_edition/nda/nda-2_hover.mp4',
-        videoMobile: '/projets/nda/nda-2_hover.mp4',
+        videoMobile: '/projets/illu_edition/nda/nda-2_hover.mp4',
         image: '/projets/illu_edition/nda/nda-1.jpg',
         title: "Naissance d'une amitié",
         baseline:["L'amitié est une âme en deux corps","Friendship is a soul in two bodies"],
@@ -351,12 +351,12 @@ const descriptionprojectsArr = [
 // },   
 //pile-poele
 {
-        id: 7,
+        id: 6,
         client: 'Maria Lou Diaz',
         discover: ["scroller pour découvrir le projet","scroll down to discover the project"],
-        videoDesktop: '/projets/pp/video_type_hp.mp4',
-        videoMobile: '/projets/pp/video_type_hp.mp4',
-        image: '/projets/pp/pp-img.png',
+        videoDesktop: '/projets/illu_edition/pp/video_type_hp.mp4',
+        videoMobile: '/projets/illu_edition/pp/video_type_hp.mp4',
+        image: '/projets/illu_edition/pp/pp-img.png',
         title: 'Pile-Poële',
         baseline: ["Ouvrez-vous au monde par la cuisine.", 'Open up to the World through Cuisine'],
         infos: [
@@ -393,7 +393,7 @@ const descriptionprojectsArr = [
             "Ce fut ma première tentative d’une réponse typographique à ce questionnement. Elle reste pour le moment probablement trop mécanique dans sa forme et insuffisamment inclusive d'un point de vue culturel. Pour pallier cet aspect mécanique du glyphe et des caractères, j’envisage également une variante cursive de la fonte. Parmi les autres améliorations à venir, il y aura le dessin des capitales et l’élargissement du set de glyphes pictographiques. Il me semble nécessaire de proposer un dessin des glyphes plus colorés afin de rendre davantage compte de l’aspect sensoriel et vivant propre à la cuisine. Pour l'instant, les pictogrammes sont principalement 'euro-centrés'. L’idée serait donc de proposer l’intégralité des ustensiles et aliments existants mondialement afin que l’inclusivité devienne totale. En ce qui concerne les ligatures 'gender-inclusive' disponibles, elles sont également incomplètes. Ce projet est encore en construction car l’idée d’une communication par le pictogramme est un réel 'challenge' au vu de la pluralité des cultures et des langues existantes. En tant que personne européenne, ce qui pourrait me sembler être une réponse satisfaisante à un système langagier universel, ne l’est pas forcément pour une personne issue d’une culture différente de la mienne. Communiquer autour de la cuisine ne nécessite pas seulement la traduction des ustensiles et aliments. Une multitude d’autres paramètres essentiels sont nécessaires à la transmission d’une recette, d’une technique ou d’un savoir-faire. Pile-Poële reste donc un début de réflexion autour de cette question très vaste de la sauvegarde du patrimoine culinaire populaire humain. Elle reste un début de réponse typographique toujours en construction.",
             "This was my first attempt at a typographic response to this question. At the moment, it may still be too mechanical in form and insufficiently inclusive from a cultural perspective. To address the mechanical aspect of the glyph and characters, I am also considering a cursive variant of the font. Among other forthcoming improvements, there will be the design of uppercase letters and the expansion of the set of pictographic glyphs. It seems necessary to offer a more colorful design of the glyphs to better convey the sensory and lively aspect inherent to cuisine. Currently, the pictograms are mainly 'euro-centric'. The idea, therefore, is to include all utensils and foods existing globally to achieve total inclusivity. Regarding the available gender-inclusive ligatures, they are also incomplete. This project is still under construction because the concept of communication through pictograms is a real challenge given the diversity of cultures and languages. As a European, what may seem like a satisfactory response to a universal language system may not necessarily be so for someone from a different culture than mine. Communicating about cuisine requires not only the translation of utensils and food items but also numerous other essential parameters for transmitting a recipe, technique, or expertise. Therefore, Pile-Poële remains the beginning of reflection on this very broad question of preserving human culinary heritage. It is an initial typographic response still under development.",
           ],
-          image: '/projets/pp/pp-section2.png',
+          image: '/projets/illu_edition/pp/pp-section2.png',
           },
           { title:"Pile-Poële",
             subtitle: ['Publications', 'Publications'],
@@ -401,7 +401,7 @@ const descriptionprojectsArr = [
               "Pile-Poele a été ajouté à l’invetaire créé par le collectif Bye-Bye Binary de 2017 à 2023.",
               "Pile-Poële was added to the inventory created by the Bye-Bye Binary collective from 2017 to 2023.",
             ],
-            image: '/projets/pp/pp-section3.jpg',
+            image: '/projets/illu_edition/pp/pp-section3.jpg',
             },
         ],
         sectionsImg:
@@ -412,7 +412,7 @@ const descriptionprojectsArr = [
 },
 //memoire
 {
-        id: 8,
+        id: 7,
         client: "Université Toulouse Jean-Jaurès 2",
         discover: ["scroller pour découvrir le projet","scroll down to discover the project"],
         videoDesktop: '/projets/illu_edition/memoire/memoire-hover.mp4', 
