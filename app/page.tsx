@@ -15,10 +15,10 @@ const Main = dynamic(() => import("../components/sections/herosection"), {
 const Prez = dynamic(() => import("../components/sections/presentation"), {
   loading: () => <div>Loading Prez...</div>,
 });
-const Footer = dynamic(() => import("../components/ui/switch"), {
+const Switch = dynamic(() => import("../components/ui/switch"), {
   loading: () => <div>Loading Footer...</div>,
 });
-const Footer2 = dynamic(() => import("../components/sections/footer"), {
+const Footer = dynamic(() => import("../components/sections/footer"), {
   loading: () => <div>Loading Footer...</div>,
 });
 
@@ -32,7 +32,6 @@ export default function Home() {
     const timer = setTimeout(() => setShowSplash(false), 2000);
     return () => clearTimeout(timer);
   }, []);
-
   // Si DataContext n'a pas encore les datas → on attend
   if (!indepArray) {
     return <div>Loading...</div>;
@@ -47,8 +46,8 @@ export default function Home() {
           <Header />
           <Main />
           <Prez />
+          <Switch />
           <Footer />
-          <Footer2 />
         </div>
       )}
     </>

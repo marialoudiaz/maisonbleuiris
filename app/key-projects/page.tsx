@@ -1,9 +1,3 @@
-export const metadata = {
-  title: "Nos projets phares – Maison Bleue Iris",
-  description:
-    "Découvrez les projets-phares de Maison Bleue Iris : Branding complet, Web Design et Illustration.",
-};
-
 'use client';
 import React, { useRef, useState, useEffect } from 'react';
 import { useData } from '../context/DataContext';
