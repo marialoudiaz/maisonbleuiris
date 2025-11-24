@@ -2,7 +2,7 @@
 import React from 'react';
 import {motion} from "framer-motion";
 import '../styles/App.scss';
-import '../globals.css'
+import './globals.css'
 
 export default function Template({children}: {children: React.ReactNode}) {
   return(

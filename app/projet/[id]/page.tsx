@@ -4,7 +4,7 @@ import {useState, useEffect} from 'react';
 import { useData } from '@/app/context/DataContext'; // Importer le contexte
 import { useRouter, useParams } from 'next/navigation';
 import '../../../styles/App.scss';
-import '../globals.css';
+import '../../globals.css';
 import Image from 'next/image';
 import Header from '../../../components/navbar/Header';
 import { FiArrowDownRight } from "react-icons/fi";
