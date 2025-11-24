@@ -26,7 +26,6 @@ const Footer = dynamic(() => import("../components/sections/footer"), {
 export default function Home() {
   const { indepArray } = useData();
   const [showSplash, setShowSplash] = useState(true);
-
   // Animation visible seulement pendant 2 secondes
   useEffect(() => {
     const timer = setTimeout(() => setShowSplash(false), 2000);

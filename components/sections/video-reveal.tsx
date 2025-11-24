@@ -17,14 +17,13 @@ const VideoReveal: React.FC<VideoProps> = ({ scrollYProgress }) => {
   // Default values if indepArray data is missing
   const videoOrdi = indepArray?.[0]?.videoOrdi || 'videoReveal1';
   const videoTel = indepArray?.[0]?.videoTel || 'videoReveal2';
-
   // Video map for fallback values
   const videoMap: { [key: string]: string } = {
-    'videoReveal1': '/videos/videos-introductives/D.mp4',
-    'videoReveal2': '/videos/videos-introductives/M.mp4',
+    'videoReveal1': '/videos/videos-introductives/graphisme-ethique.mp4',
+    'videoReveal2': '/videos/videos-introductives/graphisme-conscient.mp4',
   };
-  const ordi = videoMap[videoOrdi];
-  const tel = videoMap[videoTel];
+  const graphisme_ethique = videoMap[videoOrdi];
+  const graphisme_conscient = videoMap[videoTel];
 
   // Functions
   const handlePlayVideo = (videoRef: React.RefObject<HTMLVideoElement>) => {
@@ -76,7 +75,7 @@ const VideoReveal: React.FC<VideoProps> = ({ scrollYProgress }) => {
             onClick={() => handlePlayVideo(desktopVideoRef)}
             controls={false}
           >
-            <source src={ordi} type="video/mp4" />
+            <source src={graphisme_ethique} type="video/mp4" />
           </video>
           <div
             className="btn-transp-big"
@@ -112,7 +111,7 @@ const VideoReveal: React.FC<VideoProps> = ({ scrollYProgress }) => {
             onClick={() => handlePlayVideo(mobileVideoRef)}
             controls={true}
           >
-            <source src={tel} type="video/mp4" />
+            <source src={graphisme_conscient} type="video/mp4" />
           </video>
         </div>
       </div>

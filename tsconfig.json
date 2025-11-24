@@ -34,7 +34,7 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "app/context/DataContext.js",
-    "app/logo"
+    "app/maisonbleuiris"
   ],
   "exclude": [
     "node_modules"

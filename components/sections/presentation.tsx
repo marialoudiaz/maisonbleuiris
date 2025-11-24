@@ -40,7 +40,7 @@ const Prez: React.FC = () => {
            {
             index: 2,
             image: authenticity,
-            alt: "plante a lencre de chine",
+            alt: "plante a l'encre de chine",
             titre: `${indepArray[0].values[4]}`,
             text: `${indepArray[0].values[5]}`,
           },

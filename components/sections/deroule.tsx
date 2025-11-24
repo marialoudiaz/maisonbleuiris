@@ -19,7 +19,6 @@ const Deroule: React.FC = () => {
   // const el3 = useRef(null);
     const containerRef = useRef<HTMLDivElement>(null);
 
-
   useEffect(() => {
     // const elements = [el1.current, el2.current, el3.current];
     const items= containerRef.current?.children;

@@ -51,8 +51,7 @@ const Cible: React.FC<CibleProps> = ({ scrollYProgress }) => {
         muted 
         playsInline
       >
-        <source src="/videos/iris2.mp4" />
-        Ton navigateur ne supporte pas les vidéos HTML5.
+       <source src="/videos/gestion-de-marque-montpellier.mp4" />Ton navigateur ne supporte pas les vidéos HTML5.
       </video>
 
       <div className='container'>
@@ -75,7 +74,7 @@ const Cible: React.FC<CibleProps> = ({ scrollYProgress }) => {
           <p 
             className='btn-transp-p' 
             style={{ fontFamily: 'syne', fontWeight: '600', color: 'white' }}
-            onClick={() => router.push('/homepage/#Services')}
+            onClick={() => router.push('/#Services')}
           >
             {indepArray[0].cta[0]}
           </p>

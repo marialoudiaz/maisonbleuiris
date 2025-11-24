@@ -112,18 +112,18 @@ const Logo = () => {
     "Envoyer",
     "Nous contacter"
   ],
-words: [
-  'artisans locaux',
-  'agriculteurs biologiques',
-  'chefs végétaux',
-  'producteurs éthiques',
-  'marques slow food',
-  'marques artisanales',
-  'lieux d’hospitalité holistique',
-  'restaurants engagés',
-  'cafés éco-conscients',
-  'expériences holistiques pour les invités'
-  ],  
+  words: [
+    'artisans locaux',
+    'agriculteurs biologiques',
+    'chefs végétaux',
+    'producteurs éthiques',
+    'marques slow food',
+    'marques artisanales',
+    'lieux d’hospitalité holistique',
+    'restaurants engagés',
+    'cafés éco-conscients',
+    'expériences holistiques pour les invités'
+    ],  
   ml: [
     "Mentions légales",
     "À propos de Maison Bleu Iris",
@@ -160,57 +160,54 @@ words: [
         // "I'd rather call you"
       ],
       philo: [
-  "Our Philosophy and Mission",
-  "The Blue Iris, more than a color",
-  "The blue iris symbolizes the pursuit and cultivation of truth and authenticity. Within the creative process, this translates into a principle of conscious creation, with a desire to support and nurture meaningful projects that embrace an ethical, mindful, and well-being-oriented approach.",
-  "Symbolically, the blue iris is both a flower and the outline of the pupil, representing the idea of a clear and aligned vision. It guides us toward what is true, essential, and authentic. Thus, the blue iris lends its name to a color, an essence, 'Blue Iris', to color a world we begin by dreaming of, and then shape project by project, building it consciously.",
-  "The flower is also a symbol of love, reflecting a poetic vision of the world, the pursuit of beauty, with love.",
-  "The Three Pillars of our expertise",
-  "For a complete launch of your project",
-  "Our story is that of a creative journey built step by step. It all began with illustration and publishing, then print and visual communication, where we refined our eye and attention to detail.We then perfected our web expertise through custom creation of websites and mobile applications, bringing to life complete and coherent digital experiences. In parallel, we worked in agencies and campuses as Art Directors and Brand Managers, which allowed us to gain a strategic and international vision of branding.",
-  //9
-  "From the start, we also worked independently, developing projects as freelancers between France and Australia.",
-  "This dual creative, technical, and strategic experience naturally led to the creation of a 360° agency, capable of guiding each project from vision to execution, in a conscious and coherent approach.",
-  "Print",
-  "Displays, Advertising, Stationery, Packaging",
-  "Web",
-  "Design and Development of your website",
-  "Illustration",
-  "Illustrations, Diagrams, Publishing"
-],
-experience: [
-  "Edition",
-  "Design of book covers, editorial guidelines for book collections, and internal layout of novels.",
-  "Illustration",
-  "Illustration for brand packaging and communications, book covers, and scientific diagrams for government reports and studies.",
-  "Print",
-  "Experience in printing houses, from conception to execution of print production and binding.",
-  "Web",
-  "Design and development of web apps, mobile apps, one-page websites, and more complex sites, focusing on creating unique, custom-made experiences tailored to each brand's narrative.",
-  "Agency",
-  "Art Director & Graphic Designer 360°, working across print, web, and motion design.",
-  "Campus",
-  "Brand Management for a professional campus in Melbourne, including social media strategy, content creation, print production, and developing impactful, lasting brand guidelines."
-],
-
+        "Our Philosophy and Mission",
+        "The Blue Iris, more than a color",
+        "The blue iris symbolizes the pursuit and cultivation of truth and authenticity. Within the creative process, this translates into a principle of conscious creation, with a desire to support and nurture meaningful projects that embrace an ethical, mindful, and well-being-oriented approach.",
+        "Symbolically, the blue iris is both a flower and the outline of the pupil, representing the idea of a clear and aligned vision. It guides us toward what is true, essential, and authentic. Thus, the blue iris lends its name to a color, an essence, 'Blue Iris', to color a world we begin by dreaming of, and then shape project by project, building it consciously.",
+        "The flower is also a symbol of love, reflecting a poetic vision of the world, the pursuit of beauty, with love.",
+        "The Three Pillars of our expertise",
+        "For a complete launch of your project",
+        "Our story is that of a creative journey built step by step. It all began with illustration and publishing, then print and visual communication, where we refined our eye and attention to detail.We then perfected our web expertise through custom creation of websites and mobile applications, bringing to life complete and coherent digital experiences. In parallel, we worked in agencies and campuses as Art Directors and Brand Managers, which allowed us to gain a strategic and international vision of branding.",
+        //9
+        "From the start, we also worked independently, developing projects as freelancers between France and Australia.",
+        "This dual creative, technical, and strategic experience naturally led to the creation of a 360° agency, capable of guiding each project from vision to execution, in a conscious and coherent approach.",
+        "Print",
+        "Displays, Advertising, Stationery, Packaging",
+        "Web",
+        "Design and Development of your website",
+        "Illustration",
+        "Illustrations, Diagrams, Publishing"
+      ],
+      experience: [
+        "Edition",
+        "Design of book covers, editorial guidelines for book collections, and internal layout of novels.",
+        "Illustration",
+        "Illustration for brand packaging and communications, book covers, and scientific diagrams for government reports and studies.",
+        "Print",
+        "Experience in printing houses, from conception to execution of print production and binding.",
+        "Web",
+        "Design and development of web apps, mobile apps, one-page websites, and more complex sites, focusing on creating unique, custom-made experiences tailored to each brand's narrative.",
+        "Agency",
+        "Art Director & Graphic Designer 360°, working across print, web, and motion design.",
+        "Campus",
+        "Brand Management for a professional campus in Melbourne, including social media strategy, content creation, print production, and developing impactful, lasting brand guidelines."
+      ],
       presentation: [
         "Luxury is the essential made rare",
         "Supporting those who shape the world with love and care.", 
         " We develop brand identities of those who promote a wellbeing, ethical and conscious philosophy: spaces, brands, craftmen, practicionners, etc…",
         "About us"
-        // With a solid background in graphic design, I offer a complete service including print production, packaging, web design, and illustration
-        //to build brands that nourish the world differently
       ],
       expertise: [' • Print • Packaging • Web development • Motion • Video • Photo • Copywriting • Social Media • Illustration '],
       services: ['My services','A multitude of skills for a unique project.','We develop, together, a tailor-made offer according to your needs.','Showcase website', 'Multipage website','Videos & photos', 'Social medias', 'Blog', 'Visual identity', 'Logotype', 'Signage', 'Packaging', 'Illustration'],
-        values:[
-    "Ethic",
-    "Giving voice and visibility to conscious projects that respect life in all its forms.",
-    "Transparency",
-    "Clear and honest philosophy",
-    "Authenticity",
-    "Impactful and memorable storytelling",
-  ],
+      values:[
+      "Ethic",
+      "Giving voice and visibility to conscious projects that respect life in all its forms.",
+      "Transparency",
+      "Clear and honest philosophy",
+      "Authenticity",
+      "Impactful and memorable storytelling",
+    ],
       deroule:['flex','Your project',"Each project is unique, just like you. That's why I support you at every step, to create a custom solution that best fits your needs.","Just a clarification","We discuss your project and together establish a strategy. Depending on your project, we define the services required. Each quote is custom-made to closely match your needs.","The adventure begins","I will send you a quote including all services as well as the time needed for their completion. The delivery date is set.","Tada!","This is the day you receive your first deliverable. From then on, you have the option to request two modifications (free of charge)."],
       citation: 'For a design that suits you.',
       form: [
@@ -265,7 +262,7 @@ useEffect(() => {
     <>
     <div className='bg-color-anim'>
       <div style={{position:'relative'}}>
-       <Image id='logo-bg' src='/logo/mbi-blanc.png' alt='logo en blanc sur fond de couleur' width={380} height={210}/>
+       <Image id='logo-bg' src='/images/logo/maisonbleuiris-blanc.png' alt='logo en blanc sur fond de couleur' width={380} height={210}/>
       </div>
     </div>
     </>

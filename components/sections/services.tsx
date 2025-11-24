@@ -13,7 +13,7 @@ function Services() {
     {
       id: 1,
       title: ['Web dev', 'Développement web'],
-      img: '/images/services/serv-web.png',
+      img: '/images/services/services-web-montpellier.png',
       alt: 'Site Web Design',
       txt: [
         'Design & development of all types of websites. Onepage, multipages and e-commerce.',
@@ -24,7 +24,7 @@ function Services() {
     {
       id: 2,
       title: ['Branding strategy', 'Stratégie de marque'],
-      img: '/images/services/serv-packa.png',
+      img: '/images/services/services-packaging-montpellier.png',
       alt: 'print',
       txt: [
         'Creation and promotion of your brand: from strategy to visual conception.',
@@ -35,7 +35,7 @@ function Services() {
     {
       id: 3,
       title: ['Publishing & Illustration', 'Édition & Illustration'],
-      img: '/images/services/nda-2.png',
+      img: '/images/services/services-illustration-montpellier.png',
       alt: 'Illustration Artistique',
       txt: [
         'All types of illustrations: brand identities, scientific diagrams, book covers.',

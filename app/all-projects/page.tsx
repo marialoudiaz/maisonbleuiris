@@ -12,24 +12,20 @@ const Projets = () => {
   const imgContainerRef = useRef([]);
   const { indepArray } = useData();
   const router = useRouter();
-
   const [imageSource, setImageSource] = useState('/icons/interface/icon-eye-1.png');
 
   useEffect(() => {
     if (!indepArray) router.push('/');
   }, [indepArray, router]);
-
   if (!indepArray) return <div>Loading...</div>;
 
   const isEnglish = indepArray[0].Lang === 'EN';
   const langIndex = isEnglish ? 0 : 1;
-
   const variableENorFr = [
     ['All of our projects'],
     ['Tous nos projets']
   ];
   const textVariables = isEnglish ? variableENorFr[0] : variableENorFr[1];
-
   const prev = '/icons/interface/icon-eye-1.png';
   const next = '/icons/interface/icon-eye-2.png';
 
@@ -50,18 +46,14 @@ const Projets = () => {
   // --- Regrouper les projets par catégorie ---
   const projectsByCategory = {};
   const uniqueCategories = [];
-
   for (const project of projectsArr) {
     const category = project.category[langIndex];
-
     if (!projectsByCategory[category]) {
       projectsByCategory[category] = [];
       uniqueCategories.push(category);
     }
-
     projectsByCategory[category].push(project);
   }
-
   const handleHover = () => setImageSource(next);
   const handleHoverOut = () => setImageSource(prev);
   const handleDiscover = (projectId) => router.push(`/projet/${projectId}`);

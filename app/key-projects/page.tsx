@@ -3,11 +3,9 @@ import React, { useRef, useState, useEffect } from 'react';
 import { useData } from '../context/DataContext';
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faLinkedinIn, faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import Header from '../../components/navbar/header';
 import '../../styles/App.scss';
 import '../globals.css';
-import Header from '../../components/navbar/header';
 
 const Projets = () => {
   const gridContainerRef = useRef(null);
@@ -15,19 +13,16 @@ const Projets = () => {
   const descriptionRef = useRef(null);
   const { indepArray } = useData();
   const router = useRouter();
-
   // Set default values for all Hooks
   const [imageSource, setImageSource] = useState('/icons/interface/icon-eye-1.png');
   const [isMobile, setIsMobile] = useState(false);
   const [showFullText, setShowFullText] = useState(false);
-
   // Redirect if `indepArray` is not defined
   useEffect(() => {
     if (!indepArray) {
       router.push('/');
     }
   }, [indepArray, router]);
-
   // Handle resizing to determine if on mobile
   useEffect(() => {
     const handleResize = () => {
@@ -37,11 +32,9 @@ const Projets = () => {
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
-
   if (!indepArray) {
     return <div>Loading...</div>;
   }
-
   // Determine language settings
   const isEnglish = indepArray[0].Lang === 'EN';
   const variableENorFr = [
@@ -52,7 +45,6 @@ const Projets = () => {
   const prev = '/icons/interface/icon-eye-1.png';
   const next = '/icons/interface/icon-eye-2.png';
   const {cta} = indepArray[0];
-
   // Define project array
 
     // Menu des projets

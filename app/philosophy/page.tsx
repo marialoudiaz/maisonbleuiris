@@ -35,8 +35,8 @@ const Philo: React.FC = () => {
   if (!indepArray || !indepArray[0].philo) {
     return <div>Loading...</div>;
   }
-  const ordi = 'video/gif-iris.mp4';
-  const pola= '/img/pola.png'
+  const maisonbleuiris = 'video/maison-bleu-iris-animation.mp4';
+  const lebleuiris= '/img/le-bleu-iris.png'
   const dataArray = [
           {
             index: 0,
@@ -122,70 +122,56 @@ const Philo: React.FC = () => {
               autoPlay
               loop
               muted
-              src={ordi}
+              src={maisonbleuiris}
               style={{ width: '40%', height: 'auto', display: 'block' }}
-          ></video>
+          >
+          </video>
 
           <h4> {indepArray[0].philo[1]}</h4>
-
-         
-
-          <p id='prez-txt'> {indepArray[0].philo[2]} </p>
-          <p id='prez-txt'> {indepArray[0].philo[3]} </p>
-          <p id='prez-txt'> {indepArray[0].philo[4]} </p>
-           <Image
-            src={pola}
-            alt='icon'
-            width={350}
-            height={0}
-            className='pola'
-           />
+            <p id='prez-txt'> {indepArray[0].philo[2]} </p>
+            <p id='prez-txt'> {indepArray[0].philo[3]} </p>
+            <p id='prez-txt'> {indepArray[0].philo[4]} </p>
+            <Image
+              src={lebleuiris}
+              alt='icon'
+              width={350}
+              height={0}
+              className='pola'
+            />
         </div>
 
         {/* expertises */}
         <div className='prez'>
           <h1> {indepArray[0].philo[5]}</h1>
           <Carousel dataArray={dataArray} />
-
-          
-
           <div className='space'></div>
           <div className='space'></div>
           <h4> {indepArray[0].philo[6]}</h4>
           <div className='space'></div>
-          
 
           <div className='bg-frise'>
-        
-          <div className='bg-card'>
-           {experience.map((item, index) => (
-                    <div key={index} className="flex-wrap service-img">
-                     <h4>{item.titre}</h4>
-                      <Image 
-                        src={item.image} 
-                        alt={item.alt} 
-                        width={40}
-                        height={40}
-                      />
-                      <p style={{fontSize:'15px'}}>{item.text}</p>
-                    </div>
-                  ))}
-           </div>
-
+            <div className='bg-card'>
+            {experience.map((item, index) => (
+                      <div key={index} className="flex-wrap service-img">
+                      <h4>{item.titre}</h4>
+                        <Image 
+                          src={item.image} 
+                          alt={item.alt} 
+                          width={40}
+                          height={40}
+                        />
+                        <p style={{fontSize:'15px'}}>{item.text}</p>
+                      </div>
+                    ))}
+            </div>
           </div>
-          
           <div className='space'>
             <p id='prez-txt'> {indepArray[0].philo[7]} </p>
            <br></br>
            <p id='prez-txt'> {indepArray[0].philo[8]} </p>
             <p id='prez-txt'> {indepArray[0].philo[9]} </p>
-          </div>
-          
+          </div>          
         </div>
-
-
-
-
       </div>
      <Switch />
      <Footer />

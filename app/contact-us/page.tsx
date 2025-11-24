@@ -18,7 +18,6 @@ const Form: React.FC = () => {
   const blabla = indepArray[0].form[12];
   const [index, setIndex] = useState(0);
   const langDisplay = indepArray[0].Lang;
-
   useEffect(() => {
     const intervalId = setInterval(
       () => setIndex((index) => index + 1),
@@ -48,7 +47,7 @@ const Form: React.FC = () => {
             
             <div id="muguet">
               <video id='muguetvideo' width="320" height="240" autoPlay loop muted playsInline>
-                <source src='/videos/create_brand_identity.mp4' type='video/mp4' />
+                <source src='/videos/image-de-marque-montpellier.mp4' type='video/mp4' />
               </video>
             </div>
           

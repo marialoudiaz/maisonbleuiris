@@ -43,7 +43,7 @@ const Form: React.FC = () => {
             
             <div id="muguet">
               <video id='muguetvideo' width="320" height="240" autoPlay loop muted playsInline>
-                <source src='/video/create_brand_identity.mp4' type='video/mp4' />
+                <source src='/video/image-de-marque-montpellier.mp4' type='video/mp4' />
               </video>
             </div>
           

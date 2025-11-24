@@ -2,7 +2,7 @@
 import React, { createContext, useContext, useState } from 'react';
 
 
-    const indepArrayEN = [
+const indepArrayEN = [
     {
       ids: 1,
       Lang: 'EN',
@@ -17,8 +17,6 @@ import React, { createContext, useContext, useState } from 'react';
         "Dive-in",
         "I want to talk about my project",
         "Discover our other projects",
-        // "schedule a video call",
-        // "I'd rather call you",
       ],
       presentation: [
         "Supporting those who shape the world with love and care.", 
@@ -27,22 +25,11 @@ import React, { createContext, useContext, useState } from 'react';
       ],
       expertise: [' • Print • Packaging • Web development • Motion • Video • Photo • Copywriting • Social Media • Illustration '],
       services: ['My services','A multitude of skills for a unique project.','We develop, together, a tailor-made offer according to your needs.','Showcase website', 'Multipage website','Videos & photos', 'Social medias', 'Blog', 'Visual identity', 'Logotype', 'Signage', 'Packaging', 'Illustration'],
-      // values: [
-      //   "Ethic",
-      //   "Giving voice and visibility to conscious projects that respect life in all its forms.",
-      //   "Minimalism",
-      //   "Seeking the essence of an idea to communicate it with memorability.",
-      //   "Elegance", //4
-      //   "Timeless design, rooted in values."
-      //],
-    values:[
-    "Ethic",
-     "Authenticity",
-    "Transparency",
-    // "Giving voice and visibility to conscious projects that respect life in all its forms.",
-    //  "Clear and honest philosophy",
-    // "Impactful and memorable storytelling",
-  ],
+      values:[
+      "Ethic",
+      "Authenticity",
+      "Transparency",
+    ],
       deroule:['flex','Your project',"Each project is unique, just like you. That's why I support you at every step, to create a custom solution that best fits your needs.","Just a clarification","We discuss your project and together establish a strategy. Depending on your project, we define the services required. Each quote is custom-made to closely match your needs.","The adventure begins","I will send you a quote including all services as well as the time needed for their completion. The delivery date is set.","Tada!","This is the day you receive your first deliverable. From then on, you have the option to request two modifications (free of charge)."],
       citation: 'For a design that suits you.',
       form: ["Let's tell",'your','story','First & Last Name','Email','Company/Project','Industry/Sector','What kind of project are you after ?','Website', 'Visual identity', 'Other (explain)','Tell me more about your project',"Let's collaborate to take your business to the next level and make it flourish 🌱. Ideas, questions, a strong desire to get in touch? I'm listening.","Send"],

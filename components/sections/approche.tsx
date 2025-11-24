@@ -14,8 +14,7 @@ const Approche: React.FC = () => {
       //Si données pas encore dispos
       if (!indepArray[0] || !indepArray[0].values){
         return <div>Loading...</div>
-      }
-      
+      } 
        // Les élements du carousel
        const dataArray = [
         {
@@ -35,7 +34,7 @@ const Approche: React.FC = () => {
          {
           index: 2,
           image: nature,
-          alt: "plante a lencre de chine",
+          alt: "plante a l'encre de chine",
           titre: `${indepArray[0].values[2]}`,
           text: `${indepArray[0].values[2]}`,
         },
