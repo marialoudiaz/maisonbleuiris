@@ -1,6 +1,6 @@
 import React, { useState,useRef,useEffect} from 'react';
 import '../../styles/App.scss';
-import '../../globals.css';
+import '../../app/globals.css';
 
 interface contactFormProps {
   infos: {

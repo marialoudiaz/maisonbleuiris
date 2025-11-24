@@ -4,6 +4,7 @@ import Marquee from "react-fast-marquee";
 import '../../styles/App.scss';
 import '../../app/globals.css';
 import { useData } from '@/app/context/DataContext'; // Import du contexte
+import { useRouter} from 'next/navigation';
 import Services from './services';
 import authenticity from '../../public/images/icons/approche/authenticity.png';
 import nature from '../../public/images/icons/approche/nature.png';
@@ -15,7 +16,7 @@ import Typewriter from 'typewriter-effect';
 
 const Prez: React.FC = () => {
 
-  // const router = useRouter();
+  const router = useRouter();
   const { indepArray } = useData(); 
   if (!indepArray || !indepArray[0].presentation || !indepArray[0].expertise || !indepArray[0].cta) {
     return <div>Loading...</div>;
@@ -77,7 +78,7 @@ const Prez: React.FC = () => {
           <Carousel dataArray={dataArray} />
 
           {/* CTA vers le déroulé + formulaire */}
-          <button className='btn-transp-dark' style={{ margin: '2rem auto' }}    onClick={() => window.location.href = 'mailto:contact@maisonbleuiris.fr'}>
+          <button className='btn-transp-dark' style={{ margin: '2rem auto' }}  onClick={() => router.push('/contact-us')}>
           <div>
               <svg
                                 className="icon-transp"

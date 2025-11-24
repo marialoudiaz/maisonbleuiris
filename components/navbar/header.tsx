@@ -20,7 +20,7 @@ const Header = () => {
     { href: '#Philosophie', label: indepArray[0].header[0], id: 'philo', route:'/philosophy', langz: Lang},
     { href: '#Services', label: indepArray[0].header[1], id: 'service', route:'/#Services' , langz: Lang},
     { href: '#Projets', label: indepArray[0].header[2], id: 'projets', route:'/key-projects', langz: Lang },
-    { href: '#Contact', label: indepArray[0].header[3], id: 'contact', route:'/formulaire', langz: Lang},
+    { href: '#Contact', label: indepArray[0].header[3], id: 'contact', route:'/contact-us', langz: Lang},
   ];
 // Fonctions Hover
   const onHover = (lien:string) => {
