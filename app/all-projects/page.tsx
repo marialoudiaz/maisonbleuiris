@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "Tous nos projets – Maison Bleue Iris",
+  description:
+    "Découvrez tous les projets de Maison Bleue Iris : parcourez l'intégralité de notre expertise: Branding, Print, Web, Illustration, Typographie, Édition.",
+};
+
 'use client';
 import React, { useRef, useState, useEffect } from 'react';
 import { useData } from '../context/DataContext';

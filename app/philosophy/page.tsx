@@ -1,3 +1,17 @@
+export const metadata = {
+  title: "Philosophie – Maison Bleue Iris",
+  description:
+    "Découvrez la philosophie de Maison Bleue Iris : le bleu iris & les piliers de notre expertise.",
+};
+// version dynamique
+// export async function generateMetadata() {
+//   return {
+//     title: "Philosophie – Maison Bleue Iris",
+//     description: "Description générée dynamiquement...",
+//   };
+// }
+
+
 'use client';
 import '../../styles/App.scss';
 import '../../globals.css';
@@ -6,8 +20,8 @@ import { useData } from '@/app/context/DataContext'; // Import du contexte
 import Image from 'next/image';
 import React, { useEffect } from 'react';
 import Header from '../../components/navbar/Header';
-import Footer from '../../components/ui/switch';
-import Footer2 from '../../components/sections/footer';
+import Switch from '../../components/ui/switch';
+import Footer from '../../components/sections/footer';
 import print from '../../public/icons/services/icon-piliers-04.png';
 import web from '../../public/icons/services/icon-piliers-01.png';
 import illu from '../../public/icons/services/icon-piliers-05.png';
@@ -24,14 +38,12 @@ const Philo: React.FC = () => {
 
   const router = useRouter();
   const { indepArray } = useData(); 
-
   // Redirect if `indepArray` is not defined
     useEffect(() => {
       if (!indepArray) {
         router.push('/');
       }
     }, [indepArray, router]);
-
   if (!indepArray || !indepArray[0].philo) {
     return <div>Loading...</div>;
   }
@@ -190,8 +202,8 @@ const Philo: React.FC = () => {
 
 
       </div>
+     <Switch />
      <Footer />
-     <Footer2 />
     </>
   );
 }
