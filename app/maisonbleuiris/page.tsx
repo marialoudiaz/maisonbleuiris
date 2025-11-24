@@ -49,8 +49,8 @@ const Logo = () => {
         "Conception et encodage de votre site",
         "Illustration",
         "Illustrations, Schémas, Édition",
-      ],
-      experience: [
+  ],
+  experience: [
   "Édition",
   "Conception de couvertures de livres, de lignes éditoriales pour collections, et mise en page intérieure de romans.",
   "Illustration",
@@ -63,7 +63,7 @@ const Logo = () => {
   "Directeur artistique & Graphiste 360°, intervenant sur le print, le web et le motion design.",
   "Campus",
   "Gestion de marque pour un campus professionnel à Melbourne, incluant stratégie sur les réseaux sociaux, création de contenu, production print et élaboration de guidelines de marque impactantes et durables."
-],
+  ],
   presentation: [
     "Le luxe c'est l'essentiel devenu rare",
     "Accompagner celles et ceux qui façonnent le monde avec amour et conscience.",
@@ -75,7 +75,7 @@ const Logo = () => {
   services: ['Mes services','Une multitude de compétences pour un projet unique.','Nous développons ensemble une offre sur mesure selon vos besoins.','Site vitrine', 'Site multipage', 'Vidéos & photos', 'Réseaux sociaux', 'Blog', 'Identité visuelle', 'Logotype', 'Signalétique', 'Packaging', 'Illustration'],
   values: [
     "Éthique",
-    "Donner une voix et une visibilité aux projets conscients qui respectent la vie dans toutes ses formes.",
+    "Donner une voix aux projets conscients qui respectent la vie dans toutes ses formes.",
     "Authenticité",
     "Une philosophie simple et honnête",
     "Transparence",
@@ -202,7 +202,7 @@ const Logo = () => {
       services: ['My services','A multitude of skills for a unique project.','We develop, together, a tailor-made offer according to your needs.','Showcase website', 'Multipage website','Videos & photos', 'Social medias', 'Blog', 'Visual identity', 'Logotype', 'Signage', 'Packaging', 'Illustration'],
       values:[
       "Ethic",
-      "Giving voice and visibility to conscious projects that respect life in all its forms.",
+      "Giving voice to conscious projects that respect life in all its forms.",
       "Transparency",
       "Clear and honest philosophy",
       "Authenticity",
