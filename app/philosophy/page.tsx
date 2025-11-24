@@ -5,7 +5,7 @@ import { useRouter} from 'next/navigation';
 import { useData } from '@/app/context/DataContext'; // Import du contexte
 import Image from 'next/image';
 import React, { useEffect } from 'react';
-import Header from '../../components/navbar/Header';
+import Header from '../../components/navbar/header';
 import Switch from '../../components/ui/switch';
 import Footer from '../../components/sections/footer';
 import print from '../../public/icons/services/icon-piliers-04.png';

@@ -7,7 +7,7 @@ import Image from 'next/image';
 // import { faLinkedinIn, faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import '../../styles/App.scss';
 import '../globals.css';
-import Header from '../../components/navbar/Header';
+import Header from '../../components/navbar/header';
 
 const Projets = () => {
   const gridContainerRef = useRef(null);

@@ -4,7 +4,7 @@ import { useData } from '../context/DataContext'; // Importer le contexte
 import { useRouter} from 'next/navigation';
 import '../../styles/App.scss';
 import '../globals.css';
-import Header from '../../components/navbar/Header';
+import Header from '../../components/navbar/header';
 
 
 const Ml = () => {

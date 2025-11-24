@@ -6,7 +6,7 @@ import { useRouter, useParams } from 'next/navigation';
 import '../../../styles/App.scss';
 import '../../globals.css';
 import Image from 'next/image';
-import Header from '../../../components/navbar/Header';
+import Header from '../../../components/navbar/header';
 import { FiArrowDownRight } from "react-icons/fi";
 import '../../../styles/App.scss';
 

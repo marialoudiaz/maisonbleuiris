@@ -6,7 +6,7 @@ import { useData } from "./context/DataContext";
 import "../styles/App.scss";
 import Splash from "../components/splash/Splash"; 
 
-const Header = dynamic(() => import("../components/navbar/Header"), {
+const Header = dynamic(() => import("../components/navbar/header"), {
   loading: () => <div>Loading Header...</div>,
 });
 const Main = dynamic(() => import("../components/sections/herosection"), {
