@@ -2,7 +2,7 @@
 import React from 'react';
 import Marquee from "react-fast-marquee";
 import '../../styles/App.scss';
-import '../../globals.css';
+import '../../app/globals.css';
 import { useData } from '@/app/context/DataContext'; // Import du contexte
 import Services from './services';
 import authenticity from '../../public/icons/approche/authenticity.png';

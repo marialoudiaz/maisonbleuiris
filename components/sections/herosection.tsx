@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useRef } from 'react';
 import dynamic from 'next/dynamic';
-import '../../globals.css';
+import '../../app/globals.css';
 import { useScroll } from 'framer-motion';
 import Lenis from 'lenis';
 import { useData } from '@/app/context/DataContext'; // Import du contexte
