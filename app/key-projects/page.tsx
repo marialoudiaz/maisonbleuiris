@@ -55,7 +55,7 @@ const Projets = () => {
         id: 1,
         pastille:["Tailor-made website",'Site internet sur-mesure'],
         img: '/projets/web/bec/bec-hp-1.jpg',
-        video: '/projets/web/bec/bec-hover.mp4',
+        video: '/images/projets/web/bec/bec-hover.mp4',
         title: ["Domaine de la Pinède", "Domaine de la Pinède"],
         baseline: ['Right in the heart of the Camargue','Au coeur de la Camargue exactement'],
         text:[
@@ -72,7 +72,7 @@ const Projets = () => {
         id: 2,
         pastille:['Branding Strategy', "Stratégie d'image de marque complète"],
         img: '/projets/branding-strategy/georges/georges-hp.png',
-        video: '/projets/branding-strategy/georges/georges-hp.mp4',
+        video: '/images/projets/branding-strategy/georges/georges-hp.mp4',
         title: ["Georges", "Georges"],
         baseline: ['The soul of the Canigou',"L'âme du Canigou"],
         text:[
@@ -89,8 +89,8 @@ const Projets = () => {
       {
         id: 3,
         pastille:['Branding Strategy', "Stratégie d'image de marque complète"],
-        img: '/projets/branding-strategy/vb/vb-img.jpg',
-        video: '/projets/branding-strategy/vb/vb-video-hover.mp4',
+        img: '/images/projets/branding-strategy/vb/vb-img.jpg',
+        video: '/images/projets/branding-strategy/vb/vb-video-hover.mp4',
         title: ["VB Avocats","VB Avocats"],
         baseline: ["Modernize a graphic identity","Moderniser une identité graphique"],
         text:[
@@ -108,8 +108,8 @@ const Projets = () => {
       {
         id: 4,
         pastille:['Book cover illustration', "Illustration de couverture"],
-        img: '/projets/illu_edition/nda/nda-2.png',
-        video: '/projets/illu_edition/nda/nda_hover.mp4',
+        img: '/images/projets/illu_edition/nda/nda-2.png',
+        video: '/images/projets/illu_edition/nda/nda_hover.mp4',
         title: ["Birth of a friendship","Naissance d'une amitié"],
         baseline: ["Friendship is a soul in two bodies","L'amitié est une âme en deux corps"],
         text:[
