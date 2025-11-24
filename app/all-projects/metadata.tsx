@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 
 export const metadata = {
   title: "Mentions légales – Maison Bleue Iris",
