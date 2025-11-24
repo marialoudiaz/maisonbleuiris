@@ -1,3 +1,5 @@
+'use client';
+
 export const metadata = {
   title: "Philosophie – Maison Bleue Iris",
   description:
@@ -12,7 +14,7 @@ export const metadata = {
 // }
 
 
-'use client';
+
 import '../../styles/App.scss';
 import '../globals.css';
 import { useRouter} from 'next/navigation';
