@@ -8,7 +8,7 @@ import React, { useEffect } from 'react';
 import { useData } from '../context/DataContext'; // Importer le contexte
 import { useRouter} from 'next/navigation';
 import '../../styles/App.scss';
-import '../../globals.css';
+import '../globals.css';
 import Header from '../../components/navbar/Header';
 
 

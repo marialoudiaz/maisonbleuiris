@@ -12,7 +12,7 @@ import Image from 'next/image';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { faLinkedinIn, faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import '../../styles/App.scss';
-import '../../globals.css';
+import '../globals.css';
 import Header from '../../components/navbar/Header';
 
 const Projets = () => {

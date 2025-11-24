@@ -14,7 +14,7 @@ export const metadata = {
 
 'use client';
 import '../../styles/App.scss';
-import '../../globals.css';
+import '../globals.css';
 import { useRouter} from 'next/navigation';
 import { useData } from '@/app/context/DataContext'; // Import du contexte
 import Image from 'next/image';
