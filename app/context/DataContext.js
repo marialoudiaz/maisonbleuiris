@@ -9,8 +9,8 @@ const indepArrayEN = [
       header:['My Services','My Projects'],
       footer:"let's design your uniqueness",
       hp:['Maison Bleu Iris','supports','the makers of meaning'],
-      videoOrdi: 'videoReveal5',
-      videoTel: 'videoReveal6',
+      videoOrdi: 'videoReveal1',
+      videoTel: 'videoReveal2',
       discover: 'discover the showreel',
       location: ['currently in','Montpellier, FR.'], // location
       cta: [
