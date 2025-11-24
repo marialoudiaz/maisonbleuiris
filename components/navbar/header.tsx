@@ -5,7 +5,7 @@ import { useData } from '../../app/context/DataContext';
 import '../../styles/App.scss';
 import Image from 'next/image';
 import logo from '../../public/logo/mbi-noir.png';
-import MobileNavbar from '../navbar/mobileHeader';
+import MobileNavbar from './MobileHeader';
 
 const Header = () => {
 
@@ -17,10 +17,10 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const Lang = indepArray && indepArray[0] && indepArray[0].Lang ? JSON.stringify(indepArray[0].Lang) : '';
   const navLinks = [
-    { href: '#Philosophie', label: indepArray[0].header[0], id: 'philo', route:'/philo', langz: Lang},
-    { href: '#Services', label: indepArray[0].header[1], id: 'service', route:'/homepage/#Services' },
-    { href: '#Projets', label: indepArray[0].header[2], id: 'projets', route:'/projets', langz: Lang },
-    { href: '#Contact', label: indepArray[0].header[3], id: 'contact', route:'/homepage/#Contact'}
+    { href: '#Philosophie', label: indepArray[0].header[0], id: 'philo', route:'/philosophy', langz: Lang},
+    { href: '#Services', label: indepArray[0].header[1], id: 'service', route:'/#Services' },
+    { href: '#Projets', label: indepArray[0].header[2], id: 'projets', route:'/key-projects', langz: Lang },
+    { href: '#Contact', label: indepArray[0].header[3], id: 'contact', route:'/#Contact'}
   ];
 // Fonctions Hover
   const onHover = (lien:string) => {
@@ -41,7 +41,7 @@ const Header = () => {
       <div className="navbar hidden md:block">
         <div className='navbar-container'>
           
-          <div className='navbar-left' onClick={() => router.push('/homepage')}>
+          <div className='navbar-left' onClick={() => router.push('/')}>
             <Image src={logo} width={220} height={120} alt="logo" />
           </div>
          

@@ -1,13 +1,13 @@
 "use client";
 import React from 'react';
-import '../styles/App.scss';
 import { useData } from '@/app/context/DataContext';
 import { useRouter } from 'next/navigation';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedinIn, faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import Image from 'next/image';
+import '../../styles/App.scss';
 
-const Footer2: React.FC = () => {
+const Footer: React.FC = () => {
   const { indepArray } = useData();
   const router = useRouter();
   if (!indepArray[0] || !indepArray[0].location) {
@@ -28,7 +28,6 @@ const Footer2: React.FC = () => {
           width={1000}
           height={0}
         />
-        {/* <p>{indepArray[0].footer}</p> */}
         <p className="footer-p">📍{indepArray[0].location[0]} {indepArray[0].location[1]}</p>
       </div>
 
@@ -43,9 +42,10 @@ const Footer2: React.FC = () => {
                 </p>
               </div>
             ))}
-      <p onClick={() => router.push('/mentionslegales')}>{indepArray[0].ml[0]}</p>
+      <p onClick={() => router.push('/mentions-legales')}>{indepArray[0].ml[0]}</p>
       </div>
 
+{/* RS */}
       <div className='flex-wrap-center'>
               <div
                    
@@ -78,4 +78,4 @@ const Footer2: React.FC = () => {
   );
 };
 
-export default Footer2;
+export default Footer;

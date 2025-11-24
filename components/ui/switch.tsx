@@ -1,6 +1,6 @@
 "use client";
 import React, {useState, useEffect} from 'react';
-import '../styles/App.scss';
+import '../../styles/App.scss';
 import { useData } from '@/app/context/DataContext';
 import { useRouter } from 'next/navigation';
 

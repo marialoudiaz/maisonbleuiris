@@ -5,9 +5,9 @@ import { useRouter} from 'next/navigation';
 import { useData } from '@/app/context/DataContext'; // Import du contexte
 import Image from 'next/image';
 import React, { useEffect } from 'react';
-import Header from '../../components/navbar/header';
-import Footer from '../../components/footer';
-import Footer2 from '../../components/footer2';
+import Header from '../../components/navbar/Header';
+import Footer from '../../components/ui/switch';
+import Footer2 from '../../components/sections/footer';
 import print from '../../public/icons/services/icon-piliers-04.png';
 import web from '../../public/icons/services/icon-piliers-01.png';
 import illu from '../../public/icons/services/icon-piliers-05.png';
@@ -18,7 +18,7 @@ import edition from '../../public/icons/services/icon-piliers-06.png';//?
 import agence from '../../public/icons/services/icon-piliers-02.png';//?
 import campus from '../../public/icons/services/icon-piliers-03.png';//?
 
-import Carousel from '../../components/carousel';
+import Carousel from '../../components/ui/carousel';
 
 const Philo: React.FC = () => {
 

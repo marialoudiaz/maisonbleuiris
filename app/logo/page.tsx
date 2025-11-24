@@ -241,7 +241,7 @@ useEffect(() => {
 
   setTimeout(() => {
     updateData(array);
-    router.push(`/homepage`);
+    router.push(`/`);
   }, 2000);
 }, [lang]);
 

@@ -6,8 +6,7 @@ import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import { useData } from '@/app/context/DataContext'; // Import du contexte
 import { useRouter} from 'next/navigation';
 import Image from 'next/image';
-import '../styles/App.scss';
-
+import '../../styles/App.scss';
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 const Deroule: React.FC = () => {

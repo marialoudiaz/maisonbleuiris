@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 import '../../styles/App.scss';
 import '../../globals.css';
-import Header from '../../components/navbar/header';
+import Header from '../../components/navbar/Header';
 
 const Projets = () => {
   const gridContainerRef = useRef(null);

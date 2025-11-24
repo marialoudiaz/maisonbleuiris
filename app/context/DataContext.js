@@ -1,14 +1,6 @@
 'use client';
 import React, { createContext, useContext, useState } from 'react';
-// Créer le contexte
-const DataContext = createContext();
-// Créer le fournisseur de données
 
-export const DataProvider = ({ children }) => {
-
-  const [lang, setLang] = useState('en'); // 'fr' ou 'en'
-  const [indepArray, setIndepArray] = useState(null);  // Array FR ou EN
-  console.log('arrayDatac', indepArray);
 
     const indepArrayEN = [
     {
@@ -68,7 +60,19 @@ export const DataProvider = ({ children }) => {
         "External links on this site are provided for informational purposes only. Maria Lou Diaz disclaims any responsibility for their content and compliance with public order and decency standards, as well as their personal data protection policies. By accessing another site via a hyperlink, you agree to do so at your own risk. Consequently, any direct or indirect damage resulting from your access to another linked site cannot engage the responsibility of Maria Lou Diaz.",
         "Site Access",
         "Maria Lou Diaz strives to ensure continuous access to the website www.marialoudiaz.fr. However, interruptions may occur for maintenance or technical reasons, without liability for the publisher for any resulting consequences."]
-},]; 
+},];
+// Créer le contexte
+const DataContext = createContext();
+
+// Créer le fournisseur de données
+
+export const DataProvider = ({ children }) => {
+
+  const [lang, setLang] = useState('en'); // 'fr' ou 'en'
+  const [indepArray, setIndepArray] = useState(indepArrayEN);  // Array FR ou EN
+  console.log('arrayDatac', indepArray);
+
+ 
 
   const updateData = (newArray) => {
     setIndepArray(newArray);  // Met à jour l'array actif

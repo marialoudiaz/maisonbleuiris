@@ -3,9 +3,8 @@ import authenticity from '../public/icons/approche/authenticity.png';
 import nature from '../public/icons/approche/nature.png';
 import minimalism from '../public/icons/approche/minimalism.png';
 import Image from 'next/image';
-import Carousel from '../components/carousel';
-// import Typewriter from 'typewriter-effect';
-import '../styles/App.scss'
+import Carousel from '../ui/carousel';
+import '../../styles/App.scss';
 import { useData } from '@/app/context/DataContext';
 
 const Approche: React.FC = () => {

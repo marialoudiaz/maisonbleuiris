@@ -7,7 +7,7 @@ import Image from 'next/image';
 // import { faLinkedinIn, faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import '../../styles/App.scss';
 import '../../globals.css';
-import Header from '../../components/navbar/header';
+import Header from '../../components/navbar/Header';
 
 const Projets = () => {
   const gridContainerRef = useRef(null);
@@ -202,7 +202,7 @@ const Projets = () => {
   const toggleFullText = () => setShowFullText(!showFullText);
   // Function to navigate to project details
   const handleDiscover = (projectId) => router.push(`/projet/${projectId}`);
-    const handleDiscoverAll = () => router.push(`/projets_all`);
+    const handleDiscoverAll = () => router.push(`/all-projects`);
 
 
   return (

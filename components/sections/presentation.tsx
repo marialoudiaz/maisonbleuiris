@@ -1,17 +1,14 @@
 'use client';
 import React from 'react';
 import Marquee from "react-fast-marquee";
-import '../styles/App.scss';
-import '../globals.css';
+import '../../styles/App.scss';
+import '../../globals.css';
 import { useData } from '@/app/context/DataContext'; // Import du contexte
-// import { useRouter} from 'next/navigation';
-import Services from '../components/services-flat';
-
-import authenticity from '../public/icons/approche/authenticity.png';
-import nature from '../public/icons/approche/nature.png';
-import detail from '../public/icons/approche/detail.png';
-
-import Carousel from '../components/carousel';
+import Services from './services';
+import authenticity from '../../public/icons/approche/authenticity.png';
+import nature from '../../public/icons/approche/nature.png';
+import detail from '../../public/icons/approche/detail.png';
+import Carousel from '../ui/carousel';
 import Typewriter from 'typewriter-effect';
 
 
@@ -61,41 +58,26 @@ const Prez: React.FC = () => {
       </div>
 
       <div>
-        <div className='name'>
-          <h1> MAISON BLEU IRIS | BRANDING POÉTHIQUE</h1>
-        </div>
-        <div className='prez'>
+          <div className='name'>
+            <h1> MAISON BLEU IRIS | BRANDING POÉTHIQUE</h1>
+          </div>
+          <div className='prez'>
 
-        <h2>
-          {/* <Typewriter
-            options={{
-              strings: [`${presentation[0]}`],
-              autoStart: true,
-              loop: true,
-            }}
-          /> 
-          */}
-<Typewriter
-  onInit={(typewriter) => {
-    typewriter.typeString(`${presentation[0]}`)
-      // .pauseFor(2500)
-      // .deleteAll()
-      .start();
-  }}
-/>
-
-
-
-        </h2>
+          <h2>
+            <Typewriter
+              onInit={(typewriter) => {
+                typewriter.typeString(`${presentation[0]}`)
+                  .start();
+              }}
+            />
+          </h2>
 
           <h4 id='p-hp'style={{color:'black'}}> {presentation[1]}</h4>
           <p id='prez-txt'> {presentation[2]}</p>
-          {/* <p id='prez-txt'> {presentation[2]}</p> */}
           <Carousel dataArray={dataArray} />
 
           {/* CTA vers le déroulé + formulaire */}
           <button className='btn-transp-dark' style={{ margin: '2rem auto' }}    onClick={() => window.location.href = 'mailto:contact@maisonbleuiris.fr'}>
-            {/* <button className='btn-transp-dark' style={{ margin: '2rem auto' }}  onClick={() => router.push('/projets')}></button> */}
           <div>
               <svg
                                 className="icon-transp"

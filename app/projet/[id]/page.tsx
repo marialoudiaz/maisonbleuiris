@@ -6,7 +6,7 @@ import { useRouter, useParams } from 'next/navigation';
 import '../../../styles/App.scss';
 import '../../../globals.css';
 import Image from 'next/image';
-import Header from '../../../components/navbar/header';
+import Header from '../../../components/navbar/Header';
 import { FiArrowDownRight } from "react-icons/fi";
 import '../../../styles/App.scss';
 
@@ -17,13 +17,11 @@ function Projet() {
     const router = useRouter();
     const { indepArray } = useData();
     const { id } = useParams(); // id dans lurl (dynamiquement)
-
     useEffect(()=>{
       if (!indepArray && !id){
         router.push('/');
       }
     }, [indepArray, router, id]);
-
 const descriptionprojectsArr = [
       // bec
       {
@@ -68,8 +66,8 @@ const descriptionprojectsArr = [
           {
           subtitle:[ "Réenchanter le Web – L’Art du Storytelling Visuel","Re-enchanting the Web – The Art of Visual Storytelling"],
           text:[
-          "Dans le monde digital, le toucher semble perdu. Mais et si… on pouvait recréer la sensation du réel ? Réserver devient rituel. Un ticket inspiré du réel — ses coins arrondis, sa texture papier, sa typographie imparfaite. Un geste qui ancre. Un détail skeuomorphe qui ramène à l’expérience concrète. Les symboles se révèlent. Comme de l’encre qui s’épanche lentement sur une page ancienne. Ils apparaissent. Suggèrent plus qu’ils ne montrent. Une invitation à l’interprétation, au mystère. Le texte s’écrit sous vos yeux. Lettre après lettre, comme une machine à écrire ou les pages d’un vieux grimoire. L’histoire ne se donne pas, elle se compose en direct. L’écran devient livre. Le web, une expérience narrative, vivante, charnelle.",
-          "In the digital world, touch seems lost. But what if… we could recreate the feeling of matter? Booking becomes ritual. A ticket drawn from real life — rounded corners, paper textures, imperfect type. A gesture that grounds. A skeuomorphic detail that brings back the sense of presence. Symbols reveal themselves. Like ink slowly blooming across an old page. They appear gradually. Suggest more than they show. An invitation to mystery and meaning. Words write themselves before your eyes. Letter by letter — like a typewriter or the pages of an old storybook. The narrative doesn't arrive all at once. It unfolds. The screen becomes a book. The web, a living, breathing experience."
+          "Dans le monde digital, le toucher semble perdu. Mais et si… on pouvait recréer la sensation du réel ? Réserver devient rituel. Un ticket inspiré du réel — ses coins arrondis, sa texture papier, sa typographie imparfaite. Un geste qui ancre. Un détail skeuomorphe qui ramène à l’expérience concrète. Les symboles se révèlent.Comme de l’encre qui s’épanche lentement sur une page ancienne. Ils apparaissent. Suggèrent plus qu’ils ne montrent. Une invitation à l’interprétation, au mystère. Le texte s’écrit sous vos yeux. Lettre après lettre, comme une machine à écrire ou les pages d’un vieux grimoire. L’histoire ne se donne pas, elle se compose en direct. L’écran devient livre. Le web, une expérience narrative, vivante, charnelle.",
+          "In the digital world, touch seems lost. But what if… we could recreate the feeling of matter? Booking becomes ritual. A ticket drawn from real life — rounded corners, paper textures, imperfect type. A gesture that grounds. A skeuomorphic detail that brings back the sense of presence. Symbols reveal themselves. Like ink slowly blooming across an old page.They appear gradually. Suggest more than they show. An invitation to mystery and meaning. Words write themselves before your eyes. Letter by letter — like a typewriter or the pages of an old storybook. The narrative doesn't arrive all at once. It unfolds. The screen becomes a book. The web, a living, breathing experience."
           ],
           image: '/projets/bec/bec-hp-1.jpg',
           },
@@ -139,7 +137,7 @@ const descriptionprojectsArr = [
               text: 
               [
                 "Il y a bien longtemps, dans un temps où les hommes craignaient encore les cimes, vivait un vieil ermite nommé Georges, au sommet du Canigou. Solitaire, il parlait peu, mais ses mains racontaient des récits de feu, de pierre, et d’huile. Vivait, un vieil ermite, au sommet du Canigou, là où les neiges éternelles caressent les cieux, et où le silence des montagnes pèse plus lourd que les siècles. Il habitait une cabane de pierre, adossée à un éperon rocheux, battue par les vents mais chaleureuse de solitude choisie. Chaque matin, il saluait le lever du soleil comme un vieil ami, et descendait parfois jusqu'à la lisière des forêts pour cueillir herbes et racines, marmonnant à mi-voix les secrets de la terre qu’il n’avait jamais cessé d’aimer. Chaque jour, portant sur son dos, le mortier qu'il avait sculpté dans un magnifique marbre griotte du Conflent, il gravissait les versants escarpés, en quête de l’ail des ours, une plante rare qu’il ne trouvait qu’à l’ombre des hêtres, là où les izards tracent leurs chemins secrets. Les villageois disaient qu’il avait été un grand chef autrefois, mais qu’il avait renoncé à la gloire pour atteindre la vérité du goût. Selon la rumeur, il aurait appris à dompter les éléments – le vent, le sel, et le feu – pour créer l’aïoli parfait, un mélange si puissant qu’il guérissait les cœurs durs et redonnait force aux faibles. Mais l’aïoli de Georges ne se laissait pas apprivoiser. Il fallait battre sans faiblir, avec patience, à la main, comme l’izard franchit les falaises : sans pause, sans peur. Nombreux sont ceux qui montèrent au sommet pour apprendre, mais seuls les plus tenaces furent dignes du secret. Un jour, alors que les vents soufflaient fort et que l’hiver menaçait la vallée, Georges descendit avec un petit pot doré. Il entra dans la place du village, le déposa sur la table de pierre, et dit : 'Voici l’âme du Canigou. Ce n’est pas une sauce, c’est une épreuve. Une promesse. Une mémoire.' Puis il repartit, suivi seulement par un groupe silencieux d’izards. Depuis ce jour, chaque pot d’aïoli Georges contient un peu de cette légende :la force des montagnes,la patience du mortier,et le mystère de l’ail sauvage.",
-                "Long ago, in a time when men still feared the mountain peaks, there lived a hermit named Georges atop Mount Canigou. He lived alone, spoke little, but his hands told stories — of fire, of stone, and of oil. He dwelled in a stone hut, nestled against a rocky outcrop, battered by the winds yet warmed by chosen solitude, high where eternal snow brushes the sky and the silence weighs heavier than centuries. Each morning, he greeted the rising sun like an old friend, and would sometimes descend to the forest’s edge to gather herbs and roots, whispering softly the secrets of a land he had never stopped loving. Each day, he carried on his back a mortar he had carved from rich Conflent red marble, climbing the steep slopes in search of wild garlic — a rare plant found only in the shadow of beech trees, where izards carve hidden paths. The villagers said he had once been a great chef, who had given up fame to pursue the truth of taste. Rumour had it that he had learned to master the elements — the wind, the salt, and the fire — to create the perfect aïoli, a blend so powerful it could soften the hardest of hearts and restore strength to the weary. But Georges’ aïoli would not yield easily. It had to be beaten by hand, with patience, never wavering — like the izard that climbs the cliff face: without pause, without fear. Many climbed the mountain hoping to learn, but only the most steadfast were deemed worthy of the secret. One day, as fierce winds howled and winter crept down into the valley, Georges descended with a small golden jar. He entered the village square, placed it upon the stone table, and said: 'This is the soul of Canigou. It is not a sauce. It is a trial. A promise. A memory.' Then he left, followed only by a silent procession of izards. Since that day, each jar of Georges aïoli carries a trace of that legend: the strength of the mountains, the patience of the mortar and the mystery of wild garlic.",
+                "Long ago, in a time when men still feared the mountain peaks, there lived a hermit named Georges atop Mount Canigou. He lived alone, spoke little, but his hands told stories — of fire, of stone, and of oil. He dwelled in a stone hut, nestled against a rocky outcrop, battered by the winds yet warmed by chosen solitude, high where eternal snow brushes the sky and the silence weighs heavier than centuries. Each morning, he greeted the rising sun like an old friend, and would sometimes descend to the forest’s edge to gather herbs and roots, whispering softly the secrets of a land he had never stopped loving. Each day, he carried on his back a mortar he had carved from rich Conflent red marble, climbing the steep slopes in search of wild garlic — a rare plant found only in the shadow of beech trees, where izards carve hidden paths. The villagers said he had once been a great chef, who had given up fame to pursue the truth of taste. Rumour had it that he had learned to master the elements — the wind, the salt, and the fire — to create the perfect aïoli, a blend so powerful it could soften the hardest of hearts and restore strength to the weary. But Georges’ aïoli would not yield easily. It had to be beaten by hand, with patience, never wavering — like the izard that climbs the cliff face: without pause, without fear.Many climbed the mountain hoping to learn, but only the most steadfast were deemed worthy of the secret. One day, as fierce winds howled and winter crept down into the valley, Georges descended with a small golden jar.He entered the village square, placed it upon the stone table, and said: 'This is the soul of Canigou. It is not a sauce. It is a trial. A promise. A memory.' Then he left, followed only by a silent procession of izards. Since that day, each jar of Georges aïoli carries a trace of that legend: the strength of the mountains, the patience of the mortar and the mystery of wild garlic.",
               ],
               image: '/projets/branding-strategy/georges/georgesaioli-timbre.png',
             }    
@@ -446,9 +444,7 @@ const descriptionprojectsArr = [
           ['/projets/illu_edition/memoire/memoire1.jpg','/projets/illu_edition/memoire/memoire2.jpg','/projets/illu_edition/memoire/memoire3.jpg','/projets/illu_edition/memoire/memoire4.jpg','/projets/illu_edition/memoire/memoire5.jpg','/projets/illu_edition/memoire/memoire6.jpg'],
         ]
 },
-];
-
-        
+];     
 const imgStyle: React.CSSProperties = {
           display: 'flex',
           flexWrap: 'nowrap',

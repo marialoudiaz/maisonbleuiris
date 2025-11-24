@@ -1,13 +1,13 @@
 "use client";
 import React, { useEffect, useRef } from 'react';
 import dynamic from 'next/dynamic';
-import '../globals.css';
+import '../../globals.css';
 import { useScroll } from 'framer-motion';
 import Lenis from 'lenis';
 import { useData } from '@/app/context/DataContext'; // Import du contexte
 
-const Cible = dynamic(() => import('../components/cible'), { ssr: false });
-const VideoReveal = dynamic(() => import('../components/videoreveal'), { ssr: false });
+const Cible = dynamic(() => import('./cible'), { ssr: false });
+const VideoReveal = dynamic(() => import('./videoreveal'), { ssr: false });
 
 const Main = () => {
 

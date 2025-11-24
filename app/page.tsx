@@ -1,15 +1,56 @@
-// app/page.tsx
-import dynamic from 'next/dynamic';
-import '../styles/App.scss';
+"use client";
 
-const Logo = dynamic(() => import('./logo/page'), {
-  loading: () => <div>Loading Logo...</div>,
+import React, { useEffect, useState } from "react";
+import dynamic from "next/dynamic";
+import { useData } from "./context/DataContext";
+import "../styles/App.scss";
+import Splash from "../components/splash/Splash"; 
+
+const Header = dynamic(() => import("../components/navbar/Header"), {
+  loading: () => <div>Loading Header...</div>,
+});
+const Main = dynamic(() => import("../components/sections/herosection"), {
+  loading: () => <div>Loading Main...</div>,
+});
+const Prez = dynamic(() => import("../components/sections/presentation"), {
+  loading: () => <div>Loading Prez...</div>,
+});
+const Footer = dynamic(() => import("../components/ui/switch"), {
+  loading: () => <div>Loading Footer...</div>,
+});
+const Footer2 = dynamic(() => import("../components/sections/footer"), {
+  loading: () => <div>Loading Footer...</div>,
 });
 
-export default function HomePage() {
+
+export default function Home() {
+  const { indepArray } = useData();
+  const [showSplash, setShowSplash] = useState(true);
+
+  // Animation visible seulement pendant 2 secondes
+  useEffect(() => {
+    const timer = setTimeout(() => setShowSplash(false), 2000);
+    return () => clearTimeout(timer);
+  }, []);
+
+  // Si DataContext n'a pas encore les datas → on attend
+  if (!indepArray) {
+    return <div>Loading...</div>;
+  }
+
   return (
     <>
-        <Logo />
-    </> 
+      {showSplash ? (
+        <Splash />
+      ) : (
+        <div className="scrollable-container">
+          <Header />
+          <Main />
+          <Prez />
+          <Footer />
+          <Footer2 />
+        </div>
+      )}
+    </>
   );
 }

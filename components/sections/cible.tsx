@@ -4,8 +4,8 @@ import React, { useEffect, useState } from 'react';
 import { motion, useTransform, MotionValue } from 'framer-motion';
 import { useData } from '@/app/context/DataContext'; // Importer le contexte
 import { useRouter} from 'next/navigation';
-import '../styles/App.scss';
-import '../globals.css';
+import '../../styles/App.scss';
+import '../../globals.css';
 
 
 interface CibleProps {

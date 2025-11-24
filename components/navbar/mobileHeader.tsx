@@ -16,9 +16,9 @@ function MobileHeader({ isOpen, toggleMenu, infos, onHover, onLeave, hoveredLink
   
   const navLinks = [
     { href: '#Philosophie', label: indepArray[0].header[0], id: 'philo', route:'/philo', langz: Lang},
-    { href: '#Services', label: indepArray[0].header[1], id: 'service', route:'/homepage/#Services' },
-    { href: '#Projets', label: indepArray[0].header[2], id: 'projets', route:'/projets', langz: Lang },
-    { href: '#Contact', label: indepArray[0].header[3], id: 'contact', route:'/homepage/#Contact'}
+    { href: '#Services', label: indepArray[0].header[1], id: 'service', route:'/#Services' },
+    { href: '#Projets', label: indepArray[0].header[2], id: 'projets', route:'/key-projets', langz: Lang },
+    { href: '#Contact', label: indepArray[0].header[3], id: 'contact', route:'/#Contact'}
     
   ];
 
@@ -34,7 +34,7 @@ function MobileHeader({ isOpen, toggleMenu, infos, onHover, onLeave, hoveredLink
         
         (
           <div className='navbar-container-mobile'>
-            <div className='navbar-left' onClick={() => router.push('/homepage')}>
+            <div className='navbar-left' onClick={() => router.push('/')}>
               <Image
                 src={logo}
                 width={200}
