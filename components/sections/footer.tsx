@@ -14,16 +14,16 @@ const Footer: React.FC = () => {
     return <div>Loading...</div>; 
   }
   const navLinks = [
-    { href: '#Services', label: indepArray[0].header[0], id: 'service', route:'/homepage/#Services' },
+    { href: '#Services', label: indepArray[0].header[0], id: 'service', route:'/#Services' },
     { href: '#Projets', label: indepArray[0].header[1], id: 'projets', route:'/projets'},
-    { href: '#Contact', label: 'Contact', id: 'Contact', route:'/homepage/#Contact'}
+    { href: '#Contact', label: 'Contact', id: 'Contact', route:'/#Contact'}
   ];
   return (
     <div className='footer'>
      
       <div className='footer-logo'>
         <Image 
-          src={'/logo/mbi-noir.png'}
+          src={'/images/logo/mbi-noir.png'}
           alt='logo maria lou diaz'
           width={1000}
           height={0}

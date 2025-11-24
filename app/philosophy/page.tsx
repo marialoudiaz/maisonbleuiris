@@ -5,20 +5,22 @@ import { useRouter} from 'next/navigation';
 import { useData } from '@/app/context/DataContext'; // Import du contexte
 import Image from 'next/image';
 import React, { useEffect } from 'react';
+//composants
 import Header from '../../components/navbar/header';
 import Switch from '../../components/ui/switch';
 import Footer from '../../components/sections/footer';
-import print from '../../public/icons/services/icon-piliers-04.png';
-import web from '../../public/icons/services/icon-piliers-01.png';
-import illu from '../../public/icons/services/icon-piliers-05.png';
-import printg from '../../public/icons/services/icon-piliers-gold-04.png';
-import webg from '../../public/icons/services/icon-piliers-gold-01.png';
-import illug from '../../public/icons/services/icon-piliers-gold-05.png';
-import edition from '../../public/icons/services/icon-piliers-06.png';//?
-import agence from '../../public/icons/services/icon-piliers-02.png';//?
-import campus from '../../public/icons/services/icon-piliers-03.png';//?
-
 import Carousel from '../../components/ui/carousel';
+//images
+import print from '../../public/images/icons/services/icon-piliers-04.png';
+import web from '../../public/images/icons/services/icon-piliers-01.png';
+import illu from '../../public/images/icons/services/icon-piliers-05.png';
+import printg from '../../public/images/icons/services/icon-piliers-gold-04.png';
+import webg from '../../public/images/icons/services/icon-piliers-gold-01.png';
+import illug from '../../public/images/icons/services/icon-piliers-gold-05.png';
+import edition from '../../public/images/icons/services/icon-piliers-06.png';
+import agence from '../../public/images/icons/services/icon-piliers-02.png';
+import campus from '../../public/images/icons/services/icon-piliers-03.png';
+
 
 const Philo: React.FC = () => {
 

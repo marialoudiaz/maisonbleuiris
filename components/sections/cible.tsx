@@ -51,7 +51,7 @@ const Cible: React.FC<CibleProps> = ({ scrollYProgress }) => {
         muted 
         playsInline
       >
-        <source src="/video/iris2.mp4" />
+        <source src="/videos/iris2.mp4" />
         Ton navigateur ne supporte pas les vidéos HTML5.
       </video>
 

@@ -1,7 +1,7 @@
 // src/components/Form.tsx
 import React, { useState, useEffect } from 'react';
 import TextTransition, { presets } from 'react-text-transition';
-import ContactForm from './contactForm'; // Remplacez par le chemin correct pour le composant
+import ContactForm from './contact-form'; // Remplacez par le chemin correct pour le composant
 import '../../styles/App.scss';
 import '../../globals.css';
 import { useData } from '@/app/context/DataContext'; // Importer le contexte

@@ -20,8 +20,8 @@ const VideoReveal: React.FC<VideoProps> = ({ scrollYProgress }) => {
 
   // Video map for fallback values
   const videoMap: { [key: string]: string } = {
-    'videoReveal1': '/video/videos-introductives/D.mp4',
-    'videoReveal2': '/video/videos-introductives/M.mp4',
+    'videoReveal1': '/videos/videos-introductives/D.mp4',
+    'videoReveal2': '/videos/videos-introductives/M.mp4',
   };
   const ordi = videoMap[videoOrdi];
   const tel = videoMap[videoTel];
@@ -72,7 +72,7 @@ const VideoReveal: React.FC<VideoProps> = ({ scrollYProgress }) => {
           <video
             ref={desktopVideoRef}
             playsInline
-            poster="/projets/maisonbleuiris_services.png"
+            poster="/images/projets/maisonbleuiris_services.png"
             onClick={() => handlePlayVideo(desktopVideoRef)}
             controls={false}
           >
@@ -108,7 +108,7 @@ const VideoReveal: React.FC<VideoProps> = ({ scrollYProgress }) => {
           <video
             ref={mobileVideoRef}
             playsInline
-            poster="/projets/maisonbleuiris_services.png"
+            poster="/images/projets/maisonbleuiris_services.png"
             onClick={() => handlePlayVideo(mobileVideoRef)}
             controls={true}
           >

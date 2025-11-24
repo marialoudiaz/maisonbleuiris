@@ -5,9 +5,9 @@ import '../../styles/App.scss';
 import '../../app/globals.css';
 import { useData } from '@/app/context/DataContext'; // Import du contexte
 import Services from './services';
-import authenticity from '../../public/icons/approche/authenticity.png';
-import nature from '../../public/icons/approche/nature.png';
-import detail from '../../public/icons/approche/detail.png';
+import authenticity from '../../public/images/icons/approche/authenticity.png';
+import nature from '../../public/images/icons/approche/nature.png';
+import detail from '../../public/images/icons/approche/detail.png';
 import Carousel from '../ui/carousel';
 import Typewriter from 'typewriter-effect';
 

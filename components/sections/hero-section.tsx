@@ -7,7 +7,7 @@ import Lenis from 'lenis';
 import { useData } from '@/app/context/DataContext'; // Import du contexte
 
 const Cible = dynamic(() => import('./cible'), { ssr: false });
-const VideoReveal = dynamic(() => import('./videoreveal'), { ssr: false });
+const VideoReveal = dynamic(() => import('./video-reveal'), { ssr: false });
 
 const Main = () => {
 

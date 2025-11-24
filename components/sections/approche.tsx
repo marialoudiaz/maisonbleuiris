@@ -1,7 +1,7 @@
 import React from 'react'
-import authenticity from '../public/icons/approche/authenticity.png';
-import nature from '../public/icons/approche/nature.png';
-import minimalism from '../public/icons/approche/minimalism.png';
+import authenticity from '../public/images/icons/approche/authenticity.png';
+import nature from '../public/images/icons/approche/nature.png';
+import minimalism from '../public/images/icons/approche/minimalism.png';
 import Image from 'next/image';
 import Carousel from '../ui/carousel';
 import '../../styles/App.scss';
@@ -48,7 +48,7 @@ const Approche: React.FC = () => {
         <div className='prez'>
           <div className='flex-wrap'>
               <Image
-                src="/logo/medaillon.png"
+                src="/images/logo/medaillon.png"
                 alt="le logo sous forme de médaillon"
                 width={96}
                 height={100}

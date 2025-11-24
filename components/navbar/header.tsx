@@ -4,8 +4,8 @@ import { useRouter } from 'next/navigation';
 import { useData } from '../../app/context/DataContext';
 import '../../styles/App.scss';
 import Image from 'next/image';
-import logo from '../../public/logo/mbi-noir.png';
-import MobileNavbar from './mobileHeader';
+import logo from '../../public/images/logo/mbi-noir.png';
+import MobileNavbar from './mobile-header';
 
 const Header = () => {
 

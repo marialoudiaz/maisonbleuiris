@@ -28,9 +28,9 @@ const descriptionprojectsArr = [
         id: 1,
         client: 'Domaine de la Pinède/Manade BEC',
         discover: ["scroller pour découvrir le projet","scroll down to discover the project"],
-        videoDesktop: '/projets/web/bec/bec-hover-black.mp4',
-        videoMobile: '/projets/web/bec/bec-hover-black.mp4',
-        image: '/projets/web/bec-hp1.jpg',
+        videoDesktop: '/images/projets/web/bec/bec-hover-black.mp4',
+        videoMobile: '/images/projets/web/bec/bec-hover-black.mp4',
+        image: '/images/projets/web/bec-hp1.jpg',
         title: 'Domaine de la Pinède',
         baseline: 
         [
@@ -61,7 +61,7 @@ const descriptionprojectsArr = [
             "La conception graphique du site s'attache à chaque détail pour offrir au visiteur une expérience immersive au cœur de la Camargue. Dès la première vidéo de présentation, le décor est planté, plongeant l'utilisateur dans l'atmosphère unique du domaine. Par la suite, il est guidé à travers les pages comme s'il tournait les pages d'un livre. Cette approche créative réinvente le webdesign en s'inspirant des codes intemporels du livre imprimé. Par exemple, sur la page dédiée à la manade, le visiteur découvre des citations soigneusement choisies, reflétant l'esprit authentique et l'ambiance singulière du Domaine de la Pinède. Le même soin est apporté à la page d'accueil, renforçant l'impression d'une plongée dans un univers enchanteur.",
             "The website's graphic design pays meticulous attention to detail, offering visitors an immersive journey into the heart of the Camargue. From the opening presentation video, the tone is set, drawing users into the unique atmosphere of the domain. They are then guided through the pages as if leafing through the chapters of a book. This creative approach reimagines web design by drawing inspiration from the timeless aesthetics of printed books. For instance, on the page dedicated to the manade, visitors can explore carefully selected quotes that capture the authentic spirit and unique ambiance of the Domaine de la Pinède. The same thoughtful design is reflected on the homepage, enhancing the sense of being transported into an enchanting world.",
           ],
-          video: '/projets/web/bec/bec-site-deroule.mp4',
+          video: '/images/projets/web/bec/bec-site-deroule.mp4',
           },
           {
           subtitle:[ "Réenchanter le Web – L’Art du Storytelling Visuel","Re-enchanting the Web – The Art of Visual Storytelling"],
@@ -69,7 +69,7 @@ const descriptionprojectsArr = [
           "Dans le monde digital, le toucher semble perdu. Mais et si… on pouvait recréer la sensation du réel ? Réserver devient rituel. Un ticket inspiré du réel — ses coins arrondis, sa texture papier, sa typographie imparfaite. Un geste qui ancre. Un détail skeuomorphe qui ramène à l’expérience concrète. Les symboles se révèlent.Comme de l’encre qui s’épanche lentement sur une page ancienne. Ils apparaissent. Suggèrent plus qu’ils ne montrent. Une invitation à l’interprétation, au mystère. Le texte s’écrit sous vos yeux. Lettre après lettre, comme une machine à écrire ou les pages d’un vieux grimoire. L’histoire ne se donne pas, elle se compose en direct. L’écran devient livre. Le web, une expérience narrative, vivante, charnelle.",
           "In the digital world, touch seems lost. But what if… we could recreate the feeling of matter? Booking becomes ritual. A ticket drawn from real life — rounded corners, paper textures, imperfect type. A gesture that grounds. A skeuomorphic detail that brings back the sense of presence. Symbols reveal themselves. Like ink slowly blooming across an old page.They appear gradually. Suggest more than they show. An invitation to mystery and meaning. Words write themselves before your eyes. Letter by letter — like a typewriter or the pages of an old storybook. The narrative doesn't arrive all at once. It unfolds. The screen becomes a book. The web, a living, breathing experience."
           ],
-          image: '/projets/web/bec/bec-hp-1.jpg',
+          image: '/images/projets/web/bec/bec-hp-1.jpg',
           },
           {
           subtitle:
@@ -82,7 +82,7 @@ const descriptionprojectsArr = [
             "Et si chaque page était une porte ? Un seuil franchi, une atmosphère qui enveloppe, un souffle qui raconte… Dans un monde saturé d’informations, nous choisissons l’enchantement. La vidéo devient guide. Sur la page d’accueil comme sur les chemins intérieurs du site, elle ne vend pas, elle invite. Elle ouvre un monde. Elle incarne une présence. Elle raconte ce que les mots ne peuvent dire seuls. Chaque page est un chapitre. Non plus seulement informative, mais sensible. Elle s’écoute. Elle se ressent. Une lumière, une texture, un son, un mouvement — tout participe à tisser une narration. Ici, le design devient conte, et le visiteur devient voyageur.",
             "What if every page was a doorway? A threshold crossed, an atmosphere that wraps around you, a breath that tells a story… In a world saturated with information, we choose enchantment. Video becomes a guide. From the homepage to the inner paths of the site, it doesn’t sell — it invites. It opens a world. It embodies presence. It tells what words alone cannot. Every page is a chapter. Not just informative, but ambient. It speaks softly. It is felt. A light, a texture, a sound, a movement — all come together to weave a narrative. Here, design becomes a tale, and the visitor becomes a traveler."
           ],
-          image: '/projets/web/bec/bec-2.jpg',
+          image: '/images/projets/web/bec/bec-2.jpg',
           },
         ]
       },
@@ -91,9 +91,9 @@ const descriptionprojectsArr = [
         id: 2,
         client: "Georges Vidal",
         discover: ["scroller pour découvrir le projet","scroll down to discover the project"],
-        videoDesktop: '/projets/branding-strategy/georges/video-hover.mp4',
-        videoMobile: '/projets/branding-strategy/georges/video-hover.mp4',
-        image: '/projets/branding-strategy/georges/georges-hp.png',
+        videoDesktop: '/images/projets/branding-strategy/georges/video-hover.mp4',
+        videoMobile: '/images/projets/branding-strategy/georges/video-hover.mp4',
+        image: '/images/projets/branding-strategy/georges/georges-hp.png',
         title: 'Georges, aioli catalan',
         baseline: [
           "L'âme du Canigou",
@@ -122,7 +122,7 @@ const descriptionprojectsArr = [
                 "L’approche visuelle s’est inspirée des éléments naturels et de la sobriété monacale. Le pot évoque la pierre brute du Canigou, l’étiquette se fait parchemin. L’identité graphique est minimale mais habitée : une typographie gravée, un dessin discret d’ail sauvage, et une palette réduite aux tons de terre et d’or patiné. Tout évoque la lenteur, la patience, et la sacralité du geste. Nous avons conçu l’emballage comme un talisman : modeste en apparence, mais chargé de mémoire.",
                 "The visual approach drew from nature’s rawness and monastic simplicity. The jar echoes the rugged stone of Canigou; the label feels like aged parchment. The graphic identity is minimal yet alive: engraved typography, a subtle drawing of wild garlic, and a muted palette of earth and weathered gold. Every detail speaks of slowness, patience, and sacred ritual. We designed the packaging like a talisman: modest on the surface, yet rich with legacy."
               ],
-              image: '/projets/branding-strategy/georges/georgesaioli-poster-rochercitation.png',
+              image: '/images/projets/branding-strategy/georges/georgesaioli-poster-rochercitation.png',
             },
             {
               subtitle: ["Créer une légende autour de ta mémoire", "To create a tale from your memory."],
@@ -130,7 +130,7 @@ const descriptionprojectsArr = [
                 "Né d’une légende enracinée au sommet du Canigou, l’aïoli Georges incarne bien plus qu’un simple condiment : il est la mémoire vivante d’un savoir ancien, celui de la recette transmise par feu mon grand-père. Dans le désir d’honorer sa mémoire à travers un projet à partager — pour continuer de le faire vivre dans le présent — j’ai imaginé une légende autour de son nom : Georges, l’ermite catalan. Cette histoire se traduit graphiquement par la création d’un logotype inspiré de sa signature, auquel s’ajoute une typographie des années 50 pour le nom AIOLI CATALAN, ancrant visuellement la recette dans l’époque et l’héritage de mon grand-père. Le timbre, apposé sur le couvercle tel un sceau, complète l’ensemble. On y retrouve le rouge du drapeau catalan, les coordonnées GPS du sommet du Canigou, ses lignes de crêtes, et deux izards sauvages — gardiens silencieux de cette terre. Le timbre, c’est l’invitation au voyage. Le sceau d’une promesse.",
                 "Born from a legend rooted at the summit of Mount Canigou, aïoli Georges is much more than a simple condiment: it is the living memory of ancestral knowledge, the recipe passed down from my late grandfather. Driven by the desire to honour his memory through a shared project — to keep his presence alive in the present — I created a legend around his name: Georges, the Catalan hermit. This story is expressed visually through the creation of a logotype inspired by his signature, complemented by a 1950s-style typeface for the name AIOLI CATALAN, grounding the recipe in the era and heritage of my grandfather. A stamp, placed on the lid like a seal, completes the design. It features the red of the Catalan flag, the GPS coordinates of Mount Canigou’s summit, its ridgelines, and two wild izards — silent guardians of this land. The stamp is an invitation to travel. The seal of a promise."
               ],
-              image: '/projets/branding-strategy/georges/georges-signature-timbre.png',
+              image: '/images/projets/branding-strategy/georges/georges-signature-timbre.png',
             },
             {
               subtitle: ["Georges & la légende de l'aïoli Catalan", "Georges and the legend of catalan aioli"],
@@ -139,13 +139,13 @@ const descriptionprojectsArr = [
                 "Il y a bien longtemps, dans un temps où les hommes craignaient encore les cimes, vivait un vieil ermite nommé Georges, au sommet du Canigou. Solitaire, il parlait peu, mais ses mains racontaient des récits de feu, de pierre, et d’huile. Vivait, un vieil ermite, au sommet du Canigou, là où les neiges éternelles caressent les cieux, et où le silence des montagnes pèse plus lourd que les siècles. Il habitait une cabane de pierre, adossée à un éperon rocheux, battue par les vents mais chaleureuse de solitude choisie. Chaque matin, il saluait le lever du soleil comme un vieil ami, et descendait parfois jusqu'à la lisière des forêts pour cueillir herbes et racines, marmonnant à mi-voix les secrets de la terre qu’il n’avait jamais cessé d’aimer. Chaque jour, portant sur son dos, le mortier qu'il avait sculpté dans un magnifique marbre griotte du Conflent, il gravissait les versants escarpés, en quête de l’ail des ours, une plante rare qu’il ne trouvait qu’à l’ombre des hêtres, là où les izards tracent leurs chemins secrets. Les villageois disaient qu’il avait été un grand chef autrefois, mais qu’il avait renoncé à la gloire pour atteindre la vérité du goût. Selon la rumeur, il aurait appris à dompter les éléments – le vent, le sel, et le feu – pour créer l’aïoli parfait, un mélange si puissant qu’il guérissait les cœurs durs et redonnait force aux faibles. Mais l’aïoli de Georges ne se laissait pas apprivoiser. Il fallait battre sans faiblir, avec patience, à la main, comme l’izard franchit les falaises : sans pause, sans peur. Nombreux sont ceux qui montèrent au sommet pour apprendre, mais seuls les plus tenaces furent dignes du secret. Un jour, alors que les vents soufflaient fort et que l’hiver menaçait la vallée, Georges descendit avec un petit pot doré. Il entra dans la place du village, le déposa sur la table de pierre, et dit : 'Voici l’âme du Canigou. Ce n’est pas une sauce, c’est une épreuve. Une promesse. Une mémoire.' Puis il repartit, suivi seulement par un groupe silencieux d’izards. Depuis ce jour, chaque pot d’aïoli Georges contient un peu de cette légende :la force des montagnes,la patience du mortier,et le mystère de l’ail sauvage.",
                 "Long ago, in a time when men still feared the mountain peaks, there lived a hermit named Georges atop Mount Canigou. He lived alone, spoke little, but his hands told stories — of fire, of stone, and of oil. He dwelled in a stone hut, nestled against a rocky outcrop, battered by the winds yet warmed by chosen solitude, high where eternal snow brushes the sky and the silence weighs heavier than centuries. Each morning, he greeted the rising sun like an old friend, and would sometimes descend to the forest’s edge to gather herbs and roots, whispering softly the secrets of a land he had never stopped loving. Each day, he carried on his back a mortar he had carved from rich Conflent red marble, climbing the steep slopes in search of wild garlic — a rare plant found only in the shadow of beech trees, where izards carve hidden paths. The villagers said he had once been a great chef, who had given up fame to pursue the truth of taste. Rumour had it that he had learned to master the elements — the wind, the salt, and the fire — to create the perfect aïoli, a blend so powerful it could soften the hardest of hearts and restore strength to the weary. But Georges’ aïoli would not yield easily. It had to be beaten by hand, with patience, never wavering — like the izard that climbs the cliff face: without pause, without fear.Many climbed the mountain hoping to learn, but only the most steadfast were deemed worthy of the secret. One day, as fierce winds howled and winter crept down into the valley, Georges descended with a small golden jar.He entered the village square, placed it upon the stone table, and said: 'This is the soul of Canigou. It is not a sauce. It is a trial. A promise. A memory.' Then he left, followed only by a silent procession of izards. Since that day, each jar of Georges aïoli carries a trace of that legend: the strength of the mountains, the patience of the mortar and the mystery of wild garlic.",
               ],
-              image: '/projets/branding-strategy/georges/georgesaioli-timbre.png',
+              image: '/images/projets/branding-strategy/georges/georgesaioli-timbre.png',
             }    
           ],
           sectionsImg: 
           [
-            ['/projets/branding-strategy/georges/etiquette-pot.jpg','/projets/branding-strategy/georges/boite-georges.jpg','/projets/branding-strategy/georges/georges-boitelivraison.png'],
-            ['/projets/branding-strategy/georges/etiquette-pot.jpg','/projets/branding-strategy/georges/boite-georges.jpg','/projets/branding-strategy/georges/georges-boitelivraison.png'],
+            ['/images/projets/branding-strategy/georges/etiquette-pot.jpg','/images/projets/branding-strategy/georges/boite-georges.jpg','/images/projets/branding-strategy/georges/georges-boitelivraison.png'],
+            ['/images/projets/branding-strategy/georges/etiquette-pot.jpg','/images/projets/branding-strategy/georges/boite-georges.jpg','/images/projets/branding-strategy/georges/georges-boitelivraison.png'],
           ]
 },
 //vb
@@ -153,9 +153,9 @@ const descriptionprojectsArr = [
               id: 3,
               client: 'Valette & Berthelsen Avocats',
               discover: ["scroller pour découvrir le projet","scroll down to discover the project"],
-              videoDesktop: '/projets/branding-strategy/vb/vb-video-hover.mp4',
-              videoMobile: '/projets/branding-strategy/vb/vb-video-hover.mp4',
-              image: '/projets/branding-strategy/vb/vb-img.jpg',
+              videoDesktop: '/images/projets/branding-strategy/vb/vb-video-hover.mp4',
+              videoMobile: '/images/projets/branding-strategy/vb/vb-video-hover.mp4',
+              image: '/images/projets/branding-strategy/vb/vb-img.jpg',
               title: 'VB Avocats',
               baseline:["Redéfinir l'excellence juridique","Redefining Legal Excellence"],
               infos: [
@@ -188,13 +188,13 @@ const descriptionprojectsArr = [
             "La palette vert et argenté et le symbole de Thémis ont été choisis pour incarner les valeurs fondamentales de notre firme d’avocats. Le vert symbolise l’équilibre, l’harmonie et la justice. Il évoque aussi la croissance, la confiance et l’espoir, des notions essentielles pour accompagner nos clients vers des solutions justes et durables. L’argenté incarne la modernité, la rigueur et la transparence. Il reflète notre engagement à offrir des services clairs, efficaces et innovants, tout en garantissant une approche professionnelle et intègre. Le symbole de Thémis, déesse de la justice, représente l’équité, l’impartialité et la vérité. Avec sa balance, elle incarne la recherche constante d’équilibre et de justesse dans nos actions, tandis que son glaive rappelle notre détermination à défendre les droits de nos clients avec force et conviction. Cette identité visuelle traduit parfaitement notre mission : allier tradition et modernité pour défendre vos intérêts avec excellence, intégrité et humanité.",
             "The green and silver palette and the symbol of Themis were chosen to embody the core values of our law firm. Green symbolizes balance, harmony, and justice. It also evokes growth, trust, and hope, essential concepts in guiding our clients toward fair and sustainable solutions. Silver represents modernity, rigor, and transparency. It reflects our commitment to delivering clear, effective, and innovative services while ensuring a professional and ethical approach. The symbol of Themis, the goddess of justice, stands for fairness, impartiality, and truth. With her scales, she embodies the constant pursuit of balance and fairness in our actions, while her sword reminds us of our determination to defend our clients' rights with strength and conviction. This visual identity perfectly conveys our mission: combining tradition and modernity to defend your interests with excellence, integrity, and humanity."
           ],
-          image: '/projets/none.png',
+          image: '/images/projets/none.png',
           },
         ],
               sectionsImg:
               [
-                ['/projets/branding-strategy/vb/vb-section1aen.png','/projets/branding-strategy/vb/vb-section2b.jpg','/projets/branding-strategy/vb/vb-section1en.png','/projets/branding-strategy/vb/vb-section2d.jpg','/projets/branding-strategy/vb/vb-img.jpg','/projets/branding-strategy/vb/vb-section2c.jpg'],
-                ['/projets/branding-strategy/vb/vb-section1afr.png','/projets/branding-strategy/vb/vb-section2b.jpg','/projets/branding-strategy/vb/vb-section1fr.png','/projets/branding-strategy/vb/vb-section2d.jpg','/projets/branding-strategy/vb/vb-img.jpg','/projets/branding-strategy/vb/vb-section2c.jpg'],  
+                ['/images/projets/branding-strategy/vb/vb-section1aen.png','/images/projets/branding-strategy/vb/vb-section2b.jpg','/images/projets/branding-strategy/vb/vb-section1en.png','/images/projets/branding-strategy/vb/vb-section2d.jpg','/images/projets/branding-strategy/vb/vb-img.jpg','/images/projets/branding-strategy/vb/vb-section2c.jpg'],
+                ['/images/projets/branding-strategy/vb/vb-section1afr.png','/images/projets/branding-strategy/vb/vb-section2b.jpg','/images/projets/branding-strategy/vb/vb-section1fr.png','/images/projets/branding-strategy/vb/vb-section2d.jpg','/images/projets/branding-strategy/vb/vb-img.jpg','/images/projets/branding-strategy/vb/vb-section2c.jpg'],  
               ]
   },
 // nda
@@ -202,9 +202,9 @@ const descriptionprojectsArr = [
         id: 4,
         client: "Émile Trubert",
         discover: ["scroller pour découvrir le projet","scroll down to discover the project"],
-        videoDesktop: '/projets/illu_edition/nda/nda-2_hover.mp4',
-        videoMobile: '/projets/illu_edition/nda/nda-2_hover.mp4',
-        image: '/projets/illu_edition/nda/nda-1.jpg',
+        videoDesktop: '/images/projets/illu_edition/nda/nda-2_hover.mp4',
+        videoMobile: '/images/projets/illu_edition/nda/nda-2_hover.mp4',
+        image: '/images/projets/illu_edition/nda/nda-1.jpg',
         title: "Naissance d'une amitié",
         baseline:["L'amitié est une âme en deux corps","Friendship is a soul in two bodies"],
         infos: [['2024', 'Illustration', 'Littérature contemporaine'],['2024', 'Illustration', 'Contemporary Literature']],
@@ -223,8 +223,8 @@ const descriptionprojectsArr = [
         ],
         sectionsImg: 
         [
-          ['/projets/illu_edition/nda/nda-1.png','/projets/illu_edition/nda/nda-2.png'],
-          ['/projets/illu_edition/nda/nda-1.png','/projets/illu_edition/nda/nda-2.png'],
+          ['/images/projets/illu_edition/nda/nda-1.png','/images/projets/illu_edition/nda/nda-2.png'],
+          ['/images/projets/illu_edition/nda/nda-1.png','/images/projets/illu_edition/nda/nda-2.png'],
         ]
       },
 // pascale
@@ -232,9 +232,9 @@ const descriptionprojectsArr = [
         id: 5,
         client: 'Pascale Laffon',
         discover: ["scroller pour découvrir le projet","scroll down to discover the project"],
-        videoDesktop: '/projets/web/pl/pl_video.mp4',
-        videoMobile: '/projets/web/pl/pl_video.mp4',
-        image: '/projets/web/pl/pl-img.jpg',
+        videoDesktop: '/images/projets/web/pl/pl_video.mp4',
+        videoMobile: '/images/projets/web/pl/pl_video.mp4',
+        image: '/images/projets/web/pl/pl-img.jpg',
         title: 'Pascale Laffon',
         baseline:["Invincible est la douceur","Invincible is gentleness"],
         infos: [['2024', 'Site vitrine', 'Médecine holistique'],['2024', 'Showcase website', 'Holistic medicine']],
@@ -263,8 +263,8 @@ const descriptionprojectsArr = [
             "L’encre de chine comme symbole d’élégance et de finesse. Raconter graphiquement la pratique de la micropraxie, c’était parvenir à parler d’un univers doux, calme mais puissant. Ainsi l’encre de chine s’est révélée comme étant le médium le plus à même de nous transporter dans l’univers de Pascale Laffon. Un titre, une signature pour faire du nom de son entreprise un concept.",
             "Chinese ink as a symbol of elegance and refinement. Graphically depicting the practice of micropraxis meant conveying a gentle, calm yet powerful universe. Thus, Chinese ink emerged as the medium best suited to transport us into Pascale Laffon's world. A title, a signature, to transform the name of her business into a concept."
           ],
-          imageEN: '/projets/web/pl/pl-section1en.png',
-          image: '/projets/web/pl/pl-section1.png'
+          imageEN: '/images/projets/web/pl/pl-section1en.png',
+          image: '/images/projets/web/pl/pl-section1.png'
           },
           {title:'Pascale Laffon',
           categories: [
@@ -276,7 +276,7 @@ const descriptionprojectsArr = [
             "Tirer le portrait de Pascale et de son cabinet permettent d’aller à la rencontre du patient avant même qu’il prenne rendez-vous. Cette approche rend l'expérience vivante et chaleureuse, invitant ainsi les patients à entrer dans l'univers de Pascale et à établir une connexion personnelle dès le début.",
             "Capturing portraits of Pascale and her practice allows potential patients to get acquainted even before scheduling an appointment. This approach brings a lively and welcoming feel, inviting patients into Pascale's world and creating a warm, personal connection from the start.",
           ],
-          image: '/projets/web/pl/pl-section2.png',
+          image: '/images/projets/web/pl/pl-section2.png',
           },
           {title:'Pascale Laffon',
             categories: [
@@ -288,7 +288,7 @@ const descriptionprojectsArr = [
               "Pour immerger encore davantage les utilisateurs dans l'univers unique de Pascale, il est apparu évident de créer une iconographie exclusive. En concevant des pictogrammes spécialement imaginés pour illustrer la pratique de la micropraxie, nous avons pu raconter son histoire de manière authentique et engageante.",
               "To further immerse users in Pascale's unique world, it became clear that creating an exclusive iconography was essential. By designing custom pictograms that vividly narrate the practice of micropraxis, we were able to tell her story in an authentic and engaging way.",
             ],
-            image: '/projets/web/pl/pl-section3.png',
+            image: '/images/projets/web/pl/pl-section3.png',
             },
             {title:'Pascale Laffon',
               categories: [
@@ -300,7 +300,7 @@ const descriptionprojectsArr = [
                 "Afin de cristalliser, cette refonte, en dernier lieu, il est apparu essentiel de simplifier le logotype déjà existant de Pascale Laffon et de l’animer.",
                 "To finalize this redesign, it became essential to simplify Pascale Laffon's existing logotype and animate it.",
               ],
-              video: '/projets/web/pl/pl-section4.mp4',
+              video: '/images/projets/web/pl/pl-section4.mp4',
               },
         ],
 },
@@ -354,9 +354,9 @@ const descriptionprojectsArr = [
         id: 6,
         client: 'Maria Lou Diaz',
         discover: ["scroller pour découvrir le projet","scroll down to discover the project"],
-        videoDesktop: '/projets/illu_edition/pp/video_type_hp.mp4',
-        videoMobile: '/projets/illu_edition/pp/video_type_hp.mp4',
-        image: '/projets/illu_edition/pp/pp-img.png',
+        videoDesktop: '/images/projets/illu_edition/pp/video_type_hp.mp4',
+        videoMobile: '/images/projets/illu_edition/pp/video_type_hp.mp4',
+        image: '/images/projets/illu_edition/pp/pp-img.png',
         title: 'Pile-Poële',
         baseline: ["Ouvrez-vous au monde par la cuisine.", 'Open up to the World through Cuisine'],
         infos: [
@@ -385,7 +385,7 @@ const descriptionprojectsArr = [
             "Écrire une recette se fait dans la plupart des cas, sur un bout de papier, à la main et de manière plutôt rapide. Pile-Poële dans son dessin tente de réunir cet aspect cursif de l’écriture propre à la prise de note manuscrite et le besoin de structure et de discipline de la discipline culinaire. L'exagération du type où les ligatures se dessinent naturellement ouvre de nouvelles perspectives typographiques et sociétales en facilitant la création de nouveaux glyphes. Les pictogrammes sont minimalistes dans un souci de les rendre simples à re-dessiner manuellement et facilement ré-appropriables. Toujours dans cette volonté d’inclusivité et d’accessibilité, les pictogrammes dessinent une cuisine universelle avec des ustensiles issus de la gastronomie mais également des cuisines familiales méditerranéennes (faitout, panier d’osier, pot de yaourt, etc). La cuisine à dessiner devient ainsi universelle et humaine. Au-delà des ustensiles et aliments, les systèmes métriques se représentent aussi humainement que possible : par la main (pincée, poignée, etc).",
             "Writing a recipe is typically done on a piece of paper, by hand, and often quickly. Pile-Poële's design seeks to merge the cursive aspect of handwritten notes with the structured and disciplined nature of culinary practice. The exaggeration of typefaces where ligatures naturally emerge opens up new typographic and societal perspectives by facilitating the creation of new glyphs. The pictograms are minimalist, designed to be easy to redraw manually and readily reappropriated. In the spirit of inclusivity and accessibility, the pictograms depict a universal cuisine, featuring utensils from gastronomy as well as Mediterranean family kitchens (such as a stew pot, wicker basket, yogurt pot, etc.). Thus, the cuisine depicted becomes universal and human. Beyond utensils and food items, metric systems are represented as humanely as possible: by hand (pinch, handful, etc.)."
           ],
-          image: '/projets/illu_edition/pp/pp-section1.jpg',
+          image: '/images/projets/illu_edition/pp/pp-section1.jpg',
           },
           {title:'Pile-Poële',
           subtitle: ['Améliorations du projet', 'Project Improvements'],
@@ -393,7 +393,7 @@ const descriptionprojectsArr = [
             "Ce fut ma première tentative d’une réponse typographique à ce questionnement. Elle reste pour le moment probablement trop mécanique dans sa forme et insuffisamment inclusive d'un point de vue culturel. Pour pallier cet aspect mécanique du glyphe et des caractères, j’envisage également une variante cursive de la fonte. Parmi les autres améliorations à venir, il y aura le dessin des capitales et l’élargissement du set de glyphes pictographiques. Il me semble nécessaire de proposer un dessin des glyphes plus colorés afin de rendre davantage compte de l’aspect sensoriel et vivant propre à la cuisine. Pour l'instant, les pictogrammes sont principalement 'euro-centrés'. L’idée serait donc de proposer l’intégralité des ustensiles et aliments existants mondialement afin que l’inclusivité devienne totale. En ce qui concerne les ligatures 'gender-inclusive' disponibles, elles sont également incomplètes. Ce projet est encore en construction car l’idée d’une communication par le pictogramme est un réel 'challenge' au vu de la pluralité des cultures et des langues existantes. En tant que personne européenne, ce qui pourrait me sembler être une réponse satisfaisante à un système langagier universel, ne l’est pas forcément pour une personne issue d’une culture différente de la mienne. Communiquer autour de la cuisine ne nécessite pas seulement la traduction des ustensiles et aliments. Une multitude d’autres paramètres essentiels sont nécessaires à la transmission d’une recette, d’une technique ou d’un savoir-faire. Pile-Poële reste donc un début de réflexion autour de cette question très vaste de la sauvegarde du patrimoine culinaire populaire humain. Elle reste un début de réponse typographique toujours en construction.",
             "This was my first attempt at a typographic response to this question. At the moment, it may still be too mechanical in form and insufficiently inclusive from a cultural perspective. To address the mechanical aspect of the glyph and characters, I am also considering a cursive variant of the font. Among other forthcoming improvements, there will be the design of uppercase letters and the expansion of the set of pictographic glyphs. It seems necessary to offer a more colorful design of the glyphs to better convey the sensory and lively aspect inherent to cuisine. Currently, the pictograms are mainly 'euro-centric'. The idea, therefore, is to include all utensils and foods existing globally to achieve total inclusivity. Regarding the available gender-inclusive ligatures, they are also incomplete. This project is still under construction because the concept of communication through pictograms is a real challenge given the diversity of cultures and languages. As a European, what may seem like a satisfactory response to a universal language system may not necessarily be so for someone from a different culture than mine. Communicating about cuisine requires not only the translation of utensils and food items but also numerous other essential parameters for transmitting a recipe, technique, or expertise. Therefore, Pile-Poële remains the beginning of reflection on this very broad question of preserving human culinary heritage. It is an initial typographic response still under development.",
           ],
-          image: '/projets/illu_edition/pp/pp-section2.png',
+          image: '/images/projets/illu_edition/pp/pp-section2.png',
           },
           { title:"Pile-Poële",
             subtitle: ['Publications', 'Publications'],
@@ -401,13 +401,13 @@ const descriptionprojectsArr = [
               "Pile-Poele a été ajouté à l’invetaire créé par le collectif Bye-Bye Binary de 2017 à 2023.",
               "Pile-Poële was added to the inventory created by the Bye-Bye Binary collective from 2017 to 2023.",
             ],
-            image: '/projets/illu_edition/pp/pp-section3.jpg',
+            image: '/images/projets/illu_edition/pp/pp-section3.jpg',
             },
         ],
         sectionsImg:
         [
-          ['/projets/illu_edition/pp/pp-section4.png', '/projets/illu_edition/pp/pp-section5.png'],
-          ['/projets/illu_edition/pp/pp-section4.png', '/projets/illu_edition/pp/pp-section5.png'],
+          ['/images/projets/illu_edition/pp/pp-section4.png', '/images/projets/illu_edition/pp/pp-section5.png'],
+          ['/images/projets/illu_edition/pp/pp-section4.png', '/images/projets/illu_edition/pp/pp-section5.png'],
         ]
 },
 //memoire
@@ -415,9 +415,9 @@ const descriptionprojectsArr = [
         id: 7,
         client: "Université Toulouse Jean-Jaurès 2",
         discover: ["scroller pour découvrir le projet","scroll down to discover the project"],
-        videoDesktop: '/projets/illu_edition/memoire/memoire-hover.mp4', 
-        videoMobile: '/projets/illu_edition/memoire/memoire-hover.mp4', 
-        image: '/projets/illu_edition/memoire/memoire1.jpg',
+        videoDesktop: '/images/projets/illu_edition/memoire/memoire-hover.mp4', 
+        videoMobile: '/images/projets/illu_edition/memoire/memoire-hover.mp4', 
+        image: '/images/projets/illu_edition/memoire/memoire1.jpg',
         title: "En faveur d'une grammaire culinaire populaire",
         baseline:["Communiquer universellement par la cuisine","Cuisine as a mean of communiating"],
         infos: [
@@ -440,11 +440,12 @@ const descriptionprojectsArr = [
         ],
         sectionsImg:
         [
-          ['/projets/illu_edition/memoire/memoire1.jpg','/projets/illu_edition/memoire/memoire2.jpg','/projets/illu_edition/memoire/memoire3.jpg','/projets/illu_edition/memoire/memoire4.jpg','/projets/illu_edition/memoire/memoire5.jpg','/projets/illu_edition/memoire/memoire6.jpg'],
-          ['/projets/illu_edition/memoire/memoire1.jpg','/projets/illu_edition/memoire/memoire2.jpg','/projets/illu_edition/memoire/memoire3.jpg','/projets/illu_edition/memoire/memoire4.jpg','/projets/illu_edition/memoire/memoire5.jpg','/projets/illu_edition/memoire/memoire6.jpg'],
+          ['/images/projets/illu_edition/memoire/memoire1.jpg','/images/projets/illu_edition/memoire/memoire2.jpg','/images/projets/illu_edition/memoire/memoire3.jpg','/images/projets/illu_edition/memoire/memoire4.jpg','/images/projets/illu_edition/memoire/memoire5.jpg','/images/projets/illu_edition/memoire/memoire6.jpg'],
+          ['/images/projets/illu_edition/memoire/memoire1.jpg','images/projets/illu_edition/memoire/memoire2.jpg','/images/projets/illu_edition/memoire/memoire3.jpg','/images/projets/illu_edition/memoire/memoire4.jpg','/images/projets/illu_edition/memoire/memoire5.jpg','/images/projets/illu_edition/memoire/memoire6.jpg'],
         ]
 },
-];     
+];
+     
 const imgStyle: React.CSSProperties = {
           display: 'flex',
           flexWrap: 'nowrap',

@@ -72,7 +72,7 @@ const Deroule: React.FC = () => {
 
           <div className='flex-wrap' id='deroule-item' > {/* ref={el1} */}
             <Image
-              src='/icons/projets/projet.png'
+              src='/images/icons/projets/projet.png'
               alt="icone à l'encre d'un couple de deux personnes"
               width={300}
               height={300}
@@ -89,7 +89,7 @@ const Deroule: React.FC = () => {
 
           <div className='flex-wrap' id='deroule-item'> {/* ref={el2} */}
             <Image
-              src='/icons/projets/devis.png'
+              src='/images/icons/projets/devis.png'
               alt="icone à l'encre d'une enveloppe avec un coeur"
               width={300}
               height={300}
@@ -108,7 +108,7 @@ const Deroule: React.FC = () => {
           <div className='flex-wrap' id='deroule-item'> {/* ref={el3} */}
 
             <Image
-              src='/icons/projets/livrable.png'
+              src='/images/icons/projets/livrable.png'
               alt="icone à l'encre d'un cadeau"
               width={300}
               height={300}

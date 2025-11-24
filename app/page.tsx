@@ -9,7 +9,7 @@ import Splash from "../components/splash/Splash";
 const Header = dynamic(() => import("../components/navbar/header"), {
   loading: () => <div>Loading Header...</div>,
 });
-const Main = dynamic(() => import("../components/sections/herosection"), {
+const Main = dynamic(() => import("../components/sections/hero-section"), {
   loading: () => <div>Loading Main...</div>,
 });
 const Prez = dynamic(() => import("../components/sections/presentation"), {
