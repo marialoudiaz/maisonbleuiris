@@ -22,8 +22,6 @@ const Cible: React.FC<CibleProps> = ({ scrollYProgress }) => {
   const router = useRouter();
   // const isMobile = window.innerWidth <= 768;
   const [isVisible, setIsVisible] = useState(false);
-
-
   const sendChildren = () => {
     console.log(isHovered);
     setisHovered(true);

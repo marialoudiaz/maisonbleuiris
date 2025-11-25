@@ -3,7 +3,10 @@ import React, { useRef, useState, useEffect } from 'react';
 import { useData } from '../context/DataContext';
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
+//composants
 import Header from '../../components/navbar/header';
+import Switch from '../../components/ui/switch';
+import Footer from '../../components/sections/footer';
 import '../../styles/App.scss';
 import '../globals.css';
 
@@ -267,7 +270,7 @@ const Projets = () => {
                   <div className='carousel-btn' style={{ marginLeft: '1rem', marginBottom: '.2rem' }} onClick={handleHover}>
                     <Image
                       src={imageSource ?? ''}
-                      alt='icon'
+                      alt={isEnglish? "Eye icon working as a link to go to the designated project section": "Icône d'un oeil bougeant au survol et servant de lien pour aller à la section du projet en question"}
                       onMouseOver={handleHover}
                       onMouseOut={handleHoverOut}
                       width={100}
@@ -338,6 +341,8 @@ const Projets = () => {
           </div>
       </div>
     </div>
+    <Switch />
+    <Footer />
     </>
   );
 };

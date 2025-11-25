@@ -5,7 +5,10 @@ import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 import '../../styles/App.scss';
 import '../globals.css';
+//composants
 import Header from '../../components/navbar/header';
+import Switch from '../../components/ui/switch';
+import Footer from '../../components/sections/footer';
 
 const Projets = () => {
   const gridContainerRef = useRef(null);
@@ -133,7 +136,7 @@ const Projets = () => {
                       src={imageSource}
                       width={40}
                       height={40}
-                      alt='icon'
+                      alt={isEnglish? "Eye icon working as a link to go to the designated project section": "Icône d'un oeil bougeant au survol et servant de lien pour aller à la section du projet en question"}
                     />
                   </div>
                 </div>
@@ -145,8 +148,9 @@ const Projets = () => {
         ])}
 
       </div>
-
     </div>
+    <Switch />
+    <Footer />
     </>
     
   );

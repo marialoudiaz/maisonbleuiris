@@ -13,15 +13,16 @@ import '../../globals.css';
 function Projet() {
 
 // Recup lang via context glob
-    const router = useRouter();
-    const { indepArray } = useData();
-    const { id } = useParams(); // id dans lurl (dynamiquement)
-    useEffect(()=>{
+  const router = useRouter();
+  const { indepArray } = useData();
+  const isEnglish = indepArray[0].Lang === 'EN';
+  const { id } = useParams(); // id dans lurl (dynamiquement)
+  useEffect(()=>{
       if (!indepArray && !id){
         router.push('/');
       }
-    }, [indepArray, router, id]);
-    const descriptionprojectsArr = [
+  }, [indepArray, router, id]);
+  const descriptionprojectsArr = [
           // bec
           {
             id: 1,
@@ -443,15 +444,15 @@ function Projet() {
                     ['/images/projets/illu_edition/memoire/memoire1.jpg','images/projets/illu_edition/memoire/memoire2.jpg','/images/projets/illu_edition/memoire/memoire3.jpg','/images/projets/illu_edition/memoire/memoire4.jpg','/images/projets/illu_edition/memoire/memoire5.jpg','/images/projets/illu_edition/memoire/memoire6.jpg'],
                   ]
           },
-    ];
-    const imgStyle: React.CSSProperties = {
+  ];
+  const imgStyle: React.CSSProperties = {
               display: 'flex',
               flexWrap: 'nowrap',
               margin: '.2rem 0rem 0rem .3rem',
               width: '40px',
               height: 'auto',
               transition: 'transform 2s ease'
-    };      
+  };      
 // Déterminer les indices en fonction de la langue
 // const Lang = indepArray[0].Lang;
   const Lang = indepArray?.[0]?.Lang ?? 'FR';
@@ -530,7 +531,7 @@ function Projet() {
               >
                 <Image 
                   src={imageSource} 
-                     alt='an icon of an eye that moves from left to right to see the project description when clicked' 
+                    alt={isEnglish? "Eye icon working as a link to go to the designated project section": "Icône d'un oeil bougeant au survol et servant de lien pour aller à la section du projet en question"}
                      width={100} 
                      height={0} 
                   style={imgStyle}
@@ -604,7 +605,7 @@ function Projet() {
                 ) : (
                   <Image 
                     src={Lang !== 'FR' && section.imageEN ? section.imageEN : section.image} 
-                    alt={Lang !== 'FR' ? "Section visual in English" : "Section visual"} 
+                    alt={Lang !== 'FR' ? "Section visual in English" : "Section visuelle"} 
                     width={2600}
                     height={0}
                     style={{width:'100%'}}

@@ -9,9 +9,8 @@ function Services() {
   const {lang} = useData();
   const langIndex = lang === 'fr' ? 1 : 0; // 0 pour EN, 1 pour FR
   const { indepArray } = useData(); 
-  
-
- const services = [
+  const isEnglish = indepArray[0].Lang === 'EN';
+  const services = [
     {
       id: 1,
       title: ['Web dev', 'Développement web'],
@@ -62,7 +61,7 @@ function Services() {
           <div className='service-img'>
             <Image
               src={item.img}
-              alt={item.alt}
+              alt={isEnglish? item.alt[0]: item.alt[1]}
               width={200}
               height={200}
             />
@@ -71,7 +70,7 @@ function Services() {
       ))}
       
     </div>
-          <button className='btn-transp-dark' style={{ margin: '2rem auto' }}  onClick={() => router.push('/contact-us')}>
+      <button className='btn-transp-dark' style={{ margin: '2rem auto' }}  onClick={() => router.push('/contact-us')}>
           <div>
               <svg
                 className="icon-transp"

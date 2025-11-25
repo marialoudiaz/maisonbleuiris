@@ -257,7 +257,11 @@ const Logo = () => {
     <>
     <div className='bg-color-anim'>
       <div style={{position:'relative'}}>
-       <Image id='logo-bg' src='/images/logo/maisonbleuiris-blanc.png' alt='logo en blanc sur fond de couleur' width={380} height={210}/>
+       <Image 
+        id='logo-bg' 
+        src='/images/logo/maisonbleuiris-blanc.png' 
+        alt={lang==='en'? "Maison Bleu Iris white logo on Blue Iris colored background": "Logo de Maison Bleu Iris en blanc sur fond de couleur Bleu Iris"}
+        width={380} height={210}/>
       </div>
     </div>
     </>

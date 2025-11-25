@@ -24,7 +24,7 @@ const Footer: React.FC = () => {
       <div className='footer-logo'>
         <Image 
           src={'/images/logo/maisonbleuiris-noir.png'}
-          alt='logo maria lou diaz'
+          alt='logo maison bleu iris'
           width={1000}
           height={0}
         />

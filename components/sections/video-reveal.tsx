@@ -7,8 +7,8 @@ import '../../styles/App.scss';
 interface VideoProps {
   scrollYProgress: MotionValue<number>;
 }
+
 const VideoReveal: React.FC<VideoProps> = ({ scrollYProgress }) => {
-  
   // refs
   const desktopVideoRef = useRef<HTMLVideoElement>(null);
   const mobileVideoRef = useRef<HTMLVideoElement>(null);
@@ -24,7 +24,6 @@ const VideoReveal: React.FC<VideoProps> = ({ scrollYProgress }) => {
   };
   const graphisme_ethique = videoMap[videoOrdi];
   const graphisme_conscient = videoMap[videoTel];
-
   // Functions
   const handlePlayVideo = (videoRef: React.RefObject<HTMLVideoElement>) => {
     const videoElement = videoRef.current;
@@ -33,7 +32,6 @@ const VideoReveal: React.FC<VideoProps> = ({ scrollYProgress }) => {
       videoElement.play();
     }
   };
-
   // Fullscreen exit
   const resetVideoOnFullscreenExit = (videoRef: React.RefObject<HTMLVideoElement>) => {
     const videoElement = videoRef.current;
@@ -49,16 +47,13 @@ const VideoReveal: React.FC<VideoProps> = ({ scrollYProgress }) => {
       document.removeEventListener('fullscreenchange', handleFullscreenChange);
     };
   };
-
   // Unconditionally call useTransform and useEffect hooks
   const scale = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
   const rotate = useTransform(scrollYProgress, [0, 1], [5, 0]);
-
   useEffect(() => {
     resetVideoOnFullscreenExit(desktopVideoRef);
     resetVideoOnFullscreenExit(mobileVideoRef);
   }, []);
-
   // Return fallback content if data is missing
   if (!indepArray || !indepArray[0].discover) {
     return <div>Loading...</div>;

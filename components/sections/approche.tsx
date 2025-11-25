@@ -16,29 +16,39 @@ const Approche: React.FC = () => {
         return <div>Loading...</div>
       } 
        // Les élements du carousel
-       const dataArray = [
+      const dataArray = [
         {
           index: 0,
           image: authenticity,
-          alt: "cercle avec un trait noir au centre à l'encre de chine",
-          titre: `${indepArray[0].values[0]}`,
-          text: `${indepArray[0].values[0]}`,
+          alt: [
+            "Cercle avec un trait noir au centre, dessiné à l’encre de Chine.",
+            "Circle with a black line in the center, drawn in China ink."
+          ],
+          titre: indepArray[0].values[0],
+          text: indepArray[0].values[0],
         },
         {
           index: 1,
           image: minimalism,
-          alt: "trombone stylisé à l'encre de chine",
-          titre: `${indepArray[0].values[1]}`,
-          text: `${indepArray[0].values[1]}`,
+          alt: [
+            "Trombone stylisé, dessiné à l’encre de Chine.",
+            "Stylized paperclip drawn in China ink."
+          ],
+          titre: indepArray[0].values[1],
+          text: indepArray[0].values[1],
         },
-         {
+        {
           index: 2,
           image: nature,
-          alt: "plante a l'encre de chine",
-          titre: `${indepArray[0].values[2]}`,
-          text: `${indepArray[0].values[2]}`,
+          alt: [
+            "Plante dessinée à l’encre de Chine.",
+            "Plant drawn in China ink."
+          ],
+          titre: indepArray[0].values[2],
+          text: indepArray[0].values[2],
         },
       ];
+
 
 
   return (
@@ -52,7 +62,6 @@ const Approche: React.FC = () => {
                 width={96}
                 height={100}
               />
-             
               <Carousel dataArray={dataArray} />
             </div>
         </div>

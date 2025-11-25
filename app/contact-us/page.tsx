@@ -6,7 +6,10 @@ import '../../styles/App.scss';
 import '../globals.css';
 import { useData } from '@/app/context/DataContext'; // Importer le contexte
 import ContactForm from '../../components/formulaire/contact-form'; // Remplacez par le chemin correct pour le composant
-import Header from '../../components/navbar/header'
+//composants
+import Header from '../../components/navbar/header';
+import Switch from '../../components/ui/switch';
+import Footer from '../../components/sections/footer';
 
 
 const Form: React.FC = () => {
@@ -61,7 +64,9 @@ const Form: React.FC = () => {
           </div>
           
         </div>
-      </div>
+    <Switch />
+    <Footer />
+    </div>
   );
 };
 

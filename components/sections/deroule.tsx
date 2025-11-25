@@ -12,13 +12,12 @@ gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 const Deroule: React.FC = () => {
   const { indepArray} = useData(); // Récupérer les données du contexte
   const router = useRouter();
-
   const { deroule } = indepArray[0];
+  const isEnglish = indepArray[0].Lang === 'EN';
   // const el1 = useRef(null);
   // const el2 = useRef(null);
   // const el3 = useRef(null);
-    const containerRef = useRef<HTMLDivElement>(null);
-
+  const containerRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
     // const elements = [el1.current, el2.current, el3.current];
     const items= containerRef.current?.children;
@@ -72,7 +71,7 @@ const Deroule: React.FC = () => {
           <div className='flex-wrap' id='deroule-item' > {/* ref={el1} */}
             <Image
               src='/images/icons/projets/projet.png'
-              alt="icone à l'encre d'un couple de deux personnes"
+              alt={isEnglish? "China Ink icon of a couple": "Icône à l'encre de Chine d'un couple"}
               width={300}
               height={300}
             />
@@ -89,7 +88,7 @@ const Deroule: React.FC = () => {
           <div className='flex-wrap' id='deroule-item'> {/* ref={el2} */}
             <Image
               src='/images/icons/projets/devis.png'
-              alt="icone à l'encre d'une enveloppe avec un coeur"
+              alt={isEnglish? "China Ink icon of a letter with a heart on top": "Icône à l'encre de Chine d'une enveloppe avec un coeur"}
               width={300}
               height={300}
             />
@@ -108,7 +107,7 @@ const Deroule: React.FC = () => {
 
             <Image
               src='/images/icons/projets/livrable.png'
-              alt="icone à l'encre d'un cadeau"
+              alt={isEnglish? "China Ink icon of a gift box": "Icône à l'encre de Chine d'un cadeau"}
               width={300}
               height={300}
             />

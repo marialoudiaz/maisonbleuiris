@@ -23,29 +23,37 @@ const Prez: React.FC = () => {
   }
   const { expertise, presentation = []} = indepArray[0];
   const dataArray = [
-          {
-            index: 0,
-            image: nature,
-            alt: "cercle avec un trait noir au centre à l'encre de chine",
-            titre: `${indepArray[0].values[0]}`,
-            text: `${indepArray[0].values[1]}`,
-          },
-          {
-            index: 1,
-            image: detail,
-            alt: "trombone stylisé à l'encre de chine",
-            titre: `${indepArray[0].values[2]}`,
-            text: `${indepArray[0].values[3]}`,
-          },
-           {
-            index: 2,
-            image: authenticity,
-            alt: "plante a l'encre de chine",
-            titre: `${indepArray[0].values[4]}`,
-            text: `${indepArray[0].values[5]}`,
-          },
-        ];
-  
+    {
+      index: 0,
+      image: nature,
+      alt: [
+        "Cercle avec un trait noir au centre, dessiné à l’encre de Chine.",
+        "Circle with a black line in the center, drawn in China ink."
+      ],
+      titre: indepArray[0].values[0],
+      text: indepArray[0].values[1],
+    },
+    {
+      index: 1,
+      image: detail,
+      alt: [
+        "Trombone stylisé, dessiné à l’encre de Chine.",
+        "Stylized paperclip drawn in China ink."
+      ],
+      titre: indepArray[0].values[2],
+      text: indepArray[0].values[3],
+    },
+    {
+      index: 2,
+      image: authenticity,
+      alt: [
+        "Plante dessinée à l’encre de Chine.",
+        "Plant drawn in China ink."
+      ],
+      titre: indepArray[0].values[4],
+      text: indepArray[0].values[5],
+    },
+  ];
 
   return (
     <>
