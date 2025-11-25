@@ -382,7 +382,7 @@ function Projet() {
                     subtitle: ['Le dessin des caractères', 'The design of characters'],
                     text: [
                       "Écrire une recette se fait dans la plupart des cas, sur un bout de papier, à la main et de manière plutôt rapide. Pile-Poële dans son dessin tente de réunir cet aspect cursif de l’écriture propre à la prise de note manuscrite et le besoin de structure et de discipline de la discipline culinaire. L'exagération du type où les ligatures se dessinent naturellement ouvre de nouvelles perspectives typographiques et sociétales en facilitant la création de nouveaux glyphes. Les pictogrammes sont minimalistes dans un souci de les rendre simples à re-dessiner manuellement et facilement ré-appropriables. Toujours dans cette volonté d’inclusivité et d’accessibilité, les pictogrammes dessinent une cuisine universelle avec des ustensiles issus de la gastronomie mais également des cuisines familiales méditerranéennes (faitout, panier d’osier, pot de yaourt, etc). La cuisine à dessiner devient ainsi universelle et humaine. Au-delà des ustensiles et aliments, les systèmes métriques se représentent aussi humainement que possible : par la main (pincée, poignée, etc).",
-                      "Writing a recipe is typically done on a piece of paper, by hand, and often quickly. Pile-Poële's design seeks to merge the cursive aspect of handwritten notes with the structured and disciplined nature of culinary practice. The exaggeration of typefaces where ligatures naturally emerge opens up new typographic and societal perspectives by facilitating the creation of new glyphs. The pictograms are minimalist, designed to be easy to redraw manually and readily reappropriated. In the spirit of inclusivity and accessibility, the pictograms depict a universal cuisine, featuring utensils from gastronomy as well as Mediterranean family kitchens (such as a stew pot, wicker basket, yogurt pot, etc.). Thus, the cuisine depicted becomes universal and human. Beyond utensils and food items, metric systems are represented as humanely as possible: by hand (pinch, handful, etc.)."
+                      "Writing a recipe is typically done on a piece of paper, by hand, and often quickly. Pile-Poële's design seeks to merge the cursive aspect of handwritten notes with the structured and disciplined nature of culinary practice. The exaggeration of typefaces where ligatures naturally emerge opens up new typographic and societal perspectives by facilitating the creation of new glyphs. The pictograms are minimalist, designed to be easy to redraw manually and readily reappropriated. In the spirit of inclusivity and accessibility, the pictograms depict a universal cuisine, featuring utensils from gastronomy as well as Mediterranean family kitchens (such as a stew pot, wicker basket, yogurt pot, etc.). Thus, the cuisine depicted becomes universal and human. Beyond utensils and food items, metric systems are represented as humanely as possible: by hand (pinch, handful, etc)."
                     ],
                     image: '/images/projets/illu_edition/pp/pp-section1.jpg',
                     },
@@ -476,6 +476,7 @@ function Projet() {
     }
   };
 
+
   return (
     <>
       <Header />
@@ -505,9 +506,7 @@ function Projet() {
           </div>
         </div>  
   
-
         <div  className='section' id='projet' style={{marginBottom: '5rem'}}>
-         
          <div className='flex-wrap'>
           {/* DIV INFOS*/}
          <div className='projet-infos'>
@@ -521,34 +520,30 @@ function Projet() {
                 <p style={{fontWeight:'600'}} key={index}>{categorie}</p>
               ))}
             </div>
-  
             {descriptionprojectsArr[Number(id)-1].onClick&&
             <div>
               <>{Lang === 'FR' ? <p style={{fontWeight:'300'}}>Découvrir le site</p> : <p style={{fontWeight:'300'}}>Discover the website</p>}</>
               <div id='carousel-btn-projet' 
-                    onMouseOver={handleHover} 
-                    onMouseOut={handleHoverOut} 
-                    onClick={handleDiscoverClick}
+                onMouseOver={handleHover} 
+                onMouseOut={handleHoverOut} 
+                onClick={handleDiscoverClick}
               >
                 <Image 
-                     src={imageSource} 
+                  src={imageSource} 
                      alt='an icon of an eye that moves from left to right to see the project description when clicked' 
                      width={100} 
                      height={0} 
-                     style={imgStyle}
+                  style={imgStyle}
                 />
                   <p>{Lang === 'FR' ? <p>Lien</p> : <p>Link</p>}</p>
               </div>
             </div>
             }
-  
             <div>
               <p>Date</p>
               <p>{descriptionprojectsArr[Number(id)-1].infos[langIndex][0]}</p>
             </div>
-  
          </div>
-
          {/* DIV BESOINS */}
          <div className='projet-infos-besoins'>
               {Lang === 'FR' ? <h2>Besoins</h2> : <h2>Needs</h2>}
@@ -560,12 +555,42 @@ function Projet() {
          {/* DIV SECTIONS */}
            {/* SECTION 2 - EXPLICATION PROJET */}
             {descriptionprojectsArr[Number(id)-1].sections && descriptionprojectsArr[Number(id)-1].sections.length > 0 && (
-              descriptionprojectsArr[Number(id)-1].sections.map((section) => (
+            
+            descriptionprojectsArr[Number(id)-1].sections.map((section) => (
             <>
-            {/* TITRE DE LA PREMIÈRE SECTION */}
-              <div className='projet-infos-titre'>
+            {/* TITRE DE LA PREMIÈRE SECTION 
+            si la section fait plus de 415 caractères => class long-text, pour mieux lire
+            */}
+
+              <div className={`projet-section ${section.text[langIndex].length > 415 ? "long-text" : 'projet-infos-titre'}`}>
                 <h2>{section.subtitle[langIndex]}</h2>
-                <p>{section.text[langIndex]}</p>
+
+             {/* couper tous les 3 phrases */}
+                {section.text[langIndex].length <= 415 ? (
+                  <p>{section.text[langIndex]}</p>
+
+                )
+                :
+                (
+                  // Couper toutes les 3 phrases : résumé= Texte → split → filtrage → regroupement par 4 → <p> blocs
+                  section.text[langIndex]
+                    .split(".") // couper apres le point final
+                    .filter(sentence => sentence.trim().length > 0) // éviter les vides — apres methode split qui en crée dans le tableau
+                    .reduce((acc, sentence, index) => { // groupe, phrase, index ds grp
+                      const sentenceClean = sentence.trim() + "."; // remettre point final, supprimé par .split
+
+                      const chunkIndex = Math.floor(index / 4); // savoir dans quel groupe remettre la phrase:  index 0 → 0 / 4 = 0 // index 1 → 1 / 4 = 0 /// index 2 → 2 / 4 = 0 /// index 3 → 3 / 4 = 0 /// index 4 → 4 / 4 = 1 /// index 5 → 5 / 4 = 1 /// phrases 1 à 4 → groupe 0 /// phrases 5 à 8 → groupe 1 /// phrases 9 à 12 → groupe 2
+                      
+                      // si c'est le premier passage sur ce bloc, on initialise
+                      if (!acc[chunkIndex]) acc[chunkIndex] = sentenceClean; // créer le groupe si nexiste pas encore
+                      else acc[chunkIndex] += " " + sentenceClean; // sinon ajouter phrase au groupe existant
+                      return acc;
+                    }, [])
+                    .map((chunk, i) => ( //chq groupe de 4 phrases devient un paragraphe
+                      <p key={i}>{chunk}</p>
+                    ))
+                )
+              }
               </div>
     
               {/* IMAGE OU VIDEO DE PREMIERE SECTION */}
@@ -587,6 +612,7 @@ function Projet() {
                 )}
               </div>
             </>
+
             ))
             )}
             {/* SECTION 3 - IMAGES SUPPLÉMENTAIRES*/}

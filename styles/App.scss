@@ -1883,6 +1883,14 @@ border: 1px solid rgba(39, 34, 33, 0.384) ;
     text-align: left;
   
   }
+  .long-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;   /* Texte centré */
+    gap: 2rem;
+    margin: 0 5rem
+  }
   .projet-infos-img img,
   .projet-infos-img div video{
     margin-top: 3rem;
