@@ -31,16 +31,16 @@ const Projets = () => {
 
   const projectsArr = [
     //branding
-    { id: 1, title: "Domaine de la Pinède", img: '/projets/web/bec/bec-hp-1.jpg', video: '/projets/web/bec/bec-hover.mp4', category:["Web development","Développement web"] },
-    { id: 2, title: "Georges, Aïoli Catalan", img: '/projets/branding-strategy/georges/georges-hp.png', video: '/projets/branding-strategy/georges/video-hover.mp4', category:["Branding strategy","Stratégie de marque"] },
-    { id: 3, title: "V&B Avocats", img: '/projets/branding-strategy/vb/vb-img.jpg', video: '/projets/branding-strategy/vb/vb-video-hover.mp4', category:["Branding strategy","Stratégie de marque"] },
+    { id: 1, title: "Domaine de la Pinède", img: '/images/projets/web/bec/bec-hp-1.jpg', video: '/images/projets/web/bec/bec-hover.mp4', category:["Web development","Développement web"] },
+    { id: 2, title: "Georges, Aïoli Catalan", img: '/images/projets/branding-strategy/georges/georges-hp.png', video: '/images/projets/branding-strategy/georges/video-hover.mp4', category:["Branding strategy","Stratégie de marque"] },
+    { id: 3, title: "V&B Avocats", img: '/images/projets/branding-strategy/vb/vb-img.jpg', video: '/images/projets/branding-strategy/vb/vb-video-hover.mp4', category:["Branding strategy","Stratégie de marque"] },
     //web
-    { id: 4, title: "Naissance d'une amitié", img: '/projets/illu_edition/nda/nda-2.png', video: '/projets/illu_edition/nda/nda-2_hover.mp4', category:["Illustration, Print & Publishing","Illustration & Édition"] },
-    { id: 5, title: "Pascale Laffon", img: '/projets/web/pl/pl-img.jpg', video: '/projets/web/pl/pl-video-hover.mp4', category:["Web development","Développement web"] },
+    { id: 4, title: "Naissance d'une amitié", img: '/images/projets/illu_edition/nda/nda-2.png', video: '/images/projets/illu_edition/nda/nda-2_hover.mp4', category:["Illustration, Print & Publishing","Illustration & Édition"] },
+    { id: 5, title: "Pascale Laffon", img: '/images/projets/web/pl/pl-img.jpg', video: '/images/projets/web/pl/pl-video-hover.mp4', category:["Web development","Développement web"] },
     //illu
     // { id: 6, title: "Posters", img: '/projets/illu_edition/posters/posters-img.jpg', video: '/projets/illu_edition/nda/nda-2_hover.mp4', category:["Illustration, Print & Publishing","Illustration & Édition"] },
-    { id: 6, title: "Pile-Poële", img: '/projets/illu_edition/pp/pp-img.png', video: '/projets/illu_edition/pp/video_type_hp.mp4', category:["Illustration, Print & Publishing","Illustration & Édition"] },
-    { id: 7, title: "En faveur d'une ...", img: '/projets/illu_edition/memoire/memoire1.jpg', video: '/projets/illu_edition/memoire/memoire-hover.mp4', category:["Illustration, Print & Publishing","Illustration & Édition"] },
+    { id: 6, title: "Pile-Poële", img: '/images/projets/illu_edition/pp/pp-img.png', video: '/images/projets/illu_edition/pp/video_type_hp.mp4', category:["Illustration, Print & Publishing","Illustration & Édition"] },
+    { id: 7, title: "En faveur d'une ...", img: '/images/projets/illu_edition/memoire/memoire1.jpg', video: '/images/projets/illu_edition/memoire/memoire-hover.mp4', category:["Illustration, Print & Publishing","Illustration & Édition"] },
   ];
 
   // --- Regrouper les projets par catégorie ---

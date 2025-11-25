@@ -24,9 +24,11 @@ const Logo = () => {
     discover: 'découvrir le showreel',
     location: ['actuellement à', 'Montpellier, FR'],
     cta: [
-      "découvrir notre mission",
-      "démarrer votre projet",
-      "découvrir nos autres projets",
+      "Découvrir notre mission",
+      "Démarrer votre projet",
+      "Découvrir nos autres projets",
+      "Découvrez nos offres"
+
     ],
     philo:[
           "Notre philosphie et mission",
@@ -68,7 +70,7 @@ const Logo = () => {
       //Mon approche mêle narration, esthétique naturelle et valeurs éthiques. Issue d'une formation solide en design graphique, je propose une offre complète : production imprimée, packaging, webdesign et illustration.",
       "À propos"
     ],
-    expertise: [' • Print • Packaging • Développement web • Motion • Vidéo • Photo • Rédaction • Réseaux sociaux • Illustration '],
+    expertise: [' • Print • Packaging • Développement web • Motion • Vidéo • Photo • Réseaux sociaux • Illustration '],
     services: ['Mes services','Une multitude de compétences pour un projet unique.','Nous développons ensemble une offre sur mesure selon vos besoins.','Site vitrine', 'Site multipage', 'Vidéos & photos', 'Réseaux sociaux', 'Blog', 'Identité visuelle', 'Logotype', 'Signalétique', 'Packaging', 'Illustration'],
     values: [
       "Éthique",
@@ -142,10 +144,9 @@ const Logo = () => {
         location: ['currently in','Montpellier, FR.'], // location
         cta: [
           "discover our mission",
-          "I want to talk about my project",
+          "Launch your project",
           "Discover our other projects",
-          // "schedule a video call",
-          // "I'd rather call you"
+          "Starting your business ? Discover our packages."
         ],
         philo: [
           "Our Philosophy and Mission",
@@ -186,7 +187,7 @@ const Logo = () => {
           " We develop brand identities of those who promote a wellbeing, ethical and conscious philosophy: spaces, brands, craftmen, practicionners, etc…",
           "About us"
         ],
-        expertise: [' • Print • Packaging • Web development • Motion • Video • Photo • Copywriting • Social Media • Illustration '],
+        expertise: [' • Print • Packaging • Web development • Motion • Video • Photo • Social Media • Illustration '],
         services: ['My services','A multitude of skills for a unique project.','We develop, together, a tailor-made offer according to your needs.','Showcase website', 'Multipage website','Videos & photos', 'Social medias', 'Blog', 'Visual identity', 'Logotype', 'Signage', 'Packaging', 'Illustration'],
         values:[
         "Ethic",

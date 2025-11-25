@@ -48,7 +48,7 @@ const Approche: React.FC = () => {
           <div className='flex-wrap'>
               <Image
                 src="/images/logo/medaillon.png"
-                alt="le logo sous forme de médaillon"
+                alt="le logo sous forme de médaillon avec l'iris à l'encre de chine"
                 width={96}
                 height={100}
               />

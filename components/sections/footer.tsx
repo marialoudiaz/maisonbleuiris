@@ -15,8 +15,8 @@ const Footer: React.FC = () => {
   }
   const navLinks = [
     { href: '#Services', label: indepArray[0].header[0], id: 'service', route:'/#Services' },
-    { href: '#Projets', label: indepArray[0].header[1], id: 'projets', route:'/projets'},
-    { href: '#Contact', label: 'Contact', id: 'Contact', route:'/#Contact'}
+    { href: '#Projets', label: indepArray[0].header[1], id: 'projets', route:'/key-projects'},
+    { href: '#Contact', label: 'Contact', id: 'Contact', route:'/contact-us'}
   ];
   return (
     <div className='footer'>
@@ -57,7 +57,7 @@ const Footer: React.FC = () => {
               </div>
               <div
                   
-                  onClick={() => window.open('https://github.com/marialoudiaz/', '_blank', 'noreferrer')}
+                  onClick={() => window.open('https://www.github.com/marialoudiaz/', '_blank', 'noreferrer')}
               >
                 <div className='footer-icon'>
                   <FontAwesomeIcon  icon={faGithub} />

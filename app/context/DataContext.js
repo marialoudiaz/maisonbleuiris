@@ -15,15 +15,16 @@ const indepArrayEN = [
       location: ['currently in','Montpellier, FR.'], // location
       cta: [
         "Dive-in",
-        "I want to talk about my project",
+        "Launch your project",
         "Discover our other projects",
+        "Starting your business ? Discover our offers."
       ],
       presentation: [
         "Supporting those who shape the world with love and care.", 
         "I create thoughtful and meaningful visual identities for artisans, farmers, chefs, conscious producers, food brands, and hospitality spaces. Projects that speak of seasons, of hands that create, of ethics and the beauty of the living world. Projects that help a new vision of the world blossom — one that is fair, warm, and deeply human. My approach blends storytelling, natural aesthetics, and ethical, fair values — to build brands that nourish the world differently. With a solid background in graphic design, I offer a complete service including print production, packaging, web design, and illustration.",
         "About us"
       ],
-      expertise: [' • Print • Packaging • Web development • Motion • Video • Photo • Copywriting • Social Media • Illustration '],
+      expertise: [' • Print • Packaging • Web development • Motion • Video • Photo • Social Media • Illustration '],
       services: ['My services','A multitude of skills for a unique project.','We develop, together, a tailor-made offer according to your needs.','Showcase website', 'Multipage website','Videos & photos', 'Social medias', 'Blog', 'Visual identity', 'Logotype', 'Signage', 'Packaging', 'Illustration'],
       values:[
       "Ethic",
@@ -33,7 +34,14 @@ const indepArrayEN = [
       deroule:['flex','Your project',"Each project is unique, just like you. That's why I support you at every step, to create a custom solution that best fits your needs.","Just a clarification","We discuss your project and together establish a strategy. Depending on your project, we define the services required. Each quote is custom-made to closely match your needs.","The adventure begins","I will send you a quote including all services as well as the time needed for their completion. The delivery date is set.","Tada!","This is the day you receive your first deliverable. From then on, you have the option to request two modifications (free of charge)."],
       citation: 'For a design that suits you.',
       form: ["Let's tell",'your','story','First & Last Name','Email','Company/Project','Industry/Sector','What kind of project are you after ?','Website', 'Visual identity', 'Other (explain)','Tell me more about your project',"Let's collaborate to take your business to the next level and make it flourish 🌱. Ideas, questions, a strong desire to get in touch? I'm listening.","Send"],
-      words: ['artisans', 'farmers', 'chefs', 'conscious producers', 'food brands', 'hospitality spaces','restaurants', 'cafés', 'guesthouses'],
+      words: [
+          'local artisans', 
+          'organic farmers', 
+          'ethical producers', 
+          'hand-made brands',
+          'holistic hospitality venues',
+          'conscious restaurants',
+      ],
       ml: [
         "Legal Notice",
         "About Maison Bleu Iris",
@@ -46,7 +54,7 @@ const indepArrayEN = [
         "Hypertext Links",
         "External links on this site are provided for informational purposes only. Maria Lou Diaz disclaims any responsibility for their content and compliance with public order and decency standards, as well as their personal data protection policies. By accessing another site via a hyperlink, you agree to do so at your own risk. Consequently, any direct or indirect damage resulting from your access to another linked site cannot engage the responsibility of Maria Lou Diaz.",
         "Site Access",
-        "Maria Lou Diaz strives to ensure continuous access to the website www.marialoudiaz.fr. However, interruptions may occur for maintenance or technical reasons, without liability for the publisher for any resulting consequences."]
+      "Maria Lou Diaz strives to ensure continuous access to the website www.marialoudiaz.fr. However, interruptions may occur for maintenance or technical reasons, without liability for the publisher for any resulting consequences."]
 },];
 // Créer le contexte
 const DataContext = createContext();

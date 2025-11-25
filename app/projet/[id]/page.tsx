@@ -63,7 +63,7 @@ function Projet() {
               video: '/images/projets/web/bec/bec-site-deroule.mp4',
               },
               {
-              subtitle:[ "Réenchanter le Web – L’Art du Storytelling Visuel","Re-enchanting the Web – The Art of Visual Storytelling"],
+              subtitle:[ "Réenchanter le web, l’art du storytelling visuel","Re-enchanting the web, the art of visual storytelling"],
               text:[
               "Dans le monde digital, le toucher semble perdu. Mais et si… on pouvait recréer la sensation du réel ? Réserver devient rituel. Un ticket inspiré du réel — ses coins arrondis, sa texture papier, sa typographie imparfaite. Un geste qui ancre. Un détail skeuomorphe qui ramène à l’expérience concrète. Les symboles se révèlent.Comme de l’encre qui s’épanche lentement sur une page ancienne. Ils apparaissent. Suggèrent plus qu’ils ne montrent. Une invitation à l’interprétation, au mystère. Le texte s’écrit sous vos yeux. Lettre après lettre, comme une machine à écrire ou les pages d’un vieux grimoire. L’histoire ne se donne pas, elle se compose en direct. L’écran devient livre. Le web, une expérience narrative, vivante, charnelle.",
               "In the digital world, touch seems lost. But what if… we could recreate the feeling of matter? Booking becomes ritual. A ticket drawn from real life — rounded corners, paper textures, imperfect type. A gesture that grounds. A skeuomorphic detail that brings back the sense of presence. Symbols reveal themselves. Like ink slowly blooming across an old page.They appear gradually. Suggest more than they show. An invitation to mystery and meaning. Words write themselves before your eyes. Letter by letter — like a typewriter or the pages of an old storybook. The narrative doesn't arrive all at once. It unfolds. The screen becomes a book. The web, a living, breathing experience."
@@ -73,8 +73,8 @@ function Projet() {
               {
               subtitle:
               [ 
-                "Retrouver la Matière – Créer une Expérience Authentique",
-                "Bringing Back the Tangible – Designing an Authentic Experience"
+                "Retrouver la matière, créer une expérience authentique",
+                "Bringing back the tangible, designing an authentic experience"
               ],
               text:
               [
@@ -110,9 +110,9 @@ function Projet() {
             onClick: ['https://www.georges-aioli.fr', '_blank'],
             besoins:[
               ["Le projet avait besoin d’un récit visuel fort, capable de porter à la fois une légende ancienne et une identité contemporaine. Il fallait ancrer le produit dans un imaginaire sacré, mais accessible, en respectant l’intimité d’une fabrication artisanale et la force d’un terroir. L’emballage devait être à la hauteur de ce double héritage : celui d’un savoir ancestral et d’un goût intemporel. Enfin, le tout devait s’inscrire dans un langage de marque sobre, élégant et sincère, pour séduire autant les épicuriens que les rêveurs."],
-              ["The project required a strong visual narrative — one that could carry both an ancient legend and a modern identity. It needed to root the product in a sacred yet accessible imagination, honouring the intimacy of artisanal making and the strength of its local origins. The packaging had to live up to this dual legacy: forgotten knowledge and timeless flavour. And ultimately, everything needed to align with a brand language that was sober, elegant and sincere — appealing to both epicureans and dreamers."],
+              ["The project required a strong visual narrative, one that could carry both an ancient legend and a modern identity. It needed to root the product in a sacred yet accessible imagination, honouring the intimacy of artisanal making and the strength of its local origins. The packaging had to live up to this dual legacy: forgotten knowledge and timeless flavour. And ultimately, everything needed to align with a brand language that was sober, elegant and sincere —— appealing to both epicureans and dreamers."],
             ],
-            technologies: ['React', 'After effects', 'Illustrator', 'Ink handdrawing', 'Figma', 'Adobe Creative Suite', 'Express'],
+            technologies: ['React', 'After effects', 'Illustrator', 'Ink hand-drawing', 'Figma', 'Adobe Creative Suite', 'Express'],
             sections: 
               [
                 {
@@ -126,8 +126,8 @@ function Projet() {
                 {
                   subtitle: ["Créer une légende autour de ta mémoire", "To create a tale from your memory."],
                   text:[
-                    "Né d’une légende enracinée au sommet du Canigou, l’aïoli Georges incarne bien plus qu’un simple condiment : il est la mémoire vivante d’un savoir ancien, celui de la recette transmise par feu mon grand-père. Dans le désir d’honorer sa mémoire à travers un projet à partager — pour continuer de le faire vivre dans le présent — j’ai imaginé une légende autour de son nom : Georges, l’ermite catalan. Cette histoire se traduit graphiquement par la création d’un logotype inspiré de sa signature, auquel s’ajoute une typographie des années 50 pour le nom AIOLI CATALAN, ancrant visuellement la recette dans l’époque et l’héritage de mon grand-père. Le timbre, apposé sur le couvercle tel un sceau, complète l’ensemble. On y retrouve le rouge du drapeau catalan, les coordonnées GPS du sommet du Canigou, ses lignes de crêtes, et deux izards sauvages — gardiens silencieux de cette terre. Le timbre, c’est l’invitation au voyage. Le sceau d’une promesse.",
-                    "Born from a legend rooted at the summit of Mount Canigou, aïoli Georges is much more than a simple condiment: it is the living memory of ancestral knowledge, the recipe passed down from my late grandfather. Driven by the desire to honour his memory through a shared project — to keep his presence alive in the present — I created a legend around his name: Georges, the Catalan hermit. This story is expressed visually through the creation of a logotype inspired by his signature, complemented by a 1950s-style typeface for the name AIOLI CATALAN, grounding the recipe in the era and heritage of my grandfather. A stamp, placed on the lid like a seal, completes the design. It features the red of the Catalan flag, the GPS coordinates of Mount Canigou’s summit, its ridgelines, and two wild izards — silent guardians of this land. The stamp is an invitation to travel. The seal of a promise."
+                    "Né d’une légende enracinée au sommet du Canigou, l’aïoli Georges incarne bien plus qu’un simple condiment : il est la mémoire vivante d’un savoir ancien, celui de la recette transmise par feu mon grand-père. Dans le désir d’honorer sa mémoire à travers un projet à partager, pour continuer de le faire vivre dans le présent, j’ai imaginé une légende autour de son nom : Georges, l’ermite catalan. Cette histoire se traduit graphiquement par la création d’un logotype inspiré de sa signature, auquel s’ajoute une typographie des années 50 pour le nom AIOLI CATALAN, ancrant visuellement la recette dans l’époque et l’héritage de mon grand-père. Le timbre, apposé sur le couvercle tel un sceau, complète l’ensemble. On y retrouve le rouge du drapeau catalan, les coordonnées GPS du sommet du Canigou, ses lignes de crêtes, et deux izards sauvages, gardiens silencieux de cette terre. Le timbre, c’est l’invitation au voyage. Le sceau d’une promesse.",
+                    "Born from a legend rooted at the summit of Mount Canigou, aïoli Georges is much more than a simple condiment: it is the living memory of ancestral knowledge, the recipe passed down from my late grandfather. Driven by the desire to honour his memory through a shared project, to keep his presence alive in the present, I created a legend around his name: Georges, the Catalan hermit. This story is expressed visually through the creation of a logotype inspired by his signature, complemented by a 1950s-style typeface for the name AIOLI CATALAN, grounding the recipe in the era and heritage of my grandfather. A stamp, placed on the lid like a seal, completes the design. It features the red of the Catalan flag, the GPS coordinates of Mount Canigou’s summit, its ridgelines, and two wild izards, silent guardians of this land. The stamp is an invitation to travel. The seal of a promise."
                   ],
                   image: '/images/projets/branding-strategy/georges/georges-signature-timbre.png',
                 },
@@ -418,7 +418,7 @@ function Projet() {
                   videoMobile: '/images/projets/illu_edition/memoire/memoire-hover.mp4', 
                   image: '/images/projets/illu_edition/memoire/memoire1.jpg',
                   title: "En faveur d'une grammaire culinaire populaire",
-                  baseline:["Communiquer universellement par la cuisine","Cuisine as a mean of communiating"],
+                  baseline:["Communiquer universellement par la cuisine","Cuisine as a mean of communicating"],
                   infos: [
                     ['2021', 'Édition', 'Rédaction', 'Recherche'],
                     ['2019', 'Publishing', 'Writing', 'Research']
