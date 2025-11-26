@@ -15,6 +15,12 @@ const Form: React.FC = () => {
   const blabla = indepArray[0].form[12];
   const [index, setIndex] = useState(0);
   const langDisplay = indepArray[0].Lang;
+  const packages=[
+    type:[{"One-page website pack",""},{"First Logo pack",""},{"TJM",""}],
+    price:[{"",""},{"",""},{"385€ for a day","385€ à la journée"}],
+    services:[{"",""},{"",""},{"",""}],
+    cta["",""],
+  ];
   useEffect(() => {
     const intervalId = setInterval(
       () => setIndex((index) => index + 1),
@@ -44,6 +50,11 @@ const Form: React.FC = () => {
               <video id='muguetvideo' width="320" height="240" autoPlay loop muted playsInline>
                 <source src='/video/image-de-marque-montpellier.mp4' type='video/mp4' />
               </video>
+            </div>
+
+            <div className='pack'>
+
+
             </div>
           
           </div>

@@ -30,6 +30,8 @@ const Form: React.FC = () => {
   }, []);
 
   return (
+   <>
+   
     <div className='section' id="Contact">
         <Header />
         <h1>{form[15]}</h1>   
@@ -37,8 +39,7 @@ const Form: React.FC = () => {
 
           {/* PARTIE GAUCHE */}
           <div className='flex-col'>
-            <h2>{form[0]}</h2>
-            <h2>{form[1]}</h2>
+            <h2>{form[0]} {form[1]}</h2>
             <h2 className='gold'>{form[2]}</h2>
             
             <div className='text-block' style={{ borderTop: 'black 1px solid', paddingTop: '1rem', display: display, flexDirection: 'column' }}>
@@ -64,9 +65,10 @@ const Form: React.FC = () => {
           </div>
           
         </div>
+    </div>
     <Switch />
     <Footer />
-    </div>
+    </> 
   );
 };
 

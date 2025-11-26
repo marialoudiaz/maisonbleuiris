@@ -1994,9 +1994,14 @@ border: 1px solid rgba(39, 34, 33, 0.384) ;
 
 /* FORMULAIRE*/
 form{
-  display: flex;
-  flex-direction: column;
-  color:#272221;
+  display:grid;
+  grid-template-columns: 2;
+  // flex-direction: column;
+  border-radius: 60px;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  padding: 1rem;
+  background-color:#f9f9f9ee;
   width: 40vw;
   gap: 1.5rem;
   & .flex-wrap{
@@ -2004,11 +2009,19 @@ form{
     align-items: unset;
   }
 }
+
+.form-grp{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
 .flex-col{
   display: flex;
   flex-direction: column;
   height: 100%;
-  gap: .5rem;
+  gap: 5px;
   z-index: 5;
   & span{
     color: var(--gold);
@@ -2037,22 +2050,48 @@ form{
   }
 }
 input,textarea{
-  border: none;
-  border-bottom: 1px solid var(--primary);
+  // border: .5px solid var(--primary)!important;
+  border-radius: 30px;
   font-family: var(--Body)!important;
   font-size: var(--body)!important;
+  // border-bottom: 1px solid var(--primary);
+  box-shadow: inset 0 0 3px rgba(157, 157, 157, 0.425);
+
 }
 input{
   margin-bottom: 15px;
 }
 input[type="checkbox"] {
   margin-right: 1rem;
+  border-radius: 100px!important;
 }
 textarea{
-  border: 1px solid var(--primary)!important;
-  height: 15rem;
+  // border: .5px solid var(--primary)!important;
+  border-radius: 30px;
+  height: 10rem;
   font-family: var(--Body)!important;
   font-size: var(--body)!important;
+}
+.checkbox-group div label{
+  background-color: #403e3d73!important;
+  border: 1px solid black!important;
+  border-radius: 100px;
+}
+.toggle-btn {
+  padding: 0.5rem 1rem;
+  min-width: 140px;
+  border-radius: 24px;
+  border: 1px solid var(--primary);
+  background: transparent;
+  cursor: pointer;
+  font-family: var(--Body);
+  transition: 0.28s ease;
+}
+
+.toggle-btn.active {
+  background: var(--primary);
+  color: white;
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
 }
 // #muguet{
 //   display: grid;
@@ -2124,11 +2163,19 @@ textarea{
   }
   form{
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     width: 90vw;
     & .flex-wrap{
       gap: 10px
     }
+  }
+  .form-grp{
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 .section-scroll {
