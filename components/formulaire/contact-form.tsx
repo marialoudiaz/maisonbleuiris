@@ -38,7 +38,7 @@ const ContactForm: React.FC<contactFormProps> = ({ infos, langz, pack }) => {
   const [message, setMessage] = useState('');
   const [question, setQuestion] = useState('');
   const [acceptTerms, setAcceptTerms] = useState(false);
-  const form = useRef<any>();
+  const form = useRef();
 
   // SEND EMAIL// -----------------------------
   const sendEmail = async (e: any) => {
