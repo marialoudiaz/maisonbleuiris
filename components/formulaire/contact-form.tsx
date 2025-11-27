@@ -41,7 +41,7 @@ const ContactForm: React.FC<contactFormProps> = ({ infos, langz, pack }) => {
   const form = useRef();
 
   // SEND EMAIL// -----------------------------
-  const sendEmail = async (e: any) => {
+  const sendEmail = async (e) => {
     if (e?.preventDefault) e.preventDefault();
     try {
       const response = await fetch('/api/sendEmail', {
@@ -67,7 +67,7 @@ const ContactForm: React.FC<contactFormProps> = ({ infos, langz, pack }) => {
   // -----------------------------
   // TEXT INPUT HANDLER
   // -----------------------------
-  const handleInputChange = (e: any) => {
+  const handleInputChange = (e) => {
     setEmailData({ ...emailData, [e.target.id]: e.target.value });
   };
 
@@ -80,13 +80,13 @@ const ContactForm: React.FC<contactFormProps> = ({ infos, langz, pack }) => {
     );
   };
   // QUESTION HANDLING//
-  const handleChange = (e: any) => {
+  const handleChange = (e) => {
     const valueC = e;
     setQuestion(valueC);
     setAcceptTerms(false);
     handleSubmitQuestion(valueC);
   };
-  const handleSubmitQuestion = (props: any) => {
+  const handleSubmitQuestion = (props) => {
     if (typeof props === 'string' && props !== '' && acceptTerms) {
       window.location.href = 'https://www.bible.com/fr/bible/63/MAT.13.24-48.BFC';
     } else {
