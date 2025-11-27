@@ -29,14 +29,14 @@ const Form: React.FC = () => {
 const packages = [
   {
     type: { en: "One-page website pack", fr: "Pack site one-page" },
-    price: { en: "A$2000", fr: "€1000" },
+    price: { en: "A$1320", fr: "€660" },
     services: { en: [], fr: [] },
     cta: { en: "Click the pack, you seek and tell me more in the form.", fr: "Cliquer sur le pack qui vous intéresse et dîtes m'en plus dans le formulaire" },
     object: { en: "Hello, I would love to work on my new one-page website as part of your special pack. Here are a few infos about my project:", fr: "Bonjour, j'aimerais travailler sur mon site one-page via votre pack spécial. Voici quelques infos sur mon projet:" },
   },
   {
     type: { en: "First Logo pack", fr: "Pack Premier Logo" },
-    price: { en: "800A$", fr: "400€" },
+    price: { en: "660A$", fr: "330€" },
     services: { en: [], fr: [] },
     cta: { en: "Click the pack, you seek and tell me more in the form.", fr: "Cliquer sur le pack qui vous intéresse et dîtes m'en plus dans le formulaire" },
     object: { en: "Hello, I would love to work on my new logo as part of your special pack. Here are a few infos about my project:", fr: "Bonjour, j'aimerais travailler sur mon logo via votre pack spécial. Voici quelques infos sur mon projet:" },
