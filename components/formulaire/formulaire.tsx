@@ -15,12 +15,29 @@ const Form: React.FC = () => {
   const blabla = indepArray[0].form[12];
   const [index, setIndex] = useState(0);
   const langDisplay = indepArray[0].Lang;
-  const packages=[
-    type:[{"One-page website pack",""},{"First Logo pack",""},{"TJM",""}],
-    price:[{"",""},{"",""},{"385€ for a day","385€ à la journée"}],
-    services:[{"",""},{"",""},{"",""}],
-    cta["",""],
-  ];
+  const isEnglish = indepArray[0].Lang === 'EN';
+  console.log('langg', isEnglish)
+
+const packages = [
+  {
+    type: { en: "One-page website pack", fr: "Pack site one-page" },
+    price: { en: "A$2000", fr: "€1000" },
+    services: { en: [], fr: [] },
+    cta: { en: "Click the pack, you seek and tell me more in the form.", fr: "Cliquer sur le pack qui vous intéresse et dîtes m'en plus dans le formulaire" }
+  },
+  {
+    type: { en: "First Logo pack", fr: "Pack Premier Logo" },
+    price: { en: "800A$", fr: "400€" },
+    services: { en: [], fr: [] },
+    cta: { en: "Click the pack, you seek and tell me more in the form.", fr: "Cliquer sur le pack qui vous intéresse et dîtes m'en plus dans le formulaire" }
+  },
+  {
+    type: { en: "Daily rate", fr: "TJM (Tarif jour)" },
+    price: { en: "A$770 per day", fr: "385€ à la journée" },
+    services: { en: [], fr: [] },
+    cta: { en: "Click the pack, you seek and tell me more in the form.", fr: "Cliquer sur le pack qui vous intéresse et dîtes m'en plus dans le formulaire" }
+  }
+];
   useEffect(() => {
     const intervalId = setInterval(
       () => setIndex((index) => index + 1),
@@ -53,9 +70,38 @@ const Form: React.FC = () => {
             </div>
 
             <div className='pack'>
+            {packages.map((pack, i) => (
+              <div key={i} className="pack-item">
 
+                {/* Type */}
+                <h3>
+                  {isEnglish ? pack.type.en : pack.type.fr}
+                </h3>
 
+                {/* Prix */}
+                <p className="price">
+                  {isEnglish ? pack.price.en : pack.price.fr}
+                </p>
+
+                {/* Services (liste vide pour l'instant) */}
+                {pack.services && pack.services[isEnglish ? 'en' : 'fr'].length > 0 ? (
+                  <ul>
+                    {pack.services[isEnglish ? 'en' : 'fr'].map((service, idx) => (
+                      <li key={idx}>{service}</li>
+                    ))}
+                  </ul>
+                ) : (
+                  <p>—</p>
+                )}
+
+                {/* CTA */}
+                <p className="cta">
+                  {isEnglish ? pack.cta.en : pack.cta.fr}
+                </p>
+              </div>
+            ))}
             </div>
+
           
           </div>
 

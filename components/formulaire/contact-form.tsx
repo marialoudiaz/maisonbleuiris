@@ -7,9 +7,10 @@ interface contactFormProps {
     form: string[],
   };
   langz: string;
+  pack: string;
 }
 
-const ContactForm: React.FC<contactFormProps> = ({ infos, langz }) => {
+const ContactForm: React.FC<contactFormProps> = ({ infos, langz, pack }) => {
 
   const isEnglish = langz;
   const yesmessage = [
@@ -113,6 +114,16 @@ const ContactForm: React.FC<contactFormProps> = ({ infos, langz }) => {
      {label}
     </button>
   );
+  // ajouter pack au premier render/click sur le bouton
+  useEffect(() => {
+  if (pack) {
+    setEmailData((prev) => ({
+      ...prev,
+      message: pack + " " + prev.message  // pré-remplir une seule fois
+    }));
+  }
+}, [pack]);
+
 
   return (
     <>
@@ -121,6 +132,7 @@ const ContactForm: React.FC<contactFormProps> = ({ infos, langz }) => {
           <div className='flex-wrap'>
             <label htmlFor="prenom">{infos.form[3]}</label>
             <input
+              placeholder= {`${isEnglish ? 'Name and Surname' : 'Nom & Prénom'}`}
               type='text'
               id="prenom"
               name='user_name'
@@ -133,6 +145,7 @@ const ContactForm: React.FC<contactFormProps> = ({ infos, langz }) => {
           <div className='flex-wrap'>
             <label htmlFor="email">{infos.form[4]}</label>
             <input
+              placeholder={`${isEnglish ? 'Your Email' : 'Votre mail'}`}
               type='email'
               id="email"
               name='user_email'
@@ -144,11 +157,12 @@ const ContactForm: React.FC<contactFormProps> = ({ infos, langz }) => {
         </div>
 
         <div className='form-grp'>
-          <div className='flex-wrap'>
+          <div className='flex-wrap'> 
             <label htmlFor="company">{infos.form[5]}</label>
             <input
               id="company"
               name='company'
+              placeholder={`${isEnglish ? 'Your Company Name' : 'Le nom de votre entreprise/marque'}`}
               value={emailData.company}
               onChange={handleInputChange}
               required
@@ -158,6 +172,7 @@ const ContactForm: React.FC<contactFormProps> = ({ infos, langz }) => {
           <div className='flex-wrap'>
             <label htmlFor="industry">{infos.form[6]}</label>
             <input
+              placeholder={`${isEnglish ? 'Your Industry type' : 'Votre industrie'}`}
               id="industry"
               name='industry'
               value={emailData.industry}
@@ -170,7 +185,7 @@ const ContactForm: React.FC<contactFormProps> = ({ infos, langz }) => {
         {/* SERVICES BUTTONS */}
         <div className='checkbox-group flex-wrap'>
           <label>{infos.form[7]}</label>
-          <div style={{ display: 'flex', gap: '1.5rem', flexWrap: 'wrap', justifyContent:'center' }}>
+          <div style={{ display: 'flex', gap: '1em', flexWrap: 'wrap', justifyContent:'center', fontSize:'14px' }}>
             <ToggleBtn label="Logo" value="logo" />
             <ToggleBtn label={infos.form[8]} value="site internet" />
             <ToggleBtn label={infos.form[9]} value="identité visuelle" />
@@ -182,6 +197,7 @@ const ContactForm: React.FC<contactFormProps> = ({ infos, langz }) => {
         <div className='flex-wrap' style={{ gap: '2.5rem' }}>
           <label htmlFor="message">{infos.form[11]}</label>
           <textarea
+            placeholder={`${isEnglish ? 'Hello, you are the best, I would love to work with you on ....' : "Bonjour, vous êtes vraiment les meilleurs, j'adorerais travailler avec vous sur..."}`}
             id="message"
             name='message'
             value={emailData.message}
@@ -216,10 +232,10 @@ const ContactForm: React.FC<contactFormProps> = ({ infos, langz }) => {
                 xmlns="http://www.w3.org/2000/svg"
                 aria-label='Arrow Icon'
               >
-                <path
-                  d="M7 18C7 18.5523 7.44772 19 8 19C8.55228 19 9 18.5523 9 18H7ZM8.70711 0.292893C8.31658 -0.0976311 7.68342 -0.0976311 7.29289 0.292893L0.928932 6.65685C0.538408 7.04738 0.538408 7.68054 0.928932 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292893ZM9 18L9 1H7L7 18H9Z"
+              <path
+                d="M7 18C7 18.5523 7.44772 19 8 19C8.55228 19 9 18.5523 9 18H7ZM8.70711 0.292893C8.31658 -0.0976311 7.68342 -0.0976311 7.29289 0.292893L0.928932 6.65685C0.538408 7.04738 0.538408 7.68054 0.928932 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292893ZM9 18L9 1H7L7 18H9Z"
                   className="fill-white group-hover:fill-white"
-                ></path>
+              ></path>
               </svg>
               {infos.form[13]}
             </div>

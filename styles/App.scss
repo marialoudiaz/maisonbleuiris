@@ -72,10 +72,7 @@ font-weight: 700;
 font-style: normal;
 }
 .barlow-bold {
-  // font-family: "Barlow", sans-serif;
-  // font-weight: 700;
-  // font-style: normal;
-  font-family: "commuters-sans", sans-serif;
+font-family: "commuters-sans", sans-serif;
 font-weight: 700;
 font-style: normal;
 }
@@ -115,7 +112,6 @@ font-style: normal;
   --h4M: 18px;
   --body: 20px;
   --bodyM: 15px;
-  // 2px de moins que body (citations, label)
   --animate-delay: 7s;
   
 }
@@ -143,8 +139,6 @@ h1{
   font-size: var(--titres)!important;
   font-weight: 400!important;
   font-style: var(--Title-font-style);
-  // text-transform: uppercase;
-  // letter-spacing: 0.1em; /* or px if you prefer */
 }
 h2{
   color: var(--primary);
@@ -152,8 +146,6 @@ h2{
   font-size: var(--titres)!important;
   font-weight: 400!important;
   font-style: var(--Title-font-style);
-  // text-transform: uppercase;
-  // letter-spacing: 0.02em; /* or px if you prefer */
 }
 h3{ // Police de titres (sorte de mini-titres - a utiliser dans des paragraphes
   font-size: var(--h3)!important;
@@ -170,7 +162,6 @@ h4{ // different d'un titre s'utilise pour les paragraphes et carousel avec elem
   font-size: var(--h4)!important;
   color: var(--primary);
   font-style: var(--Title-font-style);
-  // text-transform: uppercase;
 }
 #new{
   font-weight: 100!important;
@@ -230,8 +221,6 @@ label{
 .center{
   display: flex;
   gap: 1rem;
-  // justify-content: center;
-  // align-items: center;
 }
 .flex-center{
   display: flex;
@@ -503,8 +492,6 @@ label{
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   padding: .6rem;
-  // margin-left: auto!important;
-  // margin-right: auto!important;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -980,6 +967,9 @@ pointer-events: auto;
 #Contac {
   animation-delay: 1.3s;
 }
+#Contact{
+  margin-top: 7rem;
+}
 .navbar-full-items{
   position: relative;
   display: flex;
@@ -1139,7 +1129,6 @@ transform: scale(1.1);
 }
 .text-homepage{
   width: 100vw;
-  // height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1409,7 +1398,6 @@ padding: 2rem 15rem;
   justify-content: center;  
   text-align: center;
   gap: 1rem;
-  // border: 1px solid #324f9e;
   & img{
     width: 20rem;
     border-radius: 100%;
@@ -1624,7 +1612,6 @@ border: 1px solid rgba(39, 34, 33, 0.384) ;
     font-size: var(--h3)!important;
     padding-left: 3rem;
     margin-top: 2rem;
-    // line-height: calc(var(--titres)*1.25);
 }
 .project-txt{
   font-family: var(--Body) ;
@@ -1669,9 +1656,6 @@ border: 1px solid rgba(39, 34, 33, 0.384) ;
 	scroll-snap-type : x mandatory;
   grid-column-gap: 1rem;
   grid-row-gap: 1rem;
-  // grid-template-rows: repeat(3, 1fr);
-  // grid-template-columns: repeat(1,100vw);
-  // grid-template-rows: auto;
 }
 .category-row{ 
   //30vw div
@@ -1865,7 +1849,6 @@ border: 1px solid rgba(39, 34, 33, 0.384) ;
     margin-bottom: 5rem;
     display: grid;
     gap: 2rem;
-    // padding: 0 23rem 0 23rem;
     text-align: center;
     & p{
       text-align: center!important;
@@ -1996,7 +1979,6 @@ border: 1px solid rgba(39, 34, 33, 0.384) ;
 form{
   display:grid;
   grid-template-columns: 2;
-  // flex-direction: column;
   border-radius: 60px;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
@@ -2050,36 +2032,38 @@ form{
   }
 }
 input,textarea{
-  // border: .5px solid var(--primary)!important;
   border-radius: 30px;
   font-family: var(--Body)!important;
   font-size: var(--body)!important;
-  // border-bottom: 1px solid var(--primary);
   box-shadow: inset 0 0 3px rgba(157, 157, 157, 0.425);
 
 }
 input{
   margin-bottom: 15px;
+  padding: .3rem!important;
+
 }
 input[type="checkbox"] {
   margin-right: 1rem;
   border-radius: 100px!important;
 }
 textarea{
-  // border: .5px solid var(--primary)!important;
   border-radius: 30px;
   height: 10rem;
   font-family: var(--Body)!important;
   font-size: var(--body)!important;
+   padding: 1rem!important;
+
 }
 .checkbox-group div label{
   background-color: #403e3d73!important;
   border: 1px solid black!important;
   border-radius: 100px;
 }
+
 .toggle-btn {
   padding: 0.5rem 1rem;
-  min-width: 140px;
+  width: fit-content!important;
   border-radius: 24px;
   border: 1px solid var(--primary);
   background: transparent;
@@ -2097,6 +2081,30 @@ textarea{
 //   display: grid;
 //   grid-area: 1 / 1 / 2 / 2;
 // }
+.pack{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);  
+  gap: 1rem;
+}
+.pack-item{
+  background-color:#e8e8e8bf;
+  border-radius: 60px;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  padding: 1rem;
+  border-radius: 40px;
+  & h3{
+    font-size: 15px!important;
+  };
+  & p{
+    font-size:8px
+  }
+}
+.pack-item.active {
+  background: var(--primary);
+  color: white;
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+}
 #muguetvideo{
   position: absolute;
   width: 30vw;
