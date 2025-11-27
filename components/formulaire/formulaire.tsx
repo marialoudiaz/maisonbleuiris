@@ -16,28 +16,30 @@ const Form: React.FC = () => {
   const [index, setIndex] = useState(0);
   const langDisplay = indepArray[0].Lang;
   const isEnglish = indepArray[0].Lang === 'EN';
-  console.log('langg', isEnglish)
-
-const packages = [
-  {
-    type: { en: "One-page website pack", fr: "Pack site one-page" },
-    price: { en: "A$2000", fr: "€1000" },
-    services: { en: [], fr: [] },
-    cta: { en: "Click the pack, you seek and tell me more in the form.", fr: "Cliquer sur le pack qui vous intéresse et dîtes m'en plus dans le formulaire" }
-  },
-  {
-    type: { en: "First Logo pack", fr: "Pack Premier Logo" },
-    price: { en: "800A$", fr: "400€" },
-    services: { en: [], fr: [] },
-    cta: { en: "Click the pack, you seek and tell me more in the form.", fr: "Cliquer sur le pack qui vous intéresse et dîtes m'en plus dans le formulaire" }
-  },
-  {
-    type: { en: "Daily rate", fr: "TJM (Tarif jour)" },
-    price: { en: "A$770 per day", fr: "385€ à la journée" },
-    services: { en: [], fr: [] },
-    cta: { en: "Click the pack, you seek and tell me more in the form.", fr: "Cliquer sur le pack qui vous intéresse et dîtes m'en plus dans le formulaire" }
-  }
-];
+  const [pack, setPack] = useState(null);
+  const packages = [
+    {
+      type: { en: "One-page website pack", fr: "Pack site one-page" },
+      price: { en: "A$2000", fr: "€1000" },
+      services: { en: [], fr: [] },
+      cta: { en: "Click the pack, you seek and tell me more in the form.", fr: "Cliquer sur le pack qui vous intéresse et dîtes m'en plus dans le formulaire" },
+      object: { en: "Hello, I would love to work on my new one-page website as part of your special pack. Here are a few infos about my project:", fr: "Bonjour, j'aimerais travailler sur mon site one-page via votre pack spécial. Voici quelques infos sur mon projet:" },
+    },
+    {
+      type: { en: "First Logo pack", fr: "Pack Premier Logo" },
+      price: { en: "800A$", fr: "400€" },
+      services: { en: [], fr: [] },
+      cta: { en: "Click the pack, you seek and tell me more in the form.", fr: "Cliquer sur le pack qui vous intéresse et dîtes m'en plus dans le formulaire" },
+      object: { en: "Hello, I would love to work on my new logo as part of your special pack. Here are a few infos about my project:", fr: "Bonjour, j'aimerais travailler sur mon logo via votre pack spécial. Voici quelques infos sur mon projet:" },
+    },
+    {
+      type: { en: "Daily rate", fr: "TJM (Tarif jour)" },
+      price: { en: "A$770 per day", fr: "385€ à la journée" },
+      services: { en: [], fr: [] },
+      cta: { en: "Click the pack, you seek and tell me more in the form.", fr: "Cliquer sur le pack qui vous intéresse et dîtes m'en plus dans le formulaire" },
+      object: { en: "Hello, I would love to hire you for a day (or more, please specify). Here are a few infos about my project:", fr: "Bonjour, j'aimerais vous embaûcher pour une journée (ou plus, merci de préciser). Voici quelques infos sur mon projet:" },
+    }
+  ];
   useEffect(() => {
     const intervalId = setInterval(
       () => setIndex((index) => index + 1),
@@ -72,6 +74,8 @@ const packages = [
             <div className='pack'>
             {packages.map((pack, i) => (
               <div key={i} className="pack-item">
+               <button onClick={() => isEnglish ? setPack(pack.object.en): setPack(pack.object.fr) }>
+
 
                 {/* Type */}
                 <h3>
@@ -98,6 +102,7 @@ const packages = [
                 <p className="cta">
                   {isEnglish ? pack.cta.en : pack.cta.fr}
                 </p>
+              </button>
               </div>
             ))}
             </div>
@@ -108,7 +113,7 @@ const packages = [
           {/* PARTIE DROITE */}
           <div className='grid-col2-asym'>
             <div className='formulaire'>
-              <ContactForm langz={langDisplay} infos={indepArray[0]} />
+              <ContactForm langz={langDisplay} infos={indepArray[0]} pack={pack} />
             </div>
           </div>
           
