@@ -15,7 +15,7 @@ const Form: React.FC = () => {
   const blabla = indepArray[0].form[12];
   const [index, setIndex] = useState(0);
   const langDisplay = indepArray[0].Lang;
-  const isEnglish = indepArray[0].Lang === 'EN';
+  const isFrench = indepArray[0].Lang === 'FR';
   const [pack, setPack] = useState(null);
   const packages = [
     {
@@ -74,23 +74,23 @@ const Form: React.FC = () => {
             <div className='pack'>
             {packages.map((pack, i) => (
               <div key={i} className="pack-item">
-               <button onClick={() => isEnglish ? setPack(pack.object.en): setPack(pack.object.fr) }>
+               <button onClick={() => isFrench ? setPack(pack.object.fr): setPack(pack.object.en) }>
 
 
                 {/* Type */}
                 <h3>
-                  {isEnglish ? pack.type.en : pack.type.fr}
+                  {isFrench? pack.type.fr : pack.type.en}
                 </h3>
 
                 {/* Prix */}
                 <p className="price">
-                  {isEnglish ? pack.price.en : pack.price.fr}
+                  {isFrench ? pack.price.fr : pack.price.en}
                 </p>
 
                 {/* Services (liste vide pour l'instant) */}
-                {pack.services && pack.services[isEnglish ? 'en' : 'fr'].length > 0 ? (
+                {pack.services && pack.services[isFrench ? 'fr' : 'en'].length > 0 ? (
                   <ul>
-                    {pack.services[isEnglish ? 'en' : 'fr'].map((service, idx) => (
+                    {pack.services[isFrench ? 'fr' : 'en'].map((service, idx) => (
                       <li key={idx}>{service}</li>
                     ))}
                   </ul>
@@ -100,7 +100,7 @@ const Form: React.FC = () => {
 
                 {/* CTA */}
                 <p className="cta">
-                  {isEnglish ? pack.cta.en : pack.cta.fr}
+                  {isFrench ? pack.cta.fr : pack.cta.en}
                 </p>
               </button>
               </div>
