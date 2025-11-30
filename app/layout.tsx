@@ -11,7 +11,7 @@ import '../app/globals.css';
 //Développment d’image de marque pour tous ceux qui promeut une philosophie bien-être, éco-responsable et éthique: lieux, marques, artisans, praticiens, etc…
 export const metadata = {
   title: "Maison Bleu Iris",
-  description: "Studio expert en développement d’image de marque pour tous ceux qui promeut une philosophie éco-responsable et éthique.", //Studio expert en développement d’image de marque pour tous ceux qui promeut une philosophie éco-responsable et éthique.
+  description: "Studio expert en développement d’image de marque pour tous ceux qui promeut une philosophie éco-responsable et éthique. Image de marque: Print, Développement web, Illustration, Packaging", //Studio expert en développement d’image de marque pour tous ceux qui promeut une philosophie éco-responsable et éthique.
   openGraph: {
     title: "Maison Bleu Iris",
     description: "Studio de développement d’image de marque pour tous ceux qui promeut une philosophie éco-responsable et éthique.",

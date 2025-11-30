@@ -175,7 +175,8 @@ import React, { createContext, useContext, useState } from 'react';
       "Maria Lou Diaz s’efforce d’assurer un accès continu au site www.marialoudiaz.fr. Toutefois, des interruptions peuvent survenir pour des raisons de maintenance ou techniques, sans que cela n’engage la responsabilité de l’éditeur quant aux conséquences qui en résulteraient."
     ]
   }
-  ]; const DataContext = createContext();
+  ];
+  const DataContext = createContext();
 
 // Créer le fournisseur de données
 
@@ -183,9 +184,6 @@ export const DataProvider = ({ children }) => {
 
   const [lang, setLang] = useState('fr'); // 'fr' ou 'en'
   const [indepArray, setIndepArray] = useState(indepArrayy);  // Array FR ou EN
-
- 
-
   const updateData = (newArray) => {
     setIndepArray(newArray);  // Met à jour l'array actif
   };
