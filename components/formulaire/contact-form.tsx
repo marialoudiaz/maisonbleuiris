@@ -58,7 +58,7 @@ const ContactForm: React.FC<contactFormProps> = ({ infos, langz, pack }) => {
     } catch (err) {
       console.error("Échec:", err);
       setMessage(
-        isEnglish === 'EN'
+        isFrench === 'FR'
           ? `${nomessage[0]} ${nomessage[1]}`
           : `${nomessage[2]} ${nomessage[3]}`
       );
