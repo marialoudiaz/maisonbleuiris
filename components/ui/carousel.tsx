@@ -17,7 +17,7 @@ interface CarouselProps {
 
 const Carousel: React.FC<CarouselProps> = ({dataArray}) => {
   const { indepArray } = useData(); 
-  const isEnglish = indepArray[0].Lang === 'EN';
+  const isFrench = indepArray[0].Lang === 'FR';
 
   return (
    <>
@@ -26,7 +26,7 @@ const Carousel: React.FC<CarouselProps> = ({dataArray}) => {
           <div key={index} className="flex-wrap" id="carousel-item">
             <Image 
               src={item.image} 
-              alt={isEnglish? item.alt[1]: item.alt[0]}
+              alt={isFrench? item.alt[0]: item.alt[1]}
               width={100}
               height={100}
             />

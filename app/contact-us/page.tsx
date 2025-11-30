@@ -29,7 +29,7 @@ const Form: React.FC = () => {
 const packages = [
   {
     type: { en: "One-page website pack", fr: "Pack site one-page" },
-    price: { en: "A$1320", fr: "€660" },
+    price: { en: "A$1320", fr: "660€" },
     services: { en: [], fr: [] },
     cta: { en: "Click the pack, you seek and tell me more in the form.", fr: "Cliquer sur le pack qui vous intéresse et dîtes m'en plus dans le formulaire" },
     object: { en: "Hello, I would love to work on my new one-page website as part of your special pack. Here are a few infos about my project:", fr: "Bonjour, j'aimerais travailler sur mon site one-page via votre pack spécial. Voici quelques infos sur mon projet:" },
@@ -88,7 +88,7 @@ const packages = [
               <div key={i} className="pack-item">
                 <button onClick={() => isEnglish ? setPack(pack.object.en): setPack(pack.object.fr) }>
                   {/* Type */}
-                  <h3>
+                  <h3 className='gold'>
                     {isEnglish ? pack.type.en : pack.type.fr}
                   </h3>
 

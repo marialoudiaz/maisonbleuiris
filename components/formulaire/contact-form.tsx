@@ -12,7 +12,7 @@ interface contactFormProps {
 
 const ContactForm: React.FC<contactFormProps> = ({ infos, langz, pack }) => {
 
-  const isEnglish = langz;
+  const isFrench = langz;
   const yesmessage = [
     'Thank you for your message !',
     "I'll come back to you really soon",
@@ -51,9 +51,9 @@ const ContactForm: React.FC<contactFormProps> = ({ infos, langz, pack }) => {
       });
       if (!response.ok) throw new Error("Erreur d'envoi");
       setMessage(
-        isEnglish === 'EN'
-          ? `${yesmessage[0]} ${yesmessage[1]}`
-          : `${yesmessage[2]} ${yesmessage[3]}`
+        isFrench === 'FR'
+          ? `${yesmessage[2]} ${yesmessage[3]}`
+          : `${yesmessage[0]} ${yesmessage[1]}`
       );
     } catch (err) {
       console.error("Échec:", err);
@@ -132,7 +132,7 @@ const ContactForm: React.FC<contactFormProps> = ({ infos, langz, pack }) => {
           <div className='flex-wrap'>
             <label htmlFor="prenom">{infos.form[3]}</label>
             <input
-              placeholder= {`${isEnglish ? 'Name and Surname' : 'Nom & Prénom'}`}
+              placeholder= {`${isFrench ? 'Nom & Prénom' :'Name and Surname'}`}
               type='text'
               id="prenom"
               name='user_name'
@@ -145,7 +145,7 @@ const ContactForm: React.FC<contactFormProps> = ({ infos, langz, pack }) => {
           <div className='flex-wrap'>
             <label htmlFor="email">{infos.form[4]}</label>
             <input
-              placeholder={`${isEnglish ? 'Your Email' : 'Votre mail'}`}
+              placeholder={`${isFrench ? 'Votre mail' : 'Your Email'}`}
               type='email'
               id="email"
               name='user_email'
@@ -162,7 +162,7 @@ const ContactForm: React.FC<contactFormProps> = ({ infos, langz, pack }) => {
             <input
               id="company"
               name='company'
-              placeholder={`${isEnglish ? 'Your Company Name' : 'Le nom de votre entreprise/marque'}`}
+              placeholder={`${isFrench ? 'Le nom de votre entreprise/marque' :'Your Company Name'}`}
               value={emailData.company}
               onChange={handleInputChange}
               required
@@ -172,7 +172,7 @@ const ContactForm: React.FC<contactFormProps> = ({ infos, langz, pack }) => {
           <div className='flex-wrap'>
             <label htmlFor="industry">{infos.form[6]}</label>
             <input
-              placeholder={`${isEnglish ? 'Your Industry type' : 'Votre industrie'}`}
+              placeholder={`${isFrench ? "Votre secteur d'activité" : 'Your Industry type'}`}
               id="industry"
               name='industry'
               value={emailData.industry}
@@ -197,7 +197,7 @@ const ContactForm: React.FC<contactFormProps> = ({ infos, langz, pack }) => {
         <div className='flex-wrap' style={{ gap: '2.5rem' }}>
           <label htmlFor="message">{infos.form[11]}</label>
           <textarea
-            placeholder={`${isEnglish ? 'Hello, you are the best, I would love to work with you on ....' : "Bonjour, vous êtes vraiment les meilleurs, j'adorerais travailler avec vous sur..."}`}
+            placeholder={`${isFrench ? "Bonjour, vous êtes vraiment les meilleurs, j'adorerais travailler avec vous sur...":'Hello, you are the best, I would love to work with you on ....'}`}
             id="message"
             name='message'
             value={emailData.message}
