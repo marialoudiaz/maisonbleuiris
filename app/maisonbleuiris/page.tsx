@@ -27,8 +27,8 @@ const Logo = () => {
       "Découvrir notre mission",
       "Démarrer votre projet",
       "Découvrir nos autres projets",
-      "Découvrez nos offres"
-
+      "Découvrez nos offres",
+      "Retourner à l'accueil"
     ],
     philo:[
           "Notre philosphie et mission",
@@ -82,10 +82,17 @@ const Logo = () => {
     ],
     deroule: [
       'flex',
-      'Votre projet',
-      "Chaque projet est unique, tout comme vous. C’est pourquoi je vous accompagne à chaque étape pour créer une solution sur mesure, en accord avec vos besoins.",
-      "Juste une mise au point","Nous discutons de votre projet et établissons ensemble une stratégie. Selon vos besoins, nous définissons les services nécessaires. Chaque devis est conçu sur mesure.",
-      "L’aventure commence","Je vous envoie un devis détaillant l’ensemble des prestations ainsi que les délais de réalisation. Une date de livraison est fixée.","Tada !","C’est le jour où vous recevez votre premier livrable. Vous avez alors la possibilité de demander deux modifications (gratuites)."
+      'Votre projet : et maintenant ?',
+      //1
+      "Maintenant que vous m'avez contacté, je vais revenir vers vous très prochainement. Comme chaque projet est unique, tout comme vous, je vais vous accompagner à chaque étape pour créer une solution sur mesure, en accord avec vos besoins.",
+      "Juste une mise au point",
+      "Je reçois et lis votre demande que vous m'avez envoyé via le formulaire. Je vous recontacte pour que nous discutons de votre projet et établissons ensemble une stratégie. Selon vos besoins, nous définissons les services nécessaires. Chaque devis est conçu sur mesure.",
+      //2
+      "L’aventure commence",
+      "Je vous envoie un devis détaillant l’ensemble des prestations ainsi que les délais de réalisation. Une date de livraison est fixée.",
+      //3
+      "Tada !",
+      "C’est le jour où vous recevez votre premier livrable. Vous avez alors la possibilité de demander deux modifications (gratuites)."
     ],
     citation: 'Pour un design qui vous ressemble.',
     form: [
@@ -146,7 +153,8 @@ const Logo = () => {
           "discover our mission",
           "Launch your project",
           "Discover our other projects",
-          "Starting your business ? Discover our packages."
+          "Starting your business ? Discover our packages.",
+          "Return to homepage"
         ],
         philo: [
           "Our Philosophy and Mission",
@@ -197,7 +205,21 @@ const Logo = () => {
         "Authenticity",
         "Impactful and memorable storytelling",
       ],
-        deroule:['flex','Your project',"Each project is unique, just like you. That's why I support you at every step, to create a custom solution that best fits your needs.","Just a clarification","We discuss your project and together establish a strategy. Depending on your project, we define the services required. Each quote is custom-made to closely match your needs.","The adventure begins","I will send you a quote including all services as well as the time needed for their completion. The delivery date is set.","Tada!","This is the day you receive your first deliverable. From then on, you have the option to request two modifications (free of charge)."],
+        deroule:
+      [
+        'flex',
+        'Your project: what happens next?',
+        //1
+        "Now that you’ve contacted me, I’ll get back to you very soon. Since every project is unique — just like you — I’ll guide you through each step to create a custom solution that fits your needs.",
+        "A quick clarification",
+        "I receive and read the request you sent through the form. I then get in touch so we can discuss your project and build a strategy together. Based on your needs, we define the required services. Every quote is fully tailor-made.",
+        //2
+        "The adventure begins",
+        "I send you a quote detailing all the services as well as the production timeline. A delivery date is set.",
+        //3
+        "Tada!",
+        "This is the day you receive your first deliverable. You can request up to two revisions (free of charge)."
+        ],
         citation: 'For a design that suits you.',
         form: [
           "Let's tell",

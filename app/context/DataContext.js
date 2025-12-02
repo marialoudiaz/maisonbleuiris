@@ -73,8 +73,8 @@ import React, { createContext, useContext, useState } from 'react';
       "Découvrir notre mission",
       "Démarrer votre projet",
       "Découvrir nos autres projets",
-      "Découvrez nos offres"
-
+      "Découvrez nos offres",
+      "Retourner à l'accueil"
     ],
     philo:[
           "Notre philosphie et mission",
@@ -128,10 +128,17 @@ import React, { createContext, useContext, useState } from 'react';
     ],
     deroule: [
       'flex',
-      'Votre projet',
-      "Chaque projet est unique, tout comme vous. C’est pourquoi je vous accompagne à chaque étape pour créer une solution sur mesure, en accord avec vos besoins.",
-      "Juste une mise au point","Nous discutons de votre projet et établissons ensemble une stratégie. Selon vos besoins, nous définissons les services nécessaires. Chaque devis est conçu sur mesure.",
-      "L’aventure commence","Je vous envoie un devis détaillant l’ensemble des prestations ainsi que les délais de réalisation. Une date de livraison est fixée.","Tada !","C’est le jour où vous recevez votre premier livrable. Vous avez alors la possibilité de demander deux modifications (gratuites)."
+      'Votre projet : et maintenant ?',
+      //1
+      "Maintenant que vous m'avez contacté, je vais revenir vers vous très prochainement. Comme chaque projet est unique, tout comme vous, je vais vous accompagner à chaque étape pour créer une solution sur mesure, en accord avec vos besoins.",
+      "Juste une mise au point",
+      "Je reçois et lis votre demande que vous m'avez envoyé via le formulaire. Je vous recontacte pour que nous discutons de votre projet et établissons ensemble une stratégie. Selon vos besoins, nous définissons les services nécessaires. Chaque devis est conçu sur mesure.",
+      //2
+      "L’aventure commence",
+      "Je vous envoie un devis détaillant l’ensemble des prestations ainsi que les délais de réalisation. Une date de livraison est fixée.",
+      //3
+      "Tada !",
+      "C’est le jour où vous recevez votre premier livrable. Vous avez alors la possibilité de demander deux modifications (gratuites)."
     ],
     citation: 'Pour un design qui vous ressemble.',
     form: [
@@ -175,7 +182,7 @@ import React, { createContext, useContext, useState } from 'react';
       "Maria Lou Diaz s’efforce d’assurer un accès continu au site www.marialoudiaz.fr. Toutefois, des interruptions peuvent survenir pour des raisons de maintenance ou techniques, sans que cela n’engage la responsabilité de l’éditeur quant aux conséquences qui en résulteraient."
     ]
   }
-  ];
+  ];  
   const DataContext = createContext();
 
 // Créer le fournisseur de données

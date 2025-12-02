@@ -1,3 +1,5 @@
+'use client'
+
 // components/Deroule.tsx
 import React, { useRef, useEffect } from 'react';
 import { gsap } from "gsap";
@@ -7,6 +9,11 @@ import { useData } from '@/app/context/DataContext'; // Import du contexte
 import { useRouter} from 'next/navigation';
 import Image from 'next/image';
 import '../../styles/App.scss';
+//composants
+import Header from '../../components/navbar/header';
+import Switch from '../../components/ui/switch';
+import Footer from '../../components/sections/footer';
+
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 const Deroule: React.FC = () => {
@@ -14,9 +21,16 @@ const Deroule: React.FC = () => {
   const router = useRouter();
   const { deroule } = indepArray[0];
   const isEnglish = indepArray[0].Lang === 'EN';
-  // const el1 = useRef(null);
-  // const el2 = useRef(null);
-  // const el3 = useRef(null);
+
+  // Redirect if `indepArray` is not defined
+    useEffect(() => {
+      if (!indepArray || !indepArray[0].philo) {
+        router.push('/');
+        }
+      }, [indepArray, router]);
+    if (!indepArray || !indepArray[0].philo) {
+      return <div>Loading...</div>;
+    }
   const containerRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
     // const elements = [el1.current, el2.current, el3.current];
@@ -40,26 +54,11 @@ const Deroule: React.FC = () => {
         );
       }
     }, []);
-  //   elements.forEach((el) => {
-  //     gsap.fromTo(el,
-  //       { opacity: 0, y: 50 }, // bas vers haut
-  //       {
-  //         opacity: 1,
-  //         y: 0,
-  //         duration: 1,
-  //         ease: "power2.out",
-  //         scrollTrigger: {
-  //           trigger: el,
-  //           start: "top 90%", // déclenchement quand l'élément est 90% visible
-  //           toggleActions: "play none none none"
-  //         }
-  //       }
-  //     );
-  //   });
-  // }, []);
+
 
   return (
     <>
+    <Header/>
     <section className='section' style={{ display: `${deroule}` }}>
       
         <div className='flex-wrap' ref={containerRef} id='deroule'>
@@ -118,7 +117,7 @@ const Deroule: React.FC = () => {
           </div>
         </div>
         
-        <button className='btn-transp-dark' style={{ margin: '2rem auto' }}  onClick={() => router.push('/projets')}>
+        <button className='btn-transp-dark' style={{ margin: '2rem auto' }}  onClick={() => router.push('/')}>
           <div>
               <svg className="icon-transp"
                 viewBox="0 0 16 19"
@@ -131,13 +130,14 @@ const Deroule: React.FC = () => {
               ></path>
               </svg>
               <p className='btn-transp-p' style={{color:'white'}}>
-              {indepArray[0].cta[1]}
+              {indepArray[0].cta[4]}
               </p>
           </div>
         </button>
 
       </section>
-
+      <Switch/>
+      <Footer/>
     </>
   );
 };

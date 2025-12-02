@@ -23,10 +23,7 @@ const Form: React.FC = () => {
   const langDisplay = indepArray[0].Lang;
   const isEnglish = indepArray[0].Lang === 'EN';
   const [pack, setPack] = useState(null);
-  
-  
-
-const packages = [
+  const packages = [
   {
     type: { en: "One-page website pack", fr: "Pack site one-page" },
     price: { en: "A$1320", fr: "660€" },

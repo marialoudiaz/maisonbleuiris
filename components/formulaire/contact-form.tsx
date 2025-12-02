@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+import { useRouter } from 'next/navigation'; // Importer useRouter depuis next/navigation
 import '../../styles/App.scss';
 import '../../app/globals.css';
 
@@ -11,7 +12,7 @@ interface contactFormProps {
 }
 
 const ContactForm: React.FC<contactFormProps> = ({ infos, langz, pack }) => {
-
+  const router = useRouter();
   const isFrench = langz;
   const yesmessage = [
     'Thank you for your message !',
@@ -124,6 +125,40 @@ const ContactForm: React.FC<contactFormProps> = ({ infos, langz, pack }) => {
   }
 }, [pack]);
 
+// POPUP
+const [showPopup, setShowPopup] = useState(false);
+const popupRef = useRef(null);
+
+//fonction pour rediriger vers deroule
+// Quand "message" change → afficher popup + timer auto
+useEffect(() => {
+  if (message) {
+    setShowPopup(true);
+
+    const timer = setTimeout(() => {
+      setShowPopup(false);
+      router.push('/deroule');
+    }, 3000);
+
+    return () => clearTimeout(timer);
+  }
+}, [message]);
+
+// Cliquer en dehors du popup → fermer + redirect
+useEffect(() => {
+  function handleClickOutside(e) {
+    if (popupRef.current && !popupRef.current.contains(e.target)) {
+      setShowPopup(false);
+      router.push('/deroule');
+    }
+  }
+
+  if (showPopup) {
+    document.addEventListener('mousedown', handleClickOutside);
+  }
+  return () =>
+    document.removeEventListener('mousedown', handleClickOutside);
+}, [showPopup]);
 
   return (
     <>
@@ -240,8 +275,19 @@ const ContactForm: React.FC<contactFormProps> = ({ infos, langz, pack }) => {
               {infos.form[13]}
             </div>
           </button>
+        {showPopup && (
+          <div className="popup-overlay">
+            <div className="popup-box" ref={popupRef}>
+              <button className="popup-close" onClick={() => { setShowPopup(false); router.push('/deroule'); }}>
+                ×
+              </button>
 
-          <p>{message}</p>
+              <p>{message}</p>
+            </div>
+          </div>
+        )}
+
+          {/* <p>{message}</p> */}
         </div>
 
       </form>
