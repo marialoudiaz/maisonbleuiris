@@ -15,7 +15,7 @@ const Projets = () => {
   const imgContainerRef = useRef([]);
   const { indepArray } = useData();
   const router = useRouter();
-  const [imageSource, setImageSource] = useState('/icons/interface/icon-eye-1.png');
+  const [imageSource, setImageSource] = useState('/images/icons/interface/icon-eye-1.png');
 
   useEffect(() => {
     if (!indepArray) router.push('/');
@@ -29,8 +29,8 @@ const Projets = () => {
     ['Tous nos projets']
   ];
   const textVariables = isEnglish ? variableENorFr[0] : variableENorFr[1];
-  const prev = '/icons/interface/icon-eye-1.png';
-  const next = '/icons/interface/icon-eye-2.png';
+  const prev = '/images/icons/interface/icon-eye-1.png';
+  const next = '/images/icons/interface/icon-eye-2.png';
 
   const projectsArr = [
     //branding

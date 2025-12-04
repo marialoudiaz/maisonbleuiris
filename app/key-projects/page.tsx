@@ -45,8 +45,8 @@ const Projets = () => {
     ['Découvrez nos projets clefs', 'Découvrir', 'Précédent', 'scroller à droite pour en apprendre +', 'Découvrir nos autres projets']
   ];
   const textVariables = isEnglish ? variableENorFr[0] : variableENorFr[1];
-  const prev = '/icons/interface/icon-eye-1.png';
-  const next = '/icons/interface/icon-eye-2.png';
+  const prev = '/images/icons/interface/icon-eye-1.png';
+  const next = '/images/icons/interface/icon-eye-2.png';
   const {cta} = indepArray[0];
   // Define project array
 
