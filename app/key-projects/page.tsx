@@ -17,7 +17,7 @@ const Projets = () => {
   const { indepArray } = useData();
   const router = useRouter();
   // Set default values for all Hooks
-  const [imageSource, setImageSource] = useState('/icons/interface/icon-eye-1.png');
+  const [imageSource, setImageSource] = useState('/images/icons/interface/icon-eye-1.png');
   const [isMobile, setIsMobile] = useState(false);
   const [showFullText, setShowFullText] = useState(false);
   // Redirect if `indepArray` is not defined
@@ -57,7 +57,7 @@ const Projets = () => {
       {
         id: 1,
         pastille:["Tailor-made website",'Site internet sur-mesure'],
-        img: '/projets/web/bec/bec-hp-1.jpg',
+        img: '/images/projets/web/bec/bec-hp-1.jpg',
         video: '/images/projets/web/bec/bec-hover.mp4',
         title: ["Domaine de la Pinède", "Domaine de la Pinède"],
         baseline: ['Right in the heart of the Camargue','Au coeur de la Camargue exactement'],
@@ -74,7 +74,7 @@ const Projets = () => {
       {
         id: 2,
         pastille:['Branding Strategy', "Stratégie d'image de marque complète"],
-        img: '/projets/branding-strategy/georges/georges-hp.png',
+        img: '/images/projets/branding-strategy/georges/georges-hp.png',
         video: '/images/projets/branding-strategy/georges/georges-hp.mp4',
         title: ["Georges", "Georges"],
         baseline: ['The soul of the Canigou',"L'âme du Canigou"],
