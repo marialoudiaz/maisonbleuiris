@@ -1,6 +1,9 @@
 
 export const metadata = {
-  title: "Mentions légales – Maison Bleue Iris",
+  title: "Les projets-clefs Maison Bleu Iris",
   description:
        "Découvrez les projets-phares de Maison Bleue Iris : Branding complet, Web Design et Illustration.",
+       alternates: {
+    canonical: "https://www.maisonbleuiris.fr/key-projects",
+  },
 };

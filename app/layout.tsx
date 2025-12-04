@@ -15,17 +15,20 @@ export const metadata = {
   openGraph: {
     title: "Maison Bleu Iris",
     description: "Studio de développement d’image de marque pour tous ceux qui promeut une philosophie éco-responsable et éthique.",
+    alternates: {
+    canonical: "https://www.maisonbleuiris.fr/",
+  },
     url: "https://www.maisonbleuiris.fr",
     siteName: "Maison Bleu Iris",
     images: [
       {
-        url: "https://www.maisonbleuiris.fr/favicon.png",
+        url: "https://www.maisonbleuiris.fr/favicon.ico",
         width: 800,
         height: 600,
         alt: "Icon de l'iris bleu à l'encre de chine",
       },
     ],
-    locale: "en_US",
+    locale: "fr_FR",
     type: "website",
   },
 };

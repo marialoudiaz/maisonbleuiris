@@ -1,13 +1,9 @@
 
 export const metadata = {
-  title: "Philosophie – Maison Bleue Iris",
+  title: "La Philosophie Maison Bleue Iris",
   description:
-    "Découvrez la philosophie de Maison Bleue Iris : le bleu iris & les piliers de notre expertise.",
+    "Découvrez la philosophie de Maison Bleu Iris. Découvrez notre mission et les piliers de notre expertise, puis l'histoire derrière notre couleur iconique : le bleu iris.",
+     alternates: {
+    canonical: "https://www.maisonbleuiris.fr/philosophy",
+  },
 };
-// version dynamique
-// export async function generateMetadata() {
-//   return {
-//     title: "Philosophie – Maison Bleue Iris",
-//     description: "Description générée dynamiquement...",
-//   };
-// }
