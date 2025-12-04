@@ -1,4 +1,13 @@
 // app/data/projects.ts
+export interface Section {
+  title?: string;          // présent dans certaines sections
+  categories?: string[][]; // présent dans certaines sections
+  subtitle: string[];
+  text: string[];
+  image?: string;
+  imageEN?: string;        // présent dans certaines sections
+  video?: string;
+}
 
 export interface Projet {
   id: number;
@@ -13,15 +22,18 @@ export interface Projet {
   categories?: string[][];
   onClick?: string[];
   besoins?: string[][];
-  technologies?: string[];
-  sections?: {
-    subtitle: string[];
-    text: string[];
-    image?: string;
-    video?: string;
-  }[];
+  technologies?: string[] | string[][];
+  sections?: Section[];                   // sections maintenant flexibles
   sectionsImg?: string[][];
   updatedAt?: string;
+  // sections?: {
+  //   subtitle: string[];
+  //   text: string[];
+  //   image?: string;
+  //   video?: string;
+  // }[];
+  // sectionsImg?: string[][];
+  // updatedAt?: string;
 }
 
 export const descriptionprojectsArr: Projet[] = [
