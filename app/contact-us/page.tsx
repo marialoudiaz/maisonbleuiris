@@ -56,10 +56,9 @@ const Form: React.FC = () => {
 
   return (
    <>
+   <Header />
     <div className='section' id="Contact">
-        <Header />
         <h1>{form[15]}</h1>   
-
         <div className='grid-col2'>
 
           {/* PARTIE GAUCHE */}
