@@ -38,8 +38,8 @@ function Projet() {
   const Lang = indepArray?.[0]?.Lang ?? 'FR';
   const langIndex = Lang === 'FR' ? 0 : 1;
 // Cliquer sur découvrir
-  const prev = '/icons/interface/icon-eye-1.png';
-  const next= '/icons/interface/icon-eye-2.png';
+  const prev = '/images/icons/interface/icon-eye-1.png';
+  const next= '/images/icons/interface/icon-eye-2.png';
   const [imageSource, setImageSource] = useState(prev);
 // Hover icon oeil
   const handleHover = () => {setImageSource(next);};
