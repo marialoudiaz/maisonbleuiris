@@ -10,7 +10,10 @@ import '../app/globals.css';
 // }
 //Développment d’image de marque pour tous ceux qui promeut une philosophie bien-être, éco-responsable et éthique: lieux, marques, artisans, praticiens, etc…
 export const metadata = {
-  title: "Studio design de marque Montpellier : stratégie marketing, print, web, packaging - Maison Bleu Iris",
+  title: {
+    default: "Maison Bleu Iris",
+    template: "Studio design de marque Montpellier : stratégie marketing, print, web, packaging - Maison Bleu Iris",
+  },
   description: "Vous avez un projet ou une marque à révéler ? Maison Bleu Iris accompagne celles et ceux qui défendent une vision éco-responsable et éthique, à travers une approche globale du design de marque, du print au digital: Print, Développement web, Illustration, Packaging", //Studio expert en développement d’image de marque pour tous ceux qui promeut une philosophie éco-responsable et éthique.
   openGraph: {
     title: "Studio design de marque Montpellier : stratégie marketing, print, web, packaging - Maison Bleu Iris",
@@ -19,7 +22,7 @@ export const metadata = {
     canonical: "https://www.maisonbleuiris.fr/",
   },
     url: "https://www.maisonbleuiris.fr",
-    siteName: "Maison Bleu Iris",
+    siteName: "Studio design de marque Montpellier - Maison Bleu Iris",
     images: [
       {
         url: "https://www.maisonbleuiris.fr/favicon.ico",
