@@ -41,8 +41,8 @@ const Projets = () => {
   // Determine language settings
   const isEnglish = indepArray[0].Lang === 'EN';
   const variableENorFr = [
-    ['Discover our key projects', 'Discover', 'Previous', 'scroll right to learn more', 'Discover our other projects'],
-    ['Découvrez nos projets clefs', 'Découvrir', 'Précédent', 'scroller à droite pour en apprendre +', 'Découvrir nos autres projets']
+    ['Discover our key projects - Brand design : Print, Web, Packaging, Illustration','Discover', 'Previous', 'scroll right to learn more', 'Discover our other projects'],
+    ['Découvrez nos projets phares - Graphisme & Design de marque : Print, Web, Packaging, Illustration ', 'Découvrir', 'Précédent', 'scroller à droite pour en apprendre +', 'Découvrir nos autres projets']
   ];
   const textVariables = isEnglish ? variableENorFr[0] : variableENorFr[1];
   const prev = '/images/icons/interface/icon-eye-1.png';
