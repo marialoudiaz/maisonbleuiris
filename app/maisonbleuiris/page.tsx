@@ -31,7 +31,7 @@ const Logo = () => {
       "Retourner à l'accueil"
     ],
     philo:[
-          "Notre philosphie et mission",
+          "Studio graphisme et design de marque Montpellier - Maison Bleu Iris, notre philosphie et mission",
           "L’iris bleu, plus qu’une couleur",
           "L’iris bleu symbolise la recherche et la cultivation de vérité et d’autenthicité.Au sein du processus créatif, cela se traduit par un principe de création consciente, de volonté d’accompagner et de faire fleurir des projets porteurs de sens, engagés dans une démarche éthique, consciente, bien-être.",
           "Symboliquement l’iris bleu, c’est une fleur mais aussi le contour de la pupille, soit l’idée d’une vision claire et alignée. Pour nous guider vers ce qui est vrai, essentiel et authentique.Ainsi l’iris bleu donne son nom à une couleur, une essence « Bleu Iris » pour colorer un Monde que l’on commence par rêver et que l’on dessine projets par projets pour le construire consciemment.",
