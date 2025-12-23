@@ -12,11 +12,11 @@ import '../app/globals.css';
 export const metadata = {
   title: {
     default: "Maison Bleu Iris", // titre dans l'onglet web,
-    template: "Maison Bleu Iris | Studio graphisme et design de marque Montpellier : stratégie marketing, print, web, packaging",
+    template: "Maison Bleu Iris | Studio graphisme et design de marque Montpellier", //: stratégie marketing, print, web, packaging
   },
   description: "Vous avez un projet ou une marque à révéler ? Maison Bleu Iris accompagne celles et ceux qui défendent une vision éco-responsable et éthique, à travers une approche globale du design de marque, du print au digital: Print, Développement web, Illustration, Packaging", //Studio expert en développement d’image de marque pour tous ceux qui promeut une philosophie éco-responsable et éthique.
   openGraph: {
-    title: "Maison Bleu Iris | Studio graphisme et design de marque : stratégie marketing, print, web, packaging",
+    title: "Maison Bleu Iris | Studio graphisme et design de marque Montpellier",//: stratégie marketing, print, web, packaging
     description: "Vous avez un projet ou une marque à révéler ? Maison Bleu Iris accompagne celles et ceux qui défendent une vision éco-responsable et éthique, à travers une approche globale du design de marque, du print au digital: Print, Développement web, Illustration, Packaging", //Studio expert en développement d’image de marque pour tous ceux qui promeut une philosophie éco-responsable et éthique.
     alternates: {
     canonical: "https://www.maisonbleuiris.fr/",
