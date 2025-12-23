@@ -26,7 +26,7 @@ const Projets = () => {
   const langIndex = isEnglish ? 0 : 1;
   const variableENorFr = [
     ['All of our projects'],
-    ['Tous nos projets - Graphisme & Design de marque Montpellier : Print, Web, Packaging, Illustration ']
+    ['Tous nos projets chez Maison Bleu Iris | Graphisme & Design de marque Montpellier']
   ];
   const textVariables = isEnglish ? variableENorFr[0] : variableENorFr[1];
   const prev = '/images/icons/interface/icon-eye-1.png';
