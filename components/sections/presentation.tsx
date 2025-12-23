@@ -68,7 +68,7 @@ const Prez: React.FC = () => {
 
       <div>
           <div className='name'>
-            <h1> MAISON BLEU IRIS | BRANDING POÉTHIQUE</h1>
+            <h1> MAISON BLEU IRIS | Studio graphisme et design de marque à Montpellier | Print, Web, Packaging, Illustration, Stratégie marketing Hérault</h1>
           </div>
           <div className='prez'>
 
