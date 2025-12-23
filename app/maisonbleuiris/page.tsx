@@ -17,7 +17,7 @@ const Logo = () => {
     Lang: 'FR',
     header: ['Notre Philosophie','Nos Services', 'Nos Projets', 'Nous contacter'],
     footer: "designons votre singularité",
-    hp: ['Maison Bleu Iris', 'soutient', 'les artisans du sens'],
+    hp: ['Maison Bleu Iris | Studio graphisme et design de marque à Montpellier', 'soutient', 'les artisans du sens'],
     videoOrdi: 'videoReveal1',
     videoTel: 'videoReveal2',
     videoPhilo:'videoPhilo',
