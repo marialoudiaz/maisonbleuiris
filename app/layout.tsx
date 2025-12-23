@@ -25,7 +25,7 @@ export const metadata = {
     siteName: "Studio graphisme et design de marque Montpellier - Maison Bleu Iris",
     images: [
       {
-        url: "../app/public/favicon.ico",
+        url: "../public/favicon.ico",
         width: 800,
         height: 600,
         alt: "Icon de l'iris bleu à l'encre de chine",
