@@ -11,18 +11,18 @@ import '../app/globals.css';
 //Développment d’image de marque pour tous ceux qui promeut une philosophie bien-être, éco-responsable et éthique: lieux, marques, artisans, praticiens, etc…
 export const metadata = {
   title: {
-    default: "Maison Bleu Iris | Studio graphisme et design de marque Montpellier",
-    template: "Studio graphisme et design de marque Montpellier : stratégie marketing, print, web, packaging - Maison Bleu Iris",
+    default: "Maison Bleu Iris", // titre dans l'onglet web,
+    template: "Maison Bleu Iris | Studio graphisme et design de marque Montpellier : stratégie marketing, print, web, packaging",
   },
   description: "Vous avez un projet ou une marque à révéler ? Maison Bleu Iris accompagne celles et ceux qui défendent une vision éco-responsable et éthique, à travers une approche globale du design de marque, du print au digital: Print, Développement web, Illustration, Packaging", //Studio expert en développement d’image de marque pour tous ceux qui promeut une philosophie éco-responsable et éthique.
   openGraph: {
-    title: "Studio graphisme et design de marque : stratégie marketing, print, web, packaging - Maison Bleu Iris",
+    title: "Maison Bleu Iris | Studio graphisme et design de marque : stratégie marketing, print, web, packaging",
     description: "Vous avez un projet ou une marque à révéler ? Maison Bleu Iris accompagne celles et ceux qui défendent une vision éco-responsable et éthique, à travers une approche globale du design de marque, du print au digital: Print, Développement web, Illustration, Packaging", //Studio expert en développement d’image de marque pour tous ceux qui promeut une philosophie éco-responsable et éthique.
     alternates: {
     canonical: "https://www.maisonbleuiris.fr/",
   },
     url: "https://www.maisonbleuiris.fr",
-    siteName: "Studio graphisme et design de marque Montpellier - Maison Bleu Iris",
+    siteName: "Maison Bleu Iris | Studio graphisme et design de marque Montpellier ",
     images: [
       {
         url: "../public/favicon.ico",
