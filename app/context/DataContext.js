@@ -58,7 +58,7 @@ import React, { createContext, useContext, useState } from 'react';
 // },];
 // Créer le contexte
   const indepArrayy = [
-    {
+  {
     ids: 0,
     Lang: 'FR',
     header: ['Notre Philosophie','Nos Services', 'Nos Projets', 'Nous contacter'],
@@ -184,7 +184,6 @@ import React, { createContext, useContext, useState } from 'react';
   }
   ];  
   const DataContext = createContext();
-
 // Créer le fournisseur de données
 
 export const DataProvider = ({ children }) => {

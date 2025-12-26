@@ -259,9 +259,9 @@ const Logo = () => {
           "Site Access",
           "Maria Lou Diaz strives to ensure continuous access to the website www.maisonbleuiris.fr. However, interruptions may occur for maintenance or technical reasons, without liability for the publisher for any resulting consequences."]
   },]; 
-// Aller à page chargement après Animation du logo
+//Aller à page chargement après Animation du logo
 //Faire au chargement du site (envoyé indepArrayEn par defaut)
-// Envoyer indepArrayFR si props FR recu
+//Envoyer indepArrayFR si props FR recu
   useEffect(() => {
       const array = lang === 'en' ? indepArrayEN : indepArray;
       setTimeout(() => {
@@ -277,15 +277,15 @@ const Logo = () => {
 
   return (
     <>
-    <div className='bg-color-anim'>
-      <div style={{position:'relative'}}>
-       <Image 
-        id='logo-bg' 
-        src='/images/logo/maisonbleuiris-blanc.png' 
-        alt={lang==='en'? "Maison Bleu Iris white logo on Blue Iris colored background": "Logo de Maison Bleu Iris en blanc sur fond de couleur Bleu Iris"}
-        width={380} height={210}/>
+      <div className='bg-color-anim'>
+        <div style={{position:'relative'}}>
+        <Image 
+          id='logo-bg' 
+          src='/images/logo/maisonbleuiris-blanc.png' 
+          alt={lang==='en'? "Maison Bleu Iris white logo on Blue Iris colored background": "Logo de Maison Bleu Iris en blanc sur fond de couleur Bleu Iris"}
+          width={380} height={210}/>
+        </div>
       </div>
-    </div>
     </>
   );
 };
