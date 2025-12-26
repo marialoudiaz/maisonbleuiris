@@ -1,13 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Syne:wght@400..800&display=swap');
-@import url("https://use.typekit.net/rso1pzk.css");
- @import url("https://use.typekit.net/auw7joq.css"); // commuters sans
-// *{
-//   cursor: url('/images/curseur-special.png'), auto;
-// }
-//fonts
+// @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Syne:wght@400..800&display=swap');
+// @import url("https://use.typekit.net/rso1pzk.css");
+// @import url("https://use.typekit.net/auw7joq.css"); // commuters sans
+// *{cursor: url('/images/curseur-special.png'), auto;}
 
-//legere ombre portee
-//  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+//Canela en local
 @font-face {
   font-family: 'Canela-Bold';
   src: url('../fonts/Canela-Bold-Trial.otf') format('otf'),
@@ -24,8 +20,6 @@
   font-family: 'Canela-Reg';
   src: url('../fonts/Canela-Regular-Trial.otf') format('otf'),
 }
-
-//operetta
 .reg {
 font-family: "Canela-Reg", serif;
 font-weight: 400;
@@ -41,8 +35,7 @@ font-family: "Canela-Bold", serif;
 font-weight: 700;
 font-style: normal;
 }
-//freight
-// FreightText Pro Medium Italic
+//freight > canela
 .freight-ita {
 font-family: "Canela-Light", serif;
 font-weight: 500;
@@ -54,19 +47,14 @@ font-family: "Canela-Reg", serif;
 font-weight: 400;
 font-style: normal;
 }
+
 //bodytexte
 .barlow-regular {
-  // font-family: "Barlow", sans-serif;
-  // font-weight: 400;
-  // font-style: normal;
   font-family: "commuters-sans", sans-serif;
-font-weight: 400;
-font-style: normal;
+  font-weight: 400;
+  font-style: normal;
 }
 .barlow-medium {
-  // font-family: "Barlow", sans-serif;
-  // font-weight: 500;
-  // font-style: normal;
   font-family: "commuters-sans", sans-serif;
 font-weight: 700;
 font-style: normal;
