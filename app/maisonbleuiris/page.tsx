@@ -277,15 +277,39 @@ const Logo = () => {
 
   return (
     <>
-      <div className='bg-color-anim'>
+      {/* <div className='bg-color-anim'>
         <div style={{position:'relative'}}>
         <Image 
           id='logo-bg' 
           src='/images/logo/maisonbleuiris-blanc.png' 
           alt={lang==='en'? "Maison Bleu Iris white logo on Blue Iris colored background": "Logo de Maison Bleu Iris en blanc sur fond de couleur Bleu Iris"}
-          width={380} height={210}/>
+          width={380} height={210}
+          />
         </div>
+      </div> */}
+
+      <div className="bg-color-anim">
+        <Image
+          src="/images/fond-homepage.png"
+          alt="Fond maison bleu iris"
+           width={0} height={0}
+          // fill // occupe tout le parent
+          style={{ objectFit: 'cover', objectPosition: 'center' }}
+          priority //critique pour LCP
+        />
+      <div>
+        <Image
+          src="/images/logo/maisonbleuiris-blanc.png"
+          alt="Logo Maison Bleu Iris"
+          width={500}
+          height={300}
+          priority
+        />
       </div>
+      </div>
+
+
+
     </>
   );
 };
