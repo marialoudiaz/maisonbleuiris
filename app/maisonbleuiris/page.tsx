@@ -267,12 +267,12 @@ const Logo = () => {
       setTimeout(() => {
         console.log(opacity);
         setOpacity(0);
-      }, 1000);
+      }, 800);
 
       setTimeout(() => {
         updateData(array);
         router.push(`/`);
-      }, 2000);
+      }, 1000);
   }, [lang]);
 
   return (
