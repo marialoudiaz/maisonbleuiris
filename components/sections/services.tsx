@@ -36,7 +36,7 @@ function Services() {
     {
       id: 3,
       title: ['Publishing & Illustration', 'Édition & Illustration'],
-      img: '/images/services/services-illustration-montpellier.png',
+      img: '/images/services/services-illustration-montpellier.jpg',
       alt: 'Illustration Artistique',
       txt: [
         'All types of illustrations: brand identities, scientific diagrams, book covers.',
