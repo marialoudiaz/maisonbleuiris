@@ -25,7 +25,7 @@ function Services() {
     {
       id: 2,
       title: ['Branding strategy', 'Stratégie de marque'],
-      img: '/images/services/services-packaging-montpellier.png',
+      img: '/images/services/services-packaging-montpellier.jpg',
       alt: 'print',
       txt: [
         'Creation and promotion of your brand: from strategy to visual conception.',
