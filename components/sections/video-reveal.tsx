@@ -66,6 +66,7 @@ const VideoReveal: React.FC<VideoProps> = ({ scrollYProgress }) => {
           <video
             ref={desktopVideoRef}
             playsInline
+            preload="none"
             poster="/images/projets/maisonbleuiris_services.png"
             onClick={() => handlePlayVideo(desktopVideoRef)}
             controls={false}
@@ -102,6 +103,7 @@ const VideoReveal: React.FC<VideoProps> = ({ scrollYProgress }) => {
           <video
             ref={mobileVideoRef}
             playsInline
+            preload="none"
             poster="/images/projets/maisonbleuiris_services.png"
             onClick={() => handlePlayVideo(mobileVideoRef)}
             controls={true}
