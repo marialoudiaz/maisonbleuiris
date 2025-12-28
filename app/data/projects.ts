@@ -237,8 +237,8 @@ export const descriptionprojectsArr: Projet[] = [
             ],
             sectionsImg: 
             [
-              ['/images/projets/illu_edition/nda/nda-1.png','/images/projets/illu_edition/nda/nda-2.png'],
-              ['/images/projets/illu_edition/nda/nda-1.png','/images/projets/illu_edition/nda/nda-2.png'],
+              ['/images/projets/illu_edition/nda/nda-1.jpg','/images/projets/illu_edition/nda/nda-2.png'],
+              ['/images/projets/illu_edition/nda/nda-1.jpg','/images/projets/illu_edition/nda/nda-2.png'],
             ]
           },
           // pascale
