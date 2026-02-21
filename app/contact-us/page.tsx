@@ -16,7 +16,7 @@ const Form: React.FC = () => {
   const { indepArray } = useData();
 
   const form = indepArray[0].form;
-  const display = Array.isArray(indepArray[0].form) ? indepArray[0].form[0] : indepArray[0].form;
+  // const display = Array.isArray(indepArray[0].form) ? indepArray[0].form[0] : indepArray[0].form;
   const words = indepArray[0].words ? indepArray[0].words : ['gogo']; // Assurez-vous que c'est un tableau
   const blabla = indepArray[0].form[12];
   const [index, setIndex] = useState(0);
