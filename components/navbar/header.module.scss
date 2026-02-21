@@ -1,0 +1,128 @@
+/* HEADER + NAVBAR */
+
+.navbar{
+  pointer-events: none;
+  position: fixed;
+  z-index: 20;
+  inset: 0% 0% auto;
+  background-color: rgba(255, 255, 255, 0);
+}
+.navbarcontainer{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+}
+.navbarleft{
+pointer-events: auto;
+}
+.navbarright{
+  grid-column-gap: 3rem;
+  grid-row-gap: 4rem;
+  border: 1px solid rgba(255, 255, 255, 0.361);
+  border-radius: 100px;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  pointer-events: auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: .6rem;
+  display: flex;
+  & img{
+    width: 10rem;
+    z-index: 4;
+  }
+}
+.buttonnavbar{
+  border-radius: 100px;
+  background-color: rgba(255, 255, 255, 0.361);
+  color: var(--primary);
+  text-align: center;
+  text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
+  min-height: 2.92rem;
+  padding: .83rem 1.11rem;
+  font-size: .97rem;
+  text-decoration: none;
+  display: flex;
+  gap: .5rem;
+}
+.buttonnavbar:hover{
+  background-color: var(--gold);
+  display: flex;
+  flex-wrap: nowrap;
+  gap: .5rem;
+  &:hover p{
+    color: white;
+    font-family: var(--Body)!important;
+    // font-weight: 700!important;
+    transition: font-family 0.3s ease, font-weight 0.3s ease, color 0.3s ease!important; /* Ajout de la transition */  
+  }
+}
+.menubutton {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 100;
+  cursor: pointer;
+  z-index: 110;
+}
+.logo{
+  filter: invert(100);
+}
+/*ANIMATION NAVBAR*/
+@keyframes fadeInUp {
+  from {
+    opacity: 0; /* Commencer avec une opacité de 0 */
+    transform: translateY(20px); /* Commencer en bas */
+  }
+  to {
+    opacity: 1; /* Arriver à une opacité de 1 */
+    transform: translateY(0); /* Arriver à la position normale */
+  }
+}
+#Service {
+  animation-delay: 0.3s;
+}
+#Sourc {
+  animation-delay: 0.8s;
+}
+#Contac {
+  animation-delay: 1.3s;
+}
+#Contact{
+  margin-top: 7rem;
+}
+.navbar-full-items{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  z-index: 120;
+  gap: 1rem;
+  .mobilebuttonnavbar {
+    font-family: var(--Titles);
+    & p{
+      font-size: 1.8rem;
+      color: white;
+      text-transform: uppercase;
+      opacity: 0; /* Masquer initialement */
+      transform: translateY(20px); /* Départ vers le bas */
+      animation: fadeInUp 0.5s ease forwards;
+      transition: font-family 0.3s ease, font-weight 0.3s ease, color 0.3s ease; /* Ajout de la transition */
+    }
+  }
+  & .mobilebuttonnavbar p:hover{
+    font-family: var(--Body);
+    font-weight: 800;
+    align-items: center;
+    color: var(--gold);
+  }
+}

@@ -2,7 +2,8 @@
 import React, { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { useData } from '../../app/context/DataContext';
-import '../../styles/App.scss';
+import '../../styles/app-min.scss'
+import styles from '../../components/navbar/header.module.scss';
 import Image from 'next/image';
 import logo from '../../public/images/logo/maisonbleuiris-noir.png';
 import MobileNavbar from './mobile-header';
@@ -38,18 +39,18 @@ const Header = () => {
   return (
     <>
       {/* Navbar desktop */}
-      <div className="navbar hidden md:block">
-        <div className='navbar-container'>
+      <div className={`${styles.navbar} hidden md:block`}>
+        <div className={styles.navbarcontainer}>
           
-          <div className='navbar-left' onClick={() => router.push('/')}>
+          <div className={styles.navbarleft} onClick={() => router.push('/')}>
             <Image src={logo} width={220} height={120} alt="logo" />
           </div>
          
-          <div className='navbar-right'>
+          <div className={styles.navbarright}>
             {navLinks.map(link => (
               <div 
                 key={link.id} 
-                className='button-navbar'
+                className={styles.buttonnavbar}
                 onClick={() => router.push(`${link.route}`)}
               >
                 <p

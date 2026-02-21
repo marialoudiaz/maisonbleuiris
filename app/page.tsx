@@ -18,7 +18,7 @@ const Prez = dynamic(() => import("../components/sections/presentation"), {
 const Switch = dynamic(() => import("../components/ui/switch"), {
   loading: () => <div>Loading Footer...</div>,
 });
-const Footer = dynamic(() => import("../components/sections/footer"), {
+const Footer = dynamic(() => import("../components/footer/footer"), {
   loading: () => <div>Loading Footer...</div>,
 });
 

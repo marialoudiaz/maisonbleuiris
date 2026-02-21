@@ -1,0 +1,106 @@
+/*PHILOSOPHIE*/
+.space{
+  margin-top: 2rem;
+}
+.bgfrise{
+  background-color: rgb(243,240,233);
+  border-radius: 50px;
+   padding:5rem;
+}
+.bgcard{
+ display: flex;
+ flex-wrap: wrap;
+justify-content: center;
+ gap: 1rem;
+
+  & div{
+     background-color: white;
+    border-radius: 50px;
+    width: 30%;
+    padding:2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.videoiris{
+   width: 40%;
+}
+.prez{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 2rem 15rem;
+  align-items: center;
+}
+.philoprez{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+   text-align: center;
+padding: 2rem 15rem;
+
+.philoprez video{
+  width: auto;
+  height: auto;
+  & video{
+    display: flex;
+    max-width: 100%;
+    height: 100%;  }
+    & source{
+      display: flex;
+      width: 100%;
+      height: 100%;
+    }
+}
+
+}
+.preztxt{
+  padding: 0rem;
+}
+.pola{
+  transform: rotate(6deg);
+  margin-top: -10px;
+}
+.pola:hover{
+  transform: rotate(0deg);
+  margin: 0;
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .philoprez{
+  padding: 2rem ;
+  }
+  .prez{
+    padding: 2rem!important;
+  }
+  .bgcard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 0;
+    width: 100%;
+    height: auto;
+  & div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 50px;
+    width: 100%;
+    padding:1rem;
+  }
+  }
+  .pola{
+    width: 10rem!important;
+    height: auto;
+  }
+  .videoiris{
+   width: 70%;
+}
+}

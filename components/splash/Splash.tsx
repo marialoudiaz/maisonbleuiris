@@ -1,6 +1,5 @@
 // app/page.tsx
 import dynamic from 'next/dynamic';
-import '../../styles/App.scss';
 
 const Logo = dynamic(() => import('../../app/maisonbleuiris/page'), {
   loading: () => <div>Loading Logo...</div>,

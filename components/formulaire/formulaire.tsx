@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import TextTransition, { presets } from 'react-text-transition';
 import ContactForm from './contact-form'; // Remplacez par le chemin correct pour le composant
-import '../../styles/App.scss';
+import styles from '../../components/formulaire/formulaire.module.scss';
 import '../../globals.css';
 import { useData } from '@/app/context/DataContext'; // Importer le contexte
 
@@ -12,7 +12,7 @@ const Form: React.FC = () => {
   const form = indepArray[0].form;
   const display = Array.isArray(indepArray[0].form) ? indepArray[0].form[0] : indepArray[0].form;
   const words = indepArray[0].words ? indepArray[0].words : ['gogo']; // Assurez-vous que c'est un tableau
-  const blabla = indepArray[0].form[12];
+  const blabla = indepArray[0].form[11];
   const [index, setIndex] = useState(0);
   const langDisplay = indepArray[0].Lang;
   const isFrench = indepArray[0].Lang === 'FR';
@@ -49,31 +49,31 @@ const Form: React.FC = () => {
   }, []);
 
   return (
-    <div className='section' id="Contact">
-        <div className='grid-col2'>
+    <div className={styles.section} id="Contact">
+        <div className={styles.gridcol2}>
 
           {/* PARTIE GAUCHE */}
-          <div className='flex-col'>
+          <div className={styles.flexcol}>
             <h2>{form[0]}</h2>
             <h2>{form[1]}</h2>
-            <h2 className='gold'>{form[2]}</h2>
+            <h2 style={{color:'#b8a054'}}>{form[2]}</h2>
             
-            <div className='text-block' style={{ borderTop: 'black 1px solid', paddingTop: '1rem', display: display, flexDirection: 'column' }}>
+            <div className={styles.textblock} style={{ borderTop: 'black 1px solid', paddingTop: '1rem', display: display, flexDirection: 'column' }}>
               <TextTransition springConfig={presets.gentle}>
-              <p className='syne gold' style={{textTransform:'lowercase'}}>{words[index % words.length]}</p>
+              <p style={{textTransform:'lowercase', color:'#b8a054'}}>{words[index % words.length]}</p>
               </TextTransition>
               <p>{blabla}</p>
             </div>
             
-            <div id="muguet">
-              <video id='muguetvideo' width="320" height="240" autoPlay loop muted playsInline>
+            <div className={styles.muguet}>
+              <video className={styles.muguetvideo} width="320" height="240" autoPlay loop muted playsInline>
                 <source src='/video/image-de-marque-montpellier.mp4' type='video/mp4' />
               </video>
             </div>
 
-            <div className='pack'>
+            <div className={styles.pack}>
             {packages.map((pack, i) => (
-              <div key={i} className="pack-item">
+              <div key={i} className={styles.packitem}>
                <button onClick={() => isFrench ? setPack(pack.object.fr): setPack(pack.object.en) }>
 
 
@@ -83,7 +83,7 @@ const Form: React.FC = () => {
                 </h3>
 
                 {/* Prix */}
-                <p className="price">
+                <p className={styles.price}>
                   {isFrench ? pack.price.fr : pack.price.en}
                 </p>
 
@@ -99,7 +99,7 @@ const Form: React.FC = () => {
                 )}
 
                 {/* CTA */}
-                <p className="cta">
+                <p className={styles.cta}>
                   {isFrench ? pack.cta.fr : pack.cta.en}
                 </p>
               </button>
@@ -111,8 +111,8 @@ const Form: React.FC = () => {
           </div>
 
           {/* PARTIE DROITE */}
-          <div className='grid-col2-asym'>
-            <div className='formulaire'>
+          <div className={styles.gridcol2asym}>
+            <div className={styles.formulaire}>
               <ContactForm langz={langDisplay} infos={indepArray[0]} pack={pack} />
             </div>
           </div>

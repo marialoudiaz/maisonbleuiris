@@ -1,0 +1,87 @@
+/*MOBILE NAVBAR*/
+.navbarcontainermobile{
+  position: fixed;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  top: 1rem;
+  left: 0;
+  right: 0;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.mobilenavbar {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('/images/fond-homepage.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  top:0
+}
+.mobilenavbarcontainer {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 101;
+}
+/*ANIMATION NAVBAR*/
+@keyframes fadeInUp {
+  from {
+    opacity: 0; /* Commencer avec une opacité de 0 */
+    transform: translateY(20px); /* Commencer en bas */
+  }
+  to {
+    opacity: 1; /* Arriver à une opacité de 1 */
+    transform: translateY(0); /* Arriver à la position normale */
+  }
+}
+#Service {
+  animation-delay: 0.3s;
+}
+#Sourc {
+  animation-delay: 0.8s;
+}
+#Contac {
+  animation-delay: 1.3s;
+}
+#Contact{
+  margin-top: 7rem;
+}
+.navbarfullitems{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  z-index: 120;
+  gap: 1rem;
+  .mobilebuttonnavbar {
+    font-family: var(--Titles);
+    & p{
+      font-size: 1.8rem;
+      color: white;
+      text-transform: uppercase;
+      opacity: 0; /* Masquer initialement */
+      transform: translateY(20px); /* Départ vers le bas */
+      animation: fadeInUp 0.5s ease forwards;
+      transition: font-family 0.3s ease, font-weight 0.3s ease, color 0.3s ease; /* Ajout de la transition */
+    }
+  }
+  & .mobilebuttonnavbar p:hover{
+    font-family: var(--Body);
+    font-weight: 800;
+    align-items: center;
+    color: var(--gold);
+  }
+}

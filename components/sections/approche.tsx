@@ -4,7 +4,7 @@ import nature from '../public/images/icons/approche/nature.png';
 import minimalism from '../public/images/icons/approche/minimalism.png';
 import Image from 'next/image';
 import Carousel from '../ui/carousel';
-import '../../styles/App.scss';
+import styles from '../../components/ui/carousel.module.scss';
 import { useData } from '@/app/context/DataContext';
 
 const Approche: React.FC = () => {
@@ -54,8 +54,8 @@ const Approche: React.FC = () => {
   return (
     <>
       <div>
-        <div className='prez'>
-          <div className='flex-wrap'>
+        <div className={styles.prez}>
+          <div className={styles.flexwrap}>
               <Image
                 src="/images/logo/medaillon.png"
                 alt="le logo sous forme de médaillon avec l'iris à l'encre de chine"

@@ -1,9 +1,6 @@
 import React from 'react';
 import { DataProvider } from './context/DataContext';
-// import { Providers } from "./providers";
-import '../app/globals.css';
-// import { Barlow, Barlow_Condensed} from 'next/font/google';
-import Script from 'next/script';
+import '../globals.css';
 
 
 
@@ -14,19 +11,20 @@ import Script from 'next/script';
 //Développment d’image de marque pour tous ceux qui promeut une philosophie bien-être, éco-responsable et éthique: lieux, marques, artisans, praticiens, etc…
 export const metadata = {
   title: {
-    default: "Maison Bleu Iris | Studio graphisme et design de marque Montpellier", // titre dans l'onglet web,
-    template: "Maison Bleu Iris | Studio graphisme et design de marque Montpellier", //: stratégie marketing, print, web, packaging
+    default: "Maison Bleu Iris | Studio de design de marque éthique", // titre dans l'onglet web,
+    template: "Maison Bleu Iris | Studio de design de marque éthique", //: stratégie marketing, print, web, packaging
   },
-  description: "Vous avez un projet ou une marque à révéler ? Maison Bleu Iris accompagne celles et ceux qui défendent une vision éco-responsable et éthique, à travers une approche globale du design de marque, du print au digital: Print, Développement web, Illustration, Packaging", //Studio expert en développement d’image de marque pour tous ceux qui promeut une philosophie éco-responsable et éthique.
+  description:
+  "Chez Maison Bleu Iris, nous concevons l’image de marque de celles et ceux qui portent des projets engagés, éthiques et conscients. Marques, lieux, artisans, praticiens : nous donnons forme à des univers alignés, sensibles et durables par une expertise du print au digital: Print, Développement web, Illustration, Packaging",
   //rs
   openGraph: {
-    title: "Maison Bleu Iris | Studio graphisme et design de marque Montpellier",//: stratégie marketing, print, web, packaging
-    description: "Vous avez un projet ou une marque à révéler ? Maison Bleu Iris accompagne celles et ceux qui défendent une vision éco-responsable et éthique, à travers une approche globale du design de marque, du print au digital: Print, Développement web, Illustration, Packaging", //Studio expert en développement d’image de marque pour tous ceux qui promeut une philosophie éco-responsable et éthique.
+    title: "Maison Bleu Iris | Studio de design de marque éthique Montpellier",//: stratégie marketing, print, web, packaging
+    description:   "Chez Maison Bleu Iris, nous concevons l’image de marque de celles et ceux qui portent des projets engagés, éthiques et conscients. Marques, lieux, artisans, praticiens : nous donnons forme à des univers alignés, sensibles et durables par une expertise du print au digital: Print, Développement web, Illustration, Packaging",
     alternates: {
     canonical: "https://www.maisonbleuiris.fr/",
     },
     url: "https://www.maisonbleuiris.fr",
-    siteName: "Maison Bleu Iris | Studio graphisme et design de marque Montpellier ",
+    siteName: "Maison Bleu Iris | Studio de design de marque éthique Montpellier",
     images: [
       {
         url: "../public/favicon.ico",
@@ -41,38 +39,10 @@ export const metadata = {
   //fin rs
 };
 
-/// Charger Barlow sans retarder le LCP
-// export const barlow = Barlow({
-//   subsets: ['latin'],
-//   weight: ['100','200','300','400','500','600','700','800','900'],
-//   display: 'swap',
-//   variable: '--font-barlow',
-// });
-
-// export const barlowCondensed = Barlow_Condensed({
-//   subsets: ['latin'],
-//   weight: ['100'],
-//   display: 'swap',
-//   variable: '--font-barlow-condensed',
-// });
-
-
 // a mettre dans html : className={`${barlow.variable} ${barlowCondensed.variable}`}
 export default function RootLayout({children,}:{children: React.ReactNode}) {
   return (
     <html lang="fr">
-      <head>
-        {/* Charger le kit Adobe Typekit de manière non bloquante */}
-        <Script
-          src="https://use.typekit.net/auw7joq.js"
-          strategy="afterInteractive"
-        />
-        <Script id="typekit-init" strategy="afterInteractive">
-          {`try{Typekit.load({ async: true }); } catch(e){ }`}
-        </Script>
-      </head>
-
-
       <body>
         <main>
           <DataProvider>

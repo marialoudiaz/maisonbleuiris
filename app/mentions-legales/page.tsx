@@ -2,8 +2,8 @@
 import React, { useEffect } from 'react';
 import { useData } from '../context/DataContext'; // Importer le contexte
 import { useRouter} from 'next/navigation';
-import '../../styles/App.scss';
-import '../globals.css';
+import styles from './page.module.scss';
+import '../../globals.css';
 import Header from '../../components/navbar/header';
 
 
@@ -26,9 +26,9 @@ const Ml = () => {
   return (
     <>
      
-      <div className='section-ml'>  
+      <div className={styles.sectionml}>  
       <Header/>
-        <div id='ml'>
+        <div id={styles.ml}>
           <h1>{indepArray[0].ml[0]}</h1>
           <p>{indepArray[0].ml[1]}</p>
 

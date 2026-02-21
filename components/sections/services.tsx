@@ -2,6 +2,7 @@ import React from 'react';
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 import { useData } from '@/app/context/DataContext';
+import '../../styles/App.scss'
 
 
 function Services() {

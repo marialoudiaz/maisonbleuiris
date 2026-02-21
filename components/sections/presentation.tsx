@@ -2,7 +2,7 @@
 import React from 'react';
 import Marquee from "react-fast-marquee";
 import '../../styles/App.scss';
-import '../../app/globals.css';
+import '../../globals.css';
 import { useData } from '@/app/context/DataContext'; // Import du contexte
 import { useRouter} from 'next/navigation';
 import Services from './services';

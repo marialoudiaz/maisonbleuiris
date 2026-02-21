@@ -6,9 +6,9 @@ import Image from 'next/image';
 //composants
 import Header from '../../components/navbar/header';
 import Switch from '../../components/ui/switch';
-import Footer from '../../components/sections/footer';
-import '../../styles/App.scss';
-import '../globals.css';
+import Footer from '../../components/footer/footer';
+import styles from './page.module.scss';
+import '../../globals.css';
 
 const Projets = () => {
   const gridContainerRef = useRef(null);
@@ -42,7 +42,7 @@ const Projets = () => {
   const isEnglish = indepArray[0].Lang === 'EN';
   const variableENorFr = [
     ['Discover our key projects - Brand design : Print, Web, Packaging, Illustration','Discover', 'Previous', 'scroll right to learn more', 'Discover our other projects'],
-    ['Découvrez nos projets phares - Graphisme & Design de marque : Print, Web, Packaging, Illustration ', 'Découvrir', 'Précédent', 'scroller à droite pour en apprendre +', 'Découvrir nos autres projets']
+    ['Découvrez nos projets phares - Graphisme & Design de marque Montpellier', 'Découvrir', 'Précédent', 'scroller à droite pour en apprendre +', 'Découvrir nos autres projets']
   ];
   const textVariables = isEnglish ? variableENorFr[0] : variableENorFr[1];
   const prev = '/images/icons/interface/icon-eye-1.png';
@@ -190,7 +190,6 @@ const Projets = () => {
       //   onClick: ['https://marialoudiaz.fr', '_blank']
       // }, 
     ]; 
-
   // Functions to handle hover effects and toggling text
   const handleHover = () => setImageSource(next);
   const handleHoverOut = () => setImageSource(prev);
@@ -203,28 +202,28 @@ const Projets = () => {
   return (
     <>
       <Header />
-      <div className='section' id='projets' style={{ marginTop: '7rem' }}>
+      <div className={styles.section} id={styles.projets} style={{ marginTop: '7rem' }}>
         <h2 style={{marginLeft:'2rem'}}>{textVariables[0]}</h2>
 
-        <div id='projets'>
-          <div className='grid-container-projets' ref={gridContainerRef}>
+        <div id={styles.projets}>
+          <div className={styles.gridcontainerprojets} ref={gridContainerRef}>
             {projectsArr.map((project, index) => (
-              <div className='project-wrapper' key={index} style={{ marginBottom: '2rem' }}>
-                <div className='projectImgContainer' 
+              <div className={styles.projectwrapper} key={index} style={{ marginBottom: '2rem' }}>
+                <div className={styles.projectImgContainer}
                     ref={(el) => {imgContainerRef.current[index] = el}} 
                     onClick={() => handleDiscover(project.id)}
                 >
-                  <video className='projectHoverVideo' autoPlay loop muted playsInline>
+                  <video className={styles.projectHoverVideo} autoPlay loop muted playsInline>
                     <source src={project.video} type='video/mp4' />
                   </video>
 
                   {project.img.includes('.mp4') ? (
-                    <video className='projectImg' autoPlay loop muted playsInline>
+                    <video className={styles.projectImg} autoPlay loop muted playsInline>
                       <source src={`${project.img}`} type='video/mp4' />
                     </video>
                   ) : (
                     <div
-                      className='projectImg'
+                      className={styles.projectImg}
                       style={{
                         backgroundImage: `url(${project.img})`,
                         backgroundSize: 'cover',
@@ -238,36 +237,46 @@ const Projets = () => {
 
 
                 {/* PARTIE DESCRIPTION */}
-                <div className='project-description' ref={descriptionRef}>
-                  <div className='pastille-mob' style={{paddingLeft:'3rem'}}><p className='pastille'>{project.pastille[isEnglish ? 0 : 1]}</p></div>
-                  <h3 className='project-title'>{project.baseline[isEnglish ? 0 : 1]}</h3>
+                <div className={styles.projectdescription} ref={descriptionRef}>
+                  <div className={styles.pastillemob} style={{paddingLeft:'3rem'}}><p className={styles.pastille}>{project.pastille[isEnglish ? 0 : 1]}</p></div>
+                  <h3 className={styles.projecttitle}>{project.baseline[isEnglish ? 0 : 1]}</h3>
 
                   {/* // AFFICHER TEXTE SUR MOBILE */}
-                  <p className='project-txt short-text' style={{ paddingLeft: '3rem', paddingRight: '2rem' }}>
+                 <p className={`${styles.projecttxt} ${styles.shorttext}`} style={{ paddingLeft: '3rem', paddingRight: '2rem' }}>
                     {isMobile && !showFullText ? `${project.text[isEnglish ? 0 : 1].slice(0, 200)}...` : project.text[isEnglish ? 0 : 1]}
                   </p>
-                  <p className={`project-txt full-text${isMobile && showFullText ? 'show' : ''}`} style={{ paddingLeft: '3rem', paddingRight: '2rem' }}>
+                  {/* <p className={`project-txt full-text${isMobile && showFullText ? 'show' : ''}`} style={{ paddingLeft: '3rem', paddingRight: '2rem' }}> */}
+                    
+                  <p
+                    className={[
+                                styles['project-txt'],
+                                styles['full-text'],
+                                isMobile && showFullText && styles.show ]
+                                .filter(Boolean)
+                                .join(' ')}
+                    style={{ paddingLeft: '3rem', paddingRight: '2rem' }}
+                  >
                     {project.text2[isEnglish ? 0 : 1]}
                   </p>
                   {isMobile && (
-                    <div className='btn-black en-savoir-plus' onClick={toggleFullText}>
+                    <div className={`${styles.btnblack} ${styles.ensavoirplus}`} onClick={toggleFullText}>
                       <p style={{ textAlign: 'center' }}>{showFullText ? `${isEnglish ? 'Show less' : 'Afficher moins'}` : `${isEnglish ? 'Show full text' : 'Afficher le texte complet'}`}</p>
                     </div>
                   )}
 
-                  <div className='inline-flex'>
-                    <button className='btn-black' onClick={() => handleDiscover(project.id)}>
+                  <div className={styles.inlineflex}>
+                    <button className={styles.btnblack} onClick={() => handleDiscover(project.id)}>
                       <p>{textVariables[1]}</p>
                     </button>
-                    <button className='btn-black' onClick={() => handleDiscover(project.id)}>
+                    <button className={styles.btnblack} onClick={() => handleDiscover(project.id)}>
                       <p>{textVariables[2]}</p>
                     </button>
                   </div>
                 </div>
 
-                <div className='flex-center'>
-                  <p className='projet-p'>{project.title[isEnglish ? 0 : 1]}</p>
-                  <div className='carousel-btn' style={{ marginLeft: '1rem', marginBottom: '.2rem' }} onClick={handleHover}>
+                <div className={styles.flexcenter}>
+                  <p className={styles.projetp}>{project.title[isEnglish ? 0 : 1]}</p>
+                  <div className={styles.carouselbtn} style={{ marginLeft: '1rem', marginBottom: '.2rem' }} onClick={handleHover}>
                     <Image
                       src={imageSource ?? ''}
                       alt={isEnglish? "Eye icon working as a link to go to the designated project section": "Icône d'un oeil bougeant au survol et servant de lien pour aller à la section du projet en question"}
@@ -278,23 +287,23 @@ const Projets = () => {
                       style={{ display: 'flex', width: '40px', margin: '.2rem 0rem 0rem .3rem', transition: 'transform 2s ease' }}
                     />
                   </div>
-                  <p className='projet-p' style={{ color: 'black' }}>{textVariables[3]}</p>
+                  <p className={styles.projetp} style={{ color: 'black' }}>{textVariables[3]}</p>
                 </div>
               </div>
             ))}
           </div>
 
-          <div className='center'>
-            <div className='flex-wrap-center'>
+          <div className={styles.center}>
+            <div className={styles.flexwrapcenter}>
 
             {/* boutons tous les projets - refaire lien */}
               <button 
-              className='btn-transp-dark' 
+              className={styles.btntranspdark} 
               onClick={() => handleDiscoverAll()} // onClick={() =>handleDiscoverProj()}
               >
               <div>
                 <svg
-                  className="icon-transp"
+                  className={styles.icontransp}
                   viewBox="0 0 16 19"
                   xmlns="http://www.w3.org/2000/svg"
                   aria-label='Arrow Icon'
@@ -305,38 +314,11 @@ const Projets = () => {
                 >  
                 </path>
                   </svg>
-                  <p className='btn-transp-p' style={{ color: 'white' }}>
+                  <p className={styles.btntranspp} style={{ color: 'white' }}>
                     {cta[2]}
                   </p>
                 </div>
               </button>
-            {/* boutons vers rs */}
-            {/* <div className='flex-wrap-center'>
-              <div
-                    className="btn-transp-rs"
-                    onClick={() => window.open('https://www.linkedin.com/in/maria-lou-diaz-1b7ba8143/', '_blank', 'noreferrer')}
-                >
-                  <div>
-                    <FontAwesomeIcon className='icon-transp-big' icon={faLinkedinIn} />
-                  </div>
-              </div>
-              <div
-                  className="btn-transp-rs"
-                  onClick={() => window.open('https://github.com/marialoudiaz/', '_blank', 'noreferrer')}
-              >
-                <div>
-                  <FontAwesomeIcon className='icon-transp-big' icon={faGithub} />
-                </div>
-              </div>
-              <div
-                  className="btn-transp-rs"
-                  onClick={() => window.open('https://www.instagram.com/maisonbleuiris/', '_blank', 'noreferrer')}
-              >
-                <div>
-                  <FontAwesomeIcon className='icon-transp-big' icon={faInstagram} />
-                </div>
-              </div>
-            </div> */}
             </div>
           </div>
       </div>

@@ -1,5 +1,6 @@
 import React from 'react'
 import '../../styles/App.scss';
+import styles from '../../components/ui/carousel.module.scss';
 import Image, { StaticImageData } from 'next/image';
 import { useData } from '@/app/context/DataContext'; // Import du contexte
 
@@ -21,9 +22,9 @@ const Carousel: React.FC<CarouselProps> = ({dataArray}) => {
 
   return (
    <>
-      <div className="grid-col3" style={{margin:'2rem 0rem'}}>
+      <div className={styles.gridcol3} style={{margin:'2rem 0rem'}}>
         {dataArray.map((item, index) => (
-          <div key={index} className="flex-wrap" id="carousel-item">
+          <div key={index} className={`${styles.carouselitem} ${styles.flexwrap}`}>
             <Image 
               src={item.image} 
               alt={isFrench? item.alt[0]: item.alt[1]}

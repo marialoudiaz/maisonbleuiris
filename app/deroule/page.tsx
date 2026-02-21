@@ -1,6 +1,4 @@
 'use client';
-// components/Deroule.tsx
-
 import React, { useRef, useEffect } from 'react';
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -8,31 +6,26 @@ import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import { useData } from '@/app/context/DataContext';
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
-import '../../styles/App.scss';
-
+import styles from './page.module.scss';
 // composants
 import Header from '../../components/navbar/header';
 import Switch from '../../components/ui/switch';
-import Footer from '../../components/sections/footer';
+import Footer from '../../components/footer/footer';
 
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 const Deroule: React.FC = () => {
   const { indepArray } = useData();
   const router = useRouter();
-
   // état de chargement (sans bloquer les hooks)
   const isLoading = !indepArray || !indepArray[0]?.philo;
-
   // redirection si manque de données
   useEffect(() => {
     if (isLoading) {
       router.push('/');
     }
   }, [isLoading, router]);
-
   const containerRef = useRef<HTMLDivElement>(null);
-
   useEffect(() => {
     if (!isLoading) {
       const items = containerRef.current?.children;
@@ -56,68 +49,66 @@ const Deroule: React.FC = () => {
       }
     }
   }, [isLoading]);
-
   // affichage de chargement après tous les hooks
   if (isLoading) return <div>Loading...</div>;
-
   const { deroule } = indepArray[0];
   const isEnglish = indepArray[0].Lang === 'EN';
 
   return (
     <>
       <Header />
-      <section className='section' style={{ display: `${deroule}` }}>
+      <section className={styles.section} style={{ display: `${deroule}` }}>
         
-        <div className='flex-wrap' ref={containerRef} id='deroule'>
-          <div className='flex-wrap'>
+        <div className={styles.flexwrap} ref={containerRef} id={styles.deroule}>
+          <div className={styles.flexwrap}>
             <h2>{deroule[1]}</h2>
             <p>{deroule[2]}</p>
           </div>
 
-          <div className='flex-wrap' id='deroule-item'>
+          <div className={styles.flexwrap} id={styles.derouleitem}>
             <Image
               src='/images/icons/projets/projet.png'
               alt={isEnglish ? "China Ink icon of a couple" : "Icône à l'encre de Chine d'un couple"}
               width={300}
               height={300}
             />
-            <div className='flex-wrap'>
+            <div className={styles.flexwrap}>
               <h4>{deroule[3]}</h4>
               <p>{deroule[4]}</p>
             </div>
           </div>
 
-          <div className='tiret-container' style={{ display: 'flex' }}>
-            <div className='tiret'></div>
-            <div className='tiret2'></div>
+          <div style={{ display: 'flex' }}>
+            <div className={styles.tiret}></div>
+            <div className={styles.tiret2}></div>
           </div>
 
-          <div className='flex-wrap' id='deroule-item'>
+          <div className={styles.flexwrap} id={styles.derouleitem}>
             <Image
               src='/images/icons/projets/devis.png'
               alt={isEnglish ? "China Ink icon of a letter" : "Icône à l'encre de Chine d'une enveloppe"}
               width={300}
               height={300}
             />
-            <div className='flex-wrap'>
+            <div className={styles.flexwrap}>
               <h4>{deroule[5]}</h4>
               <p>{deroule[6]}</p>
             </div>
           </div>
 
-          <div className='tiret-container' style={{ display: 'flex' }}>
-            <div className='tiret'></div>
-            <div className='tiret2'></div>
+          <div style={{ display: 'flex' }}>
+            <div className={styles.tiret}></div>
+            <div className={styles.tiret2}></div>
           </div>
 
-          <div className='flex-wrap' id='deroule-item'>
+          <div className={styles.flexwrap} id={styles.derouleitem}>
             <Image
               src='/images/icons/projets/livrable.png'
               alt={isEnglish ? "China Ink icon of a gift box" : "Icône à l'encre de Chine d'un cadeau"}
               width={300}
               height={300}
             />
-            <div className='flex-wrap'>
+            <div className={styles.flexwrap}>
               <h4>{deroule[7]}</h4>
               <p>{deroule[8]}</p>
             </div>
@@ -125,13 +116,13 @@ const Deroule: React.FC = () => {
         </div>
 
         <button
-          className='btn-transp-dark'
+          className={styles.btntranspdark}
           style={{ margin: '2rem auto' }}
           onClick={() => router.push('/')}
         >
           <div>
             <svg
-              className="icon-transp"
+              className={styles.icontransp}
               viewBox="0 0 16 19"
               xmlns="http://www.w3.org/2000/svg"
               aria-label='Arrow Icon'
@@ -141,7 +132,7 @@ const Deroule: React.FC = () => {
                 className="fill-white group-hover:fill-white"
               ></path>
             </svg>
-            <p className='btn-transp-p' style={{ color: 'white' }}>
+            <p className={styles.btntranspp} style={{ color: 'white' }}>
               {indepArray[0].cta[4]}
             </p>
           </div>

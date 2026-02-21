@@ -3,12 +3,12 @@ import React, { useRef, useState, useEffect } from 'react';
 import { useData } from '../context/DataContext';
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
-import '../../styles/App.scss';
-import '../globals.css';
+import styles from './page.module.scss';
+import '../../globals.css';
 //composants
 import Header from '../../components/navbar/header';
 import Switch from '../../components/ui/switch';
-import Footer from '../../components/sections/footer';
+import Footer from '../../components/footer/footer';
 
 const Projets = () => {
   const gridContainerRef = useRef(null);
@@ -65,8 +65,8 @@ const Projets = () => {
     <>
     <Header />
     <div
-      className='section'
-      id='projets'
+      className={styles.section}
+      id={styles.projets}
       style={{marginTop:'5rem'}}
     >
       
@@ -74,14 +74,14 @@ const Projets = () => {
       <h2 >{textVariables[0]}</h2>
 
 
-      <div className='grid-container-projets-all' ref={gridContainerRef} style={{marginTop:'2rem'}}>
+      <div className={styles.gridcontainerprojetsall} ref={gridContainerRef} style={{marginTop:'2rem'}}>
         
         {uniqueCategories.map((categoryName, catIndex) => [
 
           /* -------- COLONNE 1 : LE TITRE DE SECTION -------- */
           <h3
             key={`title-${catIndex}`}
-            className="category-title"
+            className={styles.categorytitle}
           >
             {categoryName}
           </h3>,
@@ -89,31 +89,30 @@ const Projets = () => {
           /* -------- COLONNE 2 : LES PROJETS -------- */
           <div
             key={`row-${catIndex}`}
-            className="category-row"
+            className={styles.categoryrow}
           >
             {projectsByCategory[categoryName].map((project) => (
               <div
-                className='project-wrapper-all'
+                className={styles.projectwrapperall}
                 key={project.id}
                 onClick={() => handleDiscover(project.id)}
-                // style={{ marginBottom: '2rem' }}
               >
 
                 <div
-                  className='projectImgContainerAll'
+                  className={styles.projectImgContainerAll}
                   ref={(el) => { imgContainerRef.current[project.id] = el }}
                 >
-                  <video className='projectHoverVideoAll' autoPlay loop muted playsInline>
+                  <video className={styles.projectHoverVideoAll} autoPlay loop muted playsInline>
                     <source src={project.video} type='video/mp4' />
                   </video>
 
                   {project.img.endsWith('.mp4') ? (
-                    <video className='projectImg' autoPlay loop muted playsInline>
+                    <video className={styles.projectImg} autoPlay loop muted playsInline>
                       <source src={project.img} type='video/mp4' />
                     </video>
                   ) : (
                     <div
-                      className='projectImgAll'
+                      className={styles.projectImgAll}
                       style={{
                         backgroundImage: `url(${project.img})`,
                         backgroundSize: 'cover',
@@ -124,10 +123,10 @@ const Projets = () => {
                   )}
                 </div>
 
-                <div className='flex-center'>
-                  <p className='projet-p-all'>{project.title}</p>
+                <div className={styles.flexcenter}>
+                  <p className={styles.projetpall}>{project.title}</p>
                   <div
-                    className='carousel-btn-all'
+                    className={styles.carouselbtnall}
                     style={{ marginLeft: '1rem', marginBottom: '.2rem' }}
                     onMouseEnter={handleHover}
                     onMouseLeave={handleHoverOut}

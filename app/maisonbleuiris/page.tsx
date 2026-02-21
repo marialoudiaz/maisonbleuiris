@@ -31,10 +31,10 @@ const Logo = () => {
       "Retourner à l'accueil"
     ],
     philo:[
-          "Maison Bleu Iris | Notre philosphie et mission en tant que studio graphisme et design de marque Montpellier",
+          "Maison Bleu Iris | Une philosophie du beau, de l'éthique et de l'éco-responsabilité",
           "L’iris bleu, plus qu’une couleur",
-          "L’iris bleu symbolise la recherche et la cultivation de vérité et d’autenthicité.Au sein du processus créatif, cela se traduit par un principe de création consciente, de volonté d’accompagner et de faire fleurir des projets porteurs de sens, engagés dans une démarche éthique, consciente, bien-être.",
-          "Symboliquement l’iris bleu, c’est une fleur mais aussi le contour de la pupille, soit l’idée d’une vision claire et alignée. Pour nous guider vers ce qui est vrai, essentiel et authentique.Ainsi l’iris bleu donne son nom à une couleur, une essence « Bleu Iris » pour colorer un Monde que l’on commence par rêver et que l’on dessine projets par projets pour le construire consciemment.",
+          "L’iris bleu symbolise la recherche et la cultivation de vérité et d’autenthicité. Au sein du processus créatif, cela se traduit par un principe de création consciente, de volonté d’accompagner et de faire fleurir des projets porteurs de sens, engagés dans une démarche éthique, consciente, bien-être.",
+          "Symboliquement l’iris bleu, c’est une fleur mais aussi le contour de la pupille, soit l’idée d’une vision claire et alignée. Pour nous guider vers ce qui est vrai, essentiel et authentique. Ainsi l’iris bleu donne son nom à une couleur, une essence « Bleu Iris » pour colorer un Monde que l’on commence par rêver et que l’on dessine projets par projets pour le construire consciemment.",
           "Le symbole de la fleur c'est aussi celui de l'amour, selon une vision du Monde poétique. La recherche du beau, avec amour.",
           "Les trois piliers de notre expertise",
           "Pour un lancement complet de votre projet",
@@ -277,17 +277,6 @@ const Logo = () => {
 
   return (
     <>
-      {/* <div className='bg-color-anim'>
-        <div style={{position:'relative'}}>
-        <Image 
-          id='logo-bg' 
-          src='/images/logo/maisonbleuiris-blanc.png' 
-          alt={lang==='en'? "Maison Bleu Iris white logo on Blue Iris colored background": "Logo de Maison Bleu Iris en blanc sur fond de couleur Bleu Iris"}
-          width={380} height={210}
-          />
-        </div>
-      </div> */}
-
       <div className="bg-color-anim">
         <Image
           src="/images/fond-homepage.png"
@@ -307,9 +296,6 @@ const Logo = () => {
         />
       </div>
       </div>
-
-
-
     </>
   );
 };

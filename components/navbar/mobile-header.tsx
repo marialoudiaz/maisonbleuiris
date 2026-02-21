@@ -5,7 +5,7 @@ import { useData } from '../../app/context/DataContext';
 import Image from 'next/image';
 import logo from '../../public/images/logo/maisonbleuiris-noir.png';
 import { MenuIcon, X } from 'lucide-react';
-import '../../styles/App.scss';
+import styles from '../../components/navbar/mobile-header.module.scss';
 
 function MobileHeader({ isOpen, toggleMenu, infos, onHover, onLeave, hoveredLink }) {
 
@@ -24,7 +24,7 @@ function MobileHeader({ isOpen, toggleMenu, infos, onHover, onLeave, hoveredLink
 
   return (
     <>
-      <div className='menu-button'>
+      <div className={styles.menubutton}>
         {isOpen ? 
         (
           <X style={{ color: 'white' }} size={32} onClick={toggleMenu} />
@@ -33,8 +33,8 @@ function MobileHeader({ isOpen, toggleMenu, infos, onHover, onLeave, hoveredLink
         : 
         
         (
-          <div className='navbar-container-mobile'>
-            <div className='navbar-left' onClick={() => router.push('/')}>
+          <div className={styles.navbarcontainermobile}>
+            <div className={styles.navbarleft} onClick={() => router.push('/')}>
               <Image
                 src={logo}
                 width={200}
@@ -50,12 +50,12 @@ function MobileHeader({ isOpen, toggleMenu, infos, onHover, onLeave, hoveredLink
       </div>
 
       {isOpen && (
-        <div className='mobile-navbar'>
-          <div className='mobile-navbar-container'>
+        <div className={styles.mobilenavbar}>
+          <div className={styles.mobilenavbarcontainer}>
 
             <div onClick={() => { router.push('/'); toggleMenu(); }}>
               <Image
-                className='logo'
+                className={styles.logo}
                 src={logo}
                 width={300}
                 height={60}
@@ -64,11 +64,11 @@ function MobileHeader({ isOpen, toggleMenu, infos, onHover, onLeave, hoveredLink
               />
             </div>
 
-            <div className='navbar-full-items'>
+            <div className={styles.navbarfullitems}>
               {navLinks.map(link => (
                 <div 
                   key={link.id} 
-                  className='button-navbar'
+                  className={styles.buttonnavbar}
                   onClick={() => { router.push(`${link.route}`); toggleMenu(); }}
                 >
                   <p

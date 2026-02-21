@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { useRouter } from 'next/navigation'; // Importer useRouter depuis next/navigation
-import '../../styles/App.scss';
-import '../../app/globals.css';
+import styles from '../../components/formulaire/formulaire.module.scss';
+import '../../globals.css';
 
 interface contactFormProps {
   infos: {
@@ -128,7 +128,6 @@ const ContactForm: React.FC<contactFormProps> = ({ infos, langz, pack }) => {
 // POPUP
 const [showPopup, setShowPopup] = useState(false);
 const popupRef = useRef(null);
-
 //fonction pour rediriger vers deroule
 // Quand "message" change → afficher popup + timer auto
 useEffect(() => {
@@ -143,7 +142,6 @@ useEffect(() => {
     return () => clearTimeout(timer);
   }
 }, [message]);
-
 // Cliquer en dehors du popup → fermer + redirect
 useEffect(() => {
   function handleClickOutside(e) {
@@ -162,10 +160,13 @@ useEffect(() => {
 
   return (
     <>
-      <form ref={form} onSubmit={sendEmail}>
-        <div className='form-grp'>
-          <div className='flex-wrap'>
-            <label htmlFor="prenom">{infos.form[3]}</label>
+      <form className={styles.form} ref={form} onSubmit={sendEmail}>
+
+        
+        <div className={styles.formgrp}>
+
+          <div className={styles.flexwrap}>
+            <label className={styles.label} htmlFor="prenom">{infos.form[2]}</label>
             <input
               placeholder= {`${isFrench ? 'Nom & Prénom' :'Name and Surname'}`}
               type='text'
@@ -174,11 +175,12 @@ useEffect(() => {
               value={emailData.prenom}
               onChange={handleInputChange}
               required
+              className={styles.input}
             />
           </div>
 
-          <div className='flex-wrap'>
-            <label htmlFor="email">{infos.form[4]}</label>
+          <div className={styles.flexwrap}>
+            <label htmlFor="email" className={styles.label}>{infos.form[3]}</label>
             <input
               placeholder={`${isFrench ? 'Votre mail' : 'Your Email'}`}
               type='email'
@@ -187,13 +189,13 @@ useEffect(() => {
               value={emailData.email}
               onChange={handleInputChange}
               required
+              className={styles.input}
             />
           </div>
-        </div>
+        
 
-        <div className='form-grp'>
-          <div className='flex-wrap'> 
-            <label htmlFor="company">{infos.form[5]}</label>
+          <div className={styles.flexwrap}> 
+            <label htmlFor="company">{infos.form[4]}</label>
             <input
               id="company"
               name='company'
@@ -201,11 +203,12 @@ useEffect(() => {
               value={emailData.company}
               onChange={handleInputChange}
               required
+              className={styles.input}
             />
           </div>
 
-          <div className='flex-wrap'>
-            <label htmlFor="industry">{infos.form[6]}</label>
+          <div className={styles.flexwrap}>
+            <label htmlFor="industry" className={styles.label}>{infos.form[5]}</label>
             <input
               placeholder={`${isFrench ? "Votre secteur d'activité" : 'Your Industry type'}`}
               id="industry"
@@ -213,25 +216,27 @@ useEffect(() => {
               value={emailData.industry}
               onChange={handleInputChange}
               required
+              className={styles.input}
             />
           </div>
         </div>
 
         {/* SERVICES BUTTONS */}
-        <div className='checkbox-group flex-wrap'>
-          <label>{infos.form[7]}</label>
+        <div className={`${styles.checkboxgroup} ${styles.flexwrap}`}>
+          <label className={styles.label}>{infos.form[6]}</label>
           <div style={{ display: 'flex', gap: '1em', flexWrap: 'wrap', justifyContent:'center', fontSize:'14px' }}>
             <ToggleBtn label="Logo" value="logo" />
-            <ToggleBtn label={infos.form[8]} value="site internet" />
-            <ToggleBtn label={infos.form[9]} value="identité visuelle" />
-            <ToggleBtn label={infos.form[10]} value="autre" />
+            <ToggleBtn label={infos.form[7]} value="site internet" />
+            <ToggleBtn label={infos.form[8]} value="identité visuelle" />
+            <ToggleBtn label={infos.form[9]} value="autre" />
           </div>
         </div>
 
 				{/* TEXT AREA */}
-        <div className='flex-wrap' style={{ gap: '2.5rem' }}>
-          <label htmlFor="message">{infos.form[11]}</label>
+        <div className={styles.flexwrap}>
+          <label htmlFor="message" className={styles.label}>{infos.form[10]}</label>
           <textarea
+            className={styles.textarea}
             placeholder={`${isFrench ? "Bonjour, vous êtes vraiment les meilleurs, j'adorerais travailler avec vous sur...":'Hello, you are the best, I would love to work with you on ....'}`}
             id="message"
             name='message'
@@ -241,7 +246,7 @@ useEffect(() => {
           />
         </div>
 
-        <div className='c'>
+        <div className={styles.c}>
           <label htmlFor="question">Do you like chocolate ?</label>
           <input
             type="text"
@@ -253,9 +258,9 @@ useEffect(() => {
         </div>
 
         {/* SUBMIT */}
-        <div className='flexForm'>
+        <div className={styles.flexForm}>
           <button
-            className='btn-transp-dark'
+            className={styles.btntranspdark}
             onClick={sendEmail}
             role="button"
             tabIndex={0}
@@ -276,18 +281,15 @@ useEffect(() => {
             </div>
           </button>
         {showPopup && (
-          <div className="popup-overlay">
-            <div className="popup-box" ref={popupRef}>
-              <button className="popup-close" onClick={() => { setShowPopup(false); router.push('/deroule'); }}>
+          <div className={styles.popupoverlay}>
+            <div className={styles.popupbox} ref={popupRef}>
+              <button className={styles.popupclose} onClick={() => { setShowPopup(false); router.push('/deroule'); }}>
                 ×
               </button>
-
               <p>{message}</p>
             </div>
           </div>
         )}
-
-          {/* <p>{message}</p> */}
         </div>
 
       </form>

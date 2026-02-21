@@ -77,16 +77,16 @@ import React, { createContext, useContext, useState } from 'react';
       "Retourner à l'accueil"
     ],
     philo:[
-          "Maison Bleu Iris | Notre philosphie et mission en tant que studio graphisme et design de marque Montpellier",
+         "Maison Bleu Iris | Une philosophie du beau, de l'éthique et de l'éco-responsabilité",
           "L’iris bleu, plus qu’une couleur",
           "L’iris bleu symbolise la recherche et la cultivation de vérité et d’autenthicité.Au sein du processus créatif, cela se traduit par un principe de création consciente, de volonté d’accompagner et de faire fleurir des projets porteurs de sens, engagés dans une démarche éthique, consciente, bien-être.",
           "Symboliquement l’iris bleu, c’est une fleur mais aussi le contour de la pupille, soit l’idée d’une vision claire et alignée. Pour nous guider vers ce qui est vrai, essentiel et authentique.Ainsi l’iris bleu donne son nom à une couleur, une essence « Bleu Iris » pour colorer un Monde que l’on commence par rêver et que l’on dessine projets par projets pour le construire consciemment.",
           "Le symbole de la fleur c'est aussi celui de l'amour, selon une vision du Monde poétique. La recherche du beau, avec amour.",
           "Les trois piliers de notre expertise",
           "Pour un lancement complet de votre projet",
-          "Notre histoire est celle d’un parcours créatif construit étape par étape.",
-          "Tout a commencé avec l’illustration et l’édition, puis le print et la communication visuelle, où nous avons affiné notre regard et notre exigence du détail.",
-          "Nous avons ensuite perfectionné notre maîtrise web par la création sur-mesure de sites web et d'application mobile. Pour donner vie à des expériences digitales complètes et cohérentes. En parallèle, nous avons travaillé en agences et dans des campus en tant que Art Director et Brand Manager, ce qui nous a permis d’acquérir une vision stratégique et internationale de la marque. Depuis le début, nous avons également évolué en indépendants, développant des projets en autoentrepreneur entre la France et l’Australie.Cette double expérience créative, technique et stratégique a naturellement mené à la création d’une agence 360°, capable d’accompagner chaque projet de la vision à la réalisation, dans une démarche consciente et cohérente.",
+          "L'histoire de Maison Bleu Iris",
+          "Tout a commencé avec l’illustration et l’édition, puis le print et la communication visuelle, jusqu'à affiner l'exigence du détail.",
+          "Le perfectionnement s'est ensuite poursuivi vers la création sur-mesure de sites web. Pour donner vie à des expériences digitales complètes et cohérentes. En parallèle, les diverses expériences dans la publicité, en agence et dans des campus en tant que Brand Manager,ont permis au studio d’acquérir une vision stratégique et internationale de ce qui compose l'ADN d'une marque. Depuis le début, développer des projets entre la France et l’Australie ont permis au studio d'acquérir cette double expérience créative, technique et stratégique. Tout cela, a permis d'arriver tout naturellement à la création d’une agence 360°, capable d’accompagner chaque projet de la vision à la réalisation, dans une démarche consciente et cohérente. Tout cela, pour pouvoir travailler avec des porteurs de projets éthique, éco-responsable.",
         //13
         "Print",
           "Affichages,Publicité, Papeterie, Packaging",
@@ -142,21 +142,20 @@ import React, { createContext, useContext, useState } from 'react';
     ],
     citation: 'Pour un design qui vous ressemble.',
     form: [
-      "Racontons",
-      'votre',
-      'histoire',
-      'Prénom & Nom',
-      'Email',
-      'Entreprise/Projet',
-      'Secteur d’activité',
-      'Quel type de projet envisagez-vous ?',
-      'Site web', 
-      'Identité visuelle',
-      'Autre (précisez)',
-      'Parlez-moi de votre projet',
+      "Maison Bleu Iris | Agence de graphisme éthique Montpellier",
+      'Raconte votre histoire', //1
+      'Prénom & Nom', //2
+      'Email',//3
+      'Entreprise/Projet',//4
+      'Secteur d’activité',//5
+      'Quel type de projet envisagez-vous ?',//6
+      'Site web', //7
+      'Identité visuelle',//8
+      'Autre (précisez)',//9
+      'Parlez-moi de votre projet',//10
       "Collaborons pour faire grandir votre activité 🌱. Une idée, une question, une envie forte de vous lancer ? Je suis à l'écoute.",
-      "Envoyer",
-      "Nous contacter"
+      "Envoyer",//12
+      "Nous contacter",//13
     ],
     words: [
       'artisans locaux',
