@@ -70,7 +70,7 @@ const Form: React.FC = () => {
               <TextTransition springConfig={presets.gentle}>
               <p className='gold' style={{textTransform:'lowercase'}}>{words[index % words.length]}</p>
               </TextTransition>
-              <p>{blabla}</p>
+              {/* <p>{blabla}</p> */}
             </div>
             
             <div className={styles.muguet} style={{marginTop:'5rem'}}>

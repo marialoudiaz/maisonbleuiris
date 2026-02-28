@@ -277,7 +277,7 @@ useEffect(() => {
                   className="fill-white group-hover:fill-white"
               ></path>
               </svg>
-              {infos.form[13]}
+              {infos.form[12]}
             </div>
           </button>
         {showPopup && (

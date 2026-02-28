@@ -143,7 +143,7 @@ import React, { createContext, useContext, useState } from 'react';
     citation: 'Pour un design qui vous ressemble.',
     form: [
       "Maison Bleu Iris | Agence de graphisme éthique Montpellier",
-      'Raconte votre histoire', //1
+      'Racontons votre histoire', //1
       'Prénom & Nom', //2
       'Email',//3
       'Entreprise/Projet',//4
